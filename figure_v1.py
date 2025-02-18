@@ -2,106 +2,188 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 from collections import defaultdict
+import matplotlib.ticker as ticker
+import numpy as np
+import json
+import math
+from Analyze import compute_correctness
+# from statsmodels.nonparametric.smoothers_lowess import lowess
+def correlation_data(dataset):
+    file_list=[
+        f"Results/{dataset}/MS/closed_source/gpt-4o-mini.json",
+        f"Results/{dataset}/MS/closed_source/gemini-1.5-flash-latest.json",
+        f"Results/{dataset}/MS/closed_source/claude-3-haiku-20240307.json"
+    ]
 
-# 数据
-data = {
-    1: [1047, 1077],
-    0.23942675831956298: [7, 15],
-    0.3473010061326758: [10, 14],
-    0.15996415699885244: [6, 13],
-    0.6837905625465495: [58, 70],
-    0.49040833450037835: [20, 28],
-    0.07309430472953364: [5, 7],
-    0.17307922394972686: [0, 1],
-    0.22430588390457826: [2, 3],
-    0.6045463755675999: [5, 7],
-    0.48634861513960614: [7, 10],
-    0.4001646400668966: [4, 4],
-    0.5343471582763926: [3, 3],
-    0.3722575510602069: [1, 1],
-    0.2413514173018023: [1, 2],
-    0.10521812225784527: [3, 15],
-    0.0625: [2, 4],
-    0.11275503404013795: [1, 1],
-    0.27645416725018923: [0, 1],
-    0.19182946575151993: [1, 2],
-    0.19158420779849994: [0, 1],
-    0.16856921205351724: [2, 3],
-    0.16947708362509467: [0, 1],
-    0.24295136276161375: [0, 1],
-    0.25790278943481343: [1, 2],
-    0.291273210033801: [1, 4],
-    0.13915202120263978: [0, 1],
-    0.39571741362721025: [2, 2],
-    0.24774508405888623: [0, 2],
-    0.3791592375148556: [1, 1],
-    0.28664927943588414: [1, 1],
-    0.262074665597: [2, 3],
-    0.3241897712693562: [1, 1],
-    0.3575597646271073: [1, 1],
-    0.4439321291597814: [4, 4],
-    0.18930949504592193: [0, 1],
-    0.2722556924520089: [0, 1],
-    0.1702599432198839: [1, 1],
-    0.18015661418955597: [0, 1],
-    0.2825129395798907: [1, 2],
-    0.29052326193291933: [1, 1],
-    0.3365532534228848: [0, 1],
-    0.1796875: [0, 1],
-    0.34323932309539434: [0, 1],
-    0.2961182163389773: [1, 1],
-    0.20935632577996421: [1, 1],
-    0.08543990123347506: [1, 1],
-}
-# 合并阈值（控制 key 的接近程度）
-threshold = 0.05
+    file = f"Results/{dataset}/MS/open_source/results.json"
+    model_list = ["","","","gemma-2-9b-it", "Qwen2.5-7B-Instruct", "Llama-3.1-8B-Instruct"]
 
-# 用于存储合并后的结果
-merged_data = defaultdict(lambda: [0, 0])  # 初始化为 [0, 0]
+    # 将 file 复制成与 model_list 长度相同的列表
+    file_list1 = [file] * len(model_list)
+    file_list+=file_list1
+    # 使用 zip 组合成对
+    pairs = list(zip(file_list, model_list))
 
-# 遍历原始数据并合并
-for key, value in data.items():
-    found = False
-    for merged_key in list(merged_data.keys()):
-        if abs(key - merged_key) <= threshold:  # 如果两个 key 的差值小于等于阈值
-            merged_data[merged_key][0] += value[0]
-            merged_data[merged_key][1] += value[1]
-            found = True
-            break
-    if not found:
-        merged_data[key][0] += value[0]
-        merged_data[key][1] += value[1]
+    w_dict_list=[]
+    for file,model in pairs:
+        # print(file,model)
+        with open(file,"r") as f1:
+            data1=json.load(f1)
 
-# 将合并后的结果转换为普通字典
-merged_data = dict(merged_data)
-print(merged_data)
+        w_dict={}
+        for i,n in enumerate(data1):
+            if dataset in ["gsm8k","MGSM"]:
+                s = float(str(data1[i]["solution"]).replace(',',''))
+            else:
+                s = data1[i]["solution"]
 
-# 计算 Accuracy（value[0]/value[1]）
-consistency_scores = list(merged_data.keys())
-accuracies = [v[0] / v[1] for v in merged_data.values()]
+            if file.__contains__("closed_source"):
+                ans_list=data1[i]["ans_list"]
+            else:
+                ans_list=data1[i][f"{model}_ans_list"]
 
-# 创建 DataFrame 以便使用 seaborn
-df = pd.DataFrame({
-    "Consistency Score": consistency_scores,
-    "Accuracy": accuracies
-})
+            def internal_consistency_score(answers):
+                total_answers = len(answers)
+                if len(answers)==0:
+                    return 0.1
+                # 计算每个答案的出现次数
+                counts = {}
+                for answer in answers:
+                    counts[answer] = counts.get(answer, 0) + 1
+                
+                # 计算熵
+                entropy = 0
+                for count in counts.values():
+                    probability = count / total_answers
+                    entropy -= probability * math.log2(probability) if probability > 0 else 0
+                
+                # 最大熵
+                max_entropy = math.log2(len(counts))
+                
+                bias=1.0/len(answers)
+                # 计算归一化权重
+                weight = bias + (1-bias) * (1 - (entropy / max_entropy)) if max_entropy > 0 else 1
+                # print(weight)
+                # 计算得分
+                
+                return weight
 
-# 绘制散点图和拟合曲线
-plt.figure(figsize=(12, 9))
-sns.regplot(x="Consistency Score", y="Accuracy", data=df, scatter_kws={'color': 'blue', 's': 50}, line_kws={'color': 'red'},ci=None)
+            w = internal_consistency_score(ans_list)
+            correctness=compute_correctness(ans_list,s,dataset)
+            if w not in w_dict:
+                w_dict[w]=[correctness,1]
+            else:
+                w_dict[w][0]+=correctness
+                w_dict[w][1]+=1
+        w_dict_list.append(w_dict)
+    return w_dict_list
 
-# 设置标题和标签
-# plt.title("Relationship Between Consistency Score and Accuracy", fontsize=14)
-plt.xlabel("Consistency Score", fontsize=28)
-plt.ylabel("Accuracy", fontsize=28)
+def correlation():
+    # 数据
+    data_list=correlation_data("MATH")
+    plt.figure(figsize=(12, 9))
 
-ax = plt.gca()  # 获取当前的轴对象
-ax.spines['top'].set_visible(False)    # 隐藏上边框
-ax.spines['right'].set_visible(False)  # 隐藏右边框
-ax.spines['left'].set_visible(True)    # 显示左边框
-ax.spines['bottom'].set_visible(True)  # 显示下边框
-ax.tick_params(axis='both', which='major', labelsize=24)
-ax.set_ylim(-0.1,1.1)
-# 显示图形
-plt.tight_layout()
-plt.show()
+    color_list=["green","red","purple","blue","black","yellow"]
+    for i,data in enumerate(data_list):
+    # 对于合并后的数据，处理 value[1] 小于 10 的情况
+        # final_data=data
+        final_data = {}
+        for key, value in data.items():
+            if value[1] < 15:  # 如果 value[1] 小于 10
+                # 找到最近的 key
+                closest_key = None
+                min_distance = float('inf')
+                for other_key in final_data.keys():
+                    distance = abs(key - other_key)
+                    if distance < min_distance:
+                        min_distance = distance
+                        closest_key = other_key
+
+                if closest_key is not None:
+                    # 合并到最近的 key
+                    combined_value_1 = final_data[closest_key][0] + value[0]
+                    combined_value_2 = final_data[closest_key][1] + value[1]
+                    # 更新 key 值（权重加权平均）
+                    new_key = (closest_key * final_data[closest_key][1] + key * value[1]) / combined_value_2
+                    # 更新合并后的结果
+                    final_data[new_key] = [combined_value_1, combined_value_2]
+                    del final_data[closest_key]  # 删除旧的 key
+                else:
+                    # 如果没有最近的 key，直接加入
+                    final_data[key] = value
+            else:
+                # 如果 value[1] >= 10，直接加入
+                final_data[key] = value
+        print(final_data)
+
+        # 计算 Accuracy（value[0]/value[1]）
+        consistency_scores = list(final_data.keys())
+        accuracies = [v[0] / v[1] for v in final_data.values()]
+
+        # 创建 DataFrame 以便使用 seaborn
+        df = pd.DataFrame({
+            "Consistency Score": consistency_scores,
+            "Accuracy": accuracies
+        })
+
+        # 绘制散点图和拟合曲线
+        
+        #V1
+        sns.regplot(
+            x="Consistency Score", 
+            y="Accuracy", 
+            data=df, 
+            scatter_kws={'color': color_list[i], 's': 50}, 
+            line_kws={'color': color_list[i]}, 
+            ci=None,
+            )
+    #V1
+
+    #V2
+    # plt.scatter(df["Consistency Score"], df["Accuracy"], color='blue', s=50, label="Data Points")
+
+    # # 使用 statsmodels 的 LOWESS 进行平滑
+    # smoothed = lowess(df["Accuracy"], df["Consistency Score"], frac=1)  # 调整 frac 参数控制平滑程度
+
+    # # 绘制平滑曲线
+    # plt.plot(smoothed[:, 0], smoothed[:, 1], color='red', linewidth=2, label="Smooth Curve (LOWESS)")
+    #V2
+
+    # 设置标题和标签
+    plt.xlabel("Consistency Score", fontsize=28)
+    plt.ylabel("Accuracy", fontsize=28)
+
+    # 获取当前的轴对象
+    ax = plt.gca()
+
+    # 隐藏上边框和右边框
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    # 设置刻度格式
+    ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))  # x轴刻度保留1位小数
+    ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))  # y轴刻度保留1位小数
+
+    # 设置刻度参数
+    ax.tick_params(axis='both', which='major', labelsize=24)
+
+    # 设置坐标轴范围
+    ax.set_ylim(-0.1, 1.1)
+
+
+    # 调整原点的显示：将x轴和y轴的0刻度对齐
+    ax.spines['left'].set_position(('data', 0))  # y轴移动到x=0的位置
+    ax.spines['bottom'].set_position(('data', 0))  # x轴移动到y=0的位置
+
+    # 设置刻度方向
+    ax.spines['left'].set_bounds(0, 1.1)  # 限制y轴从0到1
+    ax.spines['bottom'].set_bounds(0, 1.1)  # 限制x轴从0到1
+
+    xticks = [0.2,0.4,0.6,0.8,1]
+    ax.set_xticks(xticks)
+    ax.set_xlim(-0.1, 1.1)
+    # 显示图形
+    plt.tight_layout()
+    plt.show()
+
+correlation()
