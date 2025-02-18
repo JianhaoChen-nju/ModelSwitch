@@ -39,8 +39,10 @@ def correlation_data(dataset):
 
             if file.__contains__("closed_source"):
                 ans_list=data1[i]["ans_list"]
+                ans_list=[item for item in ans_list if item!=""]
             else:
                 ans_list=data1[i][f"{model}_ans_list"]
+                ans_list=[item for item in ans_list if item!=""]
 
             def internal_consistency_score(answers):
                 total_answers = len(answers)
@@ -80,40 +82,91 @@ def correlation_data(dataset):
 
 def correlation():
     # 数据
+    
     data_list=correlation_data("MATH")
     plt.figure(figsize=(12, 9))
-
     color_list=["green","red","purple","blue","black","yellow"]
     for i,data in enumerate(data_list):
     # 对于合并后的数据，处理 value[1] 小于 10 的情况
         # final_data=data
-        final_data = {}
-        for key, value in data.items():
-            if value[1] < 15:  # 如果 value[1] 小于 10
-                # 找到最近的 key
-                closest_key = None
-                min_distance = float('inf')
-                for other_key in final_data.keys():
-                    distance = abs(key - other_key)
-                    if distance < min_distance:
-                        min_distance = distance
-                        closest_key = other_key
+        # print(final_data)
+        # final_data = {}
+        # for key, value in data.items():
+        #     if value[1] < 15:  # 如果 value[1] 小于 10
+        #         # 找到最近的 key
+        #         closest_key = None
+        #         min_distance = float('inf')
+        #         for other_key in final_data.keys():
+        #             distance = abs(key - other_key)
+        #             if distance < min_distance:
+        #                 min_distance = distance
+        #                 closest_key = other_key
 
-                if closest_key is not None:
-                    # 合并到最近的 key
-                    combined_value_1 = final_data[closest_key][0] + value[0]
-                    combined_value_2 = final_data[closest_key][1] + value[1]
-                    # 更新 key 值（权重加权平均）
-                    new_key = (closest_key * final_data[closest_key][1] + key * value[1]) / combined_value_2
-                    # 更新合并后的结果
-                    final_data[new_key] = [combined_value_1, combined_value_2]
-                    del final_data[closest_key]  # 删除旧的 key
-                else:
-                    # 如果没有最近的 key，直接加入
-                    final_data[key] = value
+        #         if closest_key is not None:
+        #             # 合并到最近的 key
+        #             combined_value_1 = final_data[closest_key][0] + value[0]
+        #             combined_value_2 = final_data[closest_key][1] + value[1]
+        #             # 更新 key 值（权重加权平均）
+        #             new_key = (closest_key * final_data[closest_key][1] + key * value[1]) / combined_value_2
+        #             # 更新合并后的结果
+        #             final_data[new_key] = [combined_value_1, combined_value_2]
+        #             del final_data[closest_key]  # 删除旧的 key
+        #         else:
+        #             # 如果没有最近的 key，直接加入
+        #             final_data[key] = value
+        #     else:
+        #         # 如果 value[1] >= 10，直接加入
+        #         final_data[key] = value
+        # print(final_data)
+
+        # 最终结果字典
+        final_data = {}
+
+        # 1. 按照 value[1] 从小到大排序
+        sorted_data = sorted(data.items(), key=lambda x: x[1][1])
+
+        # 2. 将排序后的数据转换为字典
+        sorted_data_dict = dict(sorted_data)
+
+        # 3. 逐步合并，直到只剩下 8 个键值对
+        while len(sorted_data_dict) > 8:
+            # 找到 value[1] 最小的键值对
+            min_key = min(sorted_data_dict.keys(), key=lambda k: sorted_data_dict[k][1])
+            min_value = sorted_data_dict[min_key]
+
+            # 找到与 min_key 最近的 key
+            closest_key = None
+            min_distance = float('inf')
+            for other_key in sorted_data_dict.keys():
+                if other_key == min_key:
+                    continue  # 跳过自身
+                distance = abs(min_key - other_key)
+                if distance < min_distance:
+                    min_distance = distance
+                    closest_key = other_key
+
+            if closest_key is not None:
+                # 合并 value
+                combined_value_0 = sorted_data_dict[closest_key][0] + min_value[0]
+                combined_value_1 = sorted_data_dict[closest_key][1] + min_value[1]
+
+                # 合并 key（权重加权平均）
+                new_key = (closest_key * sorted_data_dict[closest_key][1] + min_key * min_value[1]) / combined_value_1
+
+                # 更新合并后的结果
+                sorted_data_dict[new_key] = [combined_value_0, combined_value_1]
+
+                # 删除旧的 key
+                del sorted_data_dict[closest_key]
+                del sorted_data_dict[min_key]
             else:
-                # 如果 value[1] >= 10，直接加入
-                final_data[key] = value
+                # 如果没有最近的 key，直接保留
+                sorted_data_dict[min_key] = min_value
+
+        # 4. 将结果赋值给 final_data
+        final_data = sorted_data_dict
+
+        # 5. 打印最终结果
         print(final_data)
 
         # 计算 Accuracy（value[0]/value[1]）
