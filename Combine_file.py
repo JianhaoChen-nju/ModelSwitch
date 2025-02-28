@@ -86,4 +86,4 @@ def combine_files(Type,dataset,trigger):
 
 dataset_list=["MGSM"]
 for dataset in dataset_list:
-    combine_files("ModelSwitch",dataset,"open_source")
+    combine_files("MOA",dataset,"open_source")
