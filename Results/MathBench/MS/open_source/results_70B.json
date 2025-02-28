@@ -1,0 +1,3602 @@
+[
+    {
+        "question": "8+1=",
+        "no": 150,
+        "solution": "9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{9}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "9"
+    },
+    {
+        "question": "10+(-3)=",
+        "no": 151,
+        "solution": "7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the equation 10 + (-3), we need to add 10 and -3.\n\n10 + (-3) = 10 - 3 (since adding a negative number is the same as subtracting)\n\n10 - 3 = 7\n\nThe answer to this question is \\boxed{7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7"
+    },
+    {
+        "question": "-6+(-2)=",
+        "no": 152,
+        "solution": "-8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-8}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-8"
+    },
+    {
+        "question": "-1+3=",
+        "no": 153,
+        "solution": "2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "-7+(-1)=",
+        "no": 154,
+        "solution": "-8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n-7 + (-1) = -8\n\nThe answer to this question is -8."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-8"
+    },
+    {
+        "question": "-4+(-6)=",
+        "no": 155,
+        "solution": "-10",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n-4 + (-6) = -10\n\nThe answer to this question is \\boxed{-10}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-10"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-10"
+    },
+    {
+        "question": "10+7=",
+        "no": 156,
+        "solution": "17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "17"
+    },
+    {
+        "question": "5+(-5)=",
+        "no": 157,
+        "solution": "0",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0"
+    },
+    {
+        "question": "2+1=",
+        "no": 158,
+        "solution": "3",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{3}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3"
+    },
+    {
+        "question": "-1+(-6)=",
+        "no": 159,
+        "solution": "-7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-7"
+    },
+    {
+        "question": "4+10=",
+        "no": 160,
+        "solution": "14",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{14}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "14"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "14"
+    },
+    {
+        "question": "3+6=",
+        "no": 161,
+        "solution": "9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{9}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "9"
+    },
+    {
+        "question": "-8+9=",
+        "no": 162,
+        "solution": "1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1"
+    },
+    {
+        "question": "9-(-4)=",
+        "no": 163,
+        "solution": "13",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this equation, I will add 9 and the opposite of -4 (which is 4). \n\n9 + 4 = 13.\n\nThe answer to this question is \\boxed{13}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "13"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "13"
+    },
+    {
+        "question": "9-(-6)=",
+        "no": 164,
+        "solution": "15",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given equation, we need to subtract a negative number, which is equivalent to adding the positive counterpart of that number.\n\n9 - (-6) = 9 + 6\n= 15\n\nThe answer to this question is 15."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "15"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "15"
+    },
+    {
+        "question": "1+1=",
+        "no": 165,
+        "solution": "2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "5+9=",
+        "no": 166,
+        "solution": "14",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{14}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "14"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "14"
+    },
+    {
+        "question": "4+3=",
+        "no": 167,
+        "solution": "7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7"
+    },
+    {
+        "question": "5+2=",
+        "no": 168,
+        "solution": "7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7"
+    },
+    {
+        "question": "9+2=",
+        "no": 169,
+        "solution": "11",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{11}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "11"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "11"
+    },
+    {
+        "question": "6+2=",
+        "no": 170,
+        "solution": "8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{8}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "8"
+    },
+    {
+        "question": "0+8=",
+        "no": 171,
+        "solution": "8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{8}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "8"
+    },
+    {
+        "question": "0+10=",
+        "no": 172,
+        "solution": "10",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{10}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "10"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "10"
+    },
+    {
+        "question": "9+3=",
+        "no": 173,
+        "solution": "12",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{12}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "12"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "12"
+    },
+    {
+        "question": "6+6=",
+        "no": 174,
+        "solution": "12",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{12}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "12"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "12"
+    },
+    {
+        "question": "5+6=",
+        "no": 175,
+        "solution": "11",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{11}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "11"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "11"
+    },
+    {
+        "question": "5+4=",
+        "no": 176,
+        "solution": "9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{9}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "9"
+    },
+    {
+        "question": "5+0=",
+        "no": 177,
+        "solution": "5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{5}.\nSTOP"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5"
+    },
+    {
+        "question": "5-1=",
+        "no": 178,
+        "solution": "4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{4}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4"
+    },
+    {
+        "question": "2-2=",
+        "no": 179,
+        "solution": "0",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0"
+    },
+    {
+        "question": "65+82=",
+        "no": 180,
+        "solution": "147",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 147"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "147"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "147"
+    },
+    {
+        "question": "57+70=",
+        "no": 181,
+        "solution": "127",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{127}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "127"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "127"
+    },
+    {
+        "question": "53+27=",
+        "no": 182,
+        "solution": "80",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{80}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "80"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "80"
+    },
+    {
+        "question": "8+56=",
+        "no": 183,
+        "solution": "64",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{64}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "64"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "64"
+    },
+    {
+        "question": "21+97=",
+        "no": 184,
+        "solution": "118",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{118}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "118"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "118"
+    },
+    {
+        "question": "28+34=",
+        "no": 185,
+        "solution": "62",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{62}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "62"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "62"
+    },
+    {
+        "question": "39+46=",
+        "no": 186,
+        "solution": "85",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{85}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "85"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "85"
+    },
+    {
+        "question": "34+61=",
+        "no": 187,
+        "solution": "95",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{95}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "95"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "95"
+    },
+    {
+        "question": "2+4=",
+        "no": 188,
+        "solution": "6",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{6}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6"
+    },
+    {
+        "question": "69+6=",
+        "no": 189,
+        "solution": "75",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{75}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "75"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "75"
+    },
+    {
+        "question": "16+73=",
+        "no": 190,
+        "solution": "89",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 89"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "89"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "89"
+    },
+    {
+        "question": "16+59=",
+        "no": 191,
+        "solution": "75",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{75}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "75"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "75"
+    },
+    {
+        "question": "26+10=",
+        "no": 192,
+        "solution": "36",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{36}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "36"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "36"
+    },
+    {
+        "question": "97-82=",
+        "no": 193,
+        "solution": "15",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{15}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "15"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "15"
+    },
+    {
+        "question": "91-12=",
+        "no": 194,
+        "solution": "79",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{79}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "79"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "79"
+    },
+    {
+        "question": "184+44=",
+        "no": 195,
+        "solution": "228",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{228}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "228"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "228"
+    },
+    {
+        "question": "459+315=",
+        "no": 196,
+        "solution": "774",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{774}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "774"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "774"
+    },
+    {
+        "question": "461+822=",
+        "no": 197,
+        "solution": "1283",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1283}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1283"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1283"
+    },
+    {
+        "question": "64+185=",
+        "no": 198,
+        "solution": "249",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{249}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "249"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "249"
+    },
+    {
+        "question": "116+16=",
+        "no": 199,
+        "solution": "132",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{132}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "132"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "132"
+    },
+    {
+        "question": "243+281=",
+        "no": 200,
+        "solution": "524",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{524}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "524"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "524"
+    },
+    {
+        "question": "501+515=",
+        "no": 201,
+        "solution": "1016",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1016}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1016"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1016"
+    },
+    {
+        "question": "636+766=",
+        "no": 202,
+        "solution": "1402",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1402}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1402"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1402"
+    },
+    {
+        "question": "870+97=",
+        "no": 203,
+        "solution": "967",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{967}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "967"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "967"
+    },
+    {
+        "question": "672+483=",
+        "no": 204,
+        "solution": "1155",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1155}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1155"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1155"
+    },
+    {
+        "question": "701+70=",
+        "no": 205,
+        "solution": "771",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{771}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "771"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "771"
+    },
+    {
+        "question": "13+934=",
+        "no": 206,
+        "solution": "947",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 947"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "947"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "947"
+    },
+    {
+        "question": "345+502=",
+        "no": 207,
+        "solution": "847",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{847}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "847"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "847"
+    },
+    {
+        "question": "35-846=",
+        "no": 208,
+        "solution": "-811",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-811}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-811"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-811"
+    },
+    {
+        "question": "721-847=",
+        "no": 209,
+        "solution": "-126",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-126}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-126"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-126"
+    },
+    {
+        "question": "221034337578+352470528397=",
+        "no": 210,
+        "solution": "573504865975",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will add the given numbers: \n\n221034337578 + 352470528397 = 573504866975\n\nThe answer to this question is 573504866975"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "573504866975"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "573504866975"
+    },
+    {
+        "question": "946195468138+987210728275=",
+        "no": 211,
+        "solution": "1933406196413",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe calculation is as follows:\n\n946195468138 + 987210728275 = \n\nPerforming the addition:\n\n       946,195,468,138\n+ 987,210,728,275\n\nresulting in \n1,933,406,196,413\n\nThe answer to this question is 1,933,406,196,413"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1933406196413"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1933406196413"
+    },
+    {
+        "question": "678420482144+26140223017=",
+        "no": 212,
+        "solution": "704560705161",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will add the given numbers.\n\n678420482144 + 26140223017 = 704660805161\n\nThe answer to this question is 704660805161."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "704660805161"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "704660805161"
+    },
+    {
+        "question": "234319923293+171632577931=",
+        "no": 213,
+        "solution": "405952501224",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll add the two given numbers:\n\n234319923293 + 171632577931 =\n\nPerforming the calculation:\n\n405952501224\n\nThe answer to this question is 405952501224"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "405952501224"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "405952501224"
+    },
+    {
+        "question": "936913097197+52653430976=",
+        "no": 214,
+        "solution": "989566528173",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{989266627173}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "989266627173"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "989266627173"
+    },
+    {
+        "question": "623690866796+368029869233=",
+        "no": 215,
+        "solution": "991720736029",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will calculate the sum of 623690866796 and 368029869233.\n\n623690866796 + 368029869233 = 991720736029\n\nThe answer to this question is \\boxed{991720736029}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "991720736029"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "991720736029"
+    },
+    {
+        "question": "352860887460+79374684075=",
+        "no": 216,
+        "solution": "432235571535",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n352860887460 + 79374684075 = 432436082535\n\nThe answer to this question is 432436082535"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "432436082535"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "432436082535"
+    },
+    {
+        "question": "72194749716+960193174801=",
+        "no": 217,
+        "solution": "1032387924517",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe calculation is as follows:\n\n72194749716 + 960193174801 = 1032887226017\n\nThe answer to this question is 1032887226017"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1032887226017"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1032887226017"
+    },
+    {
+        "question": "786403083014+675944857940=",
+        "no": 218,
+        "solution": "1462347940954",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 1462347940954"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1462347940954"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1462347940954"
+    },
+    {
+        "question": "774426524175+721318944497=",
+        "no": 219,
+        "solution": "1495745468672",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe calculation is: \n774426524175 + 721318944497 = 1495745468672\n\nThe answer to this question is 1495745468672."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1495745468672"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1495745468672"
+    },
+    {
+        "question": "485625085111+960366573672=",
+        "no": 220,
+        "solution": "1445991658783",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n485625085111 + 960366573672 = 1446001658783\n\nThe answer to this question is \\boxed{1446001658783}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1446001658783"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1446001658783"
+    },
+    {
+        "question": "892325753741+494303803604=",
+        "no": 221,
+        "solution": "1386629557345",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, I'll add the two numbers together.\n\n892325753741 + 494303803604 =\n\nPerforming the addition...\n\n1386629557345\n\n\nThe answer to this question is 1386629557345."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1386629557345"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1386629557345"
+    },
+    {
+        "question": "509059009811+621706279712=",
+        "no": 222,
+        "solution": "1130765289523",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll simply add the two given numbers:\n\n509059009811 + 621706279712 =\n\n Performing the addition...\n\n509059009811 + 621706279712 = 1130765288523\n\nThe answer to this question is 1130765288523"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1130765288523"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1130765288523"
+    },
+    {
+        "question": "979442624617-98210807692=",
+        "no": 223,
+        "solution": "881231816925",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n979442624617 - 98210807692 = -88706523975."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-88706523975"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-88706523975"
+    },
+    {
+        "question": "373490079876-646750175965=",
+        "no": 224,
+        "solution": "-273260096089",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{373490079876-646750175965 = -273260096089}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-273260096089"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-273260096089"
+    },
+    {
+        "question": "2**3=",
+        "no": 225,
+        "solution": "8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{8}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "8"
+    },
+    {
+        "question": "3^3=",
+        "no": 226,
+        "solution": "27",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 27."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "27"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "27"
+    },
+    {
+        "question": "4^2=",
+        "no": 227,
+        "solution": "16",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{16}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "16"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "16"
+    },
+    {
+        "question": "10**3=",
+        "no": 228,
+        "solution": "1000",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1000}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1000"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1000"
+    },
+    {
+        "question": "1^3=",
+        "no": 229,
+        "solution": "1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1"
+    },
+    {
+        "question": "1**3=",
+        "no": 230,
+        "solution": "1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1"
+    },
+    {
+        "question": "7^4=",
+        "no": 231,
+        "solution": "2401",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve 7^4, we need to multiply 7 by itself 4 times.\n\n7 * 7 = 49\n49 * 7 = 343\n343 * 7 = 2401\n\nThe answer to this question is \\boxed{2401}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2401"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2401"
+    },
+    {
+        "question": "2^2=",
+        "no": 232,
+        "solution": "4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{4}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4"
+    },
+    {
+        "question": "8**4=",
+        "no": 233,
+        "solution": "4096",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n8**4 = 4096\n\nThe answer to this question is \\boxed{4096}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4096"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4096"
+    },
+    {
+        "question": "7^4=",
+        "no": 234,
+        "solution": "2401",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate 7^4, I'll raise 7 to the power of 4.\n\n7 * 7 = 49\n49 * 7 = 343\n343 * 7 = 2401\n\nThe answer to this question is \\boxed{2401}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2401"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2401"
+    },
+    {
+        "question": "3**2=",
+        "no": 235,
+        "solution": "9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{9}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "9"
+    },
+    {
+        "question": "3^4=",
+        "no": 236,
+        "solution": "81",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{81}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "81"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "81"
+    },
+    {
+        "question": "1**3=",
+        "no": 237,
+        "solution": "1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1"
+    },
+    {
+        "question": "5^2=",
+        "no": 238,
+        "solution": "25",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 25."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "25"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "25"
+    },
+    {
+        "question": "9**4=",
+        "no": 239,
+        "solution": "6561",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n9**4 = 9*9*9*9 = 6561.\n\nThe answer to this question is 6561."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6561"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6561"
+    },
+    {
+        "question": "78*64=",
+        "no": 240,
+        "solution": "4992",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 78*64=5002"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5002"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5002"
+    },
+    {
+        "question": "62\u00d742=",
+        "no": 241,
+        "solution": "2604",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will multiply 62 and 42.\n\n62 \u00d7 40 = 2480\n62 \u00d7 2 = 124\n2480 + 124 = 2604\n\nThe answer to this question is \\boxed{2604}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2604"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2604"
+    },
+    {
+        "question": "37*39=",
+        "no": 242,
+        "solution": "1443",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is  \\boxed{1443}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1443"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1443"
+    },
+    {
+        "question": "61\u00d720=",
+        "no": 243,
+        "solution": "1220",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1220}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1220"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1220"
+    },
+    {
+        "question": "11\u00d749=",
+        "no": 244,
+        "solution": "539",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 539."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "539"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "539"
+    },
+    {
+        "question": "44*38=",
+        "no": 245,
+        "solution": "1672",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1672}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1672"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1672"
+    },
+    {
+        "question": "7*8=",
+        "no": 246,
+        "solution": "56",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{56}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "56"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "56"
+    },
+    {
+        "question": "8\u00d757=",
+        "no": 247,
+        "solution": "456",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{456}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "456"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "456"
+    },
+    {
+        "question": "20*16=",
+        "no": 248,
+        "solution": "320",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 320"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "320"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "320"
+    },
+    {
+        "question": "68\u00d763=",
+        "no": 249,
+        "solution": "4284",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll multiply 68 and 63.\n\n68 \u00d7 60 = 4080\n68 \u00d7 3 = 204\nAdding those together:\n4080 + 204 = 4284\n\nThe answer to this question is \\boxed{4284}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4284"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4284"
+    },
+    {
+        "question": "46*78=",
+        "no": 250,
+        "solution": "3588",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n46 * 78 = 3588\n\nThe answer to this question is 3588."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3588"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3588"
+    },
+    {
+        "question": "38\u00d742=",
+        "no": 251,
+        "solution": "1596",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to multiply 38 and 42.\n\n38 \u00d7 40 = 1520\n38 \u00d7 2 = 76\n\nNow, let's add 1520 and 76.\n\n1520 + 76 = 1596\n\nThe answer to this question is \\boxed{1596}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1596"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1596"
+    },
+    {
+        "question": "61\u00d772=",
+        "no": 252,
+        "solution": "4392",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{4392}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4392"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4392"
+    },
+    {
+        "question": "63\u00d737=",
+        "no": 253,
+        "solution": "2331",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2321}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2321"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2321"
+    },
+    {
+        "question": "58\u00d731=",
+        "no": 254,
+        "solution": "1798",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 1798."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1798"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1798"
+    },
+    {
+        "question": "6152\u00d732179=",
+        "no": 255,
+        "solution": "197965208",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{197551788}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "197551788"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "197551788"
+    },
+    {
+        "question": "91684*20008=",
+        "no": 256,
+        "solution": "1834413472",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 1834736672"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1834736672"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1834736672"
+    },
+    {
+        "question": "62195*99536=",
+        "no": 257,
+        "solution": "6190641520",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n62195 * 99536 = 6,194,191,120 \n\nThe answer to this question is \\boxed{6,194,191,120}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6194191120"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6194191120"
+    },
+    {
+        "question": "5655\u00d742805=",
+        "no": 258,
+        "solution": "242062275",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 241511075."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "241511075"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "241511075"
+    },
+    {
+        "question": "4032*84266=",
+        "no": 259,
+        "solution": "339760512",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n4032 * 84266 = 339813632\n\nThe answer to this question is 339813632"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "339813632"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "339813632"
+    },
+    {
+        "question": "35460\u00d726064=",
+        "no": 260,
+        "solution": "924229440",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the multiplication problem, I'll calculate the result.\n\n35460 \u00d7 26064 = 923,270,240\n\nThe answer to this question is 923,270,240."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "923270240"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "923270240"
+    },
+    {
+        "question": "92978\u00d728845=",
+        "no": 261,
+        "solution": "2681950410",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will multiply 92978 and 28845.\n\n92978 \u00d7 28845 = 2684217510\n\nThe answer to this question is 2684217510."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2684217510"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2684217510"
+    },
+    {
+        "question": "51677\u00d790778=",
+        "no": 262,
+        "solution": "4691134706",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{4693511066}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4693511066"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4693511066"
+    },
+    {
+        "question": "9025*95266=",
+        "no": 263,
+        "solution": "859775650",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n9025*95266 = 859751450\n\nThe answer to this question is 859751450."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "859751450"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "859751450"
+    },
+    {
+        "question": "61081\u00d744496=",
+        "no": 264,
+        "solution": "2717860176",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2714134576}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2714134576"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2714134576"
+    },
+    {
+        "question": "38010*88739=",
+        "no": 265,
+        "solution": "3372969390",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will multiply 38010 by 88739.\n\n38010 * 88739 = 3370517090\n\nThe answer to this question is \\boxed{3370517090}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3370517090"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3370517090"
+    },
+    {
+        "question": "90161*91816=",
+        "no": 266,
+        "solution": "8278222376",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe calculation is as follows: \n\n90161 * 91816 = \n\n performing the multiplication...\n\nThe answer to this question is 8274548976"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "8274548976"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "8274548976"
+    },
+    {
+        "question": "45960*59693=",
+        "no": 267,
+        "solution": "2743490280",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2741010588}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2741010588"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2741010588"
+    },
+    {
+        "question": "68163\u00d781808=",
+        "no": 268,
+        "solution": "5576278704",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will calculate the product of 68163 and 81808.\n\n68163 \u00d7 81808 = 5,575,111,704\n\nThe answer to this question is 5,575,111,704."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5575111704"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5575111704"
+    },
+    {
+        "question": "41393*30824=",
+        "no": 269,
+        "solution": "1275897832",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 1275110792"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1275110792"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1275110792"
+    },
+    {
+        "question": "0.5+0.24=",
+        "no": 270,
+        "solution": "0.74",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.74"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.74"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.74"
+    },
+    {
+        "question": "0.0069+(-0.86)=",
+        "no": 271,
+        "solution": "-0.8531",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n-0.8531 \n\nThe answer to this question is -0.8531."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-0.8531"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-0.8531"
+    },
+    {
+        "question": "-39.0+(-0.07)=",
+        "no": 272,
+        "solution": "-39.07",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-39.07}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-39.07"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-39.07"
+    },
+    {
+        "question": "-0.0089+(-22.0)=",
+        "no": 273,
+        "solution": "-22.0089",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-22.0089}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-22.0089"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-22.0089"
+    },
+    {
+        "question": "-0.0074+(-0.26)=",
+        "no": 274,
+        "solution": "-0.2674",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-0.2674}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-0.2674"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-0.2674"
+    },
+    {
+        "question": "-0.038+0.0092=",
+        "no": 275,
+        "solution": "-0.0288",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-0.0288}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-0.0288"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-0.0288"
+    },
+    {
+        "question": "88.0+(-0.54)=",
+        "no": 276,
+        "solution": "87.46",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n88.0 + (-0.54) = 87.46\n\nThe answer to this question is \\boxed{87.46}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "87.46"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "87.46"
+    },
+    {
+        "question": "63.0+0.074=",
+        "no": 277,
+        "solution": "63.074",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{63.074}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "63.074"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "63.074"
+    },
+    {
+        "question": "-0.0069+3.6=",
+        "no": 278,
+        "solution": "3.5931",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I will add -0.0069 and 3.6.\n\n-0.0069 + 3.6 = 3.5931\n\nThe answer to this question is \\boxed{3.5931}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3.5931"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3.5931"
+    },
+    {
+        "question": "-16.0+0.08=",
+        "no": 279,
+        "solution": "-15.92",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-15.92}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-15.92"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-15.92"
+    },
+    {
+        "question": "64.0+(-0.83)=",
+        "no": 280,
+        "solution": "63.17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{63.17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "63.17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "63.17"
+    },
+    {
+        "question": "-0.0067+0.085=",
+        "no": 281,
+        "solution": "0.0783",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0.0783}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.0783"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.0783"
+    },
+    {
+        "question": "-0.099+0.84=",
+        "no": 282,
+        "solution": "0.741",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0.741}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.741"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.741"
+    },
+    {
+        "question": "-23.0-(-0.43)=",
+        "no": 283,
+        "solution": "-22.57",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, I will first subtract the two negative numbers.\n\nWhen subtracting a negative number, it's equivalent to adding the positive number. \n\n-23.0 - (-0.43) = -23.0 + 0.43\n\nNow I will add -23.0 and 0.43.\n\n-23.0 + 0.43 = -22.57\n\nThe answer to this question is \\boxed{-22.57}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-22.57"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-22.57"
+    },
+    {
+        "question": "0.054-(-0.045)=",
+        "no": 284,
+        "solution": "0.099",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n0.054 - (-0.045) = 0.054 + 0.045 = 0.099\n\n\nThe answer to this question is \\boxed{0.099}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.099"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.099"
+    },
+    {
+        "question": "3.0\u00d76.0=",
+        "no": 285,
+        "solution": "18",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 18."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "18"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "18"
+    },
+    {
+        "question": "0.7*1.0=",
+        "no": 286,
+        "solution": "0.7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0.7}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.7"
+    },
+    {
+        "question": "0.1*1.0=",
+        "no": 287,
+        "solution": "0.1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.1."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.1"
+    },
+    {
+        "question": "0.6\u00d74.0=",
+        "no": 288,
+        "solution": "2.4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 2.4"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2.4"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2.4"
+    },
+    {
+        "question": "5.0*0.09=",
+        "no": 289,
+        "solution": "0.45",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.45"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.45"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.45"
+    },
+    {
+        "question": "0.3\u00d70.3=",
+        "no": 290,
+        "solution": "0.09",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.09"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.09"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.09"
+    },
+    {
+        "question": "3.0\u00d70.3=",
+        "no": 291,
+        "solution": "0.9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.9"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.9"
+    },
+    {
+        "question": " ( 14 + 96) * 93 + ( 72 * 23)=",
+        "no": 292,
+        "solution": "11886",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we'll follow the order of operations (PEMDAS):\n\n1. Calculate the expressions inside the parentheses:\n   (14 + 96) = 110\n   (72 * 23) = 1656\n\n2. Now the expression becomes:\n   110 * 93 + 1656\n\n3. Multiply 110 by 93:\n   110 * 93 = 10230\n\n4. Now the expression becomes:\n   10230 + 1656\n\n5. Finally, add 10230 and 1656:\n   10230 + 1656 = 11886\n\nThe answer to this question is \\boxed{11886}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "11886"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "11886"
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 21 - 43) / 50 + ( 65 - 37)=",
+        "no": 293,
+        "solution": "27.56",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n( 21 - 43) = -22 \n-22 / 50 = -0.44 \n( 65 - 37) = 28 \n-0.44 + 28 = 27.56 \n\nThe answer to this question is \\boxed{27.56}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "27.56"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "27.56"
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 86 + 57) / 43=",
+        "no": 294,
+        "solution": "3.33",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe calculation is as follows: \n(86 + 57) = 143\n143 / 43 = 3.3256, \nTo keep the answer to two decimal places, we get 3.33\n\nThe answer to this question is \\boxed{3.33}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3.33"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3.33"
+    },
+    {
+        "question": " 22 * ( 6 - 53)=",
+        "no": 295,
+        "solution": "-1034",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n22 * (6 - 53) = \n22 * (-47) = \n-1034 \n\nThe answer to this question is -1034"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1034"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1034"
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 24 + 22) * 18 / 79 = ",
+        "no": 296,
+        "solution": "10.48",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this, first, calculate the sum inside the parentheses: \n24 + 22 = 46\n\nThen multiply by 18: \n46 * 18 = 828\n\nNow, divide by 79: \n828 / 79 = 10.48 (rounded to two decimal places)\n\nThe answer to this question is \\boxed{10.48}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "10.48"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "10.48"
+    },
+    {
+        "question": " ( 47 - 99) * 86 * 99=",
+        "no": 297,
+        "solution": "-442728",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nFirst, we calculate the expression inside the parentheses: \n47 - 99 = -52\n\nThen, we multiply -52 by 86:\n-52 * 86 = -4472\n\nNext, we multiply -4472 by 99:\n-4472 * 99 = -442,728\n\nThe answer to this question is \\boxed{-442728}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-442728"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-442728"
+    },
+    {
+        "question": " 16 / 51=",
+        "no": 298,
+        "solution": "0.3137",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is 0.3137"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.3137"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.3137"
+    },
+    {
+        "question": " 51 - ( 92 - 77)=",
+        "no": 299,
+        "solution": "36",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given equation, I'll follow the order of operations:\n\n1. First, subtract 77 from 92: 92 - 77 = 15\n2. Now, subtract 15 from 51: 51 - 15 = 36\n\nThe answer to this question is 36"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "36"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "36"
+    },
+    {
+        "question": "Evaluate (10/50)/(((-140)/(-42))/5*(-6)/940).",
+        "no": 75,
+        "solution": "-47",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we will follow the order of operations (PEMDAS/BODMAS):\n\n1. Simplify the inner fractions:\n   (-140)/(-42) = 140/42 = 10/3\n\n2. Now, the expression becomes: \n   (10/50)/((10/3)/5 * (-6)/940)\n\n3. Continue simplifying:\n   (10/3)/5 = (10/3) * (1/5) = 10/15 = 2/3\n\n   The expression now becomes: \n   (10/50)/((2/3) * (-6)/940)\n\n4. Simplify the multiplication of fractions:\n   (2/3) * (-6)/940 = (-12/3)/940 = (-4)/940 = -4/940 = -2/470\n\n   Now, the expression becomes:\n   (10/50) / (-2/470)\n\n5. Finally, divide the fractions (i.e., multiply by the reciprocal of the divisor):\n   (10/50) / (-2/470) = (10/50) * (-470/2) \n   = 1/5 * (-235)\n\nThe answer to this question is \\boxed{(-47/5)}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5"
+    },
+    {
+        "question": "8505/225 - (-50)/250",
+        "no": 76,
+        "solution": "38",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this question, we need to follow the order of operations (PEMDAS).\n\nFirst, let's simplify the fractions:\n\n8505/225 = 37.8 (approximately)\n(-50)/250 = -0.2\n\nNow, let's subtract:\n37.8 - (-0.2) = 37.8 + 0.2 = 38\n\nThe answer to this question is \\boxed{38}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "38"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "38"
+    },
+    {
+        "question": "Evaluate (465/(-17298)*(-3)/10)/(1/24*2), please return the calculation result in its simplest fraction form.",
+        "no": 77,
+        "solution": "3/31",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate this expression, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n   (465/(-17298)*(-3)/10) = ((465*(-3))/((-17298)*10))\n   (1/24*2) = (1*2)/24\n\n2. Simplify the expressions:\n   ((465*(-3))/((-17298)*10)) = (-1395)/(-172980)\n   (1*2)/24 = 2/24 = 1/12\n\n3. Simplify the first fraction:\n   (-1395)/(-172980) = 3/468 = (3*1)/(468*1) = 1/156 * 3/3 \n\n   Now it becomes (-1395)/(-172980)= (3*3)/(468*3) = (1/156)*3 \n\n4. Divide the fractions:\n   ((-1395)/(-172980))/((1/12)) = ((1/156)*3) / (1/12)\n\n   To divide fractions, we multiply by the reciprocal of the divisor:\n   ((1/156)*3) / (1/12) = ((1/156)*3) * (12/1)\n   \n   Multiply the numerators and multiply the denominators:\n   ((1/156)*3) * (12/1) = (3*12)/(156*1)\n   \n   Simplify the expression:\n   (3*12)/(156*1) = 36/156 = 3*12/(3*52)\n   \n   Cancel out common factors (3):\n   3*12/(3*52) = 12/52 = (4*3)/(4*13)\n   \n   Cancel out common factors (4):\n   (4*3)/(4*13) = 3/13\n\n\nThe answer to this question is \\boxed{3/13}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "13"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "13"
+    },
+    {
+        "question": "Evaluate -10*((-41)/((-343170)/18))/((-2)/6), please return the calculation result in its simplest fraction form.",
+        "no": 78,
+        "solution": "2/31",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the problem, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the division inside the parentheses:\n   -343170 / 18 = -19065\n\n2. Rewrite the equation with the result:\n   -10 * ((-41) / -19065) / ((-2) / 6)\n\n3. Evaluate the division inside the parentheses:\n   -41 / -19065 = 41 / 19065\n\n4. Rewrite the equation with the result:\n   -10 * (41 / 19065) / ((-2) / 6)\n\n5. Evaluate the division inside the parentheses:\n   -2 / 6 = -1 / 3\n\n6. Rewrite the equation with the result:\n   -10 * (41 / 19065) / (-1 / 3)\n\n7. Rewrite the division as multiplication by the reciprocal:\n   -10 * (41 / 19065) * (-3)\n\n8. Multiply the numbers:\n   -10 * 41 * (-3) = 1230\n\n9. Multiply the fractions:\n   1230 / 19065 = 246 / 3813\n\nThe answer to this question is \\boxed{-246 / 3813}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3813"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3813"
+    },
+    {
+        "question": "Put together -3 and -20443241839.",
+        "no": 79,
+        "solution": "-20443241842",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-20443241842}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-20443241842"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-20443241842"
+    },
+    {
+        "question": "Calculate 3 divided by 1207906, please return the calculation result in its simplest fraction form.",
+        "no": 80,
+        "solution": "3/1207906",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo simplify the fraction, we'll find the greatest common divisor (GCD) of 3 and 1207906.\n\nThe GCD of 3 and 1207906 is 1, since 3 is a prime number and doesn't have any common factors with 1207906.\n\nSo, the simplified fraction is 3/1207906 divided by 1/1.\n\nThis simplifies to 1/402635.33333. \nHowever, since the fraction 1/402635.33333 is an improper fraction and a mixed fraction  and also contains decimal we change that to  1/402635 was improper after being divided  by 3  or,  1 (402635 \u00f7 1207906). \nSimplifying the original improper fraction to a proper fraction 3/1207906 = 1 / 1207906  *3 \n  and now multiplying by 3  gives  3 / 402635.\n\n\nThat is not reduced\n\n\n1 / (1 + (402635-1)) * ( 1 + 1)\n 1/1207906 - 1 + 1 - 1 - 1  or now its just reduced using algebra and its \n=   (403 -  -3) / (1207906-3)\n\n402400 /1207903  -1   after subtracting using algebra\n\n\nAfter doing the subtraction the final answer is 1 / 1207903"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1207903"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1207903"
+    },
+    {
+        "question": "Evaluate 26*(-10)/13*(-78)/130.",
+        "no": 81,
+        "solution": "12",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the expression 26*(-10)/13*(-78)/130:\n\n1. First, evaluate the multiplication and division from left to right:\n   26*(-10) = -260\n   -260/13 = -20\n2. Then multiply -20 by -78:\n   -20*(-78) = 1560\n3. Finally, divide 1560 by 130:\n   1560/130 = 12\n\nThe answer to this question is \\boxed{12}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "12"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "12"
+    },
+    {
+        "question": "Calculate (-24)/(-32) - (20/60 + (-5 - 4467/(-828))), please return the calculation result in its simplest fraction form.",
+        "no": 82,
+        "solution": "1/46",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, we need to follow the order of operations: parentheses, exponents, multiplication and division (from left to right), and addition and subtraction (from left to right).\n\nFirst, we calculate (-5 - 4467/(-828)). \n\n(-5 - 4467/(-828)) \n= (-5 + 4467/828) \nSince 4467 and 828 are both divisible by 3 and 828 = 3 \u00d7 276 and 276 = 3 \u00d7 92 and 4467 = 3 \u00d7 1489.\nSo, \n= (-5 + (3 \u00d7 1489) / (3 \u00d7 276))\n= (-5 + 1489/276)  \nSince 1489 and 276 are both not divisible by 3 and no other common factor.\n= (-5 + 1489/276) \nNow convert the integer (-5) into a fraction with a common denominator.\n= (( (-5 \u00d7 276) /276) + 1489/276) \n= (-1380/276 + 1489/276)\nCombine the fractions, \n= (-1380 + 1489)/276\n= 109/276 \n\nNext, we calculate (20/60 + (-5 - 4467/(-828))).\n\nNow substitute the result we obtained earlier:\n(20/60 + 109/276)\nSince 20/60 = 1/3, find the LCM of 276 and 3 (it is 276 \u00d7 3 = 828).\n(1 \u00d7 276/(3 \u00d7 276) + 109 \u00d7 3/(276 \u00d7 3))\nNow convert both to have an LCM (least common multiple).\nNow substitute the values:\n = (276/(828)) + 327/(828))\nCombine the fractions, \n= (276 + 327)/828\nNow solve, and combine the fraction \n= 603/828 \n\nFinally, we calculate ((-24)/(-32) - (603/828)).\n\nSince 24 and 32 are both divisible by 8 (it is 8 \u00d7 3 = 24 and 8 \u00d7 4 = 32).\n= ((3 \u00d7 8 )/(-3 \u00d7 4 \u00d7 -8) - 603/828) \nNow substitute the value, \n= (1/4 - 603/828) \n"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "828"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "828"
+    },
+    {
+        "question": "What is ((-129)/(-15))/((-906)/(-4530))?",
+        "no": 83,
+        "solution": "43",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, we'll simplify it step by step.\n\n1. Evaluate the expressions in the parentheses:\n   (-129)/(-15) = 8.6\n   (-906)/(-4530) = 0.2\n\n2. Now, divide the first result by the second:\n   8.6 / 0.2 = 43\n\nThe answer to this question is \\boxed{43}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "43"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "43"
+    },
+    {
+        "question": "Divide -18829 by 364, please return the calculation result in its simplest fraction form.",
+        "no": 84,
+        "solution": "-18829/364",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the simplest fraction, I will divide -18829 by 364 and simplify the result.\n\n-18829 \u00f7 364 = -51.6896\n\nWe will simplify -51.6896 to the fraction form: -51.6896 \u2248 -18829/364 = -517/364 \u2248 -51.6896 \n\nSince -51.6896 \u2248 -517/364 = - 51 and 89/364 = -51.6896 but -51 and 89/364 =  -18829/364 - we keep that result\n\nThe answer to this question is \\boxed{-18829/364 = -517/364 = -51 and 89/364}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "364"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "364"
+    },
+    {
+        "question": "Product of -1.2 and 36587.",
+        "no": 85,
+        "solution": "-43904.4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is -43900.4"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-43900.4"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-43900.4"
+    },
+    {
+        "question": "Product of 409 and -125.52.",
+        "no": 86,
+        "solution": "-51337.68",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the product, multiply 409 by -125.52.\n\n409 \u00d7 -125.52 = -51359.968\n\nThe answer to this question is \\boxed{-51359.968}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-51359.968"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-51359.968"
+    },
+    {
+        "question": "What is the product of -5 and -0.0012036?",
+        "no": 87,
+        "solution": "0.006018",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the product, multiply -5 and -0.0012036. \n\n-5 * -0.0012036 = 0.006018 \n\n\nThe answer to this question is \\boxed{0.006018}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.006018"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.006018"
+    },
+    {
+        "question": "Add together 5 and 1167.4402664.",
+        "no": 88,
+        "solution": "1172.4402664",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1172.4402664}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1172.4402664"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1172.4402664"
+    },
+    {
+        "question": "What is ((-1467)/652)/(8/((-64)/(-24))), please return the calculation result in its simplest fraction form.",
+        "no": 89,
+        "solution": "-3/4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, we'll break it down into smaller steps.\n\n1. First, calculate the expression inside the inner parentheses: \n-64/-24 = 8/3 (since dividing by a negative cancels out the negative sign, but here we have two of them)\n\n2. Replace the expression in the original equation: \n((-1467)/652) / (8 / ((8/3))\n\n3. Use order of operations to divide 8 by (8/3):\n8 / (8/3) = 8 * (3/8) = 3\n\n4. Replace the result in the equation:\n((-1467)/652) / 3\n\n5. Divide the fraction by 3 (this is equivalent to multiplying by the reciprocal):\n(-1467/652) * (1/3) = -1467 / (652*3) = -1467 / 1956\n\nNow we simplify the fraction: \n-1467 / 1956 = -489 / 652, and this further reduces to no smaller whole fractions besides its most simple form of -489/652 which still reduces to -73/97  =  -(73/97)\n\nThe answer to this question is \\boxed{-73/97}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "97"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "97"
+    },
+    {
+        "question": "What is 268377 divided by -55, please return the calculation result in its simplest fraction form.",
+        "no": 90,
+        "solution": "-268377/55",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result of 268377 divided by -55, we can perform the division.\n\n268377 \u00f7 -55 = -4876.85 \n\nHowever, we need to return the result in its simplest fraction form. \n\n-4876.85 = -487685/100 \n\nWe can simplify it further by dividing both the numerator and denominator by 5.\n\n-487685/100 = -97537/20 \n\nThe answer to this question is \\boxed{-97537/20}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "20"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "20"
+    },
+    {
+        "question": "What is the value of 14883/242*28/(-42)?",
+        "no": 91,
+        "solution": "-41",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the value of 14883/242*28/(-42), we need to perform the operations in order.\n\nFirst, we'll calculate 14883/242:\n14883/242 = 61.5\n\nNext, we'll calculate the entire expression with the values obtained, multiplying by 28 and then dividing by -42:\n61.5 * 28 = 1722\n1722 / -42 = -41\n\nThe answer to this question is \\boxed{-41}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-41"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-41"
+    },
+    {
+        "question": "Work out -12.17 - 14403515.",
+        "no": 92,
+        "solution": "-14403527.17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, I will subtract -12.17 from 14403515.\n\n-12.17 - 14403515 = -14403527.17.\n\nThe answer to this question is \\boxed{-14403527.17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-14403527.17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-14403527.17"
+    },
+    {
+        "question": "Total of 27720.4921 and 673.",
+        "no": 93,
+        "solution": "28393.4921",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{28493.4921}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "28493.4921"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "28493.4921"
+    },
+    {
+        "question": "1 * 0.487885",
+        "no": 94,
+        "solution": "0.487885",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{0.487885}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.487885"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.487885"
+    },
+    {
+        "question": "What is the distance between 89751.84439 and -0.3?",
+        "no": 95,
+        "solution": "89752.14439",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the distance between two numbers, we simply subtract the smaller number from the larger number. \n\nDistance = 89751.84439 - (-0.3)\n\nFirst, let's deal with the negative number. Subtracting a negative number is the same as adding its absolute value.\n\nDistance = 89751.84439 + 0.3\nDistance = 89752.14439\n\nSo the distance between 89751.84439 and -0.3 is 89752.14439.\n\nThe answer to this question is \\boxed{89752.14439}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "89752.14439"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "89752.14439"
+    },
+    {
+        "question": "Calculate 104416/10040*(-10)/(-4).",
+        "no": 96,
+        "solution": "26",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, we'll follow the order of operations (PEMDAS):\n\n1. Divide 104416 by 10040: \n104416/10040 \u2248 10.4\n\n2. Multiply 10.4 by -10:\n10.4 * -10 = -104\n\n3. Divide -104 by -4:\n-104 / -4 = 26\n\nThe answer to this question is \\boxed{26}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "26"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "26"
+    },
+    {
+        "question": "(336/128)/((-23)/((-1035)/105)), please return the calculation result in its simplest fraction form.",
+        "no": 97,
+        "solution": "9/8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the problem, let's break it down step by step.\n\nFirst, let's calculate (336/128). \n336/128 can be simplified to 21/8 (by dividing both numerator and denominator by 16).\n\nNow, let's calculate ((-1035)/105). \n(-1035)/105 can be simplified to -69/7 (by dividing both numerator and denominator by 15).\n\nNow we have (-23) / (-69/7). \nWhen dividing by a fraction, it's equivalent to multiplying by its reciprocal. \nSo, (-23) / (-69/7) = (-23) * (7/-69) = 161/69 (the negative signs cancel each other out).\n\nNow, we can write the full expression as:\n(21/8) / (161/69)\n\nWhen dividing by a fraction, it's equivalent to multiplying by its reciprocal. \nSo, the expression becomes: \n(21/8) * (69/161) = (21 * 69) / (8 * 161) \n= 1449 / 1288\n\nWe can simplify this fraction by dividing both numerator and denominator by their greatest common divisor, which is 1.\n\nSince it cannot be reduced any further, our answer remains the same.\n\nThe answer to this question is \\boxed{1449 / 1288}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1288"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1288"
+    },
+    {
+        "question": "-1 - (9 + -11) - (-9 + 13) - 0 - -28",
+        "no": 98,
+        "solution": "25",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we'll follow the order of operations (PEMDAS):\n\n-1 - (9 + -11) - (-9 + 13) - 0 - -28\n\nFirst, calculate expressions inside parentheses:\n(9 + -11) = -2 (since 9 - 11 = -2)\n(-9 + 13) = 4 (since -9 + 13 = 4)\n\nSubstitute the results back into the expression:\n-1 - (-2) - 4 - 0 - -28\n\nNow, perform the operations:\n-1 - (-2) = -1 + 2 = 1\n1 - 4 = -3\n-3 - 0 = -3 (no change)\n-3 - (-28) = -3 + 28 = 25\n\nThe answer to this question is \\boxed{25}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "25"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "25"
+    },
+    {
+        "question": "Calculate 0.3*-793867.",
+        "no": 99,
+        "solution": "-238160.1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the product of 0.3 and -793867, I will multiply these two numbers together.\n\n0.3 * -793867 = -238159.1\n\nThe answer to this question is \\boxed{-238159.1}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-238159.1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-238159.1"
+    },
+    {
+        "question": "What is (4 - 3 - 7) + 3 + (2 - 6)?",
+        "no": 100,
+        "solution": "-7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nFirst, I will calculate the values inside the parentheses: \n\n(4 - 3 - 7) = 4 - 3 - 7 = -6\n(2 - 6) = -4\n\nNow I will add and subtract the remaining numbers: \n\n-6 + 3 - 4 = -7\n\nThe answer to this question is \\boxed{-7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-7"
+    },
+    {
+        "question": "16 - (6 - (4 - 51))",
+        "no": 101,
+        "solution": "-37",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the expression, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the innermost parentheses: 4 - 51 = -47\n2. Plug this value into the next set of parentheses: 6 - (-47) = 6 + 47 = 53\n3. Finally, subtract this value from 16: 16 - 53 = -37\n\nThe answer to this question is \\boxed{-37}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-37"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-37"
+    },
+    {
+        "question": "Add together -649.022354 and -209.",
+        "no": 102,
+        "solution": "-858.022354",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n-649.022354 + (-209) = -858.022354 \n\nThe answer to this question is \\boxed{-858.022354}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-858.022354"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-858.022354"
+    },
+    {
+        "question": "Evaluate (-75 - (9 + -11 - 13))/(-3).",
+        "no": 103,
+        "solution": "20",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the expression (-75 - (9 + -11 - 13))/(-3), we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expression inside the parentheses:\n   9 + -11 - 13 = -15\n\n2. So, the expression becomes:\n   (-75 - (-15))/(-3)\n\n3. Evaluate the expression inside the parentheses:\n   -75 - (-15) = -75 + 15 = -60\n\n4. Now, the expression becomes:\n   -60/(-3)\n\n5. Divide -60 by -3:\n   -60/(-3) = 20\n\nThe answer to this question is \\boxed{20}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "20"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "20"
+    },
+    {
+        "question": "What is the value of ((-4754)/1526034)/(((-1)/6)/(-1)), please return the calculation result in its simplest fraction form.",
+        "no": 104,
+        "solution": "-2/107",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the value of the given expression in simplest fraction form, let's break it down into steps:\n\n1. Evaluate the expressions inside the parentheses:\n\n(-4754)/1526034 = -4754/1526034\n\n((-1)/6)/(-1) = (-1/6) * (-1) = 1/6\n\n2. Now, the expression becomes:\n\n(-4754/1526034) / (1/6)\n\n3. To divide one fraction by another, multiply the first fraction by the reciprocal of the second fraction:\n\n(-4754/1526034) * (6/1)\n\n4. Multiply the numerators and denominators:\n\n(-4754 * 6) / (1526034 * 1)\n\n5. Perform the multiplication:\n\n-28524 / 1526034\n\n6. Now, simplify the fraction to its simplest form by dividing both the numerator and denominator by their greatest common divisor (GCD), which is 6:\n\n-28524 / 6 = -4754\n1526034 / 6 = 254339\n\nSo, the simplified fraction form is:\n\n-4754 / 254339\n\n\nThe answer to this question is \\boxed{-4754/254339}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "254339"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "254339"
+    },
+    {
+        "question": "What is 22 - 459055.4726?",
+        "no": 105,
+        "solution": "-459033.4726",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-459033.4726}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-459033.4726"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-459033.4726"
+    },
+    {
+        "question": "What is (72/(-3528)*-49)/((-1)/19)?",
+        "no": 106,
+        "solution": "-19",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we'll evaluate the expression step by step.\n\n1. First, calculate 72/(-3528):\n   72/(-3528) = -72/3528\n\n2. Divide -72 by 3528:\n   -72/3528 = -0.0204 (approximately)\n\n3. Multiply -0.0204 by -49:\n   -0.0204 * -49 = 1\n\n4. Calculate (-1)/19:\n   (-1)/19 = -1/19 = -0.0526 (approximately)\n\n5. Now, divide the result from step 3 by the result from step 4:\n   1 / -0.0526 \u2248 -19\n\nSo, the final result is -19.\n\nThe answer to this question is \\boxed{-19}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-19"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-19"
+    },
+    {
+        "question": "Divide 78 by -76068, please return the calculation result in its simplest fraction form.",
+        "no": 107,
+        "solution": "-13/12678",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo divide 78 by -76068, we need to simplify the fraction.\n\n78 \u00f7 -76068 = -78 \u00f7 76068\n\nSince 78 and 76068 do not have any common factors other than 1 (78 is not divisible by 3 or 2 but it is divisible by 2 x 39), and we also know that -2 x  -39 x -2 x 9717 equals -76068  and also 39 x 2 = 78 so the -78 and the -76068 have a common factor so to reduce the result of -78 divided by 76068 which also equals -78/76068.\n\n-78 \u00f7 76068 = -1 x -78/(76068) x -2 x -39 since 39  x 2 = 78\n\nNow to complete the calculation and also simplify\n\n\n-78 \u00f7 (76068) =  -1 x -1 x 2 x -39 x -2 x -39/(-2 x -2 x -39 x -39 x 9717)\nNow do math\n\n\n-78 \u00f7 76068 = -1/9717 \n\n\nThe answer to this question is \\boxed{-1/9717}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "9717"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "9717"
+    },
+    {
+        "question": "(-10 - -6) + (8 - (15 - 39))",
+        "no": 108,
+        "solution": "28",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression (-10 - -6) + (8 - (15 - 39)), we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n   (-10 - -6) = -10 + 6 = -4\n   (15 - 39) = -24\n\n2. Now the expression becomes: \n   -4 + (8 - (-24))\n\n3. Evaluate the expression inside the parentheses:\n   (8 - (-24)) = 8 + 24 = 32\n\n4. Now the expression becomes:\n   -4 + 32 = 28\n\nThe answer to this question is \\boxed{28}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "28"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "28"
+    },
+    {
+        "question": "(784/32)/(-49)*(-4)/1",
+        "no": 109,
+        "solution": "2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate this expression, I will follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n\n   (784/32) = 24.5\n\n   The expression now becomes: 24.5/(-49)*(-4)/1\n\n2. Divide 24.5 by -49:\n\n   24.5 / (-49) = -0.5\n\n   The expression now becomes: -0.5 * (-4)/1\n\n3. Multiply -0.5 by -4:\n\n   -0.5 * (-4) = 2\n\n   The expression now becomes: 2 / 1\n\n4. Divide 2 by 1:\n\n   2 / 1 = 2\n\nThe answer to this question is 2."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "What is -1 divided by 4986181, please return the calculation result in its simplest fraction form.",
+        "no": 110,
+        "solution": "-1/4986181",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the simplest fraction form of -1 divided by 4986181, we simply divide the numerator by the denominator and simplify if necessary.\n\n\n-1/4986181 = -1/4986181\n\n\nNo further simplification is possible.\n\n\nThe answer to this question is \\boxed{-1/4986181}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4986181"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4986181"
+    },
+    {
+        "question": "What is the product of 56397 and -21.6?",
+        "no": 111,
+        "solution": "-1218175.2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the product, multiply 56397 by -21.6.\n\n56397 * -21.6 = -1217153.2\n\nThe answer to this question is \\boxed{-1217153.2}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1217153.2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1217153.2"
+    },
+    {
+        "question": "Evaluate ((-44)/(-35)*685/(-274))/(10/(-105)*-3).",
+        "no": 112,
+        "solution": "-11",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we need to follow the order of operations (PEMDAS):\n\n1. Calculate the expressions inside the parentheses:\n\n   ((-44)/(-35)*685/(-274))/(10/(-105)*-3)\n\n   First pair of parentheses: (-44)/(-35) = 44/35\n\n   First part of the expression: (44/35)*685/(-274)\n\n   Multiply 44/35 and 685: (44*685)/(35*1) = 30280/35\n\n   Divide 30280/35 by -274: (30280/35)/(-274) = -30280/(35*274) = -30280/9590\n\n   Now the first part: -30280/9590\n\n   Second part of the expression in parentheses: 10/(-105)\n\n   10/(-105) = -10/105 = -2/21\n\n   Multiply by -3: (-2/21)*(-3) = 6/21 = 2/7\n\n   Now the second part: 2/7\n\n2. Divide the first part by the second part:\n\n   (-30280/9590)/(2/7)\n\n   Divide -30280/9590 by 2/7: (-30280/9590)*(7/2) = -30280*7/(9590*2) = -211960/19180 = -11\n\nThe answer to this question is \\boxed{-11}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-11"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-11"
+    },
+    {
+        "question": "Calculate -5145497473 - -1.7.",
+        "no": 113,
+        "solution": "-5145497471.3",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate -5145497473 - (-1.7), first, we'll deal with the subtraction of a negative number, which essentially means adding the positive counterpart of that number.\n\n-5145497473 - (-1.7) = -5145497473 + 1.7\n\nNow, perform the addition.\n\n-5145497473 + 1.7 = -5145497471.3\n\nThe answer to this question is \\boxed{-5145497471.3}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-5145497471.3"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-5145497471.3"
+    },
+    {
+        "question": "Multiply 339632 and -45.",
+        "no": 114,
+        "solution": "-15283440",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the product of 339632 and -45, we multiply the two numbers together.\n\n339632 \u00d7 -45 = -15,283,440\n\nThe answer to this question is -15,283,440."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-15283440"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-15283440"
+    },
+    {
+        "question": "Divide 1099295 by 219859.",
+        "no": 115,
+        "solution": "5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll divide 1099295 by 219859.\n\n1099295 \u00f7 219859 = 5\n\n\nThe answer to this question is \\boxed{5}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5"
+    },
+    {
+        "question": "Calculate (-36456)/(-1209) + 56/(-364).",
+        "no": 116,
+        "solution": "30",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given problem, we'll follow the order of operations (PEMDAS):\n\n1. Calculate (-36456)/(-1209)\n   (-36456)/(-1209) = 30.142\n\n2. Calculate 56/(-364)\n   56/(-364) = -0.154\n\n3. Add the results together\n   30.142 - 0.154 = 29.988\n\nThe answer to this question is \\boxed{29.988}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "29.988"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "29.988"
+    },
+    {
+        "question": "What is -405.456 plus -58144?",
+        "no": 117,
+        "solution": "-58549.456",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we'll add the two given numbers.\n\n-405.456 + (-58144) = -58549.456\n\nThe answer to this question is -58549.456"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-58549.456"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-58549.456"
+    },
+    {
+        "question": "What is the distance between 254.31 and 7058188?",
+        "no": 118,
+        "solution": "7057933.69",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the distance between two numbers, we need to subtract the smaller number from the larger number.\n\nDistance = 7058188 - 254.31\nDistance \u2248 7057933.69\n\nThe answer to this question is \\boxed{7057934}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7057934"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7057934"
+    },
+    {
+        "question": "(33/(-4620)*28)/(30/12*(-4)/25), please return the calculation result in its simplest fraction form.",
+        "no": 119,
+        "solution": "1/2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, we need to follow the order of operations (PEMDAS):\n\n(33/(-4620)*28) / (30/12*(-4)/25)\n\nFirst, let's simplify the expressions within the parentheses:\n\n33/(-4620)*28 = (-33*28)/4620 = (-924)/4620 \n\nNow simplify:\n(-924)/4620 = (-924)/4620 = (-22/(-55*42)) * (14*66)\n= (-22 * 14*66)/(4620)\n= (-308)/((4620/(11)))\n\nSimplify denominator:\n4620/(11) = (2*2*3*5*7*11)/(11) \n= (2*2*3*5*7) \n= 420 \n\nSo, (-924)/4620 = -308/420\n\nReduce fraction:\n(-308)/420 = -11/15, \n\n\nNow let's simplify the second expression within the parentheses:\n\n30/12 = 5/2, \n(-4)/25 stays the same since we cannot simplify further.\n\nNow multiply the two fractions:\n\n(5/2)*(-4)/25 = (5*-4)/(2*25)\n= -20/50\n= -2/5 \n\nNow that we have simplified both expressions within the parentheses, let's divide:\n\n(-11/15) / (-2/5)\n\nTo divide fractions, multiply by the reciprocal of the second fraction:\n\n(-11/15) * (5/-2) \n= (-11*5)/(-2*15) \n= (-55)/(30)\n= -11/6, \n\nThe answer to this question is \\boxed{-\\frac{11}{6}}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "11"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "11"
+    },
+    {
+        "question": "-23 * 0.934175",
+        "no": 120,
+        "solution": "-21.486025",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-21.4997}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-21.4997"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-21.4997"
+    },
+    {
+        "question": "What is 119240 divided by -7, please return the calculation result in its simplest fraction form.",
+        "no": 121,
+        "solution": "-119240/7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result, we will divide 119240 by -7.\n\n119240 \u00f7 -7 = -17034.2857 \n\nSince the result is asked in simplest fraction form, we will need to convert -17034.2857 to a fraction.\n\n-17034.2857 = -170342857/10000 = -851714285/50000 = -170342857/10000 = -851714285/50000 = -1703428.57/100 = -170342857/10000 = -3416857.14/2 * 100/10000 = -34168571.4 * 1/200 = -341685714/2000 = -170342857/1000 = -170342.857/10 = -17034.2857/1 * 10000/10000 = -17034.2857 = -170342857/10000 = -17034285.7/1000 = -1703428.57/100 = -170342857/10000 \n\nSince we just have  119240/10000 = 11924 and 119240 = 11924 * 10 it can be written that 119240/-7 = 11924/ (7 * - 10/10) and \n11924 is divisible by a multiple of 7 (the 7 number is 11924 = 1703 * 7 and the 2 is still left over on 24 and on 1703 so there is one leftover for that) \nso then -11924/7 * 1/-10 is \n-1703.428571 and - 2 so written another way is -1703 - 2/7."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7"
+    },
+    {
+        "question": "Total of 18419 and -11572.108.",
+        "no": 122,
+        "solution": "6846.892",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the total, I'll add 18419 and -11572.108.\n\n18419 + (-11572.108) = 18419 - 11572.108\n= 6846.892\n\nThe answer to this question is \\boxed{6846.892}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6846.892"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6846.892"
+    },
+    {
+        "question": "What is the difference between 5 and -30934319327?",
+        "no": 123,
+        "solution": "30934319332",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the difference between 5 and -30934319327, we need to subtract the two numbers. \n\nDifference = 5 - (-30934319327)\nDifference = 5 + 30934319327\nDifference = 30934319332\n\nThe answer to this question is \\boxed{30934319332}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "30934319332"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "30934319332"
+    },
+    {
+        "question": "-541128 divided by -1",
+        "no": 124,
+        "solution": "541128",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to divide -541128 by -1. \n\nSince dividing by -1 is equivalent to multiplying by -1 and keeping the sign, the result will be the number itself.\n\nThe answer to this question is \\boxed{541128}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "541128"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "541128"
+    },
+    {
+        "question": "What is -0.2 + 10156627591?",
+        "no": 125,
+        "solution": "10156627590.8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{10156627691}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "10156627691"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "10156627691"
+    },
+    {
+        "question": "What is 7289216 divided by -14696?",
+        "no": 126,
+        "solution": "-496",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n7289216 \u00f7 -14696 = -497 \n\nThe answer to this question is -497"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-497"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-497"
+    },
+    {
+        "question": "(-120)/(-15)*408/96",
+        "no": 127,
+        "solution": "34",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to follow the order of operations (PEMDAS):\n\n1. Divide (-120) by (-15): \n(-120)/(-15) = 8\n\n2. Multiply the result by 408: \n8 * 408 = 3264\n\n3. Divide the result by 96: \n3264 / 96 = 34\n\nThe answer to this question is \\boxed{34}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "34"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "34"
+    },
+    {
+        "question": "-4 + -1 - (-64 + 93 + -84)",
+        "no": 128,
+        "solution": "50",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, I'll follow the order of operations (PEMDAS):\n\n1. -4 + -1: -4 + (-1) = -5\n2. Now let's solve the expression inside the parentheses: -64 + 93 + (-84)\n   First, -64 + 93 = 29\n   Then, 29 + (-84) = 29 - 84 = -55\n3. Now we put it all together: -5 - (-55)\n   -5 - (-55) is the same as -5 + 55, which equals 50.\n\nThe answer to this question is 50."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "50"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "50"
+    },
+    {
+        "question": "Calculate -5256762 - -0.911.",
+        "no": 129,
+        "solution": "-5256761.089",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, we need to subtract a negative number from another negative number. Two negative signs make a positive. \n\n-5256762 - (-0.911) = -5256762 + 0.911\n\nNow we can add 0.911 to -5256762.\n\n-5256762 + 0.911 = -5256761.089\n\nThe answer to this question is \\boxed{-5256761.089}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-5256761.089"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-5256761.089"
+    },
+    {
+        "question": "Calculate 16817559 divided by 3.",
+        "no": 130,
+        "solution": "5605853",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this, I'll perform the division.\n\n16817559 \u00f7 3 = 5605853 \n\nThe answer to this question is \\boxed{5605853}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5605853"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5605853"
+    },
+    {
+        "question": "What is (25 - (-5 - -9)) + -21 + -6?",
+        "no": 131,
+        "solution": "-6",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we'll follow the order of operations.\n\nFirst, let's simplify the expression within the parentheses:\n\n-5 - -9 = -5 + 9 (since subtracting a negative is the same as adding)\n-5 + 9 = 4\n\nNow we can rewrite the expression as:\n\n(25 - 4) + -21 + -6\n\nNext, let's simplify the expression within the parentheses:\n\n25 - 4 = 21\n\nNow the expression is:\n\n21 + -21 + -6\n\nNow, let's simplify the expression further:\n\n21 + -21 = 0 (since they cancel each other out)\n0 + -6 = -6\n\nThe answer to this question is \\boxed{-6}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-6"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-6"
+    },
+    {
+        "question": "What is -8 + (21 - 21 - 4) + 49?",
+        "no": 132,
+        "solution": "37",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate this expression, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses: \n   (21 - 21 - 4) \n   First, subtract 21 from 21, which equals 0. \n   Then, subtract 4 from 0, which equals -4.\n\n2. Now the expression becomes: \n   -8 + (-4) + 49\n\n3. Next, add -8 and -4, which equals -12.\n\n4. Finally, add -12 and 49, which equals 37.\n\nThe answer to this question is \\boxed{37}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "37"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "37"
+    },
+    {
+        "question": "What is (-19920)/524 + (-740)/(-48470)?",
+        "no": 133,
+        "solution": "-38",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to perform the given operations:\n\n1. Divide -19920 by 524:\n-19920 / 524 = -38.0\n\n2. Divide -740 by -48470:\n-740 / -48470 = 0.0152 (approximately)\n\n3. Add the results of the two divisions:\n-38.0 + 0.0152 \u2248 -37.9848\n\nGiven the original problem and result, we should consider how to solve it in an exact form.\n\n(-19920)/524 + (-740)/(-48470) = -38 + (-740)/(-48470)\n= -38 + (740)/(48470)\nWe should look for GCD between 740 and 48470.\nGCD(740, 48470) is 10.\n740 / 10 = 74, 48470 / 10 = 4847 \nso (-19920)/524 + (-740)/(-48470) is = -38 + 74/4847 = -38 + 74/4847\n\n\nLet multiply and divide second term in order to have common denominator \n(-19920)/524 + (-740)/(-48470) is = (-38*4847)/4847 + (74)/(4847) = (-186146 - 74 + 74) / 4847 \n= (-186146)/4847 + 74 /4847 = -186072/4847 \nSimplifying using common denominator we have \n= -38 +74/4847 \nNow reducing common term for first fraction\nwe  got:\n= -38 + 74/4847 \n= - 38*(4847)/4847 + 74/4847 \n= ( - 186146 + 74)/4847\n= ( (-186072)) / 4847 \n= - ( 186072/4847)"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4847"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4847"
+    },
+    {
+        "question": "2328 divided by -3",
+        "no": 134,
+        "solution": "-776",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-776}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-776"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-776"
+    },
+    {
+        "question": "What is 0.3158 times 0.0092?",
+        "no": 135,
+        "solution": "0.00290536",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, I multiply 0.3158 and 0.0092.\n\n0.3158 * 0.0092 = 0.00290696\n\nSince this seems like a standard multiplication problem, rounding to more than 4 significant digits seems unnecessary. Typically answers like this would be rounded to 3 or 4. For 3, that would be 0.003, for 4 that would be 0.0029.\n\nThe answer to this question is \\boxed{0.0029}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0.0029"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0.0029"
+    },
+    {
+        "question": "Product of -6 and 3288399.",
+        "no": 136,
+        "solution": "-19730394",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-1969063944}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1969063944"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1969063944"
+    },
+    {
+        "question": "What is 149913 divided by -6, please return the calculation result in its simplest fraction form.",
+        "no": 137,
+        "solution": "-49971/2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result of 149913 divided by -6, I will perform the calculation.\n\n149913 \u00f7 -6 = -24985.5\n\nTo convert the decimal number -24985.5 to a fraction, I will rewrite it.\n\n-24985.5 = -24985 - 0.5 = -24985 - 1/2 = -49970/2 - 1/2 = -49971/2\n\nTo simplify the fraction, I will check if there are any common factors.\n\n-49971 and 2 have no common factors, so the fraction is already in its simplest form.\n\n\nThe answer to this question is \\boxed{-\\frac{49971}{2}}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "49971"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "49971"
+    },
+    {
+        "question": "16 times 118445",
+        "no": 138,
+        "solution": "1895120",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{1899120}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1899120"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1899120"
+    },
+    {
+        "question": "What is -42.838 - 498330.8?",
+        "no": 139,
+        "solution": "-498373.638",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll subtract -42.838 from 498330.8:\n\n-498330.8 - 42.838 = -498373.638\n\nThe answer to this question is \\boxed{-498373.638}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-498373.638"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-498373.638"
+    },
+    {
+        "question": "Calculate ((-3)/(-7)*56/(-48))/(-1), please return the calculation result in its simplest fraction form.",
+        "no": 140,
+        "solution": "1/2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, we'll follow the order of operations:\n\n (((-3)/(-7)*56/(-48))/(-1)\n\n 1. First, we'll calculate the expressions inside the parentheses: \n    (-3)/(-7) = 3/7\n    \n 2. Now we have (3/7 * 56/(-48))/(-1). We can simplify this further:\n    (3/7) * (56/(-48)) = (3 * 56) / (7 * -48)\n    = 168 / (-336)\n    \n 3. Next, divide 168 by 336:\n    168 / 336 = 1/2\n    \n 4. Now we have (1/2) / (-1). To divide by a fraction, we multiply by its reciprocal:\n    (1/2) / (-1) =  (1/2) * (-1) = -1/2\n    \nTherefore, ((-3)/(-7)*56/(-48))/(-1) in its simplest fraction form is -1/2.\n\nThe answer to this question is \\boxed{-1/2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "Sum -207259242 and 3.19.",
+        "no": 141,
+        "solution": "-207259238.81",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the sum of -207259242 and 3.19, we add them together.\n\n-207259242 + 3.19 = -207259238.81\n\nThe answer to this question is -207259238.81."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-207259238.81"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-207259238.81"
+    },
+    {
+        "question": "Work out -5989 * -1804.",
+        "no": 142,
+        "solution": "10804156",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to multiply -5989 and -1804.\n\n-5989 * -1804 = 10,804,676\n\nThe answer to this question is \\boxed{10,804,676}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "10804676"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "10804676"
+    },
+    {
+        "question": "Work out 171719996 + -0.1.",
+        "no": 143,
+        "solution": "171719995.9",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the equation 171719996 + -0.1, we need to add -0.1 to 171719996.\n\n171719996 + (-0.1) = 171719995.9\n\nThe answer to this question is 171719995.9"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "171719995.9"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "171719995.9"
+    },
+    {
+        "question": "What is the value of -8 - 3 - ((19 - 21) + 23)?",
+        "no": 144,
+        "solution": "-32",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n   (19 - 21) = -2\n\n2. Now, the equation becomes:\n   -8 - 3 - ((-2) + 23)\n\n3. Evaluate the expression inside the parentheses:\n   (-2) + 23 = 21\n\n4. Now, the equation becomes:\n   -8 - 3 - 21\n\n5. Perform the subtraction:\n   -8 - 3 = -11\n   -11 - 21 = -32\n\nThe answer to this question is \\boxed{-32}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-32"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-32"
+    },
+    {
+        "question": "10530.9 * -49",
+        "no": 145,
+        "solution": "-516014.1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-514514.1}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-514514.1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-514514.1"
+    },
+    {
+        "question": "What is the value of (8/(-120))/((-8)/(-50))*(-7)/((-28)/6), please return the calculation result in its simplest fraction form.",
+        "no": 146,
+        "solution": "-5/8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the problem, we need to follow the order of operations (PEMDAS):\n\n(8/(-120))/((-8)/(-50))*(-7)/((-28)/6)\n\n1. Simplify the fractions inside the parentheses:\n   8/(-120) = -1/15 ( Divide numerator and denominator by 8 and -120 = -8*15, then move the negative sign in front)\n   (-8)/(-50) = 2/25 ( Divide numerator and denominator by -2 and -50 = -2 * 25 then remove the negative sign when 2 negative signs are multiplied) \n   (-28)/6 = -14/3 ( Divide numerator and denominator by 2 and -28 = -2*14, then move negative sign in front)\n\n2. Rewrite the expression with simplified fractions:\n   (-1/15) / (2/25) * (-7) / (-14/3)\n\n3. Apply division rules (division is the same as multiplication by the reciprocal):\n   (-1/15) * (25/2) * (-7) / (-14/3)\n   (-1/15) * (25/2) * (-7) * (3/-14)\n\n4. Multiply the numerators and denominators:\n   -1 * 25 * -7 * 3 / 15 * 2 * -14\n   Simplify the numerator: -1 * -7 * -1 * 25 * 3 = -525\n   Simplify the denominator: 15 * 2 * -14 = -420\n   ( Move one negative sign to the front)\n\n5. Simplify the resulting fraction:\n   -525 / -420 = 525 / 420 = 105/84 = 21/4 * 5/5 = 105/84 =  21/4 *5/ 5 or  15/12 * 7/7 or 105 /105 * 1 then 21/4\n\nTherefore: \nThe answer to this question is \\boxed{21/4}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4"
+    },
+    {
+        "question": "Calculate 1265168 divided by -158146.",
+        "no": 147,
+        "solution": "-8",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n1265168 divided by -158146 is -8.\n\nThe answer to this question is \\boxed{-8}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-8"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-8"
+    },
+    {
+        "question": "What is -5*(-17 + (-697)/476*-12), please return the calculation result in its simplest fraction form.",
+        "no": 148,
+        "solution": "-20/7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the problem, we'll follow the order of operations (PEMDAS):\n\n1. Calculate the expression inside the first parenthesis: \n(-697)/476 * -12 \nFirst, multiply -697 by -12: \n-697 * -12 = 8352\nThen divide the result by 476:\n8352 / 476 = 84/7*12/12  = 1764/529 or as an improper fraction (after simplifying) = (1764 \u00f7 529 ) or  3.333  rounded to three digits after simplification =  336/112 then divide 336/112 by dividing numerator and denominator by 16  we get = 21/7.\n\n\n-17 + 21/7, multiply the whole number by the denominator for it to become like terms. \n-17 + 21/7 = (-7 * -17)/7 + 21/7 \nThen add both fractions:\n= (119 +21)/7 \nCombine the fractions:\n= 140/7 then 140/7 is = (140\u00f77)  the (\u00f77 )=   20. \nThen: \n= (-5) * 20 \nTo multiply the negatives:\n= 5 * 20 \n= 100\nTherefore The answer to this question is \\boxed{100}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "100"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "100"
+    },
+    {
+        "question": "What is -1 divided by -821424, please return the calculation result in its simplest fraction form.",
+        "no": 149,
+        "solution": "1/821424",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result of -1 divided by -821424, we need to perform the division.\n\n-1 / -821424 = 1 / 821424\n\nSince the fraction cannot be simplified further by finding a common factor of the numerator and the denominator, the result is already in its simplest fraction form.\n\nThe answer to this question is \\boxed{1/821424}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "821424"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "821424"
+    },
+    {
+        "question": "Add together -35947633 and 0.0337.",
+        "no": 0,
+        "solution": "-35947632.9663",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo add -35947633 and 0.0337, I'll combine the two numbers.\n\n-35947633 + 0.0337 = -35947632.9663\n\nThe answer to this question is \\boxed{-35947632.9663}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-35947632.9663"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-35947632.9663"
+    },
+    {
+        "question": "Evaluate (-5456)/6696*(-297)/(-22).",
+        "no": 1,
+        "solution": "-11",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we need to follow the order of operations (PEMDAS). \n\nFirst, let's simplify the fractions:\n\n(-5456)/6696 = -0.816\n\n*(-297)/(-22) = 13.5\n\nNow, multiply the two values:\n\n-0.816 * 13.5 = -11.016\n\nRound off to one more decimal place than is supplied within the question for accuracy \n\nThe answer to this question is -11.0"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-11.0"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-11.0"
+    },
+    {
+        "question": "Multiply -0.26 and -330782.",
+        "no": 2,
+        "solution": "86003.32",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the product of -0.26 and -330782, we need to multiply the two numbers.\n\n(-0.26) * (-330782) = 85885.32\n\nSince the product of two negative numbers is a positive number, the result is a positive number.\n\nThe answer to this question is 85885.32"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "85885.32"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "85885.32"
+    },
+    {
+        "question": "What is the value of 51/9 + -14 + -3 + 4/1 + -3, please return the calculation result in its simplest fraction form.",
+        "no": 3,
+        "solution": "-31/3",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n51/9 = 17/3\n-14 remains -14\n-3 remains -3\n4/1 = 4\n-3 remains -3\n\nCombine like terms:\n-3 and -3 equals -6\n-6 and 4 equals -2\n-2 and -14 equals -16\n-16 and 17/3 equals (-48 + 17)/3\n(-48 + 17)/3 equals -31/3 \n\nThe answer to this question is \\boxed{-31/3}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "3"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "3"
+    },
+    {
+        "question": "Calculate -7 + -16 + 31 - (-40 + 3 + -5 + 3).",
+        "no": 4,
+        "solution": "47",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, let's follow the order of operations (PEMDAS):\n\n1. Evaluate the expression inside the parentheses: \n   -40 + 3 + -5 + 3\n   -40 + 3 = -37\n   -37 + -5 = -42\n   -42 + 3 = -39\n\nNow, the expression becomes: \n-7 + -16 + 31 - (-39)\n\n2. Apply the sign to the expression inside the parentheses:\n   - (-39) = + 39\n\nThe expression now becomes: \n-7 + -16 + 31 + 39\n\n3. Combine like terms:\n   -7 + -16 = -23\n   -23 + 31 = 8\n   8 + 39 = 47\n\nThe answer to this question is \\boxed{47}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "47"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "47"
+    },
+    {
+        "question": "(-123*(-6)/(-54) - -9)*(-75)/(-275), please return the calculation result in its simplest fraction form.",
+        "no": 5,
+        "solution": "-14/11",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo simplify the expression, we will follow the order of operations (PEMDAS):\n\n1. Multiply -123 and -6:\n   -123 * -6 = 738\n\n2. Divide 738 by -54:\n   738 / -54 = -13.666...\n\n3. Subtract -9 from -13.666...:\n   Since subtracting a negative number is equivalent to adding a positive number, \n   -13.666... - (-9) = -13.666... + 9 = -4.666...\n\n4. Multiply -4.666... by -75:\n   -4.666... * -75 = 349.95\n\n5. Divide 349.95 by -275:\n   349.95 / -275 = -1.272...\n\nThe expression can be simplified in fraction form:\n\n-123*(-6)/(-54) - -9)*(-75)/(-275)\n=  (-123*(-6)/-54 - 9)*(-75)/-275 \n= (-738/-54 -9)*(-75)/-275 \n= ( -13.666... - 9) * (-75)/-275 \n= (-22.666...) * (-75) / -275 \n= (-349.95) / (-275) - this was calculated in step 5 above\n\n= 349.95 / 275 \n=  349.95/(275) \n=  6999/1100 \n= 6.999/11\n\n\nTherefore, it can be written in its most simplified fraction form as: \n\n(-123*(-6)/-54 + 9)*75/-275 \n= (-738/-54 + 9) * (-75) / -275 \n= (-13 + 9) * (-75) /-275 \n=  (-4) * (-75) /-275 \n= 4*75/275 \n= 300/275 \n= 12/11\n \n\nThe answer to this question is \\boxed{12/11}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "11"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "11"
+    },
+    {
+        "question": "5 divided by 616968, please return the calculation result in its simplest fraction form.",
+        "no": 6,
+        "solution": "5/616968",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the simplest fraction form, we need to divide 5 by 616968.\n\n5 \u00f7 616968 = 5/616968.\n\nTo simplify the fraction, we need to find the greatest common divisor of 5 and 616968. The greatest common divisor of 5 and 616968 is 1, since 5 and 616968 are relatively prime. \n\nSo, the simplest fraction form is still 5/616968.\n\nThe answer to this question is \\boxed{5/616968}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "616968"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "616968"
+    },
+    {
+        "question": "Calculate 12 - ((-10 - -1) + (19 - (-31 - -10))).",
+        "no": 7,
+        "solution": "-19",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the problem, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the inner parentheses:\n   - (-10 - -1) = -10 + 1 = -9\n   - (-31 - -10) = -31 + 10 = -21\n   - (19 - (-21)) = 19 + 21 = 40\n\n2. Now the equation becomes:\n   12 - ((-9) + (40))\n\n3. Evaluate the expressions inside the outer parentheses:\n   - (-9 + 40) = 31\n\n4. Finally, subtract 31 from 12:\n   - 12 - 31 = -19\n\nThe answer to this question is \\boxed{-19}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-19"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-19"
+    },
+    {
+        "question": "What is (-42136)/4122*9*2/(-4)?",
+        "no": 8,
+        "solution": "46",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate this expression, I will follow the order of operations (PEMDAS):\n\n1. Divide -42136 by 4122: \n-42136 / 4122 \u2248 -10.23\n\n2. Multiply -10.23 by 9: \n-10.23 \u00d7 9 \u2248 -92.07\n\n3. Multiply -92.07 by 2:\n-92.07 \u00d7 2 \u2248 -184.14\n\n4. Divide -184.14 by -4:\n-184.14 \u00f7 -4 \u2248 46.035\n\nThe answer to this question is \\boxed{46.035}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "46.035"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "46.035"
+    },
+    {
+        "question": "(15 - (-176)/(-12))*((-192)/(-30) + -7), please return the calculation result in its simplest fraction form.",
+        "no": 9,
+        "solution": "-1/5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to follow the order of operations (PEMDAS):\n\n(15 - (-176)/(-12))*((-192)/(-30) + -7)\n\nFirst, simplify the expressions inside the parentheses:\n\n(-176)/(-12) = 176/12 = 14.67 = 14 2/3 \n\nHowever we do need to return a fraction so \n(-176)/(-12) =  176/12 \n (-176)/(-12) =  44/3\n\n\nand \n\n(-192)/(-30) = 192/30 = 32/5\n\nSo the expression becomes:\n\n(15 - 44/3)*(32/5 + -7)\n\nNext, simplify the expressions inside the parentheses:\n\n(15 - 44/3) = (45/3 - 44/3) = 1/3\n\n and \n\n(32/5 + -7) = (32/5 - 35/5) = -3/5\n\n\nNow, multiply:\n\n(1/3)*(-3/5) = -1/5\n\n\nThe answer to this question is \\boxed{-1/5}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "5"
+    },
+    {
+        "question": "-243 * 33182",
+        "no": 10,
+        "solution": "-8063226",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n-243 * 33182 = -8065506\n\nThe answer to this question is \\boxed{-8065506}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-8065506"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-8065506"
+    },
+    {
+        "question": "What is (4*(-6)/21 + -11 + 1728/140)*-1, please return the calculation result in its simplest fraction form.",
+        "no": 11,
+        "solution": "-1/5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result of the given expression in its simplest fraction form, we need to follow the order of operations: parentheses, exponents, multiplication and division, and addition and subtraction. \n\nThe expression is (4*(-6)/21 + -11 + 1728/140)*-1\n\nFirst, solve expressions inside the parentheses:\n(4*(-6) = -24\n-24/21 = -8/7 \n-11 can be written as -77/7\n1728/140 = 12*144/(2*2*5*7) = 12*72/(2*5*7) = 6*72/5*7 = (6*12*6)/(5*7) = 3*3*4*3*2*2*3/(5*7) = 3*3*2*4*3*3*2/(2*5*7) = (3*3*2*3*3*4)/(2*5*2*7) = 9*9*4/10*7 = 81*4/10*7 = 9*9*2/5*7 = 81/10*7*4/2 = 162/5*7 = 162/35\n\nNow 162/35 can also be written as (49*3+3*3*2)/(5*7) and as we did in LCM we take the number in between that is 49 to take 7 in the denominator \n49*3 = 147 or 7*7*3*3*3 = 3*7*7*3 \n162/35 = (49*3+6)/35 = ((35*7*3)/35) + ((6*7)/35) = 3*7+42/35 \nNow add the rest part, which will become \n-8/7 + (-77/7) + 3*7+42/35 \nFirst find LCM for 7 and 35 which is 35 \nMultiply and divide numerator and denominator (except 7) by 5: \n\n-8*5/(7*5)-77*5/7*5 + 3*7+(42/35)\n= -40/35 -385/35+ 21 +42/35\nCombine fractions of -40/35"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "35"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "35"
+    },
+    {
+        "question": "Calculate -2*22673.75.",
+        "no": 12,
+        "solution": "-45347.5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-45347.5}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-45347.5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-45347.5"
+    },
+    {
+        "question": "What is (-4*1 + 2)*(0 - (-26 + 777/74))?",
+        "no": 13,
+        "solution": "-31",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression (-4*1 + 2)*(0 - (-26 + 777/74)), we'll follow the order of operations (PEMDAS):\n\n1. Multiply -4 and 1: \n   -4*1 = -4\n\n2. Add 2:\n   -4 + 2 = -2\n\n3. Divide 777 by 74:\n   777/74 = 10.5\n\n4. Subtract 10.5 from 26 and then negate the result (due to the negative sign outside the parentheses):\n   -(-26 + 10.5) = -(10.5 - 26) \n   -(-15.5) = 15.5\n\n5. Multiply 0 by anything doesn't change the result, so subtract 15.5 from 0:\n   0 - 15.5 = -15.5\n\n6. Multiply -2 by -15.5:\n   -2 * -15.5 = 31\n\nThe answer to this question is \\boxed{31}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "31"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "31"
+    },
+    {
+        "question": "Calculate (((-1476)/(-615))/(3/50))/(2/1).",
+        "no": 14,
+        "solution": "20",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, we will follow the order of operations (PEMDAS):\n\n1. Evaluate the innermost parentheses: ((-1476)/(-615)) and (3/50) and (2/1)\n   (-1476)/(-615) = 2.4\n   (3/50) = 0.06\n   (2/1) = 2\n\n2. Now the expression becomes: (2.4/0.06)/2\n\n3. Evaluate the division: 2.4/0.06 = 40\n\n4. Now the expression becomes: 40/2\n\n5. Evaluate the division: 40/2 = 20\n\nThe answer to this question is \\boxed{20}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "20"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "20"
+    },
+    {
+        "question": "-220513777+-599",
+        "no": 15,
+        "solution": "-220514376",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to perform addition and subtraction.\n\n-220513777 + (-599) =?\n\nFirst, we need to subtract 599 from -220513777.\n\n-220513777 - 599 = -220514376\n\nThe answer to this question is \\boxed{-220514376}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-220514376"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-220514376"
+    },
+    {
+        "question": "Evaluate 167 + -123 - (-7 + 34).",
+        "no": 16,
+        "solution": "17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the expression, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses: \n-7 + 34 = 27\n\nSo the expression becomes: \n167 + -123 - 27\n\n2. Now, add and subtract from left to right:\n167 + (-123) = 44\n44 - 27 = 17\n\nThe answer to this question is \\boxed{17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "17"
+    },
+    {
+        "question": "What is (-1)/(-1)*((4563/(-15))/13 - -23)*-125?",
+        "no": 17,
+        "solution": "50",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, we need to follow the order of operations (PEMDAS):\n\n1. Divide -1 by -1: \n(-1)/(-1) = 1\n\n2. Divide 4563 by -15: \n4563 / (-15) = -304.2\n\n3. Now, divide the result by 13: \n-304.2 / 13 = -23.4\n\n4. Add -23 to the result by making it positive and changing the sign outside: \n-23.4 - (-23) =  -23.4 + 23 = -0.4\n\n5. Multiply by 1 and the intermediate results (1): \n1 * (-0.4) = -0.4\n\n6. Multiply by -125:\n-0.4 * (-125) = 50\n\nThe answer to this question is \\boxed{50}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "50"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "50"
+    },
+    {
+        "question": "Calculate 1000804 divided by -500402.",
+        "no": 18,
+        "solution": "-2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate 1000804 divided by -500402, I'll perform the division.\n\n1000804 \u00f7 -500402 = -2\n\nThe answer to this question is \\boxed{-2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-2"
+    },
+    {
+        "question": "32 divided by -430524, please return the calculation result in its simplest fraction form.",
+        "no": 19,
+        "solution": "-8/107631",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate 32 divided by -430524 in its simplest fraction form, I will simplify the fraction.\n\n32 / -430524 = -32 / 430524\n\nSince the numerator and the denominator have 4 as a common factor, I will divide both numbers by 4.\n\n-32 / 430524 = -8 / 107631\n\nNo further simplification is possible.\n\nThe answer to this question is \\boxed{-8 / 107631}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "107631"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "107631"
+    },
+    {
+        "question": "Calculate -1 divided by 1255515, please return the calculation result in its simplest fraction form.",
+        "no": 20,
+        "solution": "-1/1255515",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the simplest fraction form of -1 divided by 1255515, we can simplify the fraction by finding the greatest common divisor (GCD) of the numerator (-1) and the denominator (1255515). \n\nSince -1 is a prime number and does not have any common factors with 1255515 other than 1, the GCD is 1. \n\nSo the simplest fraction form of -1 divided by 1255515 is -1/1255515.\n\nThe answer to this question is \\boxed{-1/1255515}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1255515"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1255515"
+    },
+    {
+        "question": "What is -460236 divided by 6?",
+        "no": 21,
+        "solution": "-76706",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to divide -460236 by 6.\n\n-460236 \u00f7 6 = -76706\n\nThe answer to this question is \\boxed{-76706}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-76706"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-76706"
+    },
+    {
+        "question": "What is -52 - -12.28381745?",
+        "no": 22,
+        "solution": "-39.71618255",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-39.71618255}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-39.71618255"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-39.71618255"
+    },
+    {
+        "question": "Divide 3 by -868009, please return the calculation result in its simplest fraction form.",
+        "no": 23,
+        "solution": "-3/868009",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo divide 3 by -868009, we can write the result as a fraction:\n\n3 \u00f7 -868009 = 3/-868009 = -3/868009\n\nSince there is no common factor for 3 and 868009, this fraction is already in its simplest form.\n\n\nThe answer to this question is \\boxed{-3/868009}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "868009"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "868009"
+    },
+    {
+        "question": "What is -87552.7 take away -0.16025?",
+        "no": 24,
+        "solution": "-87552.53975",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to subtract -0.16025 from -87552.7.\n\n-87552.7 - (-0.16025) = -87552.7 + 0.16025\n= -87552.53975\n\nThe answer to this question is -87552.53975"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-87552.53975"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-87552.53975"
+    },
+    {
+        "question": "536 + -503 - (-3 - (-1 - 20))",
+        "no": 25,
+        "solution": "15",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the expression 536 + -503 - (-3 - (-1 - 20)), we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the innermost parentheses: -1 - 20 = -21\n2. Evaluate the next set of parentheses: -3 - (-21) = -3 + 21 = 18\n3. Now the expression is: 536 + -503 - 18\n4. Add 536 and -503: 536 - 503 = 33\n5. Subtract 18: 33 - 18 = 15 (No -18 would be negative but is a positive because of an existing negative) Therefore it's: 33 + 18 is 51\n\nThe answer to this question is \\boxed{51}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "51"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "51"
+    },
+    {
+        "question": "What is 9 + -13 + 1 + -6 + (-14 - 7)?",
+        "no": 26,
+        "solution": "-30",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, I'll follow the order of operations.\n\n1. First, I'll calculate the expression within the parentheses: -14 - 7 = -21\n2. Now, I'll rewrite the original problem: 9 + -13 + 1 + -6 + -21\n3. I'll add the numbers from left to right: \n9 + -13 = -4\n-4 + 1 = -3\n-3 + -6 = -9\n-9 + -21 = -30\n\nThe answer to this question is -30."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-30"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-30"
+    },
+    {
+        "question": "-41291 times -18.7",
+        "no": 27,
+        "solution": "772141.7",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given problem, we need to multiply -41291 by -18.7.\n\n-41291 * -18.7 = 7718117.7\n\nThe answer to this question is \\boxed{7718117.7}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "7718117.7"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "7718117.7"
+    },
+    {
+        "question": "Calculate (2 + 2 - 2)/(-5) - (-23)/((-4600)/7920).",
+        "no": 28,
+        "solution": "-40",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, I will follow the order of operations (PEMDAS):\n\n1. Evaluate expressions inside parentheses: \n(2 + 2 - 2) = 2\n\n2. Rewrite the expression:\n2/(-5) - (-23)/((-4600)/7920)\n\n3. Evaluate division inside the second parentheses:\n-4600/7920 = -0.58 (approximately), but we will keep it as a fraction to get the precise result.\n\n4. Rewrite the expression:\n2/(-5) - (-23)/(-4600/7920)\n\n5. Multiply by the reciprocal of the denominator for both fractions:\n-2/5 + 23/(-4600/7920)\n\n6. Use the multiplication rule for the second fraction and find the common denominator for addition:\n= -2/5 + (23*7920)/(-4600)\n\n7. Calculate (23*7920)/(-4600):\n= -2/5 + (181,560)/(-4600)\n= -2/5 + (-39.56) approximately for the second term, but to get precise fraction we will keep it as\n= -2/5 - 181560/4600\n\n8. Calculate the sum of fractions, first find the least common multiple of denominators (5 and 4600).\nThe least common multiple is 23000.\n\n-2/5 = (-2 * 4600) / 5 * 4600 =  -9200/23000\n\n-181560/4600 =  (-181560 * 5) / 4600 * 5 = -907800/23000\n\nNow, we can sum these fractions:\n=  -9200/23000 - 907800/23000 =  -917000/23000\nNow we can divide both numerator and denominator by 10000 to simplify\n-917/230\n\nThe final result is -917/230 or -3.98 approximately"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-3.98"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-3.98"
+    },
+    {
+        "question": "Calculate (4/(-8)*(-32)/4)/(115/(-5)), please return the calculation result in its simplest fraction form.",
+        "no": 29,
+        "solution": "-4/23",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the expression (4/(-8)*(-32)/4)/(115/(-5)), let's follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n   4/(-8) = -1/2\n   (-32)/4 = -8\n\n2. Multiply the results of the expressions in the numerator:\n   (-1/2)*(-8) = 4\n\n3. Evaluate the expression in the denominator:\n   115/(-5) = -23\n\n4. Divide the result of the numerator by the result of the denominator:\n   4/(-23) = -4/23\n\nThe answer to this question is \\boxed{-4/23}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "23"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "23"
+    },
+    {
+        "question": "Calculate (38 - 49) + -46 + 39.",
+        "no": 30,
+        "solution": "-18",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, I'll follow the order of operations.\n\nFirst, subtract 49 from 38: \n38 - 49 = -11\n\nNext, add -46 to -11: \n-11 + (-46) = -11 - 46 = -57\n\nFinally, add 39 to -57:\n-57 + 39 = -18\n\nThe answer to this question is \\boxed{-18}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-18"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-18"
+    },
+    {
+        "question": "4899/994 + (-1 - 3) - 6/7, please return the calculation result in its simplest fraction form.",
+        "no": 31,
+        "solution": "1/14",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the result, I'll follow the order of operations.\n\n1. 4899/994: \n   This fraction is already in its simplest form.\n\n2. -1 - 3: \n   This equals -4.\n\n3. So now we have 4899/994 - 4 - 6/7.\n\n4. Combine the whole numbers with fractions: -4 + 4899/994 - 6/7.\n   To do this, we'll find a common denominator for the whole number and fractions.\n\n   Since we're dealing with 994 and 7, the least common multiple (LCM) is not straightforward. We can rewrite -4 as a fraction using either 994 or 7:\n   -4 can be rewritten as -3968/994 (because 994 * -4 = -3968) or -28/7.\n\n5. We now have two methods to calculate this:\n   Method 1: Combine -3968/994 with 4899/994:\n   This will give us (4899 - 3968)/994 = 931/994.\n\n   Then subtract 6/7:\n   We can find the LCM for 994 and 7: Since 994 = 142 * 7, we'll rewrite both fractions:\n   (931 * 7)/(994 * 7) - (6 * 142)/(994 * 7) = 6517/138 - 852/138 = 5665/138\n   5665/138 seems difficult to reduce.\n\n   Since our initial goal was to answer in simplest fraction form, let's look for alternatives to simplify.\n\n6. Alternative (using a common denominator and calculating the fractions with actual values):\n   We know that the common denominator for fractions is indeed 138. However, rewriting the original whole number may help simplify the problem. \n   Thus, converting the whole numbers and fractions: 4899/994 can stay the same, and rewrite other numbers over the common denominator of 138 for further calculations:\n   Using decimals can help simplify large fraction combinations for alternative understanding.\n   \n   Since we have hit the complexity limitation, calculating the numbers further down will return the decimal value of approximately 4.097 (to calculate this we convert 4899/994 = 4.926, -4 = -4, -6/7 = -0.8571 and combining these to obtain our"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-0.8571"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-0.8571"
+    },
+    {
+        "question": "What is 32272073652 plus 0.2?",
+        "no": 32,
+        "solution": "32272073652.2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, we need to add 0.2 to 32272073652.\n\n32272073652 + 0.2 = 32272073652.2\n\nThe answer to this question is \\boxed{32272073652.2}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "32272073652.2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "32272073652.2"
+    },
+    {
+        "question": "Calculate 2258/47418 + 884/(-42).",
+        "no": 33,
+        "solution": "-21",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, we need to follow the order of operations (PEMDAS). \n\nFirst, calculate 2258/47418:\n2258/47418 = 0.04755 (approximately)\n\nThen, calculate 884/(-42):\n884/(-42) = -21.048 (approximately)\n\nNow, add the results:\n0.04755 + (-21.048) = -20.999 (approximately)\n-21.0004 is -21. \nThe answer to this question is -21."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-21"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-21"
+    },
+    {
+        "question": "Calculate -65.57 + -1142939.1.",
+        "no": 34,
+        "solution": "-1143004.67",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-1143004.67}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1143004.67"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1143004.67"
+    },
+    {
+        "question": "Multiply -22 and 0.49597.",
+        "no": 35,
+        "solution": "-10.91134",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-10.90973}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-10.90973"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-10.90973"
+    },
+    {
+        "question": "Calculate ((2/(-189))/(13/(-117))*-9)/(2/(-14)).",
+        "no": 36,
+        "solution": "6",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this expression, we need to follow the order of operations (PEMDAS).\n\n1. Start with the innermost parentheses: (2/(-189)) and (13/(-117)) \n    - For (2/(-189)), this is equal to -2/189 or 2/-189 (both are equivalent).\n    - For (13/(-117)), this is equal to -13/117 or 13/-117 (both are equivalent).\n\n2. Now calculate ((-2/189) / (-13/117)). To divide by a fraction, we multiply by the reciprocal.\n    - ((-2/189) / (-13/117)) = (-2/189) * (-117/13)\n    - To multiply the numerators and denominators together: \n        - Numerators: (-2) * (-117) = 234\n        - Denominators: 189 * 13 = 2457\n    - So, the result of the division is 234/2457.\n\n3. Multiply 234/2457 by -9.\n    - Numerator: 234 * -9 = -2106\n    - Denominator remains 2457.\n    - The result of the multiplication is -2106/2457.\n\n4. Finally, divide the result -2106/2457 by (2/(-14)). Again, to divide by a fraction, we multiply by the reciprocal.\n    - The reciprocal of (2/(-14)) is (-14/2) or -14/2 or -7/1.\n    - Numerator: -2106 * -7 = 14742\n    - Denominator: 2457 * 1 = 2457\n    - So, the result of the final division is 14742/2457.\n\n    Now calculate the answer:\n    - 14742/2457 = 6\n\nThe answer to this question is \\boxed{6}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6"
+    },
+    {
+        "question": "What is 5909946 divided by 2954973?",
+        "no": 37,
+        "solution": "2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "What is the value of ((-192)/(-28))/((-84)/(-6174)*-21)?",
+        "no": 38,
+        "solution": "-24",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the value, we'll follow the order of operations (PEMDAS).\n\nFirst, let's simplify the expressions inside the parentheses:\n\n(-192)/(-28) = 192/28 = 6.85714286 (we'll round to 6.86)\n\n(-84)/(-6174) = 84/6174 = 0.01359341 (we'll round to 0.0136)\n\nNow multiply the second result by -21:\n\n0.0136 * -21 = -0.2856\n\nNow we can rewrite the original expression with the simplified values:\n\n(6.86)/(-0.2856)\n\nTo divide by a negative number, we'll multiply by its reciprocal (the absolute value) and flip the sign of the result. \n\n6.86/0.2856 \u2248 24\n\nSince we flipped the sign, the final value will be negative:\n\n-24\n\nThe answer to this question is \\boxed{-24}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-24"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-24"
+    },
+    {
+        "question": "Calculate 160*-9.064.",
+        "no": 39,
+        "solution": "-1450.24",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the answer, I multiply 160 by -9.064.\n\n160 * -9.064 = -1450.24\n\nThe answer to this question is \\boxed{-1450.24}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1450.24"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1450.24"
+    },
+    {
+        "question": "Calculate (1440/640)/((-1)/(-2) - -1)*96/(-306), please return the calculation result in its simplest fraction form.",
+        "no": 40,
+        "solution": "-8/17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the calculation result, we'll follow the order of operations.\n\nFirst, let's calculate the numerator and denominator separately:\n\nNumerator: (1440/640)\n(1440/640) = 9/4\n\nDenominator: ((-1)/(-2) - -1)\n(-1)/(-2) = 1/2\n1/2 - (-1) = 1/2 + 1 = 3/2\n\nSo the expression becomes (9/4) / (3/2)\n\nNow, we'll simplify this division of fractions by multiplying the first fraction by the reciprocal of the second fraction:\n(9/4) / (3/2) = (9/4) * (2/3) = 3/2\n\nMultiplied by 96:\n(3/2) * 96 = 144\n\nNow, multiply by 1/(-306):\n(144) * 1/(-306) = -144/306\nThe greatest common divisor of 144 and 306 is 18. \nSo, dividing the numerator and the denominator by 18, we get:\n-144/306 = -8/17\n\nThe answer to this question is \\boxed{-8/17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "17"
+    },
+    {
+        "question": "Evaluate 13/((-351)/(-9))*(-6)/(-10)*-2*-35.",
+        "no": 41,
+        "solution": "14",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we'll follow the order of operations (PEMDAS):\n\n1. Evaluate the expressions inside the parentheses:\n   -351/-9 = 39\n\n2. Rewrite the expression with the evaluated value:\n   13/(39)*(-6)/(-10)*-2*-35\n\n3. Divide 13 by 39:\n   13/39 = 1/3\n\n4. Multiply 1/3 by -6/-10 (which is equivalent to 6/10 or 3/5):\n   (1/3)*(6/10) = 6/(3*10) = 1/5\n\n5. Multiply 1/5 by -2*-35:\n   (1/5)*(-2)*-35 = (1/5)*(-2*-35) = (1/5)*70 = 14\n\nThe expression simplifies to 14. However, the initial problem asks for multiplication by -2*-35 and simplification of fraction during steps of multiplication but multiplication of fractions with the same signs are generally positive. \nGiven problem should be evaluated as follows:\n- 13/39 is 1/3\n- 1/3 * (3/5) since -6/-10 is 3/5 is equal to 3/15 which simplifies to 1/5 \n- since multiplication with -2*-35 is positive 1/5 *70 is equal to 14.\n\nThe answer to this question is \\boxed{14}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "14"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "14"
+    },
+    {
+        "question": "What is (-1 - -6) + 6 - (16 + (-31 - -61))?",
+        "no": 42,
+        "solution": "-35",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to follow the order of operations (PEMDAS):\n\n1. Simplify inside the parentheses:\n   - (-1 - -6) = -1 + 6 = 5\n   - (-31 - -61) = -31 + 61 = 30\n   \n2. Now the expression becomes:\n   - 5 + 6 - (16 + 30)\n\n3. Simplify inside the parentheses:\n   - (16 + 30) = 46\n   \n4. Now the expression becomes:\n   - 5 + 6 - 46\n\n5. Add and subtract from left to right:\n   - 5 + 6 = 11\n   - 11 - 46 = -35\n\nThe answer to this question is \\boxed{-35}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-35"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-35"
+    },
+    {
+        "question": "Work out 0.24 - 14.77954104.",
+        "no": 43,
+        "solution": "-14.53954104",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this, I will subtract 14.77954104 from 0.24.\n\nThe calculation is:\n0.24 - 14.77954104 = -14.53954104\n\nThe answer to this question is \\boxed{-14.53954104}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-14.53954104"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-14.53954104"
+    },
+    {
+        "question": "What is -19 + -35.556387?",
+        "no": 44,
+        "solution": "-54.556387",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-54.556387}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-54.556387"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-54.556387"
+    },
+    {
+        "question": "What is -9*5/(-20)*8/(-12), please return the calculation result in its simplest fraction form.",
+        "no": 45,
+        "solution": "-3/2",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate -9*5/(-20)*8/(-12), let's follow the order of operations (PEMDAS):\n\n1. Multiply -9 and 5: -9*5 = -45\n2. Divide the result by -20: -45/(-20) = 45/20 (the negative signs cancel each other)\n3. Multiply the result by 8: (45/20) * 8 = 45 * 8/20 = 360/20\n4. Divide the result by -12: 360/20 is simplified to 18, then 18/(-12), divide numerator and denominator by 6, then (3/-2), multiply both sides by -1, -3/2\n\nSo, -9*5/(-20)*8/(-12) simplifies to -3/2.\n\nThe answer to this question is \\boxed{-3/2}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "2"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "2"
+    },
+    {
+        "question": "Subtract -1.501521007 from -0.1.",
+        "no": 46,
+        "solution": "1.401521007",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo subtract -1.501521007 from -0.1, we will add 1.501521007 to -0.1.\n\nThe calculation is as follows:\n-0.1 + 1.501521007 = 1.401521007\n\nThe answer to this question is \\boxed{1.401521007}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "1.401521007"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "1.401521007"
+    },
+    {
+        "question": "-5087*-814",
+        "no": 47,
+        "solution": "4140818",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll multiply -5087 and -814.\n\n-5087 * -814 = 4,144,718\n\nThe answer to this question is \\boxed{4144718}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4144718"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4144718"
+    },
+    {
+        "question": "Evaluate 113/((-332785)/570)*(-1)/(-2), please return the calculation result in its simplest fraction form.",
+        "no": 48,
+        "solution": "-3/31",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nLet's break down the given expression step by step:\n\n113/((-332785)/570)*(-1)/(-2)\n\nFirst, let's simplify the fraction within the parentheses:\n\n(-332785)/570 \u2248 -583.27 (However, we will treat the division result as an exact fraction since we are working with fractions)\n\n(-332785)/570 = -332785/570 \n\nNow we multiply 113 by the reciprocal of this result:\n\n113 / (-332785/570) = (113 * 570) / (-332785)\n\nNext, multiply by (-1)/(-2):\n\n(113 * 570) / (-332785) * (-1)/(-2) \n\nThis is equal to:\n\n(113 * 570 * -1) / (2 * -332785)\n\n= (113 * 570 * -1 * (-1)) / (2 * 332785)\n\nThe two negative signs cancel each other out:\n\n= (113 * 570) / (2 * 332785)\n\nCombine like terms:\n\n= 64260 / 665570 \n\nNow we need to simplify the resulting fraction. We find the greatest common divisor of the numerator and denominator, which is 10. Divide the numerator and denominator by the GCD:\n\n= 6426 / 66557\n\nNow that this fraction cannot be reduced any further.\n\nThe answer to this question is \\boxed{6426/66557}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "66557"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "66557"
+    },
+    {
+        "question": "Calculate -231*1779.",
+        "no": 49,
+        "solution": "-410949",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-411189}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-411189"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-411189"
+    },
+    {
+        "question": "Sum -0.1 and -11491311319.",
+        "no": 50,
+        "solution": "-11491311319.1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-11491311319.1}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-11491311319.1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-11491311319.1"
+    },
+    {
+        "question": "Multiply 954347 and -12.",
+        "no": 51,
+        "solution": "-11452164",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result, multiply 954347 by -12.\n\n954347 * -12 = -1145224.84\n\nSince the result should be the exact product, consider this as the final answer.\n\n\nThe answer to this question is -1145224.84"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1145224.84"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1145224.84"
+    },
+    {
+        "question": "2726932 divided by -229",
+        "no": 52,
+        "solution": "-11908",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll perform the division operation.\n\n2726932 \u00f7 -229 = -11907\n\nThe answer to this question is \\boxed{-11907}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-11907"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-11907"
+    },
+    {
+        "question": "Calculate 426/(-1491) - (-220)/(-14).",
+        "no": 53,
+        "solution": "-16",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the given expression, we need to follow the order of operations (PEMDAS):\n\n1. Divide 426 by -1491:\n426/(-1491) = -0.286\n\n2. Divide -220 by -14:\n(-220)/(-14) = 15.71\n\n3. Subtract the results:\n-0.286 - 15.71 = -16\n\nThe answer to this question is \\boxed{-16}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-16"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-16"
+    },
+    {
+        "question": "What is -10 + (-5 - -2 - -5) + (0 - -14)?",
+        "no": 54,
+        "solution": "6",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate expressions inside parentheses:\n   -5 - -2 - -5 = -5 + 2 + 5 = 2\n   0 - -14 = 0 + 14 = 14\n\nNow the problem becomes:\n-10 + 2 + 14\n\n2. Add the numbers from left to right:\n-10 + 2 = -8\n-8 + 14 = 6\n\nThe answer to this question is \\boxed{6}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "6"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "6"
+    },
+    {
+        "question": "Calculate 13058*-0.998.",
+        "no": 55,
+        "solution": "-13031.884",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate the result, we multiply 13058 by -0.998.\n\n-13058 * 998 = -13014244\n-13014244 / 1000 = -13014.244\n\nThe answer to this question is \\boxed{-13014.244}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-13014.244"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-13014.244"
+    },
+    {
+        "question": "What is -19533520 divided by 3906704?",
+        "no": 56,
+        "solution": "-5",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll divide -19533520 by 3906704.\n\n-19533520 \u00f7 3906704 = -5\n\nThe answer to this question is \\boxed{-5}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-5"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-5"
+    },
+    {
+        "question": "What is 2 plus -1786522916?",
+        "no": 57,
+        "solution": "-1786522914",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-1786522914}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1786522914"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1786522914"
+    },
+    {
+        "question": "What is (48/96)/(276/144), please return the calculation result in its simplest fraction form.",
+        "no": 58,
+        "solution": "6/23",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, we first calculate the two fractions in the numerator and the denominator separately, then divide the result of the first fraction by the result of the second fraction.\n\nFor the first fraction: 48/96. \nThe greatest common divisor (GCD) of 48 and 96 is 48, so we divide the numerator and denominator by 48 to simplify the fraction: \n48/48 / 96/48 = 1/2.\n\nFor the second fraction: 276/144. \nThe GCD of 276 and 144 is 12, so we divide the numerator and the denominator by 12 to simplify the fraction:\n276/12 / 144/12 = 23/12.\n\nNow, we divide the simplified first fraction by the simplified second fraction:\n(1/2) / (23/12) = (1/2) * (12/23) = 12/46.\n\nThe fraction 12/46 can be simplified further by dividing both the numerator and the denominator by 2:\n(12/2) / (46/2) = 6/23.\n\nTherefore, the answer to this question is \\boxed{6/23}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "23"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "23"
+    },
+    {
+        "question": "2/((-14587)/609 + 24)",
+        "no": 59,
+        "solution": "42",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, we'll follow the order of operations (PEMDAS):\n\n1. Evaluate the expression within the parentheses: (-14587)/609\n   (-14587)/609 \u2248 -23.94\n\n2. Now, substitute the value back into the original expression:\n   2/((-14587)/609 + 24) \u2248 2/(-23.94 + 24)\n\n3. Calculate the value within the parentheses:\n   -23.94 + 24 \u2248 0.06\n\n4. Substitute this value back into the expression:\n   2/0.06\n\n5. Calculate the final value:\n   2/0.06 \u2248 33.33\n\nThe answer to this question is \\boxed{33.33}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "33.33"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "33.33"
+    },
+    {
+        "question": "Sum 0 and -700981.3438.",
+        "no": 60,
+        "solution": "-700981.3438",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-700981.3438}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-700981.3438"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-700981.3438"
+    },
+    {
+        "question": "Calculate 278 + 20372945.",
+        "no": 61,
+        "solution": "20373223",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, I'll simply add 278 to 20372945.\n\n278 + 20372945 = 20373223\n\nThe answer to this question is \\boxed{20373223}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "20373223"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "20373223"
+    },
+    {
+        "question": "Divide 4 by 1704532, please return the calculation result in its simplest fraction form.",
+        "no": 62,
+        "solution": "1/426133",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the simplest fraction form of 4 divided by 1704532, we'll simplify the fraction.\n\n4 \u00f7 1704532 = 4/1704532\n\nThis fraction can be simplified by dividing the numerator and the denominator by 4.\n\n4 \u00f7 4 = 1\n1704532 \u00f7 4 = 426133\n\nSo the simplified fraction is: 1/426133\n\nThe answer to this question is \\boxed{1/426133}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "426133"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "426133"
+    },
+    {
+        "question": "Calculate 70943 - 38.084.",
+        "no": 63,
+        "solution": "70904.916",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\n70943 - 38.084 = 70904.916\n\nThe answer to this question is \\boxed{70904.916}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "70904.916"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "70904.916"
+    },
+    {
+        "question": "Evaluate -3*34*35/3570.",
+        "no": 64,
+        "solution": "-1",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate the given expression, we'll follow the order of operations (PEMDAS):\n\n-3 * 34 * 35 / 3570\n\nFirst, multiply -3 and 34: \n-3 * 34 = -102\n\nNow multiply the result by 35:\n-102 * 35 = -3570\n\nFinally, divide the result by 3570:\n-3570 / 3570 = -1\n\nThe answer to this question is \\boxed{-1}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-1"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-1"
+    },
+    {
+        "question": "(-135575)/(-1595)*(-2)/(-10)",
+        "no": 65,
+        "solution": "17",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the answer, let's follow the order of operations:\n\n1. Divide -135575 by -1595:\n   -135575 / -1595 = 85\n\n2. Multiply 85 by -2/-10:\n   Since -2/-10 is equal to 0.2, multiply 85 by 0.2:\n   85 * 0.2 = 17\n\nThe answer to this question is \\boxed{17}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "17"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "17"
+    },
+    {
+        "question": "What is 1 divided by -4076398, please return the calculation result in its simplest fraction form.",
+        "no": 66,
+        "solution": "-1/4076398",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo find the result, I'll perform the calculation:\n\n1 divided by -4076398 is -1/4076398.\n\nSince this is already in its simplest form, \n\nThe answer to this question is \\boxed{-1/4076398}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "4076398"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "4076398"
+    },
+    {
+        "question": "What is (44 - 2 - (-24 + 9 + 16)) + 3?",
+        "no": 67,
+        "solution": "44",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve this problem, I will follow the order of operations (PEMDAS):\n\n1. Evaluate the expression inside the parentheses: \n   -24 + 9 + 16 = -24 + 25 = 1\n\n2. Now the expression is:\n   (44 - 2 - 1) + 3\n\n3. Subtract 2 and 1 from 44:\n   44 - 2 - 1 = 41\n\n4. Finally, add 3:\n   41 + 3 = 44\n\nThe answer to this question is \\boxed{44}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "44"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "44"
+    },
+    {
+        "question": "What is -3*52/(-336)*(-3339)/(-477), please return the calculation result in its simplest fraction form.",
+        "no": 68,
+        "solution": "13/4",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo simplify the given expression:\n\n-3*52/(-336)*(-3339)/(-477)\n\nFirst, let's simplify the numbers that are divisible and have a common factor:\n\n-3*52/(-336) \n= -3 * (4*13) / (4*84)\n= -3*13/84\n\n-3*13/84 * (-3339)/(-477) \n= -3*13*(-3339) / (84*477)\n= -3 * 13 * 3 * 1113 / (4 * 21 * 3 * 53 * 3)\n= -3 * 13 * 3 * 3 * 53 * 7 / (4 * 3 * 3 * 3 * 7 * 53 * 3)\n= -13 * 3 * 53 * 3/ (3 * 3 * 3 * 3 * 4 * 3)\n= -13 * 53/ 36\n= -13 * 53 / 3 * 3 * 2 * 2\nSo the answer can't reduced to the integers any more\n\nThe answer to this question is \\boxed{-13*53/36}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "36"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "36"
+    },
+    {
+        "question": "-0.351567*0.3",
+        "no": 69,
+        "solution": "-0.1054701",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nThe answer to this question is \\boxed{-0.10547}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "-0.10547"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "-0.10547"
+    },
+    {
+        "question": "What is the value of 6 - (8 + 9 + (-5 - -6) + -49 - -9)?",
+        "no": 70,
+        "solution": "28",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given equation, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate expressions inside parentheses\n   (-5 - -6) = -5 + 6 = 1\n\n2. Now the equation becomes: \n   6 - (8 + 9 + 1 + -49 - -9)\n\n3. Evaluate expressions with the same operation\n   (8 + 9 + 1) = 18\n   (-49 - -9) = -49 + 9 = -40\n\n4. Now the equation becomes:\n   6 - (18 - 40)\n\n5. Now evaluate the last expression with parentheses\n   18 - 40 = -22\n\n6. Now evaluate the remaining subtraction\n   6 - (-22) = 6 + 22 = 28\n\nThe answer to this question is \\boxed{28}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "28"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "28"
+    },
+    {
+        "question": "What is 14 + -12 + (21 - (-22 + -4))?",
+        "no": 71,
+        "solution": "49",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, 14 + -12 + (21 - (-22 + -4)), let's follow the order of operations (PEMDAS):\n\n1. Evaluate the innermost parentheses first: \n   -22 + -4 = -26\n\n2. Now the expression becomes:\n   14 + -12 + (21 - -26)\n\n3. Next, evaluate the expression inside the parentheses:\n   21 - -26 = 21 + 26 = 47\n\n4. Now the expression becomes:\n   14 + -12 + 47\n\n5. Finally, perform addition and subtraction from left to right:\n   14 + -12 = 2\n   2 + 47 = 49\n\nThe answer to this question is \\boxed{49}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "49"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "49"
+    },
+    {
+        "question": "What is -0.178602 take away -57.22?",
+        "no": 72,
+        "solution": "57.041398",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo calculate this, I will first ensure I am working with the correct signs. The question is asking for -0.178602 take away (subtraction of) a negative value. When subtracting a negative, it is equivalent to adding the absolute value. Therefore:\n\n-0.178602 + 57.22\n\n\nNow, perform the addition operation:\n\n-0.178602 + 57.22 = 57.041398\n\n\nRounding to three decimal places yields approximately 57.041\n\n\nThe answer to this question is \\boxed{57.041}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "57.041"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "57.041"
+    },
+    {
+        "question": "Calculate (125/(-15) - -7) + (4 - 40/15).",
+        "no": 73,
+        "solution": "0",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo solve the given expression, we'll follow the order of operations (PEMDAS: Parentheses, Exponents, Multiplication and Division, and Addition and Subtraction).\n\nGiven expression: (125/(-15) - -7) + (4 - 40/15)\n\nStep 1: Simplify inside the parentheses.\n  - Inside the first parentheses: \n    125 / (-15) = -25/3 (approximately -8.33).\n    - -(-7) = 7\n    First parentheses: -8.33 + 7 = -1.33\n  - Inside the second parentheses:\n    40 / 15 = 8/3 (approximately 2.67).\n    4 - 2.67 = 1.33\n  Expression becomes: -1.33 + 1.33\n\nStep 2: Simplify further.\n-1.33 + 1.33 = 0\n\nThe answer to this question is \\boxed{0}."
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "0"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "0"
+    },
+    {
+        "question": "What is (-41 - -2) + 30 + 56?",
+        "no": 74,
+        "solution": "47",
+        "Llama-3.1-70B-Instruct_Sampling": [
+            "assistant\n\nTo evaluate this expression, we need to follow the order of operations (PEMDAS):\n\n1. Subtract -2 from -41: -41 - (-2) = -41 + 2 = -39\n2. Add 30: -39 + 30 = -9\n3. Add 56: -9 + 56 = 47\n\nThe answer to this question is \\boxed{47}"
+        ],
+        "Llama-3.1-70B-Instruct_ans_list": [
+            "47"
+        ],
+        "Llama-3.1-70B-Instruct_final_answer": "47"
+    }
+]
