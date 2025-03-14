@@ -31,6 +31,7 @@ class Hg_model:
                                                                     device_map="balanced_low_0",
                                                                     cache_dir='../../../Multi-Agent_Collaboration/debatellm/eval/work/pi_chuangg_umass_edu/.cahce',trust_remote_code=True)
     #generator = pipeline(model=lm_id, device=device, torch_dtype=torch.float16)
+        self.model_name=model
 
     def run_llm(self,prompt):
         # print(f"{lm_ids[index]} is outputing....... ")
@@ -42,7 +43,7 @@ class Hg_model:
         'return_dict_in_generate':True,
         'do_sample':True
         }
-        if 'llama' in model:
+        if 'llama' in self.model_name:
             messages = [
             {"role": "system", "content": "You are a bot that responds to weather queries. Stop when you get the answer"},
             {"role": "user", "content": f"{prompt}"}
@@ -52,17 +53,22 @@ class Hg_model:
             prompt_len = inputs.shape[-1]
             # print(sampling_params)
             output_dict = self.model.generate(inputs, # max_length=prompt_len + sampling_params['max_new_tokens'],
-            **sampling_params,return_legacy_cache=False,pad_token_id=tokenizer.eos_token_id)
-            generated_samples =tokenizer.batch_decode(output_dict.sequences[:,prompt_len:], skip_special_tokens=True,)
+            **sampling_params,return_legacy_cache=False,pad_token_id=self.tokenizer.eos_token_id)
+            generated_samples =self.tokenizer.batch_decode(output_dict.sequences[:,prompt_len:], skip_special_tokens=True,)
 
         else:
             inputs = self.tokenizer(prompt, return_tensors="pt").to(device)
             prompt_len = inputs.input_ids.to(device).shape[-1]
             # print(sampling_params)
             output_dict = self.model.generate(**inputs, # max_length=prompt_len + sampling_params['max_new_tokens'],
-            **sampling_params,return_legacy_cache=False,pad_token_id=tokenizer.eos_token_id)
-            generated_samples =tokenizer.batch_decode(output_dict.sequences[:,prompt_len:], skip_special_tokens=True,)
+            **sampling_params,return_legacy_cache=False,pad_token_id=self.tokenizer.eos_token_id)
+            generated_samples =self.tokenizer.batch_decode(output_dict.sequences[:,prompt_len:], skip_special_tokens=True,)
         return generated_samples[0]
+    def __contains__(self,str):
+        if self.model_name.__contains__(str):
+            return True
+        else:
+            return False
 
 
 # Try except decorator

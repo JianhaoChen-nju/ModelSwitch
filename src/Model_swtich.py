@@ -135,8 +135,6 @@ if __name__ == "__main__":
     modellist=args.modellist.split("|")
     if args.Open_SourceModel:
         modellist=[Hg_model(model) for model in modellist]
-    print(modellist)
-    print(modellist[0].__contains__("gpt"))
     ConsistencyThreshold=args.ConsistencyThreshold
     assert 0<ConsistencyThreshold<=1
     
