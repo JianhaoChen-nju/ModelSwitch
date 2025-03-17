@@ -6,6 +6,7 @@ import math
 import argparse
 import random
 random.seed(43)
+from collections import Counter
 
 def _fix_fracs(string):
     substrs = string.split("\\frac")
@@ -184,11 +185,11 @@ def compute_correctness(ans_list,s,dataset):
     ans_list=[item for item in ans_list if item !="Error" and item!=""]
     ans_list=[item.replace(" ","") for item in ans_list]
     ans,_ = most_frequent(ans_list)
-    if dataset in ["gsm8k","MGSM"]:
+    if dataset in ["GSM8K","MGSM"]:
         a = float(ans.replace(',',''))
         if abs(s-a) < 1e-6:
             is_correct=1
-    elif dataset=="math":
+    elif dataset=="math" or dataset=="MATH":
         if is_equiv(s.replace(" ",""),ans):
             is_correct=1
     elif dataset=="simpleqa":
@@ -308,7 +309,7 @@ def random_check():
 
 def mix_results_in_1file(dataset):
     # 分析两个文件合成
-    file=f"results/{dataset}/result.json"
+    file=f"Results/{dataset}/result.json"
     CW_file=f"results/{dataset}/SWN1/CW/CW.json"
     WC_file=f"results/{dataset}/SWN1/CW/WC.json"
     with open(file,"r") as f1:
@@ -378,22 +379,56 @@ def mix_results_in_1file(dataset):
     print("混合正确率:",mixed_Acc)
     print("request_len:",request_len/Total)
     print("-"*50)
+
+def major_ans_percentage(first_round_answers):
+    if not first_round_answers:
+        return 0  # 如果列表为空，返回0
     
+    # 计算每个答案出现的次数
+    answer_counts = Counter(first_round_answers)
+    
+    # 找到出现次数最多的答案的次数
+    max_count = max(answer_counts.values())
+    
+    # 计算出现次数最多的答案占总数的比例
+    total = len(first_round_answers)
+    max_percentage = (max_count / total) * 100
+    return max_percentage
+    
+def search_512_performance(dataset,min_x,max_x):
+    max_score=0
+    sample_when_max=0
+    request_when_max=0
+    for i in range(min_x,max_x):
+        score,request=ModelSwitch_analysis(dataset,i)
+        if score > max_score:
+            max_score=score
+            sample_when_max=i
+            request_when_max=request
+    print(max_score,sample_when_max,request_when_max)
 
-def mix_file_analysis(dataset):
+
+
+def ModelSwitch_analysis(dataset,Sampling_number):
     # 分析两个文件合成
-    file1=f"results/{dataset}/ModelFusion/merged/gemini-1.5-flash-latest.json"
-    file2=f"results/{dataset}/ModelFusion/merged/gpt-4o-mini.json"
+    # file1=f"Results/{dataset}/MS/closed_source/results_gemini-1.5-flash_512.json"
+    # file2=f"Results/{dataset}/MS/closed_source/results_gpt-4o-mini_512.json"
 
-    # file1=f"results/{dataset}/ModelFusion/gemini-1.5-flash-latest/results.json"
-    # file1=f"results/{dataset}/ModelFusion/claude-3-haiku-20240307/results.json"
+    # file1=f"Results/{dataset}/MS/closed_source/gemini-1.5-flash-latest.json"
+    # file2=f"Results/{dataset}/MS/closed_source/gpt-4o-mini.json"
+    # 
+    # file1=f"Results/{dataset}/MS/closed_source/date_closed_source_resuls.json"
+    # file1=f"Results/{dataset}/MS/closed_source/gpt-4o-mini.json"
+    # file1=f"Results/{dataset}/MS/open_source/results.json"
+    file = f"Results/{dataset}/MS/open_source/results_512.json"
+    # file = f"Results/{dataset}/MS/open_source/results.json"
     CW_file=f"results/{dataset}/SWN1/CW/CW.json"
     WC_file=f"results/{dataset}/SWN1/CW/WC.json"
-    with open(file1,"r") as f1:
+    with open(file,"r") as f1:
         data1=json.load(f1)
 
-    with open(file2,"r") as f1:
-        data2=json.load(f1)
+    # with open(file2,"r") as f1:
+    #     data2=json.load(f1)
 
     first_round_Acc=0
     first_round_Correct=0
@@ -405,39 +440,61 @@ def mix_file_analysis(dataset):
     mixed_Correct=0
     Total=len(data1)
     # 中间结果正确率
-    Correct_answer_before=0
-    Correct_answer_after=0
+
     request_len=0
-    correct2wrong=[]
-    wrong2correct=[]
-    correct2wrong_data=[]
-    wrong2correct_data=[]
-    CC=0
-    CW=0
-    WC=0
-    WW=0
-    CW_data=[]
-    WC_data=[]
+    first_model_Pass=0
+    first_model_Coverage=0
+
+    second_model_Pass=0
+    second_model_Coverage=0
+
+    switch_model_Pass=0
+    switch_model_Coverage=0
+
     for i,n in enumerate(data1):
-        no1=data1[i]["no"]
+        # no1=data1[i]["no"]
         j=0
-        for j1,m1 in enumerate(data2):
-            if data2[j1]["no"]==no1:
-                j=j1
+        # for j1,m1 in enumerate(data2):
+        #     if data2[j1]["no"]==no1:
+        #         j=j1
             
-        if dataset in ["gsm8k","MGSM"]:
+        if dataset in ["GSM8K","MGSM"]:
             s = float(str(data1[i]["solution"]).replace(',',''))
         else:
             s = data1[i]["solution"]
 
-        Sampling_number=3
-        first_round_answers=data1[i]["ans_list"]
-        # print(len(first_round_answers))
-        second_round_answers=data2[j]["ans_list"]
-        mixed_answers = data1[i]["ans_list"][0:Sampling_number]+data2[j]["ans_list"][0:Sampling_number]
-        # mixed_answers = [mixed_answers[random_check()]]
         
-        request_len+=len(data1[i]["step_sampling"])
+        first_round_answers=data1[i]["gemma-2-9b-it_ans_list"][0:Sampling_number]
+        # for ans in first_round_answers:
+        #     exist_correct_answer=compute_correctness([ans],s,dataset)
+        #     if exist_correct_answer==1:
+        #         first_model_Pass+=1
+        #         break
+        # print(len(first_round_answers))
+        second_round_answers=data1[i]["Llama-3.1-8B-Instruct_ans_list"][0:Sampling_number]
+        # for ans in second_round_answers:
+        #     exist_correct_answer=compute_correctness([ans],s,dataset)
+        #     if exist_correct_answer==1:
+        #         second_model_Pass+=1
+        #         break
+
+        # mixed_answers = first_round_answers+second_round_answers
+        # mixed_answers = [mixed_answers[random_check()]]
+        first_round_answers=[item.replace(" ","") for item in first_round_answers]
+        percentage_threshold=85
+        if major_ans_percentage(first_round_answers)>percentage_threshold:
+        # if len(set(first_round_answers))==1:
+            request_len+=Sampling_number
+            mixed_answers = first_round_answers
+        else:
+            request_len+=2*Sampling_number
+            mixed_answers = first_round_answers+second_round_answers
+        # for ans in mixed_answers:
+        #     exist_correct_answer=compute_correctness([ans],s,dataset)
+        #     if exist_correct_answer==1:
+        #         switch_model_Pass+=1
+        #         break
+        
         # request_len+=len(data1[i]["outputs"])
         first_round_Correct+=compute_correctness(first_round_answers,s,dataset)
         second_round_Correct+=compute_correctness(second_round_answers,s,dataset)
@@ -445,31 +502,57 @@ def mix_file_analysis(dataset):
 
 
     first_round_Acc=first_round_Correct*1.0/Total
-
     second_round_Acc=second_round_Correct*1.0/Total
     mixed_Acc=mixed_Correct*1.0/Total
     
+    first_model_Coverage=first_model_Pass*1.0/Total
+    second_model_Coverage=second_model_Pass*1.0/Total
+    switch_model_Coverage=switch_model_Pass*1.0/Total
+
     print("dataset:",dataset)
     print("模型1正确率:",first_round_Acc)
+    print("模型1覆盖率:",first_model_Coverage)
     # print("模型1正确答案总数:",first_round_Correct)
     print("模型2正确率:",second_round_Acc)
+    print("模型2覆盖率:",second_model_Coverage)
     print("混合正确率:",mixed_Acc)
+    print("混合覆盖率:",switch_model_Coverage)
     print("-"*50)
+    print("request:",request_len*1.0/Total)
+    print()
+    return mixed_Acc, request_len*1.0/Total
 
+def BoN(answers, rewards):
+    # 找到分数最大的索引
+    max_index = rewards.index(max(rewards))
+    # 返回对应的答案
+    return answers[max_index]
 
-def synthetic_file(dataset):
+def RM_Vote(answers, rewards):
+    # 创建一个字典来存储每个答案的累积得分
+    score_dict = {}
+    
+    for answer, reward in zip(answers, rewards):
+        if answer in score_dict:
+            score_dict[answer] += reward
+        else:
+            score_dict[answer] = reward
+    
+    # 找到累积得分最高的答案
+    best_answer = max(score_dict, key=score_dict.get)
+    return best_answer
+
+def RewardModel(dataset):
     '''math'''
-    file2=f"results/{dataset}/ModelFusion/merged/gpt-4o-mini.json"
-    file1=f"results/{dataset}/ModelFusion/merged/gemini-1.5-flash-latest.json"
-    file3=f"results/{dataset}/ModelFusion/synthetic/results.json"
+    file=f"Results/{dataset}/MS/closed_source/merged_qwen.json"
     dev_file=f"results/{dataset}/ModelFusion/synthetic/dev.json"
     metric_output_path=f"results/{dataset}/ModelFusion/synthetic/metrics.json"
 
-    with open(file1,"r") as f1:
+    with open(file,"r") as f1:
         data1=json.load(f1)
 
-    with open(file2,"r") as f1:
-        data2=json.load(f1)
+    # with open(file2,"r") as f1:
+    #     data2=json.load(f1)
 
     Correct=0
     Acc=0
@@ -481,33 +564,33 @@ def synthetic_file(dataset):
     for i,n in enumerate(data1):
         d={}
         d["question"]=data1[i]["question"]
-        d["no"]=data1[i]["no"]
+        # d["no"]=data1[i]["no"]
         d["solution"]=data1[i]["solution"]
-        d["step_sampling"]=data1[i]["step_sampling"]
-        d["intermediate_results"]=data1[i]["intermediate_results"]
-        no1=data1[i]["no"]
-        j=0
-        for j1,m1 in enumerate(data2):
-            if data2[j1]["no"]==no1:
-                j=j1
+        # d["step_sampling"]=data1[i]["step_sampling"]
+        # d["intermediate_results"]=data1[i]["intermediate_results"]
+        # no1=data1[i]["no"]
+
         
         if dataset in ["gsm8k","MGSM"]:
             s = float(str(data1[i]["solution"]).replace(',',''))
         else:
             s = data1[i]["solution"]
 
-        sampling_number=3
-        first_round_answers=data1[i]["ans_list"][0:sampling_number]
-        second_round_answers=data2[j]["ans_list"][0:sampling_number]
+        sampling_number=9
+        first_round_answers=data1[i]["gpt-4o-mini_ans_list"][0:sampling_number]
+        first_rewards=data1[i]["gpt-4o-mini_score"][0:sampling_number]
+        # first_round_outputs=[item.replace(" ","").lower() for item in first_round_answers]
+        second_round_answers=data1[i]["gemini-1.5-flash-latest_ans_list"][0:sampling_number]
+        second_rewards=data1[i]["gemini-1.5-flash-latest_score"][0:sampling_number]
 
-        # first_round_outputs=[item for item in first_round_answers if item !="Error" and item!=""]
-        # first_round_outputs=[item.replace(" ","") for item in first_round_answers]
+        first_round_outputs=[item for item in first_round_answers if item !="Error" and item!=""]
+        first_round_outputs=[item.replace(" ","") for item in first_round_answers]
 
-        outputs_set=set(first_round_answers)
-        if len(outputs_set)==1 and first_round_answers[0]!="Error" and first_round_answers[0]!="":
+        outputs_set=set(first_round_outputs)
+        if len(outputs_set)==1 and first_round_outputs[0]!="Error" and first_round_outputs[0]!="":
             # print(first_round_answers)
             d["outputs"]=[]
-            d["ans_list"]=first_round_answers
+            d["ans_list"]=first_round_outputs
             request+=len(d["ans_list"])
             d["final_answer"],_=most_frequent(d["ans_list"])
             correctness=compute_correctness(d["ans_list"],s, dataset)
@@ -521,7 +604,104 @@ def synthetic_file(dataset):
 
         
         mixed_answers = first_round_answers+second_round_answers
-        d["outputs"]=data2[j]["step_sampling"]
+    
+        # d["outputs"]=data2[j]["step_sampling"]
+        d["ans_list"]=mixed_answers
+        request+=len(d["ans_list"])
+        # majority voting
+        d["final_answer"],_=most_frequent(d["ans_list"])
+        # correctness=compute_correctness(d["ans_list"],s, dataset)
+        # RM+BoN
+        # d["final_answer"]=BoN(d["ans_list"],first_rewards+second_rewards)
+
+        # RM+vote
+        # d["final_answer"]=RM_Vote(d["ans_list"],first_rewards+second_rewards)
+        
+        # correctness=0
+        correctness=compute_correctness([d["final_answer"]],s, dataset)
+        if correctness==1:
+            Correct+=1
+            d["Correctness"]=True
+        else:
+            # print(d["final_answer"])
+            d["Correctness"]=False
+        data3.append(d)
+        dev_data.append(d)
+    
+    print(dataset)
+    Acc=Correct*1.0/Total
+    print("平均请求次数:",request*1.0/Total)
+    print("正确率:",Acc)
+    print("-"*50)
+
+def ModelSwitch(dataset):
+    '''math'''
+    # file2=f"results/{dataset}/ModelFusion/merged/gpt-4o-mini.json"
+    # file1=f"results/{dataset}/ModelFusion/merged/gemini-1.5-flash-latest.json"
+    # file3=f"results/{dataset}/ModelFusion/synthetic/results.json"
+    # file=f"Results/{dataset}/MS/closed_source/math500_results.json"
+    file=f"Results/{dataset}/MS/closed_source/results.json"
+    # file = f"Results/{dataset}/MS/open_source/results_512.json"
+    # file=f"Results/{dataset}/MS/closed_source/mathbench_reward_score.json"
+    dev_file=f"results/{dataset}/ModelFusion/synthetic/dev.json"
+    metric_output_path=f"results/{dataset}/ModelFusion/synthetic/metrics.json"
+
+    with open(file,"r") as f1:
+        data1=json.load(f1)
+
+    # with open(file2,"r") as f1:
+    #     data2=json.load(f1)
+
+    Correct=0
+    Acc=0
+    Total=len(data1)
+    # 中间结果正确率
+    request=0
+    data3=[]
+    dev_data=[]
+    for i,n in enumerate(data1):
+        d={}
+        d["question"]=data1[i]["question"]
+        # d["no"]=data1[i]["no"]
+        d["solution"]=data1[i]["solution"]
+        # d["step_sampling"]=data1[i]["step_sampling"]
+        # d["intermediate_results"]=data1[i]["intermediate_results"]
+        # no1=data1[i]["no"]
+
+        
+        if dataset in ["gsm8k","MGSM"]:
+            s = float(str(data1[i]["solution"]).replace(',',''))
+        else:
+            s = data1[i]["solution"]
+
+        sampling_number=2
+        first_round_answers=data1[i]["gemini-1.5-flash-latest_ans_list"][0:sampling_number]
+        # first_round_outputs=[item.replace(" ","").lower() for item in first_round_answers]
+        second_round_answers=data1[i]["gpt-4o-mini_ans_list"][0:sampling_number]
+
+        first_round_outputs=[item for item in first_round_answers if item !="Error" and item!=""]
+        first_round_outputs=[item.replace(" ","") for item in first_round_answers]
+
+        outputs_set=set(first_round_outputs)
+        if len(outputs_set)==1 and first_round_outputs[0]!="Error" and first_round_outputs[0]!="":
+            # print(first_round_answers)
+            d["outputs"]=[]
+            d["ans_list"]=first_round_outputs
+            request+=len(d["ans_list"])
+            d["final_answer"],_=most_frequent(d["ans_list"])
+            correctness=compute_correctness(d["ans_list"],s, dataset)
+            if correctness==1:
+                Correct+=1
+                d["Correctness"]=True
+            else:
+                d["Correctness"]=False
+            data3.append(d)
+            continue
+
+        
+        mixed_answers = first_round_outputs+second_round_answers
+    
+        # d["outputs"]=data2[j]["step_sampling"]
         d["ans_list"]=mixed_answers
         request+=len(d["ans_list"])
         d["final_answer"],_=most_frequent(d["ans_list"])
@@ -728,6 +908,194 @@ def synthetic_3file(dataset,weights):
     # print("二阶段请求数:",stage2*1.0/Total)
     # print("三阶段请求数:",stage3*1.0/Total)
     # print("正确率:",Acc)
+    # with open(file4,"w") as f:
+    #     json.dump(data4,f,indent=4)
+
+    # with open(dev_file,"w") as f:
+    #     json.dump(dev_data,f,indent=4)
+    # with open(metric_output_path, "w") as f:
+    #     f.write(f"total={Total}")
+    #     f.write("\n")
+    #     f.write(f"acc={Acc}")
+
+    return Acc
+
+def scale_number_llms(dataset,weights):
+    '''math'''
+    # if dataset in ["gsm8k","mmlu_physical"]:
+    #     file1=f"results/{dataset}/ModelFusion/gpt-4o-mini/results.json"
+    #     file2=f"results/{dataset}/ModelFusion/gemini-1.5-flash-latest/results.json"
+    # else:
+    #     file2=f"results/{dataset}/ModelFusion/gpt-4o-mini/results.json"
+    #     file1=f"results/{dataset}/ModelFusion/gemini-1.5-flash-latest/results.json"
+    # file3=f"results/{dataset}/ModelFusion/claude-3-haiku-20240307/results.json"
+    file2=f"Results/{dataset}/MS/closed_source/results.json"
+    file1=f"Results/{dataset}/MS/open_source/results.json"
+    # file4=f"results/{dataset}/ModelFusion/synthetic/results.json"
+    # dev_file=f"results/{dataset}/ModelFusion/synthetic/dev.json"
+    metric_output_path=f"results/{dataset}/ModelFusion/synthetic/metrics.json"
+
+    with open(file1,"r") as f1:
+        data1=json.load(f1)
+
+    with open(file2,"r") as f2:
+        data2=json.load(f2)
+
+    Correct=0
+    Acc=0
+    Total=len(data1)
+    # 中间结果正确率
+    request=0
+    data4=[]
+    stage2=0
+    stage3=0
+    stage1_wrong=0
+    stage2_wrong=0
+    for i,n in enumerate(data1):
+        d={}
+        d["question"]=data1[i]["question"]
+        # d["no"]=data1[i]["no"]
+        d["solution"]=data1[i]["solution"]
+        # d["statement"]=data1[i]["statement"]
+        # d["step_sampling"]=data1[i]["step_sampling"]
+        # d["intermediate_results"]=data1[i]["intermediate_results"]
+        # no1=data1[i]["no"]
+        j=0
+        k=0
+        
+        if dataset in ["gsm8k","MGSM"]:
+            s = float(str(data1[i]["solution"]).replace(',',''))
+        else:
+            s = data1[i]["solution"]
+
+        first_round_answers=data1[i]["gemma-2-9b-it_ans_list"][0:6]
+        first_round_outputs=[item.replace(" ","").lower() for item in first_round_answers]
+        outputs_set=set(first_round_outputs)
+        if len(outputs_set)==1 and first_round_outputs[0]!="" and first_round_outputs[0]!="Error":
+            d["outputs"]=[]
+            d["ans_list"]=first_round_answers
+            request+=len(d["ans_list"])
+            d["final_answer"],_=most_frequent(first_round_answers)
+            correctness=compute_correctness(d["ans_list"],s, dataset)
+            if correctness==1:
+                Correct+=1
+                d["Correctness"]=True
+            else:
+                # print(d["question"])
+                stage1_wrong+=1
+                d["Correctness"]=False
+            data4.append(d)
+            continue
+
+        second_round_answers=data1[i]["Llama-3.1-8B-Instruct_ans_list"][0:6]
+        stage2+=len(second_round_answers)
+        second_round_outputs=[item.replace(" ","").lower() for item in second_round_answers]
+        outputs_set=set(second_round_outputs)
+        if len(outputs_set)==1 and second_round_outputs[0]!="" and second_round_outputs[0]!="Error":
+            d["outputs"]=[]
+            d["ans_list"]=second_round_answers
+            request+=len(first_round_answers+second_round_answers)
+            
+            d["final_answer"],_=most_frequent(second_round_answers)
+            correctness=compute_correctness(d["ans_list"],s, dataset)
+            if correctness==1:
+                Correct+=1
+                d["Correctness"]=True
+            else:
+                d["Correctness"]=False
+            # data4.append(d)
+            continue
+
+        
+        third_round_answers=data1[i]["Qwen2.5-7B-Instruct_ans_list"][0:4]
+        # stage3+=len(third_round_answers)
+        # third_round_outputs=[item.replace(" ","").lower() for item in third_round_answers]
+        # outputs_set=set(third_round_outputs)
+        # if len(outputs_set)==1 and third_round_outputs[0]!="" and third_round_outputs[0]!="Error":
+        #     d["outputs"]=[]
+        #     d["ans_list"]=third_round_answers
+        #     request+=len(first_round_answers+third_round_answers)
+            
+        #     d["final_answer"],_=most_frequent(third_round_answers)
+        #     correctness=compute_correctness(d["ans_list"],s, dataset)
+        #     if correctness==1:
+        #         Correct+=1
+        #         d["Correctness"]=True
+        #     else:
+        #         d["Correctness"]=False
+        #     # data4.append(d)
+        #     continue
+
+        # mixed_answers = first_round_answers+second_round_answers+third_round_answers
+        # d["outputs"]=data3[k]["step_sampling"]
+        # d["ans_list"]=mixed_answers
+        # request+=len(d["ans_list"])
+        # d["final_answer"],_=most_frequent(d["ans_list"])
+
+        # j=0
+        # for j1,m in enumerate(data2):
+        #     if data2[j1]["question"]==data1[i]["question"]:
+        #         j=j1
+        #         break
+        # forth_round_answers=data2[j]["gpt-4o-mini_ans_list"][0:4]
+
+        # forth_round_outputs=[item.replace(" ","").lower() for item in forth_round_answers]
+        # outputs_set=set(forth_round_outputs)
+        # if len(outputs_set)==1 and forth_round_outputs[0]!="" and forth_round_outputs[0]!="Error":
+        #     d["outputs"]=[]
+        #     d["ans_list"]=forth_round_answers
+        #     request+=len(first_round_answers+forth_round_answers)
+            
+        #     d["final_answer"],_=most_frequent(forth_round_answers)
+        #     correctness=compute_correctness(d["ans_list"],s, dataset)
+        #     if correctness==1:
+        #         Correct+=1
+        #         d["Correctness"]=True
+        #     else:
+        #         d["Correctness"]=False
+        #     # data4.append(d)
+        #     continue
+
+        # fifth_round_answers=data2[j]["gemini-1.5-flash-latest_ans_list"][0:3]
+        # fifth_round_outputs=[item.replace(" ","").lower() for item in fifth_round_answers]
+        # outputs_set=set(fifth_round_outputs)
+        # if len(outputs_set)==1 and fifth_round_outputs[0]!="" and fifth_round_outputs[0]!="Error":
+        #     d["outputs"]=[]
+        #     d["ans_list"]=fifth_round_answers
+        #     request+=len(first_round_answers+fifth_round_answers)
+            
+        #     d["final_answer"],_=most_frequent(fifth_round_answers)
+        #     correctness=compute_correctness(d["ans_list"],s, dataset)
+        #     if correctness==1:
+        #         Correct+=1
+        #         d["Correctness"]=True
+        #     else:
+        #         d["Correctness"]=False
+        #     # data4.append(d)
+        #     continue
+
+        # sixth_round_answers=data2[j]["claude_ans_list"][0:1]
+        answers_list=[first_round_answers,second_round_answers,third_round_answers]
+        d["final_answer"],scores=calculate_scores_with_weights(answers_list,weights)
+        # if data1[i]["question"]=="Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date a month ago? Please answer in format MM/DD/YYYY.":
+        #     print(answers_list)
+        #     print(scores) 
+        # correctness=compute_correctness(first_round_answers+second_round_answers,s, dataset)
+        correctness=compute_correctness([d["final_answer"]],s, dataset)
+        if correctness==1:
+            Correct+=1
+            d["Correctness"]=True
+        else:
+            stage2_wrong+=1
+            # print(data1[i]["question"])
+            d["Correctness"]=False
+        data4.append(d)
+    # print(stage2_wrong)
+    Acc=Correct*1.0/Total
+    # print("平均请求次数:",request*1.0/Total)
+    # print("二阶段请求数:",stage2*1.0/Total)
+    # print("三阶段请求数:",stage3*1.0/Total)
+    print("正确率:",Acc)
     # with open(file4,"w") as f:
     #     json.dump(data4,f,indent=4)
 
@@ -1070,69 +1438,130 @@ def mix_3file_analysis(dataset):
     print("混合正确率:",mixed_Acc)
     print("-"*50)
 
-def calculate_scores_with_weights(first_round_answers, second_round_answers, third_round_answers,weights):
-    first_round_answers=[item for item in first_round_answers if item !="Error" and item!=""]
-    first_round_answers=[item.replace(" ","") for item in first_round_answers]
-    second_round_answers=[item for item in second_round_answers if item !="Error" and item!=""]
-    second_round_answers=[item.replace(" ","") for item in second_round_answers]
-    third_round_answers=[item for item in third_round_answers if item !="Error" and item!=""]
-    third_round_answers=[item.replace(" ","") for item in third_round_answers]
+# def calculate_scores_with_weights(first_round_answers, second_round_answers, third_round_answers,weights):
+#     first_round_answers=[item for item in first_round_answers if item !="Error" and item!=""]
+#     first_round_answers=[item.replace(" ","") for item in first_round_answers]
+#     second_round_answers=[item for item in second_round_answers if item !="Error" and item!=""]
+#     second_round_answers=[item.replace(" ","") for item in second_round_answers]
+#     third_round_answers=[item for item in third_round_answers if item !="Error" and item!=""]
+#     third_round_answers=[item.replace(" ","") for item in third_round_answers]
 
     
+#     # 统计每个答案的得分
+#     answer_scores = {}
+    
+#     # V2 entropy
+#     def internal_consistency_score(answers):
+#         score = {}
+#         total_answers = len(answers)
+#         if len(answers)==0:
+#             return score
+#         # 计算每个答案的出现次数
+#         counts = {}
+#         for answer in answers:
+#             counts[answer] = counts.get(answer, 0) + 1
+        
+#         # 计算熵
+#         entropy = 0
+#         for count in counts.values():
+#             probability = count / total_answers
+#             entropy -= probability * math.log2(probability) if probability > 0 else 0
+        
+#         # 最大熵
+#         max_entropy = math.log2(len(counts))
+        
+#         bias=1.0/len(answers)
+#         # 计算归一化权重
+#         weight = bias + (1-bias) * (1 - (entropy / max_entropy)) if max_entropy > 0 else 1
+#         # print(weight)
+#         # 计算得分
+#         for answer, count in counts.items():
+#             score[answer] = count * weight
+        
+#         return score
+
+#     # 计算外部权重得分
+#     def external_weight_score(internal_scores, weight):
+#         score = {key: value * weight for key, value in internal_scores.items()}
+#         return score
+
+#     # 处理模型A
+#     a_internal_scores = internal_consistency_score(first_round_answers)
+#     a_weighted_scores = external_weight_score(a_internal_scores, weights['1'])
+    
+#     # 处理模型B
+#     b_internal_scores = internal_consistency_score(second_round_answers)
+#     b_weighted_scores = external_weight_score(b_internal_scores, weights['2'])
+
+#     # 处理模型C
+#     c_internal_scores = internal_consistency_score(third_round_answers)
+#     c_weighted_scores = external_weight_score(c_internal_scores, weights['3'])
+#     # print(c_internal_scores)
+#     # print(c_external_scores)
+#     # 合并得分
+#     for answer in set(first_round_answers + second_round_answers + third_round_answers):
+#         total_score = 0
+#         # 加入权重后得分
+#         total_score += a_weighted_scores.get(answer, 0)
+#         total_score += b_weighted_scores.get(answer, 0)
+#         total_score += c_weighted_scores.get(answer, 0)
+        
+#         answer_scores[answer] = total_score
+
+#     # 按优先级选择得分最高的答案
+#     def select_best_answer():
+#         max_score = -1
+#         best_answer = None
+
+#         # 优先级顺序：first_round > second_round > third_round
+#         for answer in first_round_answers + second_round_answers + third_round_answers:
+#             score = answer_scores.get(answer, 0)
+#             if score > max_score:
+#                 max_score = score
+#                 best_answer = answer
+        
+#         return best_answer
+    
+#     return select_best_answer(), answer_scores
+    
+def calculate_scores_with_weights(answer_list, weights):
+    # 清理每轮答案，去除 "Error" 和空字符串，并去除空格
+    cleaned_answer_list = []
+    for answers in answer_list:
+        cleaned_answers = [item.replace(" ", "") for item in answers if item != "Error" and item != ""]
+        cleaned_answer_list.append(cleaned_answers)
+
     # 统计每个答案的得分
     answer_scores = {}
 
-    # 计算内部得分V0（最朴素版本）
-    # def internal_consistency_score(answers):
-    #     score = {}
-    #     for answer in answers:
-    #         score[answer] = score.get(answer, 0) + 1
-    #     return score
-    
-    # V1频次*频率
-    # def internal_consistency_score(answers):
-    #     score = {}
-    #     total_answers = len(answers)
-        
-    #     # 计算每个答案的出现次数
-    #     counts = {}
-    #     for answer in answers:
-    #         counts[answer] = counts.get(answer, 0) + 1
-        
-    #     # 计算得分
-    #     for answer, count in counts.items():
-    #         score[answer] = count * (count / total_answers)
-        
-    #     return score
-    
     # V2 entropy
     def internal_consistency_score(answers):
         score = {}
         total_answers = len(answers)
-        if len(answers)==0:
+        if len(answers) == 0:
             return score
         # 计算每个答案的出现次数
         counts = {}
         for answer in answers:
             counts[answer] = counts.get(answer, 0) + 1
-        
+
         # 计算熵
         entropy = 0
         for count in counts.values():
             probability = count / total_answers
             entropy -= probability * math.log2(probability) if probability > 0 else 0
-        
+
         # 最大熵
         max_entropy = math.log2(len(counts))
-        
-        bias=1.0/len(answers)
+
+        bias = 1.0 / len(answers)
         # 计算归一化权重
-        weight = bias + (1-bias) * (1 - (entropy / max_entropy)) if max_entropy > 0 else 1
+        weight = bias + (1 - bias) * (1 - (entropy / max_entropy)) if max_entropy > 0 else 1
         # print(weight)
         # 计算得分
         for answer, count in counts.items():
             score[answer] = count * weight
-        
+
         return score
 
     # 计算外部权重得分
@@ -1140,27 +1569,21 @@ def calculate_scores_with_weights(first_round_answers, second_round_answers, thi
         score = {key: value * weight for key, value in internal_scores.items()}
         return score
 
-    # 处理模型A
-    a_internal_scores = internal_consistency_score(first_round_answers)
-    a_weighted_scores = external_weight_score(a_internal_scores, weights['A'])
-    
-    # 处理模型B
-    b_internal_scores = internal_consistency_score(second_round_answers)
-    b_weighted_scores = external_weight_score(b_internal_scores, weights['B'])
+    # 处理每轮答案
+    weighted_scores_list = []
+    for i, answers in enumerate(cleaned_answer_list):
+        internal_scores = internal_consistency_score(answers)
+        weighted_scores = external_weight_score(internal_scores, weights[str(i + 1)])
+        weighted_scores_list.append(weighted_scores)
 
-    # 处理模型C
-    c_internal_scores = internal_consistency_score(third_round_answers)
-    c_weighted_scores = external_weight_score(c_internal_scores, weights['C'])
-    # print(c_internal_scores)
-    # print(c_external_scores)
     # 合并得分
-    for answer in set(first_round_answers + second_round_answers + third_round_answers):
+    all_answers = [answer for answers in cleaned_answer_list for answer in answers]
+    for answer in set(all_answers):
         total_score = 0
         # 加入权重后得分
-        total_score += a_weighted_scores.get(answer, 0)
-        total_score += b_weighted_scores.get(answer, 0)
-        total_score += c_weighted_scores.get(answer, 0)
-        
+        for weighted_scores in weighted_scores_list:
+            total_score += weighted_scores.get(answer, 0)
+
         answer_scores[answer] = total_score
 
     # 按优先级选择得分最高的答案
@@ -1168,16 +1591,17 @@ def calculate_scores_with_weights(first_round_answers, second_round_answers, thi
         max_score = -1
         best_answer = None
 
-        # 优先级顺序：first_round > second_round > third_round
-        for answer in first_round_answers + second_round_answers + third_round_answers:
-            score = answer_scores.get(answer, 0)
-            if score > max_score:
-                max_score = score
-                best_answer = answer
-        
+        # 优先级顺序：按轮次顺序，前面的轮次优先级更高
+        for answers in cleaned_answer_list:
+            for answer in answers:
+                score = answer_scores.get(answer, 0)
+                if score > max_score:
+                    max_score = score
+                    best_answer = answer
+
         return best_answer
-    
-    return select_best_answer()
+
+    return select_best_answer(), answer_scores
 
 def vote_algorithmn_performance(dataset,weights):
     # 分析三个文件合成
@@ -1278,13 +1702,17 @@ def search_optimal_weights(dataset):
         best_weights = None
         best_score = float('-inf')
 
-        for a_weight in range(1, 6):
-            for b_weight in range(1, 6):
-                for c_weight in range(1, 6):
-                    if a_weight==b_weight and b_weight==c_weight and a_weight!=1:
-                        continue
-                    weights = {'A': a_weight, 'B': b_weight, 'C': c_weight}
-                    score = vote_algorithmn_performance_in_1file(dataset,weights)
+        for a_weight in range(1, 5):
+            for b_weight in range(1, 5):
+                for c_weight in range(1, 5):
+                    for d_weight in range(1, 4):
+                        for e_weight in range(1, 3):
+                            for f_weight in range(1, 3):
+                                if a_weight==b_weight and b_weight==c_weight and c_weight==d_weight and d_weight==e_weight and e_weight==f_weight and a_weight!=1:
+                                    continue
+                    weights = {'1': a_weight, '2': b_weight, '3': c_weight, "4": d_weight, "5": e_weight, "6":f_weight}
+                    # score = vote_algorithmn_performance_in_1file(dataset,weights)
+                    score = scale_number_llms(dataset,weights)
                     if score > best_score:
                         best_score = score
                         best_weights = weights
@@ -1405,7 +1833,58 @@ def statistic(dataset):
                 answer4_num+=1
     print(answer4_num)
 
+def Statistic_500(dataset, Sampling_Number):
+    # 分析两个文件合成
+    # file=f"Results/{dataset}/MS/closed_source/results_gpt-4o-mini_512.json"
+    # file=f"Results/{dataset}/MS/closed_source/results_gemini-1.5-flash_512.json"
+    file=f"Results/{dataset}/MS/open_source/results_mathbench_512.json"
+    with open(file,"r") as f1:
+        data1=json.load(f1)
+    # Llama-3.1-8B-Instruct_ans_list
+        #gemma-2-9b-it_ans_list
+    print(len(data1[0]["Llama-3.1-8B-Instruct_ans_list"]))
+    first_round_Acc=0
+    first_round_Correct=0
 
+    Total=len(data1)
+    # 中间结果正确率
+
+    request_len=0
+
+    Coverage=0
+    Coverage_rate=0.0
+    for i,n in enumerate(data1):
+            
+        if dataset in ["gsm8k","MGSM"]:
+            s = float(str(data1[i]["solution"]).replace(',',''))
+        else:
+            s = data1[i]["solution"]
+
+        first_round_answers=data1[i]["Llama-3.1-8B-Instruct_ans_list"][0:Sampling_Number]
+        
+        # print(len(first_round_answers))
+        first_round_answers=[item.replace(" ","") for item in first_round_answers]
+        if len(set(first_round_answers))==1:
+            request_len+=Sampling_Number
+        else:
+            request_len+=2*Sampling_Number
+    
+        for ans in first_round_answers:
+            exist_correct_answer=compute_correctness([ans],s,dataset)
+            if exist_correct_answer==1:
+                Coverage+=1
+                break
+
+        first_round_Correct+=compute_correctness(first_round_answers,s,dataset)
+        # if compute_correctness(mixed_answers,s,dataset)==0:
+        #     print(data1[i]["question"])
+
+    first_round_Acc=first_round_Correct*1.0/Total
+    Coverage_rate=Coverage*1.0/Total
+    print("dataset:",dataset)
+    print("模型1正确率:",first_round_Acc)
+    print("模型1覆盖率:",Coverage_rate)
+    print("-"*50)
 
 datasets=[
     # "gsm8k",
@@ -1435,8 +1914,8 @@ weights_dict={
     "mmlu_health":{'A': 1, 'B': 1, 'C': 1},
     "MGSM":{'A': 1, 'B': 1, 'C': 1},
     "simpleqa": {'A': 1, 'B': 1, 'C': 1},
-    "DATE": {"A":1, "B":1, "C":1},
-    "MathBench": {"A":1, "B":1, "C":1}
+    "DATE": {"1":1, "2":1, "3":1, "4":1,"5":1, "6":1},
+    "MathBench": {"1":1, "2":1, "3":1, "4":1,"5":1, "6":1}
 }
 
 
@@ -1467,45 +1946,43 @@ weights_dict={
 # }
 
 
-
-
-# for dataset in datasets:
-#     # merge_2file(dataset)
-#     # statistic(dataset)
-#     # mix_file_analysis(dataset)
-#     # synthetic_file(dataset)
-#     # single_file_analysis(dataset)
-#     correlation(dataset)
-#     # mix_results_in_1file(dataset)
-#     # mix_3file_analysis(dataset)
-#     # print(vote_algorithmn_performance(dataset,weights_dict[dataset]))
-#     # print(search_optimal_weights(dataset))
-#     # print(vote_algorithmn_performance_in_1file(dataset,weights_dict[dataset]))
-#     # synthetic_3file(dataset,weights_dict[dataset])
-
 if __name__ == "__main__":
     # 使用 argparse 解析命令行参数
     parser = argparse.ArgumentParser(description="Run specific functions on datasets")
     parser.add_argument("function", type=str, help="The function to run")
     parser.add_argument("dataset", type=str, help="The dataset to process")
+    parser.add_argument("--xais", type=int, default=None, help="The Xais value")
     parser.add_argument("--weights", type=str, default=None, help="Weights for specific functions (optional)")
+    parser.add_argument("--min", type=int, default=None, help="min")
+    parser.add_argument("--max", type=int, default=None, help="max")
 
     args = parser.parse_args()
 
     # 获取命令行参数
     function_name = args.function
     dataset = args.dataset
+    xais = args.xais
     weights = args.weights
+    min_x = args.min
+    max_x = args.max
 
     # 通过字符串调用对应的函数
     if function_name == "merge_2file":
         merge_2file(dataset)
     elif function_name == "statistic":
         statistic(dataset)
-    elif function_name == "mix_file_analysis":
-        mix_file_analysis(dataset)
-    elif function_name == "synthetic_file":
-        synthetic_file(dataset)
+    elif function_name=="search_512_performance":
+        search_512_performance(dataset,min_x,max_x)
+    elif function_name == "RewardModel":
+        RewardModel(dataset)
+    elif function_name == "scale_llm_num":
+        scale_number_llms(dataset,weights_dict[dataset])
+    elif function_name == "Statistic_500":
+        Statistic_500(dataset, xais)
+    elif function_name == "ModelSwitch_analysis":
+        ModelSwitch_analysis(dataset, xais)
+    elif function_name == "ModelSwitch":
+        ModelSwitch(dataset)
     elif function_name == "single_file_analysis":
         single_file_analysis(dataset)
     elif function_name == "correlation":
@@ -1520,7 +1997,7 @@ if __name__ == "__main__":
         else:
             print("Error: Weights are required for vote_algorithmn_performance")
     elif function_name == "search_optimal_weights":
-        search_optimal_weights(dataset)
+        print(search_optimal_weights(dataset))
     elif function_name == "vote_algorithmn_performance_in_1file":
         if weights is not None:
             vote_algorithmn_performance_in_1file(dataset, weights)
