@@ -20,7 +20,17 @@ pip install -r requirements.txt
 
 ---
 
-TODO
+```
+python src/Model_swtich.py \
+    --dataset_name "GSM8K" \
+    --num_workers 250 \
+    --Sampling True \
+    --Sampling_Numbers 250\
+    --results_sampling 5 \
+    --modellist "gpt-4o-mini|gemini-1.5-flash-latest"\
+    --ConsistencyThreshold 1  \
+    --Open_SourceModel False \
+```
 
 ## Experimental Results
 
@@ -30,19 +40,33 @@ TODO
 
 ![](Figs/VS_SelfConsistency.png)
 
-### TODO
+```
+python src/Evaluation.py \
+    --Evaluation "MS_SC" \
+    --dataset "GSM8K" \
+    --budget 16 
+```
 
 ### ModelSwitch vs. Multi-Agent Debate
 
 ![](Figs/VS_MAD.png)
 
-### TODO
+```
+python src/Evaluation.py \
+    --Evaluation "MS_MAD" \
+    --dataset "GSM8K"
+
+```
 
 ### Combined with Reward Model
 
 ![](Figs/Combined_with_RM.png)
 
-TODO
+```
+python src/Evaluation.py \
+    --Evaluation "RM" \
+    --dataset "MathBench"
+```
 
 ## Citation
 
