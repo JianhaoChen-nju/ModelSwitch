@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run the evaluation script with arguments
-python ../src/Model_swtich.py \
+python src/Model_swtich.py \
     --dataset_name "GSM8K" \
     --num_workers 250 \
     --Sampling True \

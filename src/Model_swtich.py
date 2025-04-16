@@ -122,7 +122,7 @@ def generate(dataset_name,question,llm,results_sampling):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate the dataset.")
     parser.add_argument("--num_workers", type=int, default=10, help="Number of workers for parallel processing.")
-    parser.add_argument("--dataset_name", type=str, default="gsm8k", help="Name of the dataset.")
+    parser.add_argument("--dataset_name", type=str, default="GSM8K", help="Name of the dataset.")
     parser.add_argument("--Sampling",type=bool, default=False, help="Whether to do sampling")
     parser.add_argument("--Sampling_Numbers",type=int, default=10, help="Number of Sampling")
     parser.add_argument("--results_sampling", type=int, default=5, help="Sampling numbers of output.")
