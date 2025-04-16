@@ -1,0 +1,3902 @@
+[
+    {
+        "question": "Calculate 12 - ((-10 - -1) + (19 - (-31 - -10))).",
+        "no": 7,
+        "solution": "-19",
+        "ans_sampling": [
+            "1. **Innermost parentheses first:**\n   -10 - -1 = -10 + 1 = -9\n   -31 - -10 = -31 + 10 = -21\n\n2. **Next set of parentheses:**\n   (-9) + (19 - (-21)) = -9 + (19 + 21) = -9 + 40 = 31\n\n3. **Final calculation:**\n   12 - (31) = 12 - 31 = -19\n\nThe answer to this question is $\\boxed{-19}$\n"
+        ],
+        "ans_list": [
+            "-19"
+        ],
+        "final_answer": "-19",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 160*-9.064.",
+        "no": 39,
+        "solution": "-1450.24",
+        "ans_sampling": [
+            "160 * -9.064 = -1450.24\n\nThe answer to this question is $\\boxed{-1450.24}$\n"
+        ],
+        "ans_list": [
+            "-1450.24"
+        ],
+        "final_answer": "-1450.24",
+        "Correctness": true
+    },
+    {
+        "question": "What is (4*(-6)/21 + -11 + 1728/140)*-1, please return the calculation result in its simplest fraction form.",
+        "no": 11,
+        "solution": "-1/5",
+        "ans_sampling": [
+            "1. **Calculate 4 * (-6) / 21:**\n   4 * (-6) = -24\n   -24 / 21 = -8/7\n\n2. **Calculate 1728 / 140:**\n   1728 / 140 = 432/35\n\n\n3. **Add the fractions and the integer:**\n   -8/7 + (-11) + 432/35\n   To add these, we need a common denominator, which is 35.\n   (-8/7) * (5/5) = -40/35\n   (-11) * (35/35) = -385/35\n\n   -40/35 - 385/35 + 432/35 = ( -40 -385 + 432) / 35\n   = 7/35\n   = 1/5\n\n4. **Multiply by -1:**\n   (1/5) * -1 = -1/5\n\nThe answer to this question is $\\boxed{-\\frac{1}{5}}$.\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": false
+    },
+    {
+        "question": "What is -19533520 divided by 3906704?",
+        "no": 56,
+        "solution": "-5",
+        "ans_sampling": [
+            "-19533520 / 3906704 = -5\n\nThe answer to this question is $\\boxed{-5}$.\n"
+        ],
+        "ans_list": [
+            "-5"
+        ],
+        "final_answer": "-5",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate (38 - 49) + -46 + 39.",
+        "no": 30,
+        "solution": "-18",
+        "ans_sampling": [
+            "1. **Calculate (38 - 49):**\n   38 - 49 = -11\n\n2. **Add -46:**\n   -11 + (-46) = -57\n\n3. **Add 39:**\n   -57 + 39 = -18\n\nThe answer to this question is $\\boxed{-18}$.\n"
+        ],
+        "ans_list": [
+            "-18"
+        ],
+        "final_answer": "-18",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 0.3*-793867.",
+        "no": 99,
+        "solution": "-238160.1",
+        "ans_sampling": [
+            "0.3 * -793867 = -238160.1\n\nThe answer to this question is \\boxed{-238160.1}\n"
+        ],
+        "ans_list": [
+            "-238160.1"
+        ],
+        "final_answer": "-238160.1",
+        "Correctness": true
+    },
+    {
+        "question": "Product of 409 and -125.52.",
+        "no": 86,
+        "solution": "-51337.68",
+        "ans_sampling": [
+            "409 * -125.52 = -51342.68\n\nThe answer to this question is \\boxed{-51342.68}.\n"
+        ],
+        "ans_list": [
+            "-51342.68"
+        ],
+        "final_answer": "-51342.68",
+        "Correctness": false
+    },
+    {
+        "question": "Multiply 339632 and -45.",
+        "no": 114,
+        "solution": "-15283440",
+        "ans_sampling": [
+            "339632 * -45\n\nWe can perform the multiplication:\n\n339632 * -45 = -15283440\n\nThe answer to this question is $\\boxed{-15283440}$\n"
+        ],
+        "ans_list": [
+            "-15283440"
+        ],
+        "final_answer": "-15283440",
+        "Correctness": true
+    },
+    {
+        "question": "16 - (6 - (4 - 51))",
+        "no": 101,
+        "solution": "-37",
+        "ans_sampling": [
+            "1. **Innermost parentheses:** 4 - 51 = -47\n\n2. **Next set of parentheses:** 6 - (-47) = 6 + 47 = 53\n\n3. **Final calculation:** 16 - 53 = -37\n\nThe answer to this question is $\\boxed{-37}$\n"
+        ],
+        "ans_list": [
+            "-37"
+        ],
+        "final_answer": "-37",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 70943 - 38.084.",
+        "no": 63,
+        "solution": "70904.916",
+        "ans_sampling": [
+            "70943 - 38.084 can be rewritten as:\n\n70943.000\n-    38.084\n-----------\n70904.916\n\nThe answer to this question is $\\boxed{70904.916}$.\n"
+        ],
+        "ans_list": [
+            "70904.916"
+        ],
+        "final_answer": "70904.916",
+        "Correctness": true
+    },
+    {
+        "question": "Work out -12.17 - 14403515.",
+        "no": 92,
+        "solution": "-14403527.17",
+        "ans_sampling": [
+            "-12.17 - 14403515 = -14403527.17\n\nThe answer to this question is $\\boxed{-14403527.17}$\n"
+        ],
+        "ans_list": [
+            "-14403527.17"
+        ],
+        "final_answer": "-14403527.17",
+        "Correctness": true
+    },
+    {
+        "question": "1 * 0.487885",
+        "no": 94,
+        "solution": "0.487885",
+        "ans_sampling": [
+            "1 * 0.487885 = 0.487885\n\nThe answer to this question is $\\boxed{0.487885}$.\n"
+        ],
+        "ans_list": [
+            "0.487885"
+        ],
+        "final_answer": "0.487885",
+        "Correctness": true
+    },
+    {
+        "question": "What is -42.838 - 498330.8?",
+        "no": 139,
+        "solution": "-498373.638",
+        "ans_sampling": [
+            "-42.838 - 498330.8 = -498373.638\n\nThe answer to this question is $\\boxed{-498373.638}$\n"
+        ],
+        "ans_list": [
+            "-498373.638"
+        ],
+        "final_answer": "-498373.638",
+        "Correctness": true
+    },
+    {
+        "question": "Total of 18419 and -11572.108.",
+        "no": 122,
+        "solution": "6846.892",
+        "ans_sampling": [
+            "18419 + (-11572.108) = 18419 - 11572.108 = 6846.892\n\nThe answer to this question is $\\boxed{6846.892}$\n"
+        ],
+        "ans_list": [
+            "6846.892"
+        ],
+        "final_answer": "6846.892",
+        "Correctness": true
+    },
+    {
+        "question": "What is -52 - -12.28381745?",
+        "no": 22,
+        "solution": "-39.71618255",
+        "ans_sampling": [
+            "-52 - -12.28381745 can be rewritten as -52 + 12.28381745.\n\nSince we are adding a negative number to a positive number, we subtract the absolute values and keep the sign of the number with the larger absolute value. \n\n|-52| = 52\n|12.28381745| = 12.28381745\n\n52 - 12.28381745 = 39.71618255\n\nSince |-52| is greater than |12.28381745|, and -52 is negative, the result is negative.\n\nSo, -52 + 12.28381745 = -39.71618255\n\nThe answer to this question is $\\boxed{-39.71618255}$\n"
+        ],
+        "ans_list": [
+            "-39.71618255"
+        ],
+        "final_answer": "-39.71618255",
+        "Correctness": true
+    },
+    {
+        "question": "2+1=",
+        "no": 158,
+        "solution": "3",
+        "ans_sampling": [
+            "2 + 1 = 3\n\nThe answer to this question is $\\boxed{3}$.\n"
+        ],
+        "ans_list": [
+            "3"
+        ],
+        "final_answer": "3",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -65.57 + -1142939.1.",
+        "no": 34,
+        "solution": "-1143004.67",
+        "ans_sampling": [
+            "-65.57 + -1142939.1 = -1143004.67\n\nThe answer to this question is $\\boxed{-1143004.67}$\n"
+        ],
+        "ans_list": [
+            "-1143004.67"
+        ],
+        "final_answer": "-1143004.67",
+        "Correctness": true
+    },
+    {
+        "question": "Total of 27720.4921 and 673.",
+        "no": 93,
+        "solution": "28393.4921",
+        "ans_sampling": [
+            "27720.4921 + 673 = 28393.4921\n\nThe answer to this question is $\\boxed{28393.4921}$.\n"
+        ],
+        "ans_list": [
+            "28393.4921"
+        ],
+        "final_answer": "28393.4921",
+        "Correctness": true
+    },
+    {
+        "question": "What is -460236 divided by 6?",
+        "no": 21,
+        "solution": "-76706",
+        "ans_sampling": [
+            "-460236 divided by 6 can be calculated as follows:\n\n-460236 / 6 = -76706\n\nThe answer to this question is $\\boxed{-76706}$\n"
+        ],
+        "ans_list": [
+            "-76706"
+        ],
+        "final_answer": "-76706",
+        "Correctness": true
+    },
+    {
+        "question": "Multiply -0.26 and -330782.",
+        "no": 2,
+        "solution": "86003.32",
+        "ans_sampling": [
+            "-0.26 * -330782\n\nSince we are multiplying two negative numbers, the result will be positive.\n\n0.26 * 330782 = 86003.32\n\nThe answer to this question is $\\boxed{86003.32}$.\n"
+        ],
+        "ans_list": [
+            "86003.32"
+        ],
+        "final_answer": "86003.32",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-1)/(-1)*((4563/(-15))/13 - -23)*-125?",
+        "no": 17,
+        "solution": "50",
+        "ans_sampling": [
+            "1. **Simplify the inner parentheses:**\n4563 / (-15) = -304.2\n\n2. **Substitute and simplify the expression within the square brackets:**\n(-304.2) / 13 - (-23) = -23.4 + 23 = -0.4\n\n3. **Simplify the first part of the expression:**\n(-1) / (-1) = 1\n\n4. **Substitute and compute the remaining expression:**\n1 * (-0.4) * (-125) = 0.4 * 125 = 50\n\nThe answer to this question is $\\boxed{50}$.\n"
+        ],
+        "ans_list": [
+            "50"
+        ],
+        "final_answer": "50",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 1000804 divided by -500402.",
+        "no": 18,
+        "solution": "-2",
+        "ans_sampling": [
+            "1000804 / -500402 = -2\n\nThe answer to this question is $\\boxed{-2}$.\n"
+        ],
+        "ans_list": [
+            "-2"
+        ],
+        "final_answer": "-2",
+        "Correctness": true
+    },
+    {
+        "question": "Add together -35947633 and 0.0337.",
+        "no": 0,
+        "solution": "-35947632.9663",
+        "ans_sampling": [
+            "-35947633 + 0.0337 = -35947632.9663\n\nThe answer to this question is $\\boxed{-35947632.9663}$.\n"
+        ],
+        "ans_list": [
+            "-35947632.9663"
+        ],
+        "final_answer": "-35947632.9663",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate (((-1476)/(-615))/(3/50))/(2/1).",
+        "no": 14,
+        "solution": "20",
+        "ans_sampling": [
+            "First, we simplify the expression inside the outermost parentheses:\n((-1476)/(-615))/(3/50)\n\nA negative divided by a negative is a positive:\n(1476/615)/(3/50)\n\n1476/615 simplifies to 2.4:\n2.4/(3/50)\n\nDividing by a fraction is the same as multiplying by its reciprocal:\n2.4 * (50/3)\n\n2.4 is the same as 24/10:\n(24/10)*(50/3)\n\nWe can simplify this by canceling common factors:\n(24/10)*(50/3) = (24 * 50) / (10 * 3)\n= (24 * 5) / 3\n= (8 * 3 * 5) / 3\n= 8 * 5 \n= 40\n\nNow we have the expression:\n40/(2/1)\n40/2 \n= 20\n\nThe answer to this question is $\\boxed{20}$.\n"
+        ],
+        "ans_list": [
+            "20"
+        ],
+        "final_answer": "20",
+        "Correctness": true
+    },
+    {
+        "question": "What is -1 divided by 4986181, please return the calculation result in its simplest fraction form.",
+        "no": 110,
+        "solution": "-1/4986181",
+        "ans_sampling": [
+            "-1 divided by 4986181 is represented as -1/4986181. Since -1 and 4986181 are coprime (their greatest common divisor is 1), the fraction is already in its simplest form.\n\nThe answer to this question is \\boxed{-1/4986181}\n"
+        ],
+        "ans_list": [
+            "4986181"
+        ],
+        "final_answer": "4986181",
+        "Correctness": false
+    },
+    {
+        "question": "-0.351567*0.3",
+        "no": 69,
+        "solution": "-0.1054701",
+        "ans_sampling": [
+            "0.351567 * 0.3 = 0.1054701\n\nThe answer to this question is $\\boxed{0.1054701}$\n"
+        ],
+        "ans_list": [
+            "0.1054701"
+        ],
+        "final_answer": "0.1054701",
+        "Correctness": false
+    },
+    {
+        "question": "What is 7289216 divided by -14696?",
+        "no": 126,
+        "solution": "-496",
+        "ans_sampling": [
+            "7289216 divided by -14696 can be written as:\n\n7289216 / -14696\n\nPerforming the division:\n\n7289216 / -14696 = -496\n\nThe answer to this question is $\\boxed{-496}$.\n"
+        ],
+        "ans_list": [
+            "-496"
+        ],
+        "final_answer": "-496",
+        "Correctness": true
+    },
+    {
+        "question": "Sum 0 and -700981.3438.",
+        "no": 60,
+        "solution": "-700981.3438",
+        "ans_sampling": [
+            "0 + (-700981.3438) = -700981.3438\n\nThe answer to this question is $\\boxed{-700981.3438}$.\n"
+        ],
+        "ans_list": [
+            "-700981.3438"
+        ],
+        "final_answer": "-700981.3438",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of 51/9 + -14 + -3 + 4/1 + -3, please return the calculation result in its simplest fraction form.",
+        "no": 3,
+        "solution": "-31/3",
+        "ans_sampling": [
+            "1. Convert the mixed number 51/9 to a mixed fraction:\n51 divided by 9 is 5 with a remainder of 6, so 51/9 = 5 6/9 = 5 2/3.\n\n2.  Convert the mixed number to an improper fraction:\n5 2/3 = (5*3 + 2)/3 = 17/3\n\n3. Rewrite the expression with improper fractions and simplify the fractions:\n17/3 + (-14) + (-3) + 4/1 + (-3)\n= 17/3 - 14 - 3 + 4 - 3\n\n4. Combine the integers:\n-14 - 3 + 4 - 3 = -16\n\n5. Rewrite the expression:\n17/3 - 16\n\n6. Convert 16 to a fraction with a denominator of 3:\n16 = 16 * 3/3 = 48/3\n\n7. Rewrite the expression and subtract the fractions:\n17/3 - 48/3 = (17 - 48)/3 = -31/3\n\nThe answer to this question is $\\boxed{-31/3}$.\n"
+        ],
+        "ans_list": [
+            "3"
+        ],
+        "final_answer": "3",
+        "Correctness": false
+    },
+    {
+        "question": "-23 * 0.934175",
+        "no": 120,
+        "solution": "-21.486025",
+        "ans_sampling": [
+            "-23 * 0.934175 = -21.486025\n\nThe answer to this question is \\boxed{-21.486025}\n"
+        ],
+        "ans_list": [
+            "-21.486025"
+        ],
+        "final_answer": "-21.486025",
+        "Correctness": true
+    },
+    {
+        "question": "Product of -1.2 and 36587.",
+        "no": 85,
+        "solution": "-43904.4",
+        "ans_sampling": [
+            "-1.2 * 36587 = -43904.4\n\nThe answer to this question is $\\boxed{-43904.4}$\n"
+        ],
+        "ans_list": [
+            "-43904.4"
+        ],
+        "final_answer": "-43904.4",
+        "Correctness": true
+    },
+    {
+        "question": "5+9=",
+        "no": 166,
+        "solution": "14",
+        "ans_sampling": [
+            "5 + 9 = 14\n\nThe answer to this question is $\\boxed{14}$\n"
+        ],
+        "ans_list": [
+            "14"
+        ],
+        "final_answer": "14",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 278 + 20372945.",
+        "no": 61,
+        "solution": "20373223",
+        "ans_sampling": [
+            "278 + 20372945 = 20373223\n\nThe answer to this question is $\\boxed{20373223}$\n"
+        ],
+        "ans_list": [
+            "20373223"
+        ],
+        "final_answer": "20373223",
+        "Correctness": true
+    },
+    {
+        "question": "Add together 5 and 1167.4402664.",
+        "no": 88,
+        "solution": "1172.4402664",
+        "ans_sampling": [
+            "5 + 1167.4402664 = 1172.4402664\n\nThe answer to this question is $\\boxed{1172.4402664}$\n"
+        ],
+        "ans_list": [
+            "1172.4402664"
+        ],
+        "final_answer": "1172.4402664",
+        "Correctness": true
+    },
+    {
+        "question": "2328 divided by -3",
+        "no": 134,
+        "solution": "-776",
+        "ans_sampling": [
+            "2328 divided by -3 can be written as:\n\n2328 / -3\n\nPerforming the division:\n\n2328 / -3 = -776\n\nThe answer to this question is $\\boxed{-776}$\n"
+        ],
+        "ans_list": [
+            "-776"
+        ],
+        "final_answer": "-776",
+        "Correctness": true
+    },
+    {
+        "question": "-1+3=",
+        "no": 153,
+        "solution": "2",
+        "ans_sampling": [
+            "1 + 3 = 4\n\nThe answer to this question is $\\boxed{4}$\n"
+        ],
+        "ans_list": [
+            "4"
+        ],
+        "final_answer": "4",
+        "Correctness": false
+    },
+    {
+        "question": "-220513777+-599",
+        "no": 15,
+        "solution": "-220514376",
+        "ans_sampling": [
+            "-220513777 + -599 = -220514376\n\nThe answer to this question is $\\boxed{-220514376}$\n"
+        ],
+        "ans_list": [
+            "-220514376"
+        ],
+        "final_answer": "-220514376",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -2*22673.75.",
+        "no": 12,
+        "solution": "-45347.5",
+        "ans_sampling": [
+            "-2 * 22673.75 = -45347.5\n\nThe answer to this question is $\\boxed{-45347.5}$\n"
+        ],
+        "ans_list": [
+            "-45347.5"
+        ],
+        "final_answer": "-45347.5",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -7 + -16 + 31 - (-40 + 3 + -5 + 3).",
+        "no": 4,
+        "solution": "47",
+        "ans_sampling": [
+            "1. **Simplify the expression inside the parentheses:**\n-40 + 3 + -5 + 3 = -40 + 3 - 5 + 3 = -40 -5 + 3 + 3 = -45 + 6= -39\n\n2. **Substitute the simplified expression back into the original expression:**\n-7 + -16 + 31 - (-39)\n\n3. **Simplify the double negative:**\n-7 + -16 + 31 + 39\n\n4. **Combine the terms:**\n-7 - 16 + 31 + 39 = -23 + 31 + 39 = 8 + 39 = 47\n\nThe answer to this question is $\\boxed{47}$.\n"
+        ],
+        "ans_list": [
+            "47"
+        ],
+        "final_answer": "47",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -5256762 - -0.911.",
+        "no": 129,
+        "solution": "-5256761.089",
+        "ans_sampling": [
+            "-5256762 - -0.911 can be rewritten as -5256762 + 0.911.\n\n-5256762 + 0.911 = -5256761.089\n\nThe answer to this question is $\\boxed{-5256761.089}$.\n"
+        ],
+        "ans_list": [
+            "-5256761.089"
+        ],
+        "final_answer": "-5256761.089",
+        "Correctness": true
+    },
+    {
+        "question": "Multiply -22 and 0.49597.",
+        "no": 35,
+        "solution": "-10.91134",
+        "ans_sampling": [
+            "-22 * 0.49597 = -10.91134\n\nThe answer to this question is $\\boxed{-10.91134}$.\n"
+        ],
+        "ans_list": [
+            "-10.91134"
+        ],
+        "final_answer": "-10.91134",
+        "Correctness": true
+    },
+    {
+        "question": "What is 32272073652 plus 0.2?",
+        "no": 32,
+        "solution": "32272073652.2",
+        "ans_sampling": [
+            "32272073652 + 0.2 = 32272073652.2\n\nThe answer to this question is $\\boxed{32272073652.2}$\n"
+        ],
+        "ans_list": [
+            "32272073652.2"
+        ],
+        "final_answer": "32272073652.2",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-42136)/4122*9*2/(-4)?",
+        "no": 8,
+        "solution": "46",
+        "ans_sampling": [
+            "1. **Simplify the fraction:** (-42136)/4122 simplifies to approximately -10.222.  We'll keep more decimal places during calculations for accuracy and round at the end.\n\n2. **Multiply by 9:** (-10.222) * 9 = -91.998\n\n3. **Multiply by 2:** -91.998 * 2 = -183.996\n\n4. **Divide by -4:** -183.996 / (-4) = 45.999\n\nSince we rounded values earlier, the exact answer might be slightly different. Doing the whole calculation in one go:\n(-42136) / 4122 * 9 * 2 / (-4) = 46.0058224648\n\n\nSo, rounding to the nearest integer, the answer is approximately 46.\n\nThe answer to this question is $\\boxed{46}$\n"
+        ],
+        "ans_list": [
+            "46"
+        ],
+        "final_answer": "46",
+        "Correctness": true
+    },
+    {
+        "question": "10+7=",
+        "no": 156,
+        "solution": "17",
+        "ans_sampling": [
+            "10 + 7 = 17\n\nThe answer to this question is $\\boxed{17}$\n"
+        ],
+        "ans_list": [
+            "17"
+        ],
+        "final_answer": "17",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-4*1 + 2)*(0 - (-26 + 777/74))?",
+        "no": 13,
+        "solution": "-31",
+        "ans_sampling": [
+            "1. **Inside the first parenthesis:**\n   -4 * 1 = -4\n   -4 + 2 = -2\n\n2. **Inside the second parenthesis:**\n   777 / 74 = 10.5\n\n   -26 + 10.5 = -15.5\n\n   0 - (-15.5) = 0 + 15.5 = 15.5\n\n3. **Multiply the results of the two parentheses:**\n   -2 * 15.5 = -31\n\nThe answer to this question is $\\boxed{-31}$.\n"
+        ],
+        "ans_list": [
+            "-31"
+        ],
+        "final_answer": "-31",
+        "Correctness": true
+    },
+    {
+        "question": "-243 * 33182",
+        "no": 10,
+        "solution": "-8063226",
+        "ans_sampling": [
+            "-243 * 33182 = -8069826\n\nThe answer to this question is \\boxed{-8069826}\n"
+        ],
+        "ans_list": [
+            "-8069826"
+        ],
+        "final_answer": "-8069826",
+        "Correctness": false
+    },
+    {
+        "question": "(-123*(-6)/(-54) - -9)*(-75)/(-275), please return the calculation result in its simplest fraction form.",
+        "no": 5,
+        "solution": "-14/11",
+        "ans_sampling": [
+            "1. **Calculate -123 * (-6):**  -123 * (-6) = 738\n\n2. **Divide by -54:** 738 / (-54) = -13.666...  (We'll keep this as an improper fraction to avoid early rounding errors: 738/-54 = -738/54 = -123/9)\n\n3. **Simplify -123/9:**  -123/9 = -41/3\n\n4. **Substitute and simplify the first part of the expression:** -123*(-6)/(-54) - -9  becomes -41/3 + 9\n\n5. **Find a common denominator and add:** -41/3 + 9 = -41/3 + 27/3 = -14/3\n\n6. **Multiply by -75:** (-14/3) * (-75) = 1050/3 = 350\n\n7. **Divide by -275:** 350 / (-275) = -350/275\n\n8. **Simplify the fraction:**  -350/275 = -14/11\n\nThe answer to this question is $\\boxed{-\\frac{14}{11}}$\n"
+        ],
+        "ans_list": [
+            "14"
+        ],
+        "final_answer": "14",
+        "Correctness": false
+    },
+    {
+        "question": "5 divided by 616968, please return the calculation result in its simplest fraction form.",
+        "no": 6,
+        "solution": "5/616968",
+        "ans_sampling": [
+            "5 divided by 616968 can be represented as the fraction 5/616968. Since 5 is a prime number and doesn't divide 616968, this fraction is already in its simplest form.\n\nThe answer to this question is $\\boxed{\\frac{5}{616968}}$\n"
+        ],
+        "ans_list": [
+            "5"
+        ],
+        "final_answer": "5",
+        "Correctness": false
+    },
+    {
+        "question": "(15 - (-176)/(-12))*((-192)/(-30) + -7), please return the calculation result in its simplest fraction form.",
+        "no": 9,
+        "solution": "-1/5",
+        "ans_sampling": [
+            "1. **Calculate (-176)/(-12)**\n(-176)/(-12) = 176/12 = 44/3\n\n2. **Calculate (-192)/(-30)**\n(-192)/(-30) = 192/30 = 32/5\n\n3. **Calculate (32/5) + (-7)**\n(32/5) + (-7) = 32/5 - 35/5 = -3/5\n\n4. **Calculate (44/3) * (-3/5)**\n(44/3) * (-3/5) = -132/15 = -44/5\n\n5. **Calculate 15 - (-44/5)**\n15 - (-44/5) = 15 + 44/5 = 75/5 + 44/5 = 119/5\n\nThe answer to this question is $\\boxed{\\frac{119}{5}}$\n"
+        ],
+        "ans_list": [
+            "119"
+        ],
+        "final_answer": "119",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate 13058*-0.998.",
+        "no": 55,
+        "solution": "-13031.884",
+        "ans_sampling": [
+            "13058 * -0.998 = -13031.984\n\nThe answer to this question is $\\boxed{-13031.984}$\n"
+        ],
+        "ans_list": [
+            "-13031.984"
+        ],
+        "final_answer": "-13031.984",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate 167 + -123 - (-7 + 34).",
+        "no": 16,
+        "solution": "17",
+        "ans_sampling": [
+            "1. **Evaluate the expression inside the parenthesis:**\n-7 + 34 = 27\n\n2. **Substitute the result back into the original expression:**\n167 + -123 - (27)\n\n3. **Simplify the addition of a negative number:**\n167 - 123 - 27\n\n4. **Perform the subtractions from left to right:**\n167 - 123 = 44\n44 - 27 = 17\n\nThe answer to this question is $\\boxed{17}$.\n"
+        ],
+        "ans_list": [
+            "17"
+        ],
+        "final_answer": "17",
+        "Correctness": true
+    },
+    {
+        "question": "3+6=",
+        "no": 161,
+        "solution": "9",
+        "ans_sampling": [
+            "3 + 6 = 9\n\nThe answer to this question is $\\boxed{9}$\n"
+        ],
+        "ans_list": [
+            "9"
+        ],
+        "final_answer": "9",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -1 divided by 1255515, please return the calculation result in its simplest fraction form.",
+        "no": 20,
+        "solution": "-1/1255515",
+        "ans_sampling": [
+            "-1 divided by 1255515 is simply -1/1255515.  Since 1 is the only common factor of 1 and 1255515, the fraction is already in its simplest form.\n\nThe answer to this question is $\\boxed{-\\frac{1}{1255515}}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": false
+    },
+    {
+        "question": "5+2=",
+        "no": 168,
+        "solution": "7",
+        "ans_sampling": [
+            "5 + 2 = 7\n\nThe answer to this question is \\boxed{7}\n"
+        ],
+        "ans_list": [
+            "7"
+        ],
+        "final_answer": "7",
+        "Correctness": true
+    },
+    {
+        "question": "9+2=",
+        "no": 169,
+        "solution": "11",
+        "ans_sampling": [
+            "9 + 2 = 11\n\nThe answer to this question is $\\boxed{11}$\n"
+        ],
+        "ans_list": [
+            "11"
+        ],
+        "final_answer": "11",
+        "Correctness": true
+    },
+    {
+        "question": "2/((-14587)/609 + 24)",
+        "no": 59,
+        "solution": "42",
+        "ans_sampling": [
+            "First, we simplify the denominator:\n\n-14587/609 + 24 \n= -24 + 24\n= 0\n\nSo, the expression becomes 2/0. \n\nDivision by zero is undefined.\n\nThe answer to this question is $\\boxed{\\text{undefined}}$.\n"
+        ],
+        "ans_list": [
+            "Error"
+        ],
+        "final_answer": "-1",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate 2258/47418 + 884/(-42).",
+        "no": 33,
+        "solution": "-21",
+        "ans_sampling": [
+            "1. Calculate 2258/47418:\n   2258/47418 \u2248 0.04762\n\n2. Calculate 884/(-42):\n   884/(-42) \u2248 -21.0476\n\n3. Add the two results:\n   0.04762 + (-21.0476) \u2248 -21\n\nThe answer to this question is $\\boxed{-21}$.\n"
+        ],
+        "ans_list": [
+            "-21"
+        ],
+        "final_answer": "-21",
+        "Correctness": true
+    },
+    {
+        "question": "1+1=",
+        "no": 165,
+        "solution": "2",
+        "ans_sampling": [
+            "1 + 1 = 2\n\nThe answer to this question is $\\boxed{2}$\n"
+        ],
+        "ans_list": [
+            "2"
+        ],
+        "final_answer": "2",
+        "Correctness": true
+    },
+    {
+        "question": "536 + -503 - (-3 - (-1 - 20))",
+        "no": 25,
+        "solution": "15",
+        "ans_sampling": [
+            "1. **Innermost parentheses:** (-1 - 20) = -21\n\n2. **Next set of parentheses:** (-3 - (-21)) = -3 + 21 = 18\n\n3. **Addition:** 536 + (-503) = 33\n\n4. **Subtraction:** 33 - 18 = 15\n\nThe answer to this question is $\\boxed{15}$\n"
+        ],
+        "ans_list": [
+            "15"
+        ],
+        "final_answer": "15",
+        "Correctness": true
+    },
+    {
+        "question": "Sum -207259242 and 3.19.",
+        "no": 141,
+        "solution": "-207259238.81",
+        "ans_sampling": [
+            "-207259242 + 3.19 = -207259238.81\n\nThe answer to this question is $\\boxed{-207259238.81}$\n"
+        ],
+        "ans_list": [
+            "-207259238.81"
+        ],
+        "final_answer": "-207259238.81",
+        "Correctness": true
+    },
+    {
+        "question": "What is 1 divided by -4076398, please return the calculation result in its simplest fraction form.",
+        "no": 66,
+        "solution": "-1/4076398",
+        "ans_sampling": [
+            "1 divided by -4076398 can be written as the fraction:\n\n1 / -4076398\n\nThis can be simplified to:\n\n-1 / 4076398\n\nThe fraction is already in its simplest form since 1 is in the numerator.\n\nThe answer to this question is $\\boxed{-\\frac{1}{4076398}}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": false
+    },
+    {
+        "question": "-1+(-6)=",
+        "no": 159,
+        "solution": "-7",
+        "ans_sampling": [
+            "1 + (-6) can be rewritten as 1 - 6.\n\n1 - 6 = -5\n\nThe answer to this question is $\\boxed{-5}$\n"
+        ],
+        "ans_list": [
+            "-5"
+        ],
+        "final_answer": "-5",
+        "Correctness": false
+    },
+    {
+        "question": "4+10=",
+        "no": 160,
+        "solution": "14",
+        "ans_sampling": [
+            "4 + 10 = 14\n\nThe answer to this question is $\\boxed{14}$\n"
+        ],
+        "ans_list": [
+            "14"
+        ],
+        "final_answer": "14",
+        "Correctness": true
+    },
+    {
+        "question": "What is 2 plus -1786522916?",
+        "no": 57,
+        "solution": "-1786522914",
+        "ans_sampling": [
+            "2 + (-1786522916) is the same as 2 - 1786522916\n\n2 - 1786522916 = -1786522914\n\nThe answer to this question is $\\boxed{-1786522914}$\n"
+        ],
+        "ans_list": [
+            "-1786522914"
+        ],
+        "final_answer": "-1786522914",
+        "Correctness": true
+    },
+    {
+        "question": "9+3=",
+        "no": 173,
+        "solution": "12",
+        "ans_sampling": [
+            "9 + 3 = 12\n\nThe answer to this question is $\\boxed{12}$\n"
+        ],
+        "ans_list": [
+            "12"
+        ],
+        "final_answer": "12",
+        "Correctness": true
+    },
+    {
+        "question": "6+2=",
+        "no": 170,
+        "solution": "8",
+        "ans_sampling": [
+            "6 + 2 = 8\n\nThe answer to this question is $\\boxed{8}$\n"
+        ],
+        "ans_list": [
+            "8"
+        ],
+        "final_answer": "8",
+        "Correctness": true
+    },
+    {
+        "question": "-541128 divided by -1",
+        "no": 124,
+        "solution": "541128",
+        "ans_sampling": [
+            "-541128 divided by -1  is equivalent to:\n\n-541128 / -1\n\nSince dividing a negative number by a negative number results in a positive number, we have:\n\n541128\n\nThe answer to this question is $\\boxed{541128}$.\n"
+        ],
+        "ans_list": [
+            "541128"
+        ],
+        "final_answer": "541128",
+        "Correctness": true
+    },
+    {
+        "question": "(-10 - -6) + (8 - (15 - 39))",
+        "no": 108,
+        "solution": "28",
+        "ans_sampling": [
+            "1. **Parentheses (innermost first):**\n(15 - 39) = -24\n\n2. **Substitute and solve the remaining parentheses:**\n(8 - (-24)) = 8 + 24 = 32\n\n3. **Simplify the first part:**\n(-10 - -6) = -10 + 6 = -4\n\n4. **Add the results:**\n-4 + 32 = 28\n\nThe answer to this question is $\\boxed{28}$\n"
+        ],
+        "ans_list": [
+            "28"
+        ],
+        "final_answer": "28",
+        "Correctness": true
+    },
+    {
+        "question": "0+8=",
+        "no": 171,
+        "solution": "8",
+        "ans_sampling": [
+            "0 + 8 = 8\n\nThe answer to this question is $\\boxed{8}$\n"
+        ],
+        "ans_list": [
+            "8"
+        ],
+        "final_answer": "8",
+        "Correctness": true
+    },
+    {
+        "question": "-41291 times -18.7",
+        "no": 27,
+        "solution": "772141.7",
+        "ans_sampling": [
+            "-41291 times -18.7 can be written as (-41291) * (-18.7)\n\nSince the product of two negative numbers is a positive number, the result will be positive.\n\n41291 * 18.7 = 771941.7\n\nThe answer to this question is $\\boxed{771941.7}$.\n"
+        ],
+        "ans_list": [
+            "771941.7"
+        ],
+        "final_answer": "771941.7",
+        "Correctness": false
+    },
+    {
+        "question": "5+(-5)=",
+        "no": 157,
+        "solution": "0",
+        "ans_sampling": [
+            "5 + (-5) means we are adding 5 and -5.  Since these are opposite numbers (one positive and one negative of the same magnitude), their sum is 0.\n\nThe answer to this question is $\\boxed{0}$.\n"
+        ],
+        "ans_list": [
+            "0"
+        ],
+        "final_answer": "0",
+        "Correctness": true
+    },
+    {
+        "question": "What is 14 + -12 + (21 - (-22 + -4))?",
+        "no": 71,
+        "solution": "49",
+        "ans_sampling": [
+            "1. **Solve the inner parenthesis:** -22 + -4 = -26\n2. **Solve the outer parenthesis:** 21 - (-26) = 21 + 26 = 47\n3. **Add the first two numbers:** 14 + -12 = 2\n4. **Add the result to the result of the parenthesis:** 2 + 47 = 49\n\nThe answer to this question is $\\boxed{49}$.\n"
+        ],
+        "ans_list": [
+            "49"
+        ],
+        "final_answer": "49",
+        "Correctness": true
+    },
+    {
+        "question": "Work out 171719996 + -0.1.",
+        "no": 143,
+        "solution": "171719995.9",
+        "ans_sampling": [
+            "171719996 + -0.1 can be rewritten as 171719996 - 0.1.\n171719996 - 0.1 = 171719995.9\n\nThe answer to this question is $\\boxed{171719995.9}$.\n"
+        ],
+        "ans_list": [
+            "171719995.9"
+        ],
+        "final_answer": "171719995.9",
+        "Correctness": true
+    },
+    {
+        "question": "What is -0.2 + 10156627591?",
+        "no": 125,
+        "solution": "10156627590.8",
+        "ans_sampling": [
+            "-0.2 + 10156627591 is the same as 10156627591 - 0.2.\n\n10156627591.0 \n-        0.2\n-------------\n10156627590.8\n\n\nThe answer to this question is $\\boxed{10156627590.8}$\n"
+        ],
+        "ans_list": [
+            "10156627590.8"
+        ],
+        "final_answer": "10156627590.8",
+        "Correctness": true
+    },
+    {
+        "question": "0+10=",
+        "no": 172,
+        "solution": "10",
+        "ans_sampling": [
+            "0 + 10 = 10\n\nThe answer to this question is $\\boxed{10}$\n"
+        ],
+        "ans_list": [
+            "10"
+        ],
+        "final_answer": "10",
+        "Correctness": true
+    },
+    {
+        "question": "9-(-4)=",
+        "no": 163,
+        "solution": "13",
+        "ans_sampling": [
+            "9 - (-4) can be rewritten as 9 + 4 because subtracting a negative number is the same as adding its positive counterpart.\n\n9 + 4 = 13\n\nThe answer to this question is $\\boxed{13}$.\n"
+        ],
+        "ans_list": [
+            "13"
+        ],
+        "final_answer": "13",
+        "Correctness": true
+    },
+    {
+        "question": "What is -87552.7 take away -0.16025?",
+        "no": 24,
+        "solution": "-87552.53975",
+        "ans_sampling": [
+            "-87552.7 take away -0.16025 can be written as:\n\n-87552.7 - (-0.16025)\n\nSubtracting a negative number is the same as adding the positive of that number:\n\n-87552.7 + 0.16025\n\nNow we perform the addition:\n\n-87552.53975\n\nThe answer to this question is $\\boxed{-87552.53975}$.\n"
+        ],
+        "ans_list": [
+            "-87552.53975"
+        ],
+        "final_answer": "-87552.53975",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of -8 - 3 - ((19 - 21) + 23)?",
+        "no": 144,
+        "solution": "-32",
+        "ans_sampling": [
+            "1. **Innermost parentheses:** (19 - 21) = -2\n\n2. **Next set of parentheses:** (-2 + 23) = 21\n\n3. **First subtraction:** -8 - 3 = -11\n\n4. **Final subtraction:** -11 - 21 = -32\n\nThe answer to this question is $\\boxed{-32}$.\n"
+        ],
+        "ans_list": [
+            "-32"
+        ],
+        "final_answer": "-32",
+        "Correctness": true
+    },
+    {
+        "question": "Sum -0.1 and -11491311319.",
+        "no": 50,
+        "solution": "-11491311319.1",
+        "ans_sampling": [
+            "-0.1 + (-11491311319) = -11491311319.1\n\nThe answer to this question is \\boxed{-11491311319.1}\n"
+        ],
+        "ans_list": [
+            "-11491311319.1"
+        ],
+        "final_answer": "-11491311319.1",
+        "Correctness": true
+    },
+    {
+        "question": "(-120)/(-15)*408/96",
+        "no": 127,
+        "solution": "34",
+        "ans_sampling": [
+            "1. **Divide -120 by -15:**\n   A negative divided by a negative results in a positive.\n   -120 / -15 = 8\n\n2. **Divide 408 by 96:**\n   408 / 96 = 4.25\n\n3. **Multiply the results of steps 1 and 2:**\n   8 * 4.25 = 34\n\nThe answer to this question is $\\boxed{34}$.\n"
+        ],
+        "ans_list": [
+            "34"
+        ],
+        "final_answer": "34",
+        "Correctness": true
+    },
+    {
+        "question": "What is 5909946 divided by 2954973?",
+        "no": 37,
+        "solution": "2",
+        "ans_sampling": [
+            "5909946 divided by 2954973 can be written as:\n\n5909946 / 2954973\n\nNotice that 5909946 is exactly double 2954973.  Therefore:\n\n5909946 / 2954973 = 2\n\nThe answer to this question is $\\boxed{2}$.\n"
+        ],
+        "ans_list": [
+            "2"
+        ],
+        "final_answer": "2",
+        "Correctness": true
+    },
+    {
+        "question": "8505/225 - (-50)/250",
+        "no": 76,
+        "solution": "38",
+        "ans_sampling": [
+            "1. **8505/225:**  This division gives 37.8.\n\n2. **(-50)/250:** This division gives -0.2.\n\n3. **37.8 - (-0.2):**  Subtracting a negative is the same as adding a positive.  So, 37.8 - (-0.2) = 37.8 + 0.2 = 38.\n\nThe answer to this question is $\\boxed{38}$.\n"
+        ],
+        "ans_list": [
+            "38"
+        ],
+        "final_answer": "38",
+        "Correctness": true
+    },
+    {
+        "question": "8+1=",
+        "no": 150,
+        "solution": "9",
+        "ans_sampling": [
+            "8 + 1 = 9\n\nThe answer to this question is $\\boxed{9}$\n"
+        ],
+        "ans_list": [
+            "9"
+        ],
+        "final_answer": "9",
+        "Correctness": true
+    },
+    {
+        "question": "What is -8 + (21 - 21 - 4) + 49?",
+        "no": 132,
+        "solution": "37",
+        "ans_sampling": [
+            "1. **Evaluate the expression inside the parentheses:**\n(21 - 21 - 4) = 0 - 4 = -4\n\n2. **Substitute the result back into the original expression:**\n-8 + (-4) + 49\n\n3. **Perform the addition from left to right:**\n-8 + (-4) = -12\n\n4. **Continue with the addition:**\n-12 + 49 = 37\n\nThe answer to this question is $\\boxed{37}$.\n"
+        ],
+        "ans_list": [
+            "37"
+        ],
+        "final_answer": "37",
+        "Correctness": true
+    },
+    {
+        "question": "Divide 1099295 by 219859.",
+        "no": 115,
+        "solution": "5",
+        "ans_sampling": [
+            "1099295 divided by 219859\n\nWe can perform long division:\n\n219859 | 1099295\n          - 1099295\n          --------\n              0\n\nSince 1099295 is exactly 5 times 219859 (5 * 219859 = 1099295), the quotient is 5.\n\nThe answer to this question is $\\boxed{5}$\n"
+        ],
+        "ans_list": [
+            "5"
+        ],
+        "final_answer": "5",
+        "Correctness": true
+    },
+    {
+        "question": "9-(-6)=",
+        "no": 164,
+        "solution": "15",
+        "ans_sampling": [
+            "9 - (-6) can be rewritten as 9 + 6 because subtracting a negative number is the same as adding the positive version of that number.\n\n9 + 6 = 15\n\nThe answer to this question is $\\boxed{15}$\n"
+        ],
+        "ans_list": [
+            "15"
+        ],
+        "final_answer": "15",
+        "Correctness": true
+    },
+    {
+        "question": "What is the distance between 254.31 and 7058188?",
+        "no": 118,
+        "solution": "7057933.69",
+        "ans_sampling": [
+            "We are asked to find the distance between 254.31 and 7058188.  \"Distance\" in this context means the absolute difference between the two numbers.  We calculate this by subtracting the smaller number from the larger number:\n\n7058188 - 254.31 = 7057933.69\n\nThe answer to this question is $\\boxed{7057933.69}$\n"
+        ],
+        "ans_list": [
+            "7057933.69"
+        ],
+        "final_answer": "7057933.69",
+        "Correctness": true
+    },
+    {
+        "question": "10+(-3)=",
+        "no": 151,
+        "solution": "7",
+        "ans_sampling": [
+            "10 + (-3) means we start at 10 on the number line. Adding a negative number is the same as subtracting the positive version of that number. So, 10 + (-3) is the same as 10 - 3.\n\n10 - 3 = 7\n\nThe answer to this question is $\\boxed{7}$.\n"
+        ],
+        "ans_list": [
+            "7"
+        ],
+        "final_answer": "7",
+        "Correctness": true
+    },
+    {
+        "question": "5+4=",
+        "no": 176,
+        "solution": "9",
+        "ans_sampling": [
+            "5 + 4 = 9\n\nThe answer to this question is $\\boxed{9}$\n"
+        ],
+        "ans_list": [
+            "9"
+        ],
+        "final_answer": "9",
+        "Correctness": true
+    },
+    {
+        "question": "39+46=",
+        "no": 186,
+        "solution": "85",
+        "ans_sampling": [
+            "39 + 46 = 85\n\nThe answer to this question is $\\boxed{85}$\n"
+        ],
+        "ans_list": [
+            "85"
+        ],
+        "final_answer": "85",
+        "Correctness": true
+    },
+    {
+        "question": "What is (44 - 2 - (-24 + 9 + 16)) + 3?",
+        "no": 67,
+        "solution": "44",
+        "ans_sampling": [
+            "1. **Simplify the inner parenthesis:**\n(-24 + 9 + 16) = -24 + 25 = 1\n\n2. **Substitute the simplified expression back into the original expression:**\n(44 - 2 - 1) + 3\n\n3. **Simplify the expression inside the parenthesis:**\n(44 - 2 - 1) = 44 - 3 = 41\n\n4. **Add the remaining number:**\n41 + 3 = 44\n\nThe answer to this question is $\\boxed{44}$.\n"
+        ],
+        "ans_list": [
+            "44"
+        ],
+        "final_answer": "44",
+        "Correctness": true
+    },
+    {
+        "question": "2726932 divided by -229",
+        "no": 52,
+        "solution": "-11908",
+        "ans_sampling": [
+            "2726932 divided by -229 can be written as:\n\n2726932 / -229\n\nPerforming the division:\n\n2726932 / -229 = -11908\n\nThe answer to this question is \\boxed{-11908}\n"
+        ],
+        "ans_list": [
+            "-11908"
+        ],
+        "final_answer": "-11908",
+        "Correctness": true
+    },
+    {
+        "question": "What is 9 + -13 + 1 + -6 + (-14 - 7)?",
+        "no": 26,
+        "solution": "-30",
+        "ans_sampling": [
+            "1. **Parentheses first:** (-14 - 7) = -21\n\n2. **Rewrite the expression:** 9 + (-13) + 1 + (-6) + (-21)\n\n3. **Add the positive numbers:** 9 + 1 = 10\n\n4. **Add the negative numbers:** -13 + (-6) + (-21) = -40\n\n5. **Combine positive and negative sums:** 10 + (-40) = -30\n\nThe answer to this question is $\\boxed{-30}$\n"
+        ],
+        "ans_list": [
+            "-30"
+        ],
+        "final_answer": "-30",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-41 - -2) + 30 + 56?",
+        "no": 74,
+        "solution": "47",
+        "ans_sampling": [
+            "1. **Simplify the double negative:** -41 - -2 becomes -41 + 2\n\n2. **Calculate -41 + 2:** -41 + 2 = -39\n\n3. **Substitute back into the original expression:** -39 + 30 + 56\n\n4. **Calculate -39 + 30:** -39 + 30 = -9\n\n5. **Calculate -9 + 56:** -9 + 56 = 47\n\nThe answer to this question is $\\boxed{47}$.\n"
+        ],
+        "ans_list": [
+            "47"
+        ],
+        "final_answer": "47",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 1265168 divided by -158146.",
+        "no": 147,
+        "solution": "-8",
+        "ans_sampling": [
+            "1265168 divided by -158146 can be written as:\n\n1265168 / -158146\n\nPerforming the division:\n\n1265168 / -158146 = -8\n\nThe answer to this question is $\\boxed{-8}$.\n"
+        ],
+        "ans_list": [
+            "-8"
+        ],
+        "final_answer": "-8",
+        "Correctness": true
+    },
+    {
+        "question": "What is (4 - 3 - 7) + 3 + (2 - 6)?",
+        "no": 100,
+        "solution": "-7",
+        "ans_sampling": [
+            "1. **Solve the first parenthesis:** (4 - 3 - 7) = (1 - 7) = -6\n\n2. **Solve the second parenthesis:** (2 - 6) = -4\n\n3. **Substitute the values back into the original expression:** -6 + 3 + (-4)\n\n4. **Perform the addition:** -6 + 3 = -3\n\n5. **Perform the final addition:** -3 + (-4) = -7\n\nThe answer to this question is $\\boxed{-7}$\n"
+        ],
+        "ans_list": [
+            "-7"
+        ],
+        "final_answer": "-7",
+        "Correctness": true
+    },
+    {
+        "question": "(-135575)/(-1595)*(-2)/(-10)",
+        "no": 65,
+        "solution": "17",
+        "ans_sampling": [
+            "1. Divide -135575 by -1595:\n-135575 / -1595 = 85\n\n2. Multiply 85 by -2:\n85 * -2 = -170\n\n3. Divide -170 by -10:\n-170 / -10 = 17\n\nThe answer to this question is $\\boxed{17}$.\n"
+        ],
+        "ans_list": [
+            "17"
+        ],
+        "final_answer": "17",
+        "Correctness": true
+    },
+    {
+        "question": "Product of -6 and 3288399.",
+        "no": 136,
+        "solution": "-19730394",
+        "ans_sampling": [
+            "-6 * 3288399 = -19730394\n\nThe answer to this question is $\\boxed{-19730394}$.\n"
+        ],
+        "ans_list": [
+            "-19730394"
+        ],
+        "final_answer": "-19730394",
+        "Correctness": true
+    },
+    {
+        "question": "6+6=",
+        "no": 174,
+        "solution": "12",
+        "ans_sampling": [
+            "6 + 6 = 12\n\nThe answer to this question is $\\boxed{12}$\n"
+        ],
+        "ans_list": [
+            "12"
+        ],
+        "final_answer": "12",
+        "Correctness": true
+    },
+    {
+        "question": "What is -0.178602 take away -57.22?",
+        "no": 72,
+        "solution": "57.041398",
+        "ans_sampling": [
+            "-0.178602 take away -57.22 can be written as:\n\n-0.178602 - (-57.22)\n\nSubtracting a negative number is the same as adding its positive counterpart:\n\n-0.178602 + 57.22\n\nNow we add the two numbers:\n\n57.22 - 0.178602 = 57.041398\n\nThe answer to this question is $\\boxed{57.041398}$\n"
+        ],
+        "ans_list": [
+            "57.041398"
+        ],
+        "final_answer": "57.041398",
+        "Correctness": true
+    },
+    {
+        "question": "What is the product of -5 and -0.0012036?",
+        "no": 87,
+        "solution": "0.006018",
+        "ans_sampling": [
+            "-5 multiplied by -0.0012036\n\nFirst, we multiply 5 and 0.0012036:\n5 * 0.0012036 = 0.006018\n\nSince we are multiplying two negative numbers, the result is positive.\n\nSo, -5 * -0.0012036 = 0.006018\n\nThe answer to this question is $\\boxed{0.006018}$\n"
+        ],
+        "ans_list": [
+            "0.006018"
+        ],
+        "final_answer": "0.006018",
+        "Correctness": true
+    },
+    {
+        "question": "10530.9 * -49",
+        "no": 145,
+        "solution": "-516014.1",
+        "ans_sampling": [
+            "10530.9 * -49\n\nMultiply 10530.9 by -49:\n\n10530.9 * -49 = -515954.1\n\nThe answer to this question is $\\boxed{-516004.1}$\n"
+        ],
+        "ans_list": [
+            "-516004.1"
+        ],
+        "final_answer": "-516004.1",
+        "Correctness": false
+    },
+    {
+        "question": "5+0=",
+        "no": 177,
+        "solution": "5",
+        "ans_sampling": [
+            "5 + 0 = 5\n\nThe answer to this question is $\\boxed{5}$\n"
+        ],
+        "ans_list": [
+            "5"
+        ],
+        "final_answer": "5",
+        "Correctness": true
+    },
+    {
+        "question": "(784/32)/(-49)*(-4)/1",
+        "no": 109,
+        "solution": "2",
+        "ans_sampling": [
+            "1. **(784/32)**: 784 divided by 32 is 24.5.\n2. **24.5/(-49)**: 24.5 divided by -49 is -0.5.\n3. **-0.5*(-4)**: -0.5 multiplied by -4 is 2.\n4. **2/1**: 2 divided by 1 is 2.\n\nThe answer to this question is $\\boxed{2}$.\n"
+        ],
+        "ans_list": [
+            "2"
+        ],
+        "final_answer": "2",
+        "Correctness": true
+    },
+    {
+        "question": "28+34=",
+        "no": 185,
+        "solution": "62",
+        "ans_sampling": [
+            "28 + 34 = 62\n\nThe answer to this question is $\\boxed{62}$\n"
+        ],
+        "ans_list": [
+            "62"
+        ],
+        "final_answer": "62",
+        "Correctness": true
+    },
+    {
+        "question": "-6+(-2)=",
+        "no": 152,
+        "solution": "-8",
+        "ans_sampling": [
+            "-6 + (-2) means we are adding two negative numbers.  When adding numbers with the same sign (both negative in this case), we add their absolute values and keep the sign.\n\n|-6| = 6\n|-2| = 2\n\n6 + 2 = 8\n\nSince both numbers are negative, our answer is -8.\n\n\nThe answer to this question is $\\boxed{-8}$\n"
+        ],
+        "ans_list": [
+            "-8"
+        ],
+        "final_answer": "-8",
+        "Correctness": true
+    },
+    {
+        "question": "What is the difference between 5 and -30934319327?",
+        "no": 123,
+        "solution": "30934319332",
+        "ans_sampling": [
+            "The difference between two numbers is found by subtracting the second number from the first. In this case, we want to find the difference between 5 and -30934319327.\n\nSo, we perform the subtraction: 5 - (-30934319327)\n\nSubtracting a negative number is the same as adding its positive counterpart. Thus, the expression becomes:\n\n5 + 30934319327\n\nAdding these numbers gives us:\n\n30934319332\n\n\nThe answer to this question is $\\boxed{30934319332}$.\n"
+        ],
+        "ans_list": [
+            "30934319332"
+        ],
+        "final_answer": "30934319332",
+        "Correctness": true
+    },
+    {
+        "question": "What is -1 divided by -821424, please return the calculation result in its simplest fraction form.",
+        "no": 149,
+        "solution": "1/821424",
+        "ans_sampling": [
+            "-1 divided by -821424 can be written as:\n\n-1 / -821424\n\nA negative divided by a negative is positive, so:\n\n1 / 821424\n\nThis fraction is already in its simplest form since 1 and 821424 do not share any common factors other than 1.\n\nThe answer to this question is \\boxed{1/821424}.\n"
+        ],
+        "ans_list": [
+            "821424"
+        ],
+        "final_answer": "821424",
+        "Correctness": false
+    },
+    {
+        "question": "What is 268377 divided by -55, please return the calculation result in its simplest fraction form.",
+        "no": 90,
+        "solution": "-268377/55",
+        "ans_sampling": [
+            "268377 divided by -55 is calculated as follows:\n\n268377 / -55 = -4879.58181818...\n\nSince the result is a non-terminating and non-repeating decimal, we can express it as a fraction by keeping the negative sign and simply putting the original numbers into fraction form:\n\n-268377/55\n\nThis fraction cannot be simplified further as 268377 and 55 share no common factors other than 1.\n\nThe answer to this question is $\\boxed{-\\frac{268377}{55}}$\n"
+        ],
+        "ans_list": [
+            "268377"
+        ],
+        "final_answer": "268377",
+        "Correctness": false
+    },
+    {
+        "question": "-4+(-6)=",
+        "no": 155,
+        "solution": "-10",
+        "ans_sampling": [
+            "-4 + (-6) means we are adding two negative numbers.\n\nWhen we add two negative numbers, we add their absolute values and keep the negative sign.\n\n|-4| = 4\n|-6| = 6\n\n4 + 6 = 10\n\nSince both numbers are negative, the sum is also negative.\n\n-4 + (-6) = -10\n\nThe answer to this question is $\\boxed{-10}$.\n"
+        ],
+        "ans_list": [
+            "-10"
+        ],
+        "final_answer": "-10",
+        "Correctness": true
+    },
+    {
+        "question": "What is -10 + (-5 - -2 - -5) + (0 - -14)?",
+        "no": 54,
+        "solution": "6",
+        "ans_sampling": [
+            "1. **Solve the innermost parentheses first:**\n(-5 - -2 - -5) = (-5 + 2 + 5) = 2\n\n2. **Solve the next set of parentheses:**\n(0 - -14) = (0 + 14) = 14\n\n3. **Substitute the results back into the original expression:**\n-10 + 2 + 14\n\n4. **Perform the addition:**\n-10 + 2 = -8\n-8 + 14 = 6\n\nThe answer to this question is $\\boxed{6}$.\n"
+        ],
+        "ans_list": [
+            "6"
+        ],
+        "final_answer": "6",
+        "Correctness": true
+    },
+    {
+        "question": "Divide 3 by -868009, please return the calculation result in its simplest fraction form.",
+        "no": 23,
+        "solution": "-3/868009",
+        "ans_sampling": [
+            "The fraction is $\\frac{3}{-868009}$. Since the denominator is negative, we can write the fraction as $-\\frac{3}{868009}$.\n\nWe look for common factors between 3 and 868009. Since the sum of the digits of 868009 is $8+6+8+0+0+9=31$, which is not divisible by 3, then 868009 is not divisible by 3. Thus, 3 and 868009 have no common factors other than 1, meaning that the fraction is already in its simplest form.\n\nThe answer to this question is $\\boxed{-\\frac{3}{868009}}$.\n"
+        ],
+        "ans_list": [
+            "3"
+        ],
+        "final_answer": "3",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate (-75 - (9 + -11 - 13))/(-3).",
+        "no": 103,
+        "solution": "20",
+        "ans_sampling": [
+            "1. **Simplify the innermost parentheses:**\n   9 + (-11) - 13 = 9 - 11 - 13 = -2 - 13 = -15\n\n\n2. **Substitute back into the expression:**\n   (-75 - (-15))/(-3)\n\n\n3. **Simplify the numerator:**\n   -75 - (-15) = -75 + 15 = -60\n\n\n4. **Divide:**\n   -60 / (-3) = 20\n\nThe answer to this question is $\\boxed{20}$.\n"
+        ],
+        "ans_list": [
+            "20"
+        ],
+        "final_answer": "20",
+        "Correctness": true
+    },
+    {
+        "question": "-7+(-1)=",
+        "no": 154,
+        "solution": "-8",
+        "ans_sampling": [
+            "-7 + (-1) means we are adding two negative numbers.\n\nWhen adding two negative numbers, we add their absolute values and keep the negative sign.\n\nThe absolute value of -7 is 7.\nThe absolute value of -1 is 1.\n\n7 + 1 = 8\n\nSince both numbers were negative, the result is also negative.  So, -7 + (-1) = -8\n\nThe answer to this question is $\\boxed{-8}$\n"
+        ],
+        "ans_list": [
+            "-8"
+        ],
+        "final_answer": "-8",
+        "Correctness": true
+    },
+    {
+        "question": "Work out 0.24 - 14.77954104.",
+        "no": 43,
+        "solution": "-14.53954104",
+        "ans_sampling": [
+            "0.24 - 14.77954104\n\nSince we are subtracting a larger number from a smaller number, the result will be negative.  We can rewrite the problem as -(14.77954104 - 0.24).\n\n14.77954104\n-  0.24\n-----------\n14.53954104\n\nSo, 0.24 - 14.77954104 = -14.53954104\n\nThe answer to this question is $\\boxed{-14.53954104}$.\n"
+        ],
+        "ans_list": [
+            "-14.53954104"
+        ],
+        "final_answer": "-14.53954104",
+        "Correctness": true
+    },
+    {
+        "question": "-1 - (9 + -11) - (-9 + 13) - 0 - -28",
+        "no": 98,
+        "solution": "25",
+        "ans_sampling": [
+            "1. **Solve the expressions inside the parentheses:**\n   (9 + -11) = -2\n   (-9 + 13) = 4\n\n2. **Substitute the results back into the original expression:**\n   -1 - (-2) - (4) - 0 - -28\n\n3. **Simplify the double negatives:**\n   -1 + 2 - 4 - 0 + 28\n\n4. **Perform the additions and subtractions from left to right:**\n   -1 + 2 = 1\n   1 - 4 = -3\n   -3 - 0 = -3\n   -3 + 28 = 25\n\nThe answer to this question is $\\boxed{25}$.\n"
+        ],
+        "ans_list": [
+            "25"
+        ],
+        "final_answer": "25",
+        "Correctness": true
+    },
+    {
+        "question": "What is 22 - 459055.4726?",
+        "no": 105,
+        "solution": "-459033.4726",
+        "ans_sampling": [
+            "22 - 459055.4726 = -459033.4726\n\nThe answer to this question is \\boxed{-459033.4726}\n"
+        ],
+        "ans_list": [
+            "-459033.4726"
+        ],
+        "final_answer": "-459033.4726",
+        "Correctness": true
+    },
+    {
+        "question": "What is (72/(-3528)*-49)/((-1)/19)?",
+        "no": 106,
+        "solution": "-19",
+        "ans_sampling": [
+            "1. **Simplify the innermost parentheses:** 72/(-3528) * -49 = (72 * -49) / -3528  \n2. **Calculate the numerator:** 72 * -49 = -3528\n3. **Divide the numerator by the denominator:** -3528 / -3528 = 1\n4. **Substitute back into the original expression:** (1) / (-1/19)\n5. **Divide by a fraction is the same as multiplying by its reciprocal:** 1 * (-19/1) = 1 * -19 = -19\n \nThe answer to this question is $\\boxed{-19}$\n"
+        ],
+        "ans_list": [
+            "-19"
+        ],
+        "final_answer": "-19",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-1 - -6) + 6 - (16 + (-31 - -61))?",
+        "no": 42,
+        "solution": "-35",
+        "ans_sampling": [
+            "1. **Simplify the innermost parentheses:**\n(-31 - -61) = (-31 + 61) = 30\n\n2. **Simplify the second parentheses:**\n(16 + 30) = 46\n\n3. **Simplify the first parentheses:**\n(-1 - -6) = (-1 + 6) = 5\n\n4. **Substitute the simplified parentheses into the expression:**\n5 + 6 - 46\n\n5. **Perform the addition:**\n5 + 6 = 11\n\n6. **Perform the subtraction:**\n11 - 46 = -35\n\n\nThe answer to this question is $\\boxed{-35}$.\n"
+        ],
+        "ans_list": [
+            "-35"
+        ],
+        "final_answer": "-35",
+        "Correctness": true
+    },
+    {
+        "question": "What is the product of 56397 and -21.6?",
+        "no": 111,
+        "solution": "-1218175.2",
+        "ans_sampling": [
+            "56397 * -21.6\n\nWe can perform this multiplication:\n\n56397 * -21.6 = -1218295.2\n\nThe answer to this question is $\\boxed{-1218295.2}$.\n"
+        ],
+        "ans_list": [
+            "-1218295.2"
+        ],
+        "final_answer": "-1218295.2",
+        "Correctness": false
+    },
+    {
+        "question": "What is -405.456 plus -58144?",
+        "no": 117,
+        "solution": "-58549.456",
+        "ans_sampling": [
+            "-405.456 plus -58144 is the same as -405.456 + (-58144).\n\nAdding two negative numbers results in a negative number.  We can add the absolute values of the numbers and then make the sum negative.\n\n405.456 + 58144 = 58549.456\n\nSince both numbers are negative, the sum is negative.\n\nTherefore, -405.456 + (-58144) = -58549.456\n\nThe answer to this question is $\\boxed{-58549.456}$\n"
+        ],
+        "ans_list": [
+            "-58549.456"
+        ],
+        "final_answer": "-58549.456",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -231*1779.",
+        "no": 49,
+        "solution": "-410949",
+        "ans_sampling": [
+            "-231 * 1779\n\nFirst, we can ignore the negative sign and multiply 231 by 1779:\n```\n      1779\n    x  231\n-----------\n      1779\n     53370\n    355800\n-----------\n    410949 \n```\n\nSince we are multiplying a negative number (-231) by a positive number (1779), the result will be negative.\n\nTherefore, -231 * 1779 = -410949\n\nThe answer to this question is $\\boxed{-410949}$.\n"
+        ],
+        "ans_list": [
+            "-410949"
+        ],
+        "final_answer": "-410949",
+        "Correctness": true
+    },
+    {
+        "question": "53+27=",
+        "no": 182,
+        "solution": "80",
+        "ans_sampling": [
+            "53 + 27 = 80\n\nThe answer to this question is $\\boxed{80}$\n"
+        ],
+        "ans_list": [
+            "80"
+        ],
+        "final_answer": "80",
+        "Correctness": true
+    },
+    {
+        "question": "69+6=",
+        "no": 189,
+        "solution": "75",
+        "ans_sampling": [
+            "69 + 6 = 75\n\nThe answer to this question is $\\boxed{75}$\n"
+        ],
+        "ans_list": [
+            "75"
+        ],
+        "final_answer": "75",
+        "Correctness": true
+    },
+    {
+        "question": "Work out -5989 * -1804.",
+        "no": 142,
+        "solution": "10804156",
+        "ans_sampling": [
+            "-5989 * -1804\n\nSince both numbers are negative, the product will be positive.\n\nWe can perform the multiplication:\n\n5989 * 1804\n\n  5989\nx 1804\n-------\n 23956\n   0000\n479120\n598900\n-------\n10804156\n\nTherefore, -5989 * -1804 = 10804156\n\nThe answer to this question is $\\boxed{10804156}$\n"
+        ],
+        "ans_list": [
+            "10804156"
+        ],
+        "final_answer": "10804156",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 104416/10040*(-10)/(-4).",
+        "no": 96,
+        "solution": "26",
+        "ans_sampling": [
+            "1. Simplify the expression:\n104416/10040 * (-10)/(-4)\n\n2.  Notice that the two negatives cancel each other out:\n104416/10040 * 10/4\n\n3. Divide 10 by 4:\n104416/10040 * 2.5\n\n4.  Divide 104416 by 10040:\n10.4 * 2.5\n\n5. Multiply 10.4 by 2.5:\n26\n\nThe answer to this question is $\\boxed{26}$.\n"
+        ],
+        "ans_list": [
+            "26"
+        ],
+        "final_answer": "26",
+        "Correctness": true
+    },
+    {
+        "question": "8+56=",
+        "no": 183,
+        "solution": "64",
+        "ans_sampling": [
+            "8 + 56 = 64\n\nThe answer to this question is $\\boxed{64}$\n"
+        ],
+        "ans_list": [
+            "64"
+        ],
+        "final_answer": "64",
+        "Correctness": true
+    },
+    {
+        "question": "65+82=",
+        "no": 180,
+        "solution": "147",
+        "ans_sampling": [
+            "Step 1: Add the ones digits: 5 + 2 = 7\n\nStep 2: Add the tens digits: 6 + 8 = 14\n\nStep 3: Combine the tens and ones: 14 tens and 7 ones is 147.\n\nThe answer to this question is $\\boxed{147}$.\n"
+        ],
+        "ans_list": [
+            "147"
+        ],
+        "final_answer": "147",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate -5145497473 - -1.7.",
+        "no": 113,
+        "solution": "-5145497471.3",
+        "ans_sampling": [
+            "-5145497473 - -1.7 can be rewritten as -5145497473 + 1.7.\n\nCalculating the sum:\n\n-5145497473 + 1.7 = -5145497471.3\n\nThe answer to this question is $\\boxed{-5145497471.3}$.\n"
+        ],
+        "ans_list": [
+            "-5145497471.3"
+        ],
+        "final_answer": "-5145497471.3",
+        "Correctness": true
+    },
+    {
+        "question": "What is 119240 divided by -7, please return the calculation result in its simplest fraction form.",
+        "no": 121,
+        "solution": "-119240/7",
+        "ans_sampling": [
+            "119240 divided by -7 can be written as:\n\n119240 / -7\n\nWe perform the division:\n\n119240 / -7 = -17034.285714285715\n\nSince we want the answer in its simplest fraction form, we recognize that the decimal portion repeats.  We calculate the fraction as follows:\n\n119240 / -7 = -17034 and a remainder of 2.  This means we have -17034 and 2/-7.\n\nSo we have -17034 - 2/7 which can be written as $-\\frac{119240}{7}$.\n\nThe answer to this question is $\\boxed{-\\frac{119240}{7}}$\n"
+        ],
+        "ans_list": [
+            "119240"
+        ],
+        "final_answer": "119240",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate 13/((-351)/(-9))*(-6)/(-10)*-2*-35.",
+        "no": 41,
+        "solution": "14",
+        "ans_sampling": [
+            "1. Simplify the fraction within the parenthesis:\n(-351)/(-9) = 39\n\n2. Substitute this value back into the expression:\n13/39 * (-6)/(-10) * -2 * -35\n\n3. Simplify the fractions:\n13/39 = 1/3\n(-6)/(-10) = 3/5\n\n4. Substitute the simplified fractions back into the expression:\n(1/3) * (3/5) * -2 * -35\n\n5. Perform the multiplications:\n(1/3) * (3/5) = 1/5\n(1/5) * -2 = -2/5\n(-2/5) * -35 = (-2 * -35)/5 = 70/5 = 14\n\nThe answer to this question is $\\boxed{14}$.\n"
+        ],
+        "ans_list": [
+            "14"
+        ],
+        "final_answer": "14",
+        "Correctness": true
+    },
+    {
+        "question": "What is ((-129)/(-15))/((-906)/(-4530))?",
+        "no": 83,
+        "solution": "43",
+        "ans_sampling": [
+            "First, we simplify the expression within the first set of parentheses:\n(-129)/(-15) = 129/15 = 43/5\n\nNext, we simplify the expression within the second set of parentheses:\n(-906)/(-4530) = 906/4530 = 1/5\n\nNow we have the expression (43/5)/(1/5). To divide by a fraction, we multiply by its reciprocal:\n(43/5) * (5/1) = (43*5)/(5*1) = 215/5 = 43\n\nThe answer to this question is $\\boxed{43}$.\n"
+        ],
+        "ans_list": [
+            "43"
+        ],
+        "final_answer": "43",
+        "Correctness": true
+    },
+    {
+        "question": "What is (25 - (-5 - -9)) + -21 + -6?",
+        "no": 131,
+        "solution": "-6",
+        "ans_sampling": [
+            "1. **Simplify the inner parentheses:**\n(-5 - -9) = (-5 + 9) = 4\n\n2. **Substitute the simplified expression back into the original expression:**\n(25 - 4) + -21 + -6\n\n3. **Simplify the parentheses:**\n(25 - 4) = 21\n\n4. **Substitute the simplified expression back into the expression:**\n21 + -21 + -6\n\n5. **Simplify the addition from left to right:**\n21 + -21 = 0\n\n6. **Substitute the simplified expression back into the expression:**\n0 + -6\n\n7. **Simplify the addition:**\n0 + -6 = -6\n\nThe answer to this question is $\\boxed{-6}$\n"
+        ],
+        "ans_list": [
+            "-6"
+        ],
+        "final_answer": "-6",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 16817559 divided by 3.",
+        "no": 130,
+        "solution": "5605853",
+        "ans_sampling": [
+            "16817559 / 3\n\nWe perform long division:\n\n         5605853\n     ____________\n3 | 16817559\n     15\n     ---\n      18\n      18\n      ---\n       01\n       00\n       ---\n        17\n        15\n        ---\n         25\n         24\n         ---\n          15\n          15\n          ---\n           09\n           09\n           ---\n            0\n\nTherefore, 16817559 divided by 3 is 5605853.\n\nThe answer to this question is $\\boxed{5605853}$\n"
+        ],
+        "ans_list": [
+            "5605853"
+        ],
+        "final_answer": "5605853",
+        "Correctness": true
+    },
+    {
+        "question": "What is 0.3158 times 0.0092?",
+        "no": 135,
+        "solution": "0.00290536",
+        "ans_sampling": [
+            "1. Multiply the numbers as if they were whole numbers: 3158 * 92 = 290536\n\n2. Count the total number of decimal places in both original numbers: 0.3158 has 4 decimal places, and 0.0092 has 3 decimal places. In total, there are 4 + 3 = 7 decimal places.\n\n3. Place the decimal point in the product from step 1. Since there are 7 decimal places, move the decimal point 7 places to the left:\n290536 becomes 0.00290536\n\nThe answer to this question is $\\boxed{0.00290536}$\n"
+        ],
+        "ans_list": [
+            "0.00290536"
+        ],
+        "final_answer": "0.00290536",
+        "Correctness": true
+    },
+    {
+        "question": "Add together -649.022354 and -209.",
+        "no": 102,
+        "solution": "-858.022354",
+        "ans_sampling": [
+            "1. We are asked to add -649.022354 and -209.\n\n2.  This can be written as: -649.022354 + (-209)\n\n3. Since both numbers are negative, we add their absolute values and keep the negative sign.\n\n4.  649.022354 + 209 = 858.022354\n\n5.  Thus, -649.022354 + (-209) = -858.022354.\n\nThe answer to this question is $\\boxed{-858.022354}$\n"
+        ],
+        "ans_list": [
+            "-858.022354"
+        ],
+        "final_answer": "-858.022354",
+        "Correctness": true
+    },
+    {
+        "question": "Divide -18829 by 364, please return the calculation result in its simplest fraction form.",
+        "no": 84,
+        "solution": "-18829/364",
+        "ans_sampling": [
+            "To divide -18829 by 364, we perform the division and express the result as a fraction.\n\n-18829 \u00f7 364 = -51.728021978\n\nSince we need to express the result as a fraction, we can write the division as:\n$$ \\frac{-18829}{364} $$\n\nWe can check if the numerator and denominator share any common factors to simplify the fraction.\n\nSince 364 = 4 * 91 = 2 * 2 * 7 * 13 and -18829 is not divisible by 2, 7, or 13, the fraction is already in its simplest form.\n\nThe answer to this question is $\\boxed{\\frac{-18829}{364}}$.\n"
+        ],
+        "ans_list": [
+            "-18829"
+        ],
+        "final_answer": "-18829",
+        "Correctness": false
+    },
+    {
+        "question": "2-2=",
+        "no": 179,
+        "solution": "0",
+        "ans_sampling": [
+            "2 - 2 = 0\n\nThe answer to this question is $\\boxed{0}$\n"
+        ],
+        "ans_list": [
+            "0"
+        ],
+        "final_answer": "0",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate (4/(-8)*(-32)/4)/(115/(-5)), please return the calculation result in its simplest fraction form.",
+        "no": 29,
+        "solution": "-4/23",
+        "ans_sampling": [
+            "First, we calculate 4/(-8) * (-32)/4:\n4/(-8) = -1/2\n(-32)/4 = -8\nSo, 4/(-8) * (-32)/4 = (-1/2) * (-8) = 4\n\nNext, we calculate 115/(-5):\n115/(-5) = -23\n\nNow we calculate (4/(-8) * (-32)/4) / (115/(-5)), which simplifies to 4 / (-23).\nSo, 4/(-23) = -4/23\n\nThe answer to this question is $\\boxed{-\\frac{4}{23}}$\n"
+        ],
+        "ans_list": [
+            "4"
+        ],
+        "final_answer": "4",
+        "Correctness": false
+    },
+    {
+        "question": "What is 149913 divided by -6, please return the calculation result in its simplest fraction form.",
+        "no": 137,
+        "solution": "-49971/2",
+        "ans_sampling": [
+            "149913 divided by -6 can be written as:\n\n149913 / -6\n\nSince 149913 is not divisible by 6, we can express it as a fraction:\n\n-149913/6 \n\nWe simplify the fraction by finding the greatest common divisor (GCD) of the numerator and denominator. In this case, both 149913 and 6 are divisible by 3.\n\n149913 \u00f7 3 = 49971\n6 \u00f7 3 = 2\n\nSo the simplified fraction is -49971/2.\n\nThe answer to this question is $\\boxed{-\\frac{49971}{2}}$\n"
+        ],
+        "ans_list": [
+            "49971"
+        ],
+        "final_answer": "49971",
+        "Correctness": false
+    },
+    {
+        "question": "4+3=",
+        "no": 167,
+        "solution": "7",
+        "ans_sampling": [
+            "4 + 3 = 7\n\nThe answer to this question is $\\boxed{7}$\n"
+        ],
+        "ans_list": [
+            "7"
+        ],
+        "final_answer": "7",
+        "Correctness": true
+    },
+    {
+        "question": "5-1=",
+        "no": 178,
+        "solution": "4",
+        "ans_sampling": [
+            "5 - 1 = 4\n\nThe answer to this question is $\\boxed{4}$\n"
+        ],
+        "ans_list": [
+            "4"
+        ],
+        "final_answer": "4",
+        "Correctness": true
+    },
+    {
+        "question": "34+61=",
+        "no": 187,
+        "solution": "95",
+        "ans_sampling": [
+            "34 + 61 = 95\n\nThe answer to this question is $\\boxed{95}$\n"
+        ],
+        "ans_list": [
+            "95"
+        ],
+        "final_answer": "95",
+        "Correctness": true
+    },
+    {
+        "question": "What is -19 + -35.556387?",
+        "no": 44,
+        "solution": "-54.556387",
+        "ans_sampling": [
+            "-19 + -35.556387 is the same as -19 - 35.556387.\nBoth numbers are negative, so we add their absolute values and keep the negative sign.\n19 + 35.556387 = 54.556387\n\nSince both numbers are negative, the sum is also negative. So, -19 + -35.556387 = -54.556387\n\nThe answer to this question is $\\boxed{-54.556387}$.\n"
+        ],
+        "ans_list": [
+            "-54.556387"
+        ],
+        "final_answer": "-54.556387",
+        "Correctness": true
+    },
+    {
+        "question": "Subtract -1.501521007 from -0.1.",
+        "no": 46,
+        "solution": "1.401521007",
+        "ans_sampling": [
+            "We are asked to subtract -1.501521007 from -0.1. This can be written as:\n\n-0.1 - (-1.501521007)\n\nSubtracting a negative number is the same as adding its positive counterpart.  So, we have:\n\n-0.1 + 1.501521007\n\nNow, we perform the addition:\n\n1.501521007 - 0.1 = 1.401521007\n\nThe answer to this question is $\\boxed{1.401521007}$.\n"
+        ],
+        "ans_list": [
+            "1.401521007"
+        ],
+        "final_answer": "1.401521007",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of 6 - (8 + 9 + (-5 - -6) + -49 - -9)?",
+        "no": 70,
+        "solution": "28",
+        "ans_sampling": [
+            "1. **Simplify the innermost parentheses:**\n(-5 - -6) = (-5 + 6) = 1\n\n2. **Simplify the double negatives:**\n-49 - -9 = -49 + 9 = -40\n\n3. **Substitute the simplified expressions back into the original expression:**\n6 - (8 + 9 + 1 + -40)\n\n4. **Simplify the expression within the parentheses:**\n8 + 9 + 1 + -40 = 18 - 40 = -22\n\n5. **Substitute the simplified expression back into the original expression:**\n6 - (-22)\n\n6. **Simplify the subtraction of a negative number:**\n6 - (-22) = 6 + 22 = 28\n\nThe answer to this question is $\\boxed{28}$\n"
+        ],
+        "ans_list": [
+            "28"
+        ],
+        "final_answer": "28",
+        "Correctness": true
+    },
+    {
+        "question": "What is -9*5/(-20)*8/(-12), please return the calculation result in its simplest fraction form.",
+        "no": 45,
+        "solution": "-3/2",
+        "ans_sampling": [
+            "-9 * 5 / (-20) * 8 / (-12)\n\nFirst, we perform the multiplication in the numerator:\n-9 * 5 = -45\n\nAnd the multiplication in the denominator:\n(-20) * (-12) = 240\n\nSo we have:\n-45 / 240 * 8\n\nNow, multiplying the fraction by 8:\n(-45 * 8) / 240\n-360 / 240\n\nNow, simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 120:\n-360 / 120 = -3\n240 / 120 = 2\n\nSo the simplified fraction is -3/2.\n\nThe answer to this question is $\\boxed{-\\frac{3}{2}}$.\n"
+        ],
+        "ans_list": [
+            "3"
+        ],
+        "final_answer": "3",
+        "Correctness": false
+    },
+    {
+        "question": "16+59=",
+        "no": 191,
+        "solution": "75",
+        "ans_sampling": [
+            "16 + 59 = 75\n\nThe answer to this question is \\boxed{75}\n"
+        ],
+        "ans_list": [
+            "75"
+        ],
+        "final_answer": "75",
+        "Correctness": true
+    },
+    {
+        "question": "Evaluate -3*34*35/3570.",
+        "no": 64,
+        "solution": "-1",
+        "ans_sampling": [
+            "First, we can rewrite the expression as:\n\n-3 * 34 * 35 / 3570\n\nWe can simplify the expression by canceling out the common factor of 35:\n\n-3 * 34 * 1 / (3570/35)\n\nNow, we divide 3570 by 35:\n3570 / 35 = 102\n\nSo the expression becomes:\n-3 * 34 / 102\n\nNow we can multiply -3 by 34:\n-3 * 34 = -102\n\nSo the expression becomes:\n-102 / 102\n\nDividing -102 by 102 gives us:\n-1\n\nThe answer to this question is $\\boxed{-1}$.\n"
+        ],
+        "ans_list": [
+            "-1"
+        ],
+        "final_answer": "-1",
+        "Correctness": true
+    },
+    {
+        "question": "-5087*-814",
+        "no": 47,
+        "solution": "4140818",
+        "ans_sampling": [
+            "-5087 * -814\n\nSince we are multiplying two negative numbers, the result will be positive.\n\n5087 * 814\n\n5087 * 814 can be calculated as follows:\n5087 * (800 + 10 + 4)\n= (5087 * 800) + (5087 * 10) + (5087 * 4)\n= 4069600 + 50870 + 20348\n= 4069600 + 71218\n= 4140818\n\n\nTherefore, -5087 * -814 = 4140818.\n\nThe answer to this question is $\\boxed{4140818}$\n"
+        ],
+        "ans_list": [
+            "4140818"
+        ],
+        "final_answer": "4140818",
+        "Correctness": true
+    },
+    {
+        "question": "-8+9=",
+        "no": 162,
+        "solution": "1",
+        "ans_sampling": [
+            "-8 + 9 is the same as 9 - 8.\n\n9 - 8 = 1\n\nThe answer to this question is $\\boxed{1}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": true
+    },
+    {
+        "question": "636+766=",
+        "no": 202,
+        "solution": "1402",
+        "ans_sampling": [
+            "636 + 766 = 1402\n\nThe answer to this question is $\\boxed{1402}$\n"
+        ],
+        "ans_list": [
+            "1402"
+        ],
+        "final_answer": "1402",
+        "Correctness": true
+    },
+    {
+        "question": "97-82=",
+        "no": 193,
+        "solution": "15",
+        "ans_sampling": [
+            "97 - 82 = 15\n\nThe answer to this question is $\\boxed{15}$\n"
+        ],
+        "ans_list": [
+            "15"
+        ],
+        "final_answer": "15",
+        "Correctness": true
+    },
+    {
+        "question": "-4 + -1 - (-64 + 93 + -84)",
+        "no": 128,
+        "solution": "50",
+        "ans_sampling": [
+            "1. **Simplify inside the parentheses:**\n-64 + 93 + -84 = -64 + 93 - 84 \n                    = 29 - 84\n                    = -55\n\n2. **Substitute the simplified expression back into the original expression:**\n-4 + -1 - (-55) = -4 - 1 + 55\n\n3. **Perform addition and subtraction from left to right:**\n-4 - 1 + 55 = -5 + 55\n              = 50\n\nThe answer to this question is $\\boxed{50}$.\n"
+        ],
+        "ans_list": [
+            "50"
+        ],
+        "final_answer": "50",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate (2 + 2 - 2)/(-5) - (-23)/((-4600)/7920).",
+        "no": 28,
+        "solution": "-40",
+        "ans_sampling": [
+            "1. **Simplify the numerator of the first fraction:**\n   (2 + 2 - 2) = 2\n\n2. **Simplify the first fraction:**\n   2/(-5) = -2/5 = -0.4\n\n3. **Simplify the denominator of the second fraction:**\n   (-4600)/7920 = -4600/7920 = -460/792 = -5/8.8 = -0.56818181818... (approximately)\n\n4. **Simplify the second fraction:**\n   (-23)/(-4600/7920) = (-23)/(-5/8.8) = -23 * (-8.8/5) = -23 * (-1.76) = 40.48\n\n5. **Perform the subtraction:**\n   -0.4 - 40.48 = -40.88\n\nThe answer to this question is $\\boxed{-40.88}$.\n"
+        ],
+        "ans_list": [
+            "-40.88"
+        ],
+        "final_answer": "-40.88",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate (125/(-15) - -7) + (4 - 40/15).",
+        "no": 73,
+        "solution": "0",
+        "ans_sampling": [
+            "1. **Calculate 125/(-15):**\n   125 / (-15) = -25/3\n\n2. **Calculate -(-7):**\n   -(-7) = 7\n\n3. **Calculate (125/(-15) - -7):**\n   -25/3 + 7 = -25/3 + 21/3 = -4/3\n\n4. **Calculate 40/15:**\n   40/15 = 8/3\n\n5. **Calculate (4 - 40/15):**\n   4 - 8/3 = 12/3 - 8/3 = 4/3\n\n6. **Calculate (125/(-15) - -7) + (4 - 40/15):**\n   -4/3 + 4/3 = 0\n\n\nThe answer to this question is $\\boxed{0}$.\n"
+        ],
+        "ans_list": [
+            "0"
+        ],
+        "final_answer": "0",
+        "Correctness": true
+    },
+    {
+        "question": "21+97=",
+        "no": 184,
+        "solution": "118",
+        "ans_sampling": [
+            "21 + 97 = 118\n\nThe answer to this question is $\\boxed{118}$\n"
+        ],
+        "ans_list": [
+            "118"
+        ],
+        "final_answer": "118",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of 14883/242*28/(-42)?",
+        "no": 91,
+        "solution": "-41",
+        "ans_sampling": [
+            "1. Simplify the expression:\n\n14883/242 * 28/(-42)\n\n2. Perform the division 14883/242:\n\n14883 \u00f7 242 \u2248 61.5\n\n3. Simplify the fraction 28/(-42) by dividing both numerator and denominator by 14:\n\n28/(-42) = 2/(-3) = -2/3\n\n4. Now multiply the results of steps 2 and 3:\n\n61.5 * (-2/3)\n\n5. Convert 61.5 to a fraction to make the multiplication easier:\n\n61.5 = 61 + 1/2 = 123/2\n\n6. Multiply the fractions:\n\n(123/2) * (-2/3) = (123 * -2) / (2 * 3) = -246 / 6\n\n7. Simplify the fraction:\n\n-246/6 = -41\n\nThe answer to this question is $\\boxed{-41}$.\n"
+        ],
+        "ans_list": [
+            "-41"
+        ],
+        "final_answer": "-41",
+        "Correctness": true
+    },
+    {
+        "question": "501+515=",
+        "no": 201,
+        "solution": "1016",
+        "ans_sampling": [
+            "501 + 515 = 1016\n\nThe answer to this question is $\\boxed{1016}$\n"
+        ],
+        "ans_list": [
+            "1016"
+        ],
+        "final_answer": "1016",
+        "Correctness": true
+    },
+    {
+        "question": "26+10=",
+        "no": 192,
+        "solution": "36",
+        "ans_sampling": [
+            "26 + 10 = 36\n\nThe answer to this question is $\\boxed{36}$\n"
+        ],
+        "ans_list": [
+            "36"
+        ],
+        "final_answer": "36",
+        "Correctness": true
+    },
+    {
+        "question": "2+4=",
+        "no": 188,
+        "solution": "6",
+        "ans_sampling": [
+            "2 + 4 = 6\n\nThe answer to this question is $\\boxed{6}$\n"
+        ],
+        "ans_list": [
+            "6"
+        ],
+        "final_answer": "6",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of ((-192)/(-28))/((-84)/(-6174)*-21)?",
+        "no": 38,
+        "solution": "-24",
+        "ans_sampling": [
+            "1. **Simplify the first part of the expression**:\n(-192)/(-28) = 192/28 = 48/7\n\n2. **Simplify the second part of the expression**:\n(-84)/(-6174) = 84/6174 = 14/1029\n\n3. **Multiply this fraction by -21**:\n(14/1029) * -21 = (-294/1029) = (-14/49)\n\n4. **Now we have the expression**:\n(48/7) / (-14/49)\n\n5. **Division by a fraction is the same as multiplication by its reciprocal**:\n(48/7) * (-49/14) = (48 * -49) / (7 * 14)\n\n6. **Simplify the expression**:\n(48 * -7) / 14 = -336 / 14 = -24\n\nThe answer to this question is $\\boxed{-24}$.\n"
+        ],
+        "ans_list": [
+            "-24"
+        ],
+        "final_answer": "-24",
+        "Correctness": true
+    },
+    {
+        "question": "Evaluate 26*(-10)/13*(-78)/130.",
+        "no": 81,
+        "solution": "12",
+        "ans_sampling": [
+            "1. **Simplify the first fraction:** 26/13 = 2\n\n2. **Simplify the second fraction:** -78/130 can be simplified by dividing both numerator and denominator by 2:\n-78/2 = -39\n130/2 = 65\nSo, -78/130 = -39/65\n\nWe can further simplify this fraction by dividing both numerator and denominator by 13:\n-39/13 = -3\n65/13 = 5\nSo, -78/130 = -3/5\n\n3. **Rewrite the expression:** The original expression is now: 2*(-10)*(-3/5)\n\n4. **Multiply the numbers:** 2*(-10) = -20\n-20*(-3/5) = (-20*-3)/5 = 60/5 = 12\n\nThe answer to this question is $\\boxed{12}$.\n"
+        ],
+        "ans_list": [
+            "12"
+        ],
+        "final_answer": "12",
+        "Correctness": true
+    },
+    {
+        "question": "16+73=",
+        "no": 190,
+        "solution": "89",
+        "ans_sampling": [
+            "16 + 73 = 89\n\nThe answer to this question is $\\boxed{89}$\n"
+        ],
+        "ans_list": [
+            "89"
+        ],
+        "final_answer": "89",
+        "Correctness": true
+    },
+    {
+        "question": "What is the distance between 89751.84439 and -0.3?",
+        "no": 95,
+        "solution": "89752.14439",
+        "ans_sampling": [
+            "1. **Find the difference:** To find the distance between two numbers on a number line, we find the absolute difference between them. In other words, we subtract the smaller number from the larger number.  Here, 89751.84439 is the larger number and -0.3 is the smaller number.\n\n2. **Calculate the difference:**  89751.84439 - (-0.3) = 89751.84439 + 0.3 = 89752.14439\n\n3. **Consider the absolute value:** Since distance must be positive, if the difference was negative, we would take the absolute value. In this case, the difference is already positive.\n\nTherefore, the distance between 89751.84439 and -0.3 is 89752.14439.\n\nThe answer to this question is $\\boxed{89752.14439}$.\n"
+        ],
+        "ans_list": [
+            "89752.14439"
+        ],
+        "final_answer": "89752.14439",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate ((-3)/(-7)*56/(-48))/(-1), please return the calculation result in its simplest fraction form.",
+        "no": 140,
+        "solution": "1/2",
+        "ans_sampling": [
+            "1. **Simplify the fraction inside the parentheses:**\n\n(-3)/(-7) * 56/(-48) = (3/7) * (56/(-48))\n\n2. **Simplify further:**\n\n(3/7) * (56/(-48)) = (3/7) * (-7/6)  (Since 56/(-48) simplifies to -7/6 by dividing both numerator and denominator by 8)\n\n\n3. **Multiply the fractions:**\n\n(3/7) * (-7/6) = (3 * -7) / (7 * 6) = -21 / 42\n\n4. **Simplify the resulting fraction:**\n\n-21/42 = -1/2 (by dividing both numerator and denominator by 21)\n\n\n5. **Divide by -1:**\n(-1/2) / (-1) = -1/2 * -1/1 = 1/2\n\nThe answer to this question is $\\boxed{1/2}$\n"
+        ],
+        "ans_list": [
+            "2"
+        ],
+        "final_answer": "2",
+        "Correctness": false
+    },
+    {
+        "question": "What is (48/96)/(276/144), please return the calculation result in its simplest fraction form.",
+        "no": 58,
+        "solution": "6/23",
+        "ans_sampling": [
+            "First, we have the expression (48/96)/(276/144).\n\nWe can rewrite the division of fractions as multiplication by the reciprocal of the second fraction:\n\n(48/96) / (276/144) = (48/96) * (144/276)\n\nNow we can simplify the fractions before multiplying:\n\n48/96 simplifies to 1/2 (since 48 * 2 = 96)\n144/276 simplifies to 12/23 (since both numbers are divisible by 12)\n\nSo now we have:\n\n(1/2) * (12/23)\n\nMultiply the numerators and the denominators:\n\n(1 * 12) / (2 * 23) = 12/46\n\nWe can simplify this fraction further by dividing both the numerator and the denominator by 2:\n\n12/46 = 6/23\n\nThe answer to this question is $\\boxed{6/23}$.\n"
+        ],
+        "ans_list": [
+            "23"
+        ],
+        "final_answer": "23",
+        "Correctness": false
+    },
+    {
+        "question": "32 divided by -430524, please return the calculation result in its simplest fraction form.",
+        "no": 19,
+        "solution": "-8/107631",
+        "ans_sampling": [
+            "1. We have the division 32 / -430524.\n\n2. Since we have a positive number divided by a negative number, the result will be negative.\n\n3. We can simplify the fraction by finding the greatest common divisor (GCD) of 32 and 430524.  First, find the prime factorization of 32: 32 = 2^5.\nNow, we can check if 2 divides 430524. Since 430524 is an even number, it is divisible by 2.  430524 = 2 * 215262 = 2^2 * 107631.\nSo, the GCD of 32 and 430524 is 2^2 = 4.\n\n4. Divide both the numerator and denominator by the GCD:\n32 / 4 = 8\n430524 / 4 = 107631\n\n5. So the simplified fraction is 8/-107631 or -8/107631.\n\nThe answer to this question is $\\boxed{-\\frac{8}{107631}}$.\n"
+        ],
+        "ans_list": [
+            "8"
+        ],
+        "final_answer": "8",
+        "Correctness": false
+    },
+    {
+        "question": "Put together -3 and -20443241839.",
+        "no": 79,
+        "solution": "-20443241842",
+        "ans_sampling": [
+            "We are asked to put together -3 and -20443241839.  \"Put together\" means to add.\n\nSo, we need to calculate -3 + (-20443241839).\n\nSince both numbers are negative, we add their absolute values and keep the negative sign.\n\n3 + 20443241839 = 20443241842\n\nSince both numbers are negative, the sum is also negative.\n\n-3 + (-20443241839) = -20443241842\n\nThe answer to this question is $\\boxed{-20443241842}$.\n"
+        ],
+        "ans_list": [
+            "-20443241842"
+        ],
+        "final_answer": "-20443241842",
+        "Correctness": true
+    },
+    {
+        "question": "721-847=",
+        "no": 209,
+        "solution": "-126",
+        "ans_sampling": [
+            "721 - 847\n\nSince 847 is larger than 721, the result will be negative.\nWe can find the difference by subtracting the smaller number from the larger number and then adding a negative sign.\n\n847 - 721 = 126\n\nSo, 721 - 847 = -126\n\nThe answer to this question is $\\boxed{-126}$.\n"
+        ],
+        "ans_list": [
+            "-126"
+        ],
+        "final_answer": "-126",
+        "Correctness": true
+    },
+    {
+        "question": "184+44=",
+        "no": 195,
+        "solution": "228",
+        "ans_sampling": [
+            "184 + 44 = 228\n\nThe answer to this question is $\\boxed{228}$\n"
+        ],
+        "ans_list": [
+            "228"
+        ],
+        "final_answer": "228",
+        "Correctness": true
+    },
+    {
+        "question": "701+70=",
+        "no": 205,
+        "solution": "771",
+        "ans_sampling": [
+            "701 + 70 = 771\n\nThe answer to this question is $\\boxed{771}$\n"
+        ],
+        "ans_list": [
+            "771"
+        ],
+        "final_answer": "771",
+        "Correctness": true
+    },
+    {
+        "question": "Divide 4 by 1704532, please return the calculation result in its simplest fraction form.",
+        "no": 62,
+        "solution": "1/426133",
+        "ans_sampling": [
+            "First, we set up the division as a fraction: 4/1704532\n\nNext, we simplify the fraction by finding the greatest common divisor (GCD) of the numerator and denominator. The prime factorization of 4 is 2^2. To find if 1704532 is divisible by 2, we check if it is an even number. Since 1704532 is even, it is divisible by 2.\n1704532 / 2 = 852266\n852266 is also even, so it's divisible by 2.\n852266 / 2 = 426133\n\nSo, 1704532 = 2 * 2 * 426133 = 2^2 * 426133\nThe GCD of 4 and 1704532 is 2^2 = 4. \n\nDividing both the numerator and denominator by the GCD:\n(4/4) / (1704532/4) = 1/426133\n\nThe fraction is now in its simplest form.\n\nThe answer to this question is $\\boxed{1/426133}$.\n"
+        ],
+        "ans_list": [
+            "426133"
+        ],
+        "final_answer": "426133",
+        "Correctness": false
+    },
+    {
+        "question": "Multiply 954347 and -12.",
+        "no": 51,
+        "solution": "-11452164",
+        "ans_sampling": [
+            "954347 * -12\n\nFirst, we can ignore the negative sign and multiply 954347 by 12:\n\n954347 * 12\n\n* 7 * 12 = 84  (write down 4 and carry-over 8)\n* 4 * 12 = 48 + 8 = 56 (write down 6 and carry-over 5)\n* 3 * 12 = 36 + 5 = 41 (write down 1 and carry-over 4)\n* 4 * 12 = 48 + 4 = 52 (write down 2 and carry-over 5)\n* 5 * 12 = 60 + 5 = 65 (write down 5 and carry-over 6)\n* 9 * 12 = 108 + 6 = 114 (write down 114)\n\nSo, 954347 * 12 = 11452164\n\nNow, since we multiplied a positive number by a negative number, the result will be negative.\n\nTherefore, 954347 * -12 = -11452164\n\nThe answer to this question is $\\boxed{-11452164}$.\n"
+        ],
+        "ans_list": [
+            "-11452164"
+        ],
+        "final_answer": "-11452164",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate ((2/(-189))/(13/(-117))*-9)/(2/(-14)).",
+        "no": 36,
+        "solution": "6",
+        "ans_sampling": [
+            "Here's how to solve the expression step-by-step:\n\n1. **Simplify the fractions within the parentheses:**\n   (2/(-189)) = -2/189\n   (13/(-117)) = -13/117\n\n2. **Perform the division within the parentheses:**\n   (-2/189) / (-13/117) = (-2/189) * (-117/13) = (2*117)/(189*13) = 234/2457\n\n3. **Simplify the fraction:**\n   234/2457 = (2*3*3*13)/(3*3*3*7*13) = 2/(3*7) = 2/21\n\n4. **Multiply by -9:**\n   (2/21) * -9 = -18/21 = -6/7\n\n5. **Simplify 2/(-14):**\n    2/(-14) = -2/14 = -1/7\n\n6. **Perform the final division:**\n   (-6/7) / (-1/7) = (-6/7) * (-7/1) = 42/7 = 6\n\nThe answer to this question is $\\boxed{6}$.\n"
+        ],
+        "ans_list": [
+            "6"
+        ],
+        "final_answer": "6",
+        "Correctness": true
+    },
+    {
+        "question": "7*8=",
+        "no": 246,
+        "solution": "56",
+        "ans_sampling": [
+            "7 multiplied by 8 is equal to 56.\n\nThe answer to this question is $\\boxed{56}$\n"
+        ],
+        "ans_list": [
+            "56"
+        ],
+        "final_answer": "56",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate 3 divided by 1207906, please return the calculation result in its simplest fraction form.",
+        "no": 80,
+        "solution": "3/1207906",
+        "ans_sampling": [
+            "3 divided by 1207906 can be written as the fraction 3/1207906.  \n\nWe can simplify this fraction.  Since both the numerator and denominator are divisible by 3 (3/3 = 1 and 1207906/3 = 402635.333...), we can divide both by 3:\n3/1207906 = 1/402635.333...\n\nHowever, fractions should have integers in the numerator and denominator. Therefore, we have:\n\n3/1207906 = 1 / 402635.333...\n\nWe can simplify 3/1207906 as follows:\nSince 1207906 = 2 x 3 x 201317 + 2, 3 and 1207906 aren't both divisible by a common factor other than 1. Hence, the simplest fractional form is 3/1207906 which can be written as a decimal as approximately 0.000002482.\n\nThe answer to this question is $\\boxed{3/1207906}$.\n"
+        ],
+        "ans_list": [
+            "1207906"
+        ],
+        "final_answer": "1207906",
+        "Correctness": false
+    },
+    {
+        "question": "35-846=",
+        "no": 208,
+        "solution": "-811",
+        "ans_sampling": [
+            "846 - 35 = 811\n\nSince the question is 35 - 846, we get a negative result.\n\n846 - 35 = 811\nSo, 35 - 846 = -811\n\nThe answer to this question is $\\boxed{-811}$.\n"
+        ],
+        "ans_list": [
+            "-811"
+        ],
+        "final_answer": "-811",
+        "Correctness": true
+    },
+    {
+        "question": "892325753741+494303803604=",
+        "no": 221,
+        "solution": "1386629557345",
+        "ans_sampling": [
+            "892325753741\n+494303803604\n-------------\n1386629557345\n\nThe answer to this question is $\\boxed{1386629557345}$\n"
+        ],
+        "ans_list": [
+            "1386629557345"
+        ],
+        "final_answer": "1386629557345",
+        "Correctness": true
+    },
+    {
+        "question": "0.1*1.0=",
+        "no": 287,
+        "solution": "0.1",
+        "ans_sampling": [
+            "0.1 * 1.0 = 0.1\n\nThe answer to this question is $\\boxed{0.1}$\n"
+        ],
+        "ans_list": [
+            "0.1"
+        ],
+        "final_answer": "0.1",
+        "Correctness": true
+    },
+    {
+        "question": "5+6=",
+        "no": 175,
+        "solution": "11",
+        "ans_sampling": [
+            "5 + 6 = 11\n\nThe answer to this question is $\\boxed{11}$\n"
+        ],
+        "ans_list": [
+            "11"
+        ],
+        "final_answer": "11",
+        "Correctness": true
+    },
+    {
+        "question": "(33/(-4620)*28)/(30/12*(-4)/25), please return the calculation result in its simplest fraction form.",
+        "no": 119,
+        "solution": "1/2",
+        "ans_sampling": [
+            "First, let's simplify the expression within the parentheses.\n(33/(-4620) * 28) simplifies to (33 * 28) / (-4620) = 924 / -4620 = -1/5\n\n(30/12 * (-4)/25) simplifies to (30 * -4) / (12 * 25) = -120 / 300 = -2/5\n\nSo, the original expression becomes:\n(-1/5) / (-2/5)\n\nTo divide fractions, we multiply by the reciprocal of the second fraction:\n(-1/5) * (-5/2)\n\nMultiply the numerators and denominators:\n(-1 * -5) / (5 * 2) = 5/10\n\nSimplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 5:\n5/10 = 1/2\n\nThe answer to this question is $\\boxed{1/2}$.\n"
+        ],
+        "ans_list": [
+            "2"
+        ],
+        "final_answer": "2",
+        "Correctness": false
+    },
+    {
+        "question": "16 times 118445",
+        "no": 138,
+        "solution": "1895120",
+        "ans_sampling": [
+            "16 * 118445\n\nWe can break down 16 into 10 + 6 and multiply each part by 118445:\n\n10 * 118445 = 1184450\n6 * 118445\n\nTo calculate 6 * 118445, we can further break it down:\n6 * (100000 + 10000 + 8000 + 400 + 40 + 5)\n= 600000 + 60000 + 48000 + 2400 + 240 + 30\n= 600000 + 60000 + 48000 + 2400 + 270\n= 660000 + 48000 + 2670\n= 708000 + 2670\n= 710670\n\nNow add the results:\n1184450 + 710670\n= 1895120\n\n\nThe answer to this question is $\\boxed{1895120}$.\n"
+        ],
+        "ans_list": [
+            "1895120"
+        ],
+        "final_answer": "1895120",
+        "Correctness": true
+    },
+    {
+        "question": "Divide 78 by -76068, please return the calculation result in its simplest fraction form.",
+        "no": 107,
+        "solution": "-13/12678",
+        "ans_sampling": [
+            "1. We are asked to divide 78 by -76068.  This can be written as the fraction:\n\n78 / -76068\n\n2. We can simplify this fraction by dividing both the numerator and denominator by their greatest common divisor (GCD).  First, we can see that both numbers are divisible by 2.\n\n(78/2) / (-76068/2) = 39 / -38034\n\n3. Now, we can see that both 39 and 38034 are divisible by 3.\n\n(39/3) / (-38034/3) = 13 / -12678\n\n4.  It appears that 13 is a prime number. We need to check if 12678 is divisible by 13. 12678/13 = 975.23... which indicates that 12678 is not divisible by 13.\n\n5.  Therefore, the fraction 13/-12678 is in its simplest form.  We can also write this as -13/12678.\n\nThe answer to this question is $\\boxed{-\\frac{13}{12678}}$\n"
+        ],
+        "ans_list": [
+            "13"
+        ],
+        "final_answer": "13",
+        "Correctness": false
+    },
+    {
+        "question": "57+70=",
+        "no": 181,
+        "solution": "127",
+        "ans_sampling": [
+            "57 + 70 = 127\n\nThe answer to this question is $\\boxed{127}$\n"
+        ],
+        "ans_list": [
+            "127"
+        ],
+        "final_answer": "127",
+        "Correctness": true
+    },
+    {
+        "question": "786403083014+675944857940=",
+        "no": 218,
+        "solution": "1462347940954",
+        "ans_sampling": [
+            "786403083014\n+675944857940\n-------------\n1462347940954\n\nThe answer to this question is $\\boxed{1462347940954}$\n"
+        ],
+        "ans_list": [
+            "1462347940954"
+        ],
+        "final_answer": "1462347940954",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of ((-4754)/1526034)/(((-1)/6)/(-1)), please return the calculation result in its simplest fraction form.",
+        "no": 104,
+        "solution": "-2/107",
+        "ans_sampling": [
+            "1. **Simplify the denominator:**\n((-1)/6)/(-1) = (-1/6) * (-1/1) = 1/6\n\n2. **Rewrite the expression:**\n(-4754/1526034) / (1/6)\n\n3. **Dividing by a fraction is the same as multiplying by its reciprocal:**\n(-4754/1526034) * 6/1\n\n4. **Multiply the numerators and denominators:**\n(-4754 * 6) / (1526034 * 1) = -28524 / 1526034\n\n5. **Simplify the fraction by finding the greatest common divisor (GCD) of the numerator and denominator.**\nGCD(28524, 1526034) = 2\n\n6. **Divide both numerator and denominator by the GCD:**\n-28524 / 2 = -14262\n1526034 / 2 = 763017\n\nTherefore, the simplified fraction is -14262/763017.\n\nThe answer to this question is $\\boxed{-\\frac{14262}{763017}}$\n"
+        ],
+        "ans_list": [
+            "14262"
+        ],
+        "final_answer": "14262",
+        "Correctness": false
+    },
+    {
+        "question": "13+934=",
+        "no": 206,
+        "solution": "947",
+        "ans_sampling": [
+            "13 + 934 = 947\n\nThe answer to this question is $\\boxed{947}$\n"
+        ],
+        "ans_list": [
+            "947"
+        ],
+        "final_answer": "947",
+        "Correctness": true
+    },
+    {
+        "question": "1**3=",
+        "no": 237,
+        "solution": "1",
+        "ans_sampling": [
+            "1**3 = 1 * 1 * 1 = 1\n\nThe answer to this question is $\\boxed{1}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": true
+    },
+    {
+        "question": "485625085111+960366573672=",
+        "no": 220,
+        "solution": "1445991658783",
+        "ans_sampling": [
+            "485625085111\n+960366573672\n-------------\n1445991658783\n\nThe answer to this question is $\\boxed{1445991658783}$\n"
+        ],
+        "ans_list": [
+            "1445991658783"
+        ],
+        "final_answer": "1445991658783",
+        "Correctness": true
+    },
+    {
+        "question": "459+315=",
+        "no": 196,
+        "solution": "774",
+        "ans_sampling": [
+            "459 + 315\n\nStarting with the ones place: 9 + 5 = 14. Write down 4 and carry over 1.\n\nMoving to the tens place: 1 (carried over) + 5 + 1 = 7. Write down 7.\n\nFinally, the hundreds place: 4 + 3 = 7. Write down 7.\n\nSo, 459 + 315 = 774\n\nThe answer to this question is $\\boxed{774}$\n"
+        ],
+        "ans_list": [
+            "774"
+        ],
+        "final_answer": "774",
+        "Correctness": true
+    },
+    {
+        "question": "-16.0+0.08=",
+        "no": 279,
+        "solution": "-15.92",
+        "ans_sampling": [
+            "-16.0 + 0.08 = -15.92\n\nThe answer to this question is $\\boxed{-15.92}$\n"
+        ],
+        "ans_list": [
+            "-15.92"
+        ],
+        "final_answer": "-15.92",
+        "Correctness": true
+    },
+    {
+        "question": "-0.0067+0.085=",
+        "no": 281,
+        "solution": "0.0783",
+        "ans_sampling": [
+            "0.085 - 0.0067 = 0.0783\n\nThe answer to this question is $\\boxed{0.0783}$\n"
+        ],
+        "ans_list": [
+            "0.0783"
+        ],
+        "final_answer": "0.0783",
+        "Correctness": true
+    },
+    {
+        "question": "5^2=",
+        "no": 238,
+        "solution": "25",
+        "ans_sampling": [
+            "5^2 means 5 multiplied by itself (5 * 5).\n\n5 * 5 = 25\n\nThe answer to this question is $\\boxed{25}$\n"
+        ],
+        "ans_list": [
+            "25"
+        ],
+        "final_answer": "25",
+        "Correctness": true
+    },
+    {
+        "question": "0.7*1.0=",
+        "no": 286,
+        "solution": "0.7",
+        "ans_sampling": [
+            "0.7 * 1.0 = 0.7\n\nThe answer to this question is $\\boxed{0.7}$\n"
+        ],
+        "ans_list": [
+            "0.7"
+        ],
+        "final_answer": "0.7",
+        "Correctness": true
+    },
+    {
+        "question": "623690866796+368029869233=",
+        "no": 215,
+        "solution": "991720736029",
+        "ans_sampling": [
+            "623690866796 + 368029869233 = 991720736029\n\nThe answer to this question is $\\boxed{991720736029}$\n"
+        ],
+        "ans_list": [
+            "991720736029"
+        ],
+        "final_answer": "991720736029",
+        "Correctness": true
+    },
+    {
+        "question": "-0.0069+3.6=",
+        "no": 278,
+        "solution": "3.5931",
+        "ans_sampling": [
+            "0.0069 + 3.6 = 3.6069\n\nThe answer to this question is $\\boxed{3.6069}$\n"
+        ],
+        "ans_list": [
+            "3.6069"
+        ],
+        "final_answer": "3.6069",
+        "Correctness": false
+    },
+    {
+        "question": "3.0\u00d76.0=",
+        "no": 285,
+        "solution": "18",
+        "ans_sampling": [
+            "3.0 * 6.0 = 18.0\n\nThe answer to this question is $\\boxed{18.0}$\n"
+        ],
+        "ans_list": [
+            "18.0"
+        ],
+        "final_answer": "18.0",
+        "Correctness": false
+    },
+    {
+        "question": "4^2=",
+        "no": 227,
+        "solution": "16",
+        "ans_sampling": [
+            "4^2 means 4 multiplied by itself (4*4).\n\n4 * 4 = 16\n\nThe answer to this question is $\\boxed{16}$\n"
+        ],
+        "ans_list": [
+            "16"
+        ],
+        "final_answer": "16",
+        "Correctness": true
+    },
+    {
+        "question": "91-12=",
+        "no": 194,
+        "solution": "79",
+        "ans_sampling": [
+            "91 - 12 \n\nWe can subtract the ones place first: 1 - 2. Since we can't subtract 2 from 1, we borrow 1 ten from the tens place. So, the 9 in the tens place becomes 8, and the 1 in the ones place becomes 11.\n\nNow we have 11 - 2 = 9.\n\nNext, we subtract the tens place: 8 - 1 = 7.\n\nTherefore, 91 - 12 = 79.\n\nThe answer to this question is $\\boxed{79}$.\n"
+        ],
+        "ans_list": [
+            "79"
+        ],
+        "final_answer": "79",
+        "Correctness": true
+    },
+    {
+        "question": "8**4=",
+        "no": 233,
+        "solution": "4096",
+        "ans_sampling": [
+            "8**4 means 8 raised to the power of 4, which is 8 multiplied by itself 4 times.\n\n8 * 8 * 8 * 8 = 64 * 64 = 4096\n\nThe answer to this question is $\\boxed{4096}$\n"
+        ],
+        "ans_list": [
+            "4096"
+        ],
+        "final_answer": "4096",
+        "Correctness": true
+    },
+    {
+        "question": "0.6\u00d74.0=",
+        "no": 288,
+        "solution": "2.4",
+        "ans_sampling": [
+            "0.6 * 4.0 can be rewritten as 6/10 * 4 = 24/10 = 2.4\n\nThe answer to this question is $\\boxed{2.4}$\n"
+        ],
+        "ans_list": [
+            "2.4"
+        ],
+        "final_answer": "2.4",
+        "Correctness": true
+    },
+    {
+        "question": "116+16=",
+        "no": 199,
+        "solution": "132",
+        "ans_sampling": [
+            "116 + 16\n\nWe can break down 16 into 10 and 6.\n\n116 + 10 = 126\n126 + 6 = 132\n\nAlternatively, align the numbers vertically:\n```\n 116\n+ 16\n----\n 132\n```\n6 + 6 = 12, write down 2 and carry-over 1.\n1 + 1 + 1 = 3\n1 (brought down)\n\nThe answer to this question is $\\boxed{132}$.\n"
+        ],
+        "ans_list": [
+            "132"
+        ],
+        "final_answer": "132",
+        "Correctness": true
+    },
+    {
+        "question": "0.5+0.24=",
+        "no": 270,
+        "solution": "0.74",
+        "ans_sampling": [
+            "0.5 can be written as 0.50\n0.50 + 0.24 = 0.74\n\nThe answer to this question is $\\boxed{0.74}$\n"
+        ],
+        "ans_list": [
+            "0.74"
+        ],
+        "final_answer": "0.74",
+        "Correctness": true
+    },
+    {
+        "question": "2^2=",
+        "no": 232,
+        "solution": "4",
+        "ans_sampling": [
+            "2^2 means 2 multiplied by itself twice, which is 2 * 2.\n\n2 * 2 = 4\n\nThe answer to this question is $\\boxed{4}$\n"
+        ],
+        "ans_list": [
+            "4"
+        ],
+        "final_answer": "4",
+        "Correctness": true
+    },
+    {
+        "question": "5.0*0.09=",
+        "no": 289,
+        "solution": "0.45",
+        "ans_sampling": [
+            "5.0 * 0.09\n\nWe can perform this multiplication:\n\n5 * 0.09 = 0.45\n\nThe answer to this question is $\\boxed{0.45}$.\n"
+        ],
+        "ans_list": [
+            "0.45"
+        ],
+        "final_answer": "0.45",
+        "Correctness": true
+    },
+    {
+        "question": "3**2=",
+        "no": 235,
+        "solution": "9",
+        "ans_sampling": [
+            "3**2 means 3 raised to the power of 2, which is the same as 3 multiplied by itself.\n\n3 * 3 = 9\n\nThe answer to this question is $\\boxed{9}$\n"
+        ],
+        "ans_list": [
+            "9"
+        ],
+        "final_answer": "9",
+        "Correctness": true
+    },
+    {
+        "question": "-0.0089+(-22.0)=",
+        "no": 273,
+        "solution": "-22.0089",
+        "ans_sampling": [
+            "-0.0089 + (-22.0) can be rewritten as -0.0089 - 22.0\n\nThis is the same as -22.0089\n\nThe answer to this question is $\\boxed{-22.0089}$.\n"
+        ],
+        "ans_list": [
+            "-22.0089"
+        ],
+        "final_answer": "-22.0089",
+        "Correctness": true
+    },
+    {
+        "question": "2**3=",
+        "no": 225,
+        "solution": "8",
+        "ans_sampling": [
+            "2**3 means 2 raised to the power of 3, which is equivalent to 2 multiplied by itself three times.\n\n2 * 2 * 2 = 8\n\nThe answer to this question is $\\boxed{8}$.\n"
+        ],
+        "ans_list": [
+            "8"
+        ],
+        "final_answer": "8",
+        "Correctness": true
+    },
+    {
+        "question": "7^4=",
+        "no": 231,
+        "solution": "2401",
+        "ans_sampling": [
+            "7^4 means 7 multiplied by itself 4 times.\n7^4 = 7 * 7 * 7 * 7\n7 * 7 = 49\n49 * 7 = 343\n343 * 7 = 2401\n\nThe answer to this question is $\\boxed{2401}$\n"
+        ],
+        "ans_list": [
+            "2401"
+        ],
+        "final_answer": "2401",
+        "Correctness": true
+    },
+    {
+        "question": "672+483=",
+        "no": 204,
+        "solution": "1155",
+        "ans_sampling": [
+            "* **Add the ones place:** 2 + 3 = 5\n* **Add the tens place:** 7 + 8 = 15 (carry-over the 1)\n* **Add the hundreds place:** 6 + 4 + 1 (carry-over) = 11\n\nTherefore, 672 + 483 = 1155.\n\nThe answer to this question is $\\boxed{1155}$\n"
+        ],
+        "ans_list": [
+            "1155"
+        ],
+        "final_answer": "1155",
+        "Correctness": true
+    },
+    {
+        "question": "1**3=",
+        "no": 230,
+        "solution": "1",
+        "ans_sampling": [
+            "1**3 = 1*1*1 = 1\n\nThe answer to this question is $\\boxed{1}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": true
+    },
+    {
+        "question": " 51 - ( 92 - 77)=",
+        "no": 299,
+        "solution": "36",
+        "ans_sampling": [
+            "1. **Parentheses first:** 92 - 77 = 15\n2. **Subtraction:** 51 - 15 = 36\n\nThe answer to this question is $\\boxed{36}$\n"
+        ],
+        "ans_list": [
+            "36"
+        ],
+        "final_answer": "36",
+        "Correctness": true
+    },
+    {
+        "question": "1^3=",
+        "no": 229,
+        "solution": "1",
+        "ans_sampling": [
+            "1 cubed (1\u00b3) means 1 multiplied by itself three times: 1 * 1 * 1.\n\n1 * 1 = 1\n1 * 1 = 1\n\nThe answer to this question is $\\boxed{1}$\n"
+        ],
+        "ans_list": [
+            "1"
+        ],
+        "final_answer": "1",
+        "Correctness": true
+    },
+    {
+        "question": "64.0+(-0.83)=",
+        "no": 280,
+        "solution": "63.17",
+        "ans_sampling": [
+            "64.0 + (-0.83) can be rewritten as 64.0 - 0.83\n\nTo subtract 0.83 from 64.0, we align the decimal points:\n\n64.00\n- 0.83\n-------\n63.17\n\nThe answer to this question is $\\boxed{63.17}$.\n"
+        ],
+        "ans_list": [
+            "63.17"
+        ],
+        "final_answer": "63.17",
+        "Correctness": true
+    },
+    {
+        "question": "352860887460+79374684075=",
+        "no": 216,
+        "solution": "432235571535",
+        "ans_sampling": [
+            "352860887460 + 79374684075 = 432235571535\n\nThe answer to this question is $\\boxed{432235571535}$\n"
+        ],
+        "ans_list": [
+            "432235571535"
+        ],
+        "final_answer": "432235571535",
+        "Correctness": true
+    },
+    {
+        "question": "373490079876-646750175965=",
+        "no": 224,
+        "solution": "-273260096089",
+        "ans_sampling": [
+            "373490079876 - 646750175965 = -273260096089\n\nThe answer to this question is $\\boxed{-273260096089}$.\n"
+        ],
+        "ans_list": [
+            "-273260096089"
+        ],
+        "final_answer": "-273260096089",
+        "Correctness": true
+    },
+    {
+        "question": "3^4=",
+        "no": 236,
+        "solution": "81",
+        "ans_sampling": [
+            "3^4 means 3 multiplied by itself four times.\n\n3^4 = 3 * 3 * 3 * 3 = 81\n\nThe answer to this question is $\\boxed{81}$\n"
+        ],
+        "ans_list": [
+            "81"
+        ],
+        "final_answer": "81",
+        "Correctness": true
+    },
+    {
+        "question": "7^4=",
+        "no": 234,
+        "solution": "2401",
+        "ans_sampling": [
+            "7^4 means 7 multiplied by itself 4 times.\n\n7^4 = 7 * 7 * 7 * 7 = 49 * 49 = 2401\n\nThe answer to this question is $\\boxed{2401}$.\n"
+        ],
+        "ans_list": [
+            "2401"
+        ],
+        "final_answer": "2401",
+        "Correctness": true
+    },
+    {
+        "question": "9**4=",
+        "no": 239,
+        "solution": "6561",
+        "ans_sampling": [
+            "9**4 means 9 to the power of 4, which is 9*9*9*9.\n\n9*9 = 81\n81*9 = 729\n729*9 = 6561\n\nThe answer to this question is $\\boxed{6561}$\n"
+        ],
+        "ans_list": [
+            "6561"
+        ],
+        "final_answer": "6561",
+        "Correctness": true
+    },
+    {
+        "question": "221034337578+352470528397=",
+        "no": 210,
+        "solution": "573504865975",
+        "ans_sampling": [
+            "221034337578 + 352470528397 = 573504865975\n\nThe answer to this question is $\\boxed{573504865975}$.\n"
+        ],
+        "ans_list": [
+            "573504865975"
+        ],
+        "final_answer": "573504865975",
+        "Correctness": true
+    },
+    {
+        "question": "8\u00d757=",
+        "no": 247,
+        "solution": "456",
+        "ans_sampling": [
+            "We can break 57 down into 50 and 7.\n8 * 50 = 400\n8 * 7 = 56\n400 + 56 = 456\n\nThe answer to this question is $\\boxed{456}$\n"
+        ],
+        "ans_list": [
+            "456"
+        ],
+        "final_answer": "456",
+        "Correctness": true
+    },
+    {
+        "question": "72194749716+960193174801=",
+        "no": 217,
+        "solution": "1032387924517",
+        "ans_sampling": [
+            "72194749716 + 960193174801 = 1032387924517\n\nThe answer to this question is $\\boxed{1032387924517}$\n"
+        ],
+        "ans_list": [
+            "1032387924517"
+        ],
+        "final_answer": "1032387924517",
+        "Correctness": true
+    },
+    {
+        "question": "509059009811+621706279712=",
+        "no": 222,
+        "solution": "1130765289523",
+        "ans_sampling": [
+            "509059009811 + 621706279712 = 1130765289523\n\nThe answer to this question is $\\boxed{1130765289523}$\n"
+        ],
+        "ans_list": [
+            "1130765289523"
+        ],
+        "final_answer": "1130765289523",
+        "Correctness": true
+    },
+    {
+        "question": "What is ((-1467)/652)/(8/((-64)/(-24))), please return the calculation result in its simplest fraction form.",
+        "no": 89,
+        "solution": "-3/4",
+        "ans_sampling": [
+            "First, we simplify the denominator:\n\n8/((-64)/(-24)) = 8 * (-24)/(-64) = 8 * (24/64) = 8 * (3/8) = 3\n\nNow, substitute this back into the original expression:\n\n((-1467)/652)/3 = (-1467/652) * (1/3) = -1467/(652 * 3) = -1467/1956\n\nNow, we try to simplify the fraction -1467/1956 by finding the greatest common divisor (GCD) of 1467 and 1956.\n1467 = 3 * 489 = 3 * 3 * 163 = $3^2$ * 163\n1956 = 2 * 978 = 2 * 2 * 489 = 2 * 2 * 3 * 163 = $2^2$ * 3 * 163\n\nThe GCD(1467, 1956) = 3 * 163 = 489.\n\nSo, we can simplify the fraction:\n-1467/1956 = (-3 * 489) / (4 * 489) = -3/4\n\nThe answer to this question is $\\boxed{-3/4}$.\nFinal Answer: The final answer is $\\boxed{-3/4}$"
+        ],
+        "ans_list": [
+            "4"
+        ],
+        "final_answer": "4",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate (-5456)/6696*(-297)/(-22).",
+        "no": 1,
+        "solution": "-11",
+        "ans_sampling": [
+            "First, we have the expression (-5456)/6696 * (-297)/(-22).\n\nWe can simplify the fractions before multiplying.\n(-5456)/6696 can be simplified by dividing both the numerator and the denominator by their greatest common divisor, which is 8.\n-5456 \u00f7 8 = -682\n6696 \u00f7 8 = 837\nSo, (-5456)/6696 = -682/837.\n\nNow, we have (-682/837) * (-297)/(-22).\n\nThe product of two negative numbers is positive, and the product of a negative and a positive number is negative. So, we have:\n(-682/837) * (297/22)\n\nWe can simplify the multiplication:\n(-682/837) * (297/22) = (-682 * 297) / (837 * 22) = -202454 / 18414\n\nNow, we can simplify the fraction -202454 / 18414 by finding the greatest common divisor of 202454 and 18414.  We can see that both numbers are divisible by 2.\n202454 \u00f7 2 = 101227\n18414 \u00f7 2 = 9207\nSo, -202454/18414 = -101227/9207\nWe can observe that both 101227 and 9207 are divisible by 9.\n101227 \u00f7 9 = 11247.444...\n9207 \u00f7 9 = 1023\nSo, we must find the gcd of 202454 and 18414.\ngcd(202454, 18414) = 18\n-202454/18 = -11247.444...\n18414/18 = 1023\nSo, -202454 / 18414 = -(202454/18) / (18414/18) = -11247.444... / 1023\nNow, we can divide: -202454/18414 \u2248 -11\n\n(-682/837) * (297/22) = -11\n\nThe answer to this question is $\\boxed{-11}$.\nFinal Answer: The final answer is $\\boxed{-11}$"
+        ],
+        "ans_list": [
+            "-11"
+        ],
+        "final_answer": "-11",
+        "Correctness": true
+    },
+    {
+        "question": "345+502=",
+        "no": 207,
+        "solution": "847",
+        "ans_sampling": [
+            "345 + 502\n\nAdding the ones place: 5 + 2 = 7\nAdding the tens place: 4 + 0 = 4\nAdding the hundreds place: 3 + 5 = 8\n\nSo, 345 + 502 = 847\n\nThe answer to this question is $\\boxed{847}$\n"
+        ],
+        "ans_list": [
+            "847"
+        ],
+        "final_answer": "847",
+        "Correctness": true
+    },
+    {
+        "question": "3^3=",
+        "no": 226,
+        "solution": "27",
+        "ans_sampling": [
+            "3^3 means 3 multiplied by itself three times: 3 * 3 * 3\n\n3 * 3 = 9\n9 * 3 = 27\n\nThe answer to this question is $\\boxed{27}$\n"
+        ],
+        "ans_list": [
+            "27"
+        ],
+        "final_answer": "27",
+        "Correctness": true
+    },
+    {
+        "question": "What is the value of (8/(-120))/((-8)/(-50))*(-7)/((-28)/6), please return the calculation result in its simplest fraction form.",
+        "no": 146,
+        "solution": "-5/8",
+        "ans_sampling": [
+            "We are asked to evaluate the expression (8/(-120))/((-8)/(-50))*(-7)/((-28)/6).\n\nFirst, simplify the fractions:\n8/(-120) = -8/120 = -1/15\n(-8)/(-50) = 8/50 = 4/25\n(-28)/6 = -14/3\n\nNow we can rewrite the expression as:\n(-1/15) / (4/25) * (-7) / (-14/3)\n\nDividing by a fraction is the same as multiplying by its reciprocal:\n(-1/15) * (25/4) * (-7) * (-3/14)\n\nMultiplying the numerators and denominators:\n(-1 * 25 * -7 * -3) / (15 * 4 * 14)\n(-525) / (840)\n\nSimplify the fraction:\n-525/840\nDivide both numerator and denominator by their greatest common divisor, which is 210:\n(-525 \u00f7 210) / (840 \u00f7 210)\n-5/8\n\nThe answer to this question is $\\boxed{-\\frac{5}{8}}$.\nFinal Answer: The final answer is $\\boxed{-5/8}$\n"
+        ],
+        "ans_list": [
+            "5"
+        ],
+        "final_answer": "5",
+        "Correctness": false
+    },
+    {
+        "question": "63.0+0.074=",
+        "no": 277,
+        "solution": "63.074",
+        "ans_sampling": [
+            "63.0 + 0.074\n\nAlign the decimal points:\n\n63.000\n+ 0.074\n-------\n63.074\n\nThe answer to this question is $\\boxed{63.074}$\n"
+        ],
+        "ans_list": [
+            "63.074"
+        ],
+        "final_answer": "63.074",
+        "Correctness": true
+    },
+    {
+        "question": "774426524175+721318944497=",
+        "no": 219,
+        "solution": "1495745468672",
+        "ans_sampling": [
+            "774426524175\n+721318944497\n-------------\n1495745468672\n\nThe answer to this question is $\\boxed{1495745468672}$\n"
+        ],
+        "ans_list": [
+            "1495745468672"
+        ],
+        "final_answer": "1495745468672",
+        "Correctness": true
+    },
+    {
+        "question": "234319923293+171632577931=",
+        "no": 213,
+        "solution": "405952501224",
+        "ans_sampling": [
+            "234319923293\n+171632577931\n------------\n405952501224\n\nThe answer to this question is $\\boxed{405952501224}$\n"
+        ],
+        "ans_list": [
+            "405952501224"
+        ],
+        "final_answer": "405952501224",
+        "Correctness": true
+    },
+    {
+        "question": " 22 * ( 6 - 53)=",
+        "no": 295,
+        "solution": "-1034",
+        "ans_sampling": [
+            "1. **Calculate the difference inside the parentheses:**\n6 - 53 = -47\n\n2. **Multiply the result by 22:**\n22 * -47 = -1034\n\nThe answer to this question is $\\boxed{-1034}$\n"
+        ],
+        "ans_list": [
+            "-1034"
+        ],
+        "final_answer": "-1034",
+        "Correctness": true
+    },
+    {
+        "question": "10**3=",
+        "no": 228,
+        "solution": "1000",
+        "ans_sampling": [
+            "10**3 is the same as 10 multiplied by itself three times: 10 * 10 * 10\n\n10 * 10 = 100\n100 * 10 = 1000\n\nThe answer to this question is $\\boxed{1000}$\n"
+        ],
+        "ans_list": [
+            "1000"
+        ],
+        "final_answer": "1000",
+        "Correctness": true
+    },
+    {
+        "question": "-0.099+0.84=",
+        "no": 282,
+        "solution": "0.741",
+        "ans_sampling": [
+            "0.84 - 0.099 = 0.840 - 0.099 = 0.741\n\nThe answer to this question is $\\boxed{0.741}$\n"
+        ],
+        "ans_list": [
+            "0.741"
+        ],
+        "final_answer": "0.741",
+        "Correctness": true
+    },
+    {
+        "question": "9025*95266=",
+        "no": 263,
+        "solution": "859775650",
+        "ans_sampling": [
+            "9025 * 95266 = 859979950\n\nThe answer to this question is $\\boxed{859979950}$\n"
+        ],
+        "ans_list": [
+            "859979950"
+        ],
+        "final_answer": "859979950",
+        "Correctness": false
+    },
+    {
+        "question": "58\u00d731=",
+        "no": 254,
+        "solution": "1798",
+        "ans_sampling": [
+            "58 \u00d7 31 can be calculated as follows:\n\n* 58 \u00d7 30 = 1740\n* 58 \u00d7 1 = 58\n\nAdding these two products: 1740 + 58 = 1798\n\nThe answer to this question is $\\boxed{1798}$.\n"
+        ],
+        "ans_list": [
+            "1798"
+        ],
+        "final_answer": "1798",
+        "Correctness": true
+    },
+    {
+        "question": "3.0\u00d70.3=",
+        "no": 291,
+        "solution": "0.9",
+        "ans_sampling": [
+            "3.0 \u00d7 0.3 can be rewritten as 3 \u00d7 0.3 (since 3.0 is the same as 3).\n\nNow, multiply 3 by 0.3:\n3 \u00d7 0.3 = 0.9\n\nThe answer to this question is $\\boxed{0.9}$\n"
+        ],
+        "ans_list": [
+            "0.9"
+        ],
+        "final_answer": "0.9",
+        "Correctness": true
+    },
+    {
+        "question": "-23.0-(-0.43)=",
+        "no": 283,
+        "solution": "-22.57",
+        "ans_sampling": [
+            "-23.0 - (-0.43)\n\nSubtracting a negative number is the same as adding its positive counterpart. So, we rewrite the expression:\n\n-23.0 + 0.43\n\nNow, we add the two numbers:\n\n-22.57\n\n\nThe answer to this question is $\\boxed{-22.57}$\n"
+        ],
+        "ans_list": [
+            "-22.57"
+        ],
+        "final_answer": "-22.57",
+        "Correctness": true
+    },
+    {
+        "question": "Calculate (-36456)/(-1209) + 56/(-364).",
+        "no": 116,
+        "solution": "30",
+        "ans_sampling": [
+            "1. **Calculate (-36456)/(-1209):**\nSince both numbers are negative, the result will be positive.\n36456 / 1209 = 30.1538461538... which is approximately 30.15.\nWe notice that 36456 = 30*1209 + 180 + 56*3 = 30 * 1209 + 168 + 12 = 30 * 1209 + 186, so it is almost exactly 30. We calculate it precisely:\n-36456 / -1209 = 30.153846...  Since the numbers are integers, we can use integer division to get exactly 30.\n\n2. **Calculate 56/(-364):**\nSince one number is positive and the other is negative, the result will be negative.\n56/(-364) = -56/364 which simplifies to -14/91 = -2/13 \u2248 -0.1538\n\n3. **Add the two results:**\n30 + (-2/13) = 30 - 2/13 \nTo add these, we convert 30 to a fraction with a denominator of 13:\n30 = 390/13\nSo, 390/13 - 2/13 = 388/13 \u2248 29.846\n\nThe answer to this question is $\\boxed{388/13}$.\n"
+        ],
+        "ans_list": [
+            "13"
+        ],
+        "final_answer": "13",
+        "Correctness": false
+    },
+    {
+        "question": "0.054-(-0.045)=",
+        "no": 284,
+        "solution": "0.099",
+        "ans_sampling": [
+            "0.054 - (-0.045) can be rewritten as 0.054 + 0.045.\n\nAdding the two numbers, we get:\n\n0.054 + 0.045 = 0.099\n\nThe answer to this question is $\\boxed{0.099}$.\n"
+        ],
+        "ans_list": [
+            "0.099"
+        ],
+        "final_answer": "0.099",
+        "Correctness": true
+    },
+    {
+        "question": "61\u00d720=",
+        "no": 243,
+        "solution": "1220",
+        "ans_sampling": [
+            "61 x 20 can be thought of as 61 x (2 x 10).\n\nThis is equal to (61 x 2) x 10.\n\n61 x 2 = 122\n\n122 x 10 = 1220\n\nThe answer to this question is $\\boxed{1220}$.\n"
+        ],
+        "ans_list": [
+            "1220"
+        ],
+        "final_answer": "1220",
+        "Correctness": true
+    },
+    {
+        "question": "461+822=",
+        "no": 197,
+        "solution": "1283",
+        "ans_sampling": [
+            "**Step 1:** Add the ones place digits.\n\n1 + 2 = 3\n\n**Step 2:** Add the tens place digits.\n\n6 + 2 = 8\n\n**Step 3:** Add the hundreds place digits.\n\n4 + 8 = 12\n\n\n**Step 4:** Combine the sums from each place value.\n\n12 (hundreds) + 8 (tens) + 3 (ones) = 1283\n\nThe answer to this question is $\\boxed{1283}$\n"
+        ],
+        "ans_list": [
+            "1283"
+        ],
+        "final_answer": "1283",
+        "Correctness": true
+    },
+    {
+        "question": "0.3\u00d70.3=",
+        "no": 290,
+        "solution": "0.09",
+        "ans_sampling": [
+            "0.3 \u00d7 0.3 can be written as (3/10) \u00d7 (3/10).\n\nMultiplying the numerators gives 3 \u00d7 3 = 9.\nMultiplying the denominators gives 10 \u00d7 10 = 100.\n\nSo, (3/10) \u00d7 (3/10) = 9/100 = 0.09\n\nThe answer to this question is $\\boxed{0.09}$\n"
+        ],
+        "ans_list": [
+            "0.09"
+        ],
+        "final_answer": "0.09",
+        "Correctness": true
+    },
+    {
+        "question": "20*16=",
+        "no": 248,
+        "solution": "320",
+        "ans_sampling": [
+            "20 * 16 can be calculated as follows:\n\n20 * 16 = 20 * (10 + 6)\n       = (20 * 10) + (20 * 6)\n       = 200 + 120\n       = 320\n\nThe answer to this question is $\\boxed{320}$\n"
+        ],
+        "ans_list": [
+            "320"
+        ],
+        "final_answer": "320",
+        "Correctness": true
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 86 + 57) / 43=",
+        "no": 294,
+        "solution": "3.33",
+        "ans_sampling": [
+            "1. Add the numbers in the parentheses: 86 + 57 = 143\n\n2. Divide the sum by 43: 143 / 43 = 3.325581395348837\n\n3. Round the result to two decimal places: 3.33\n\nThe answer to this question is $\\boxed{3.33}$\n"
+        ],
+        "ans_list": [
+            "3.33"
+        ],
+        "final_answer": "3.33",
+        "Correctness": true
+    },
+    {
+        "question": "44*38=",
+        "no": 245,
+        "solution": "1672",
+        "ans_sampling": [
+            "44 * 38 can be calculated as follows:\n\n40 * 30 = 1200\n4 * 30 = 120\n40 * 8 = 320\n4 * 8 = 32\n\n1200 + 120 + 320 + 32 = 1672\n\nThe answer to this question is $\\boxed{1672}$.\n"
+        ],
+        "ans_list": [
+            "1672"
+        ],
+        "final_answer": "1672",
+        "Correctness": true
+    },
+    {
+        "question": "88.0+(-0.54)=",
+        "no": 276,
+        "solution": "87.46",
+        "ans_sampling": [
+            "88.0 + (-0.54)  means we are adding a negative number to 88.0.  Adding a negative number is the same as subtracting the positive version of that number.\n\nSo, 88.0 + (-0.54) = 88.0 - 0.54\n88.0 - 0.54 = 87.46\n\nThe answer to this question is $\\boxed{87.46}$\n"
+        ],
+        "ans_list": [
+            "87.46"
+        ],
+        "final_answer": "87.46",
+        "Correctness": true
+    },
+    {
+        "question": "35460\u00d726064=",
+        "no": 260,
+        "solution": "924229440",
+        "ans_sampling": [
+            "35460 \u00d7 26064 can be calculated as follows:\n\n      35460\n   \u00d7 26064\n------------\n    141840\n   2127600\n------------\n 212760000\n709200000\n------------\n924215840\n\nTherefore, 35460 \u00d7 26064 = 924215840\n\nThe answer to this question is $\\boxed{924215840}$\n"
+        ],
+        "ans_list": [
+            "924215840"
+        ],
+        "final_answer": "924215840",
+        "Correctness": false
+    },
+    {
+        "question": "-39.0+(-0.07)=",
+        "no": 272,
+        "solution": "-39.07",
+        "ans_sampling": [
+            "-39.0 + (-0.07) means we are adding two negative numbers.\n\nWhen adding two negative numbers, we add their absolute values and retain the negative sign.\n\n|-39.0| = 39.0\n|-0.07| = 0.07\n\n39.0 + 0.07 = 39.07\n\nSince both numbers were negative, the result is negative:\n\n-39.07\n\nThe answer to this question is $\\boxed{-39.07}$\n"
+        ],
+        "ans_list": [
+            "-39.07"
+        ],
+        "final_answer": "-39.07",
+        "Correctness": true
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 21 - 43) / 50 + ( 65 - 37)=",
+        "no": 293,
+        "solution": "27.56",
+        "ans_sampling": [
+            "1. **(21 - 43) / 50:**\n   21 - 43 = -22\n   -22 / 50 = -0.44\n\n2. **(65 - 37):**\n   65 - 37 = 28\n\n3. **-0.44 + 28:**\n   -0.44 + 28 = 27.56\n\nThe answer to this question is $\\boxed{27.56}$\n"
+        ],
+        "ans_list": [
+            "27.56"
+        ],
+        "final_answer": "27.56",
+        "Correctness": true
+    },
+    {
+        "question": " ( 47 - 99) * 86 * 99=",
+        "no": 297,
+        "solution": "-442728",
+        "ans_sampling": [
+            "1. **Calculate (47 - 99):**\n   47 - 99 = -52\n\n2. **Multiply the result by 86:**\n   -52 * 86 = -4472\n\n3. **Multiply the result by 99:**\n   -4472 * 99 = -442728\n\nThe answer to this question is $\\boxed{-442728}$\n"
+        ],
+        "ans_list": [
+            "-442728"
+        ],
+        "final_answer": "-442728",
+        "Correctness": true
+    },
+    {
+        "question": "0.0069+(-0.86)=",
+        "no": 271,
+        "solution": "-0.8531",
+        "ans_sampling": [
+            "0.0069 + (-0.86) is the same as 0.0069 - 0.86\n\nWe can perform the subtraction:\n\n   0.8600\n-  0.0069\n----------\n   0.8531\n\nSince we are subtracting a smaller positive number from a larger negative number (which is effectively adding two negative numbers), the result is negative.\n\nSo, 0.0069 - 0.86 = -0.8531\n\nThe answer to this question is $\\boxed{-0.8531}$\n"
+        ],
+        "ans_list": [
+            "-0.8531"
+        ],
+        "final_answer": "-0.8531",
+        "Correctness": true
+    },
+    {
+        "question": "6152\u00d732179=",
+        "no": 255,
+        "solution": "197965208",
+        "ans_sampling": [
+            "6152 \u00d7 32179\n\nWe can multiply these two numbers using the standard multiplication algorithm.\n\n      6152\n  \u00d7 32179\n------------\n     55368\n    43064\n    6152\n  12304\n18456\n------------\n197902408\n\nTherefore, 6152 \u00d7 32179 = 197902408\n\nThe answer to this question is $\\boxed{197902408}$\n"
+        ],
+        "ans_list": [
+            "197902408"
+        ],
+        "final_answer": "197902408",
+        "Correctness": false
+    },
+    {
+        "question": "-0.0074+(-0.26)=",
+        "no": 274,
+        "solution": "-0.2674",
+        "ans_sampling": [
+            "Here's how to solve -0.0074 + (-0.26):\n\nSince we are adding a negative number, this is the same as subtracting that number. Therefore, we can rewrite the expression as:\n\n-0.0074 - 0.26\n\nTo perform this subtraction, we can align the decimal points and subtract as usual:\n\n```\n-0.2600\n-0.0074\n--------\n-0.2674\n```\n\nThe answer to this question is $\\boxed{-0.2674}$.\n"
+        ],
+        "ans_list": [
+            "-0.2674"
+        ],
+        "final_answer": "-0.2674",
+        "Correctness": true
+    },
+    {
+        "question": " 16 / 51=",
+        "no": 298,
+        "solution": "0.3137",
+        "ans_sampling": [
+            "16 / 51 is a division problem. We can perform the division to get a decimal approximation or express the result as a simplified fraction.\n\nSince 16 and 51 do not share any common factors other than 1, the fraction is already in its simplest form.\n\n16 divided by 51 is approximately equal to 0.31372549...\n\nTherefore, 16/51 is the simplified fraction form.\n\nThe answer to this question is $\\boxed{16/51}$.\n"
+        ],
+        "ans_list": [
+            "51"
+        ],
+        "final_answer": "51",
+        "Correctness": false
+    },
+    {
+        "question": "64+185=",
+        "no": 198,
+        "solution": "249",
+        "ans_sampling": [
+            "64 + 185\n\nWe can add the numbers by breaking them down into hundreds, tens, and ones:\n\n64 = 60 + 4\n185 = 100 + 80 + 5\n\nAdding the ones: 4 + 5 = 9\nAdding the tens: 60 + 80 = 140\nAdding the hundreds: 100\n\nAdding the sums: 100 + 140 + 9 = 249\n\nAlternatively, we can perform the addition vertically:\n```\n  64\n+185\n----\n 249\n```\n\nThe answer to this question is $\\boxed{249}$.\n"
+        ],
+        "ans_list": [
+            "249"
+        ],
+        "final_answer": "249",
+        "Correctness": true
+    },
+    {
+        "question": "51677\u00d790778=",
+        "no": 262,
+        "solution": "4691134706",
+        "ans_sampling": [
+            "51677 \u00d7 90778\n\nWe can use the standard multiplication method.\n\n```\n        51677\n    \u00d7   90778\n-------------\n      413416\n    3617390\n  36173900\n465093000\n-------------\n4687650406\n```\n\n51677 \u00d7 90778 = 4687650406\n\nThe answer to this question is $\\boxed{4687650406}$\n"
+        ],
+        "ans_list": [
+            "4687650406"
+        ],
+        "final_answer": "4687650406",
+        "Correctness": false
+    },
+    {
+        "question": " ( 14 + 96) * 93 + ( 72 * 23)=",
+        "no": 292,
+        "solution": "11886",
+        "ans_sampling": [
+            "1. **Calculate 14 + 96:**\n14 + 96 = 110\n\n2. **Multiply the result by 93:**\n110 * 93 = 10230\n\n3. **Calculate 72 * 23:**\n72 * 23 = 1656\n\n4. **Add the results from steps 2 and 3:**\n10230 + 1656 = 11886\n\nThe answer to this question is $\\boxed{11886}$\n"
+        ],
+        "ans_list": [
+            "11886"
+        ],
+        "final_answer": "11886",
+        "Correctness": true
+    },
+    {
+        "question": "243+281=",
+        "no": 200,
+        "solution": "524",
+        "ans_sampling": [
+            "**Step 1:** Add the ones digits.\n\n3 + 1 = 4\n\n**Step 2:** Add the tens digits.\n\n4 + 8 = 12\n\n**Step 3:** Add the hundreds digits.\n\n2 + 2 = 4\n\n**Step 4:** Combine the results from steps 1, 2, and 3.\n\nSince the tens digits added up to 12, we carry-over the 1 to the hundreds place. This means we add 1 to the sum of the hundreds digits: 4 + 1 = 5.\n\nSo, the final sum is 524.\n\nThe answer to this question is $\\boxed{524}$.\n"
+        ],
+        "ans_list": [
+            "524"
+        ],
+        "final_answer": "524",
+        "Correctness": true
+    },
+    {
+        "question": "Keep the answer to two decimal places, ( 24 + 22) * 18 / 79 = ",
+        "no": 296,
+        "solution": "10.48",
+        "ans_sampling": [
+            "1. **Parentheses first:** (24 + 22) = 46\n2. **Multiplication:** 46 * 18 = 828\n3. **Division:** 828 / 79 = 10.4810126582...\n\nRounding to two decimal places: 10.48\n\nThe answer to this question is $\\boxed{10.48}$\n"
+        ],
+        "ans_list": [
+            "10.48"
+        ],
+        "final_answer": "10.48",
+        "Correctness": true
+    },
+    {
+        "question": "4899/994 + (-1 - 3) - 6/7, please return the calculation result in its simplest fraction form.",
+        "no": 31,
+        "solution": "1/14",
+        "ans_sampling": [
+            "1. **Solve 4899/994:**\nWe can simplify this fraction to approximately 4.9265. We will leave it as an improper fraction for now to avoid rounding errors.\n\n2. **Solve (-1 - 3):**\n -1 - 3 = -4\n\n3. **Rewrite the expression:**\n 4899/994 + (-4) - 6/7\n\n4. **Find a common denominator for the fractions:**\nThe common denominator for 994 and 7 is 6958.\nRewrite 4899/994 as (4899*7)/6958 = 34293/6958\nRewrite 6/7 as (6*994)/6958 = 5964/6958\n\n5. **Rewrite the expression with the common denominator and simplify:**\n= 34293/6958 - 4 - 5964/6958\n= (34293 - 5964)/6958 - 4\n= 28329/6958 - 4\n\n6. **Convert 4 to a fraction with the denominator 6958:**\n4 = (4*6958)/6958 = 27832/6958\n\n7. **Subtract the fractions:**\n= 28329/6958 - 27832/6958\n= (28329 - 27832)/6958\n= 497/6958\n\nThe answer to this question is $\\boxed{\\frac{497}{6958}}$\n"
+        ],
+        "ans_list": [
+            "497"
+        ],
+        "final_answer": "497",
+        "Correctness": false
+    },
+    {
+        "question": "678420482144+26140223017=",
+        "no": 212,
+        "solution": "704560705161",
+        "ans_sampling": [
+            "678420482144 + 26140223017 can be added by aligning the numbers vertically and adding each column from right to left:\n\n```\n 678420482144\n+  26140223017\n--------------\n 704560705161\n```\n\nStarting from the rightmost column:\n\n4 + 7 = 11. Write down 1 and carry over 1.\n4 + 1 + 1 = 6\n1 + 0 = 1\n2 + 3 = 5\n8 + 2 = 10. Write down 0 and carry over 1.\n4 + 2 + 1 = 7\n0 + 4 = 4\n2 + 1 = 3\n4 + 6 = 10. Write down 0 and carry over 1.\n2 + 1 = 3\n8 + 2 = 10. Write down 0 and carry over 1.\n7 + 6 + 1 = 14. Write down 4 and carry over 1.\n6 + 0 + 1= 7\n\nThe answer to this question is $\\boxed{704560705161}$\n"
+        ],
+        "ans_list": [
+            "704560705161"
+        ],
+        "final_answer": "704560705161",
+        "Correctness": true
+    },
+    {
+        "question": "68163\u00d781808=",
+        "no": 268,
+        "solution": "5576278704",
+        "ans_sampling": [
+            "68163 \u00d7 81808\n\nWe can perform this multiplication as follows:\n\n```\n        68163\n    x   81808\n---------------\n      545304\n     000000\n   54530400\n  681630000\n55706380400\n---------------\n55712233404 \n```\nThe product is 55712233404.\n\nThe answer to this question is $\\boxed{55712233404}$.\n"
+        ],
+        "ans_list": [
+            "55712233404"
+        ],
+        "final_answer": "55712233404",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate ((-44)/(-35)*685/(-274))/(10/(-105)*-3).",
+        "no": 112,
+        "solution": "-11",
+        "ans_sampling": [
+            "We are asked to evaluate the expression $\\frac{\\frac{-44}{-35} \\cdot \\frac{685}{-274}}{\\frac{10}{-105} \\cdot -3}$.\n\nFirst, let's simplify the numerator:\n$\\frac{-44}{-35} \\cdot \\frac{685}{-274} = \\frac{44}{35} \\cdot \\frac{685}{-274} = \\frac{44}{35} \\cdot \\frac{5 \\cdot 137}{-2 \\cdot 137} = \\frac{44}{35} \\cdot \\frac{5}{-2} = \\frac{44}{7 \\cdot 5} \\cdot \\frac{5}{-2} = \\frac{44}{7} \\cdot \\frac{1}{-2} = \\frac{22 \\cdot 2}{7} \\cdot \\frac{1}{-2} = \\frac{22}{-7} = -\\frac{22}{7}$.\n\nNow, let's simplify the denominator:\n$\\frac{10}{-105} \\cdot (-3) = \\frac{10}{-105} \\cdot (-3) = \\frac{10}{-35 \\cdot 3} \\cdot (-3) = \\frac{10}{-35} \\cdot \\frac{-3}{3} = \\frac{-2}{7} \\cdot (-1) = \\frac{2}{7}$.\n\nFinally, let's divide the numerator by the denominator:\n$\\frac{-\\frac{22}{7}}{\\frac{2}{7}} = -\\frac{22}{7} \\cdot \\frac{7}{2} = -\\frac{22}{2} = -11$.\n\nThe answer to this question is $\\boxed{-11}$.\nFinal Answer: The final answer is $\\boxed{-11}$"
+        ],
+        "ans_list": [
+            "-11"
+        ],
+        "final_answer": "-11",
+        "Correctness": true
+    },
+    {
+        "question": "What is (-19920)/524 + (-740)/(-48470)?",
+        "no": 133,
+        "solution": "-38",
+        "ans_sampling": [
+            "1. **Simplify the first fraction:**\n-19920/524 = -38\n\n2. **Simplify the second fraction:**\n-740/(-48470) = 740/48470. We can simplify this fraction by dividing both the numerator and the denominator by their greatest common divisor (GCD), which is 10.\n740/48470 = 74/4847.\n\n3. **Add the two simplified fractions:**\n-38 + 74/4847\n\nTo add these, we need a common denominator.  We can write -38 as a fraction with the denominator 4847:\n-38 = -38 * 4847 / 4847 = -184286/4847\n\nNow we can add:\n-184286/4847 + 74/4847 = (-184286 + 74)/4847 = -184212/4847\n\n4. **Simplify the result (if possible):**\nThe fraction -184212/4847 can be simplified. We can determine if 4847 is a factor of 184212. It appears it is not.\nHowever, we can express the result as a mixed number or a decimal.  As a decimal, this is approximately -38.0136...\n\nThe answer to this question is $\\boxed{-184212/4847}$.\n"
+        ],
+        "ans_list": [
+            "4847"
+        ],
+        "final_answer": "4847",
+        "Correctness": false
+    },
+    {
+        "question": "37*39=",
+        "no": 242,
+        "solution": "1443",
+        "ans_sampling": [
+            "37 * 39 can be calculated as follows:\n\nOne way to solve this is to break down the problem:\n\n37 * 39 = 37 * (40 - 1)\n       = (37 * 40) - (37 * 1)\n       = 1480 - 37\n       = 1443\n\n\nAnother way is to use the standard multiplication method:\n```\n    37\n  x 39\n-------\n   333  (9*37)\n 1110   (30*37)\n-------\n 1443\n```\n\nThe answer to this question is $\\boxed{1443}$\n"
+        ],
+        "ans_list": [
+            "1443"
+        ],
+        "final_answer": "1443",
+        "Correctness": true
+    },
+    {
+        "question": "38010*88739=",
+        "no": 265,
+        "solution": "3372969390",
+        "ans_sampling": [
+            "38010 * 88739\n\nWe can multiply this using the standard multiplication method:\n\n```\n        38010\n    x   88739\n---------------\n      342090\n    1140300\n  26607000\n304080000\n3376120000\n---------------\n3377245390 \n```\n\nTherefore, 38010 * 88739 = 3377245390\n\nThe answer to this question is $\\boxed{3377245390}$\n"
+        ],
+        "ans_list": [
+            "3377245390"
+        ],
+        "final_answer": "3377245390",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate (1440/640)/((-1)/(-2) - -1)*96/(-306), please return the calculation result in its simplest fraction form.",
+        "no": 40,
+        "solution": "-8/17",
+        "ans_sampling": [
+            "1. Simplify the fraction 1440/640:\n   1440/640 = (144*10)/(64*10) = 144/64 = (9*16)/(4*16) = 9/4\n\n2. Simplify the expression within the parentheses:\n   (-1)/(-2) - (-1) = 1/2 + 1 = 1/2 + 2/2 = 3/2\n\n3. Simplify the expression 96/(-306):\n   96/(-306) = (96)/(-306) = (2*48)/(-2*153) = 48/(-153) = (3*16)/(-3*51) = 16/(-51) = -16/51\n\n4. Substitute the simplified values into the expression:\n   (9/4) / (3/2) * (-16/51)\n   = (9/4) * (2/3) * (-16/51)\n\n5. Multiply the fractions:\n   (9*2*(-16))/(4*3*51)\n\n6. Simplify the fraction:\n   (9*2*(-16))/(4*3*51) = (3*3*2*(-2*8))/(2*2*3*3*17) = (3*2*-16)/(12*51) = (6*-16)/(12*51)\n   = (-96)/(612)\n\n7. Simplify -96/612 by dividing both the numerator and denominator by their greatest common divisor, which is 12.\n   -96 = 12 * -8\n   612 = 12 * 51\n   -96/612 = (-8*12)/(51*12) = -8/51\n\nThe answer to this question is $\\boxed{-8/51}$.\n"
+        ],
+        "ans_list": [
+            "51"
+        ],
+        "final_answer": "51",
+        "Correctness": false
+    },
+    {
+        "question": "11\u00d749=",
+        "no": 244,
+        "solution": "539",
+        "ans_sampling": [
+            "11 x 49 can be calculated by multiplying 49 by 10 and then adding 49 to the result.\n\n49 x 10 = 490\n490 + 49 = 539\n\nAlternatively, we can use the distributive property:\n11 x 49 = 11 x (50 - 1)\n         = (11 x 50) - (11 x 1)\n         = 550 - 11\n         = 539\n\nThe answer to this question is $\\boxed{539}$.\n"
+        ],
+        "ans_list": [
+            "539"
+        ],
+        "final_answer": "539",
+        "Correctness": true
+    },
+    {
+        "question": "870+97=",
+        "no": 203,
+        "solution": "967",
+        "ans_sampling": [
+            "**Step 1:** Add the ones place digits: 0 + 7 = 7\n\n**Step 2:** Add the tens place digits: 7 + 9 = 16\n\n**Step 3:** Since the sum of the tens place digits is greater than 9, we carry over the 1 to the hundreds place.  So, we have 6 in the tens place and carry-over 1.\n\n**Step 4:** Add the hundreds place digits, including the carry-over: 8 + 1 = 9\n\n**Step 5:** Combine the sums from each place value: 9 (hundreds) + 6 (tens) + 7 (ones) = 967\n\nThe answer to this question is $\\boxed{967}$\n"
+        ],
+        "ans_list": [
+            "967"
+        ],
+        "final_answer": "967",
+        "Correctness": true
+    },
+    {
+        "question": "Evaluate 113/((-332785)/570)*(-1)/(-2), please return the calculation result in its simplest fraction form.",
+        "no": 48,
+        "solution": "-3/31",
+        "ans_sampling": [
+            "1. **Simplify the denominator:**\n\nStart with (-332785)/570.  This simplifies to -583.85087719...\n\n2. **Multiply by -1/(-2):**\n\nMultiplying -583.85087719... by -1/(-2) is the same as multiplying by -1/(-2), which simplifies to 1/2. So we have -583.85087719... * (1/2) = -291.92543859...\n\n3. **Divide 113 by the result:**\n\n113 divided by -291.92543859... is 113 / (-332785/570) * (-1)/(-2) = 113 / (-332785/570) * (1/2) = 113 / (-332785/1140). We can rewrite division by a fraction as multiplication by its reciprocal:\n\n113 * (1140/-332785) = (113 * 1140)/-332785 = 128820/-332785 = -128820/332785\n\n4. **Simplify the fraction:**\n\nBoth 128820 and 332785 are divisible by 5.\n128820 / 5 = 25764\n332785 / 5 = 66557\n\nSo, -128820/332785 simplifies to -25764/66557.\n\nThe answer to this question is $\\boxed{-\\frac{25764}{66557}}$\n"
+        ],
+        "ans_list": [
+            "25764"
+        ],
+        "final_answer": "25764",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate -10*((-41)/((-343170)/18))/((-2)/6), please return the calculation result in its simplest fraction form.",
+        "no": 78,
+        "solution": "2/31",
+        "ans_sampling": [
+            "1. **Simplify the innermost parentheses:**\n(-343170)/18 = -19065\n\n2. **Evaluate the division within the second set of parentheses:**\n-41 / -19065 = 41/19065\n\n3. **Evaluate the multiplication:**\n-10 * (41/19065) = -410/19065\n\n4. **Simplify the division in the denominator:**\n(-2)/6 = -1/3\n\n5. **Evaluate the division:**\n(-410/19065) / (-1/3) = (-410/19065) * (-3/1) = (410*3) / 19065 = 1230 / 19065\n\n6. **Simplify the fraction:**\n1230 and 19065 share a common factor of 5.  Dividing both numerator and denominator by 5 gives: 246/3813. Examining the factors of 246 (2, 3, 41) and 3813 (3, 1271, 41, 31), we find a common factor of 3 and also 41. So we can simplify by dividing by 3 and then by 41 or by directly dividing by 123 (3x41):\n1230 / 19065 = (123 * 10) / (123 * 155) = 10/155\nThen simplify by dividing the numerator and denominator by 5 to get: 2/31\n\nThe answer to this question is $\\boxed{2/31}$.\n"
+        ],
+        "ans_list": [
+            "31"
+        ],
+        "final_answer": "31",
+        "Correctness": false
+    },
+    {
+        "question": "5655\u00d742805=",
+        "no": 258,
+        "solution": "242062275",
+        "ans_sampling": [
+            "5655 \u00d7 42805\n\nWe can multiply these numbers using the standard multiplication method:\n\n```\n      5655\n   x 42805\n   -------\n    28275\n  452400\n1131000\n22620000\n-----------\n242276775\n```\n\nTherefore, 5655 \u00d7 42805 = 242,276,775\n\nThe answer to this question is $\\boxed{242276775}$\n"
+        ],
+        "ans_list": [
+            "242276775"
+        ],
+        "final_answer": "242276775",
+        "Correctness": false
+    },
+    {
+        "question": "62195*99536=",
+        "no": 257,
+        "solution": "6190641520",
+        "ans_sampling": [
+            "62195 * 99536\n\nWe can multiply these numbers using the standard multiplication algorithm:\n\n```\n      62195\nx    99536\n-----------\n    373170  (62195 * 6)\n   1865850  (62195 * 30)\n  31097500  (62195 * 500)\n 559755000  (62195 * 9000)\n5597550000 (62195 * 90000)\n-----------\n6191403020\n```\n\nThe answer to this question is $\\boxed{6191403020}$.\n"
+        ],
+        "ans_list": [
+            "6191403020"
+        ],
+        "final_answer": "6191403020",
+        "Correctness": false
+    },
+    {
+        "question": "78*64=",
+        "no": 240,
+        "solution": "4992",
+        "ans_sampling": [
+            "78 * 64 can be calculated as follows:\n\n* **Method 1: Traditional Multiplication**\n\n```\n    78\n  x 64\n-------\n   312  (78 * 4)\n  468   (78 * 6, shifted one place left)\n-------\n  4992\n```\n\n* **Method 2: Distributive Property**\n\n78 * 64 = 78 * (60 + 4) = (78 * 60) + (78 * 4)\n= (70 * 60) + (8 * 60) + (70 * 4) + (8 * 4)\n= 4200 + 480 + 280 + 32\n= 4680 + 312\n= 4992\n\nThe answer to this question is $\\boxed{4992}$\n"
+        ],
+        "ans_list": [
+            "4992"
+        ],
+        "final_answer": "4992",
+        "Correctness": true
+    },
+    {
+        "question": "-0.038+0.0092=",
+        "no": 275,
+        "solution": "-0.0288",
+        "ans_sampling": [
+            "0.0092 is positive and -0.038 is negative.  Since the numbers have different signs, we subtract the magnitudes and keep the sign of the number with the larger magnitude.\n\nThe magnitude of -0.038 is 0.038.\nThe magnitude of 0.0092 is 0.0092.\n\n0.038 - 0.0092 = 0.0288.\n\nSince |-0.038| > |0.0092|, the final answer is negative.\n\nSo, -0.038 + 0.0092 = -0.0288\n\nThe answer to this question is $\\boxed{-0.0288}$\n"
+        ],
+        "ans_list": [
+            "-0.0288"
+        ],
+        "final_answer": "-0.0288",
+        "Correctness": true
+    },
+    {
+        "question": "46*78=",
+        "no": 250,
+        "solution": "3588",
+        "ans_sampling": [
+            "46 * 78\n\nWe can break down this multiplication using the distributive property:\n\n46 * (70 + 8) = (46 * 70) + (46 * 8)\n\nFirst, let's calculate 46 * 70:\n46 * 70 = 46 * 7 * 10 = 322 * 10 = 3220\n\nNext, let's calculate 46 * 8:\n46 * 8 = (40 + 6) * 8 = (40 * 8) + (6 * 8) = 320 + 48 = 368\n\nNow, add the two results together:\n3220 + 368 = 3588\n\nThe answer to this question is $\\boxed{3588}$.\n"
+        ],
+        "ans_list": [
+            "3588"
+        ],
+        "final_answer": "3588",
+        "Correctness": true
+    },
+    {
+        "question": "63\u00d737=",
+        "no": 253,
+        "solution": "2331",
+        "ans_sampling": [
+            "63 x 37 can be calculated as follows:\n\nMethod 1: Standard multiplication\n```\n   63\nx  37\n-----\n  441  (7 x 63)\n1890  (30 x 63)\n-----\n2331\n```\n\nMethod 2: Distributive property\n63 x 37 = 63 x (30 + 7)\n          = (63 x 30) + (63 x 7)\n          = 1890 + 441\n          = 2331\n\nThe answer to this question is $\\boxed{2331}$.\n"
+        ],
+        "ans_list": [
+            "2331"
+        ],
+        "final_answer": "2331",
+        "Correctness": true
+    },
+    {
+        "question": "41393*30824=",
+        "no": 269,
+        "solution": "1275897832",
+        "ans_sampling": [
+            "41393 * 30824\n\nWe can perform the multiplication as follows:\n```\n     41393\nx    30824\n----------\n    165572   (41393 * 4)\n    827860   (41393 * 2 * 10)\n  33114400  (41393 * 8 * 100)\n1241790000 (41393 * 3 * 10000)\n----------\n1275897032 \n```\n\n41393 * 30824 = 1,275,897,032\n\n\nThe answer to this question is $\\boxed{1275897032}$\n"
+        ],
+        "ans_list": [
+            "1275897032"
+        ],
+        "final_answer": "1275897032",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate 426/(-1491) - (-220)/(-14).",
+        "no": 53,
+        "solution": "-16",
+        "ans_sampling": [
+            "1. **Simplify the first fraction:**\n426/(-1491) can be simplified by dividing both the numerator and denominator by their greatest common divisor (GCD). The GCD of 426 and 1491 is 3. So,\n426/(-1491) = (426/3) / (-1491/3) = 142/(-497) = -142/497\n\n2. **Simplify the second fraction:**\n(-220)/(-14) can be simplified by dividing both the numerator and denominator by their GCD, which is 2.  Since both numerator and denominator are negative, the fraction is positive.\n(-220)/(-14) = (220/2) / (14/2) = 110/7\n\n3. **Perform the subtraction:**\n-142/497 - 110/7\n\nTo subtract these fractions, we need a common denominator. The least common multiple of 497 and 7 is 497*7 = 3479. \n\n-142/497 - 110/7 = (-142 * 7)/(497 * 7) - (110 * 497)/(7 * 497)\n= -994/3479 - 54670/3479\n= (-994 - 54670)/3479\n= -55664/3479\n\n4. **Simplify the final fraction (if possible):**\nThe GCD of 55664 and 3479 is not readily apparent, but dividing 55664 by 3479 we have approximately 15.999 or very nearly 16. As it happens 3479 is not divisible by 2 or 5, indicating it is unlikely that there is a simple shared factor with 55664. To be confident we must express both numbers as prime factors. Since we find that there is no common prime factor between the numerator and denominator, the fraction is in its simplest form.\n\nThe answer to this question is $\\boxed{-55664/3479}$.\n"
+        ],
+        "ans_list": [
+            "3479"
+        ],
+        "final_answer": "3479",
+        "Correctness": false
+    },
+    {
+        "question": "68\u00d763=",
+        "no": 249,
+        "solution": "4284",
+        "ans_sampling": [
+            "68 x 63 can be calculated as follows:\n\nOne way is to break down 63 into 60 + 3:\n68 x 60 = 4080\n68 x 3 = 204\n4080 + 204 = 4284\n\nAlternatively, we can break down 68 into 60 + 8:\n60 x 63 = 3780\n8 x 63 = 504\n3780 + 504 = 4284\n\nAnother way is long multiplication:\n```\n    68\n x  63\n-------\n   204  (68 x 3)\n 4080  (68 x 60)\n-------\n 4284\n```\n\nThe answer to this question is $\\boxed{4284}$.\n"
+        ],
+        "ans_list": [
+            "4284"
+        ],
+        "final_answer": "4284",
+        "Correctness": true
+    },
+    {
+        "question": "Evaluate (10/50)/(((-140)/(-42))/5*(-6)/940).",
+        "no": 75,
+        "solution": "-47",
+        "ans_sampling": [
+            "First, we simplify the expression inside the parentheses in the denominator:\n$$ \\frac{\\frac{-140}{-42}}{5} \\cdot \\frac{-6}{940} = \\frac{140}{42 \\cdot 5} \\cdot \\frac{-6}{940} = \\frac{10/3}{5} \\cdot \\frac{-6}{940} = \\frac{10}{15} \\cdot \\frac{-6}{940} = \\frac{2}{3} \\cdot \\frac{-6}{940} = \\frac{-12}{2820} = \\frac{-1}{235} $$\nSo, the original expression becomes:\n$$ \\frac{10/50}{\\frac{-1}{235}} = \\frac{1/5}{\\frac{-1}{235}} = \\frac{1}{5} \\cdot \\frac{235}{-1} = \\frac{1}{5} \\cdot -235 = -\\frac{235}{5} = -47 $$\nTherefore,\n$$ \\frac{10}{50} \\div \\left( \\frac{\\frac{-140}{-42}}{5} \\times \\frac{-6}{940} \\right) = \\frac{1}{5} \\div \\left( \\frac{\\frac{10}{3}}{5} \\times \\frac{-6}{940} \\right) = \\frac{1}{5} \\div \\left( \\frac{10}{15} \\times \\frac{-6}{940} \\right) = \\frac{1}{5} \\div \\left( \\frac{2}{3} \\times \\frac{-6}{940} \\right) = \\frac{1}{5} \\div \\left( \\frac{-12}{2820} \\right) = \\frac{1}{5} \\div \\left( \\frac{-1}{235} \\right) = \\frac{1}{5} \\times -235 = -47 $$\n\nThe answer to this question is $\\boxed{-47}$.\nFinal Answer: The final answer is $\\boxed{-47}$"
+        ],
+        "ans_list": [
+            "-47"
+        ],
+        "final_answer": "-47",
+        "Correctness": true
+    },
+    {
+        "question": "(336/128)/((-23)/((-1035)/105)), please return the calculation result in its simplest fraction form.",
+        "no": 97,
+        "solution": "9/8",
+        "ans_sampling": [
+            "First, simplify the fraction in the denominator:\n\n(-1035)/105 = -1035 \u00f7 105 = -9.85714... (We'll keep it as (-1035)/105 for now to avoid rounding errors).\n\nNow the denominator becomes:\n(-23)/((-1035)/105) = -23 * (105/(-1035)) = -23 * (-105/1035) = 23 * (105/1035)\n= (23*105)/1035 = 2415/1035.  Since both are divisible by 5, we get 483/207. Now, notice that 483 = 207*2+69, and 207 = 69*3, so 69 is a common divisor.  483/69=7 and 207/69=3.  So, 483/207=7/3.\n\nThe initial expression is now:\n(336/128) / (7/3) = (336/128) * (3/7).\n\nSimplify 336/128:\n336 = 128 * 2 + 80\n128 = 80 * 1 + 48\n80 = 48 * 1 + 32\n48 = 32 * 1 + 16\n32 = 16 * 2 + 0\nGCD(336, 128) is 16.\nSo, 336/128 = (336/16) / (128/16) = 21/8\n\nSo now we have:\n(21/8) * (3/7) = (21 * 3) / (8 * 7) = 63 / 56.\n\nSince 7 is a common divisor, we can simplify to (63/7)/(56/7) = 9/8.\n\n\nThe answer to this question is $\\boxed{9/8}$.\n"
+        ],
+        "ans_list": [
+            "8"
+        ],
+        "final_answer": "8",
+        "Correctness": false
+    },
+    {
+        "question": "92978\u00d728845=",
+        "no": 261,
+        "solution": "2681950410",
+        "ans_sampling": [
+            "92978 \u00d7 28845\n\nWe can break down the multiplication as follows:\n\n* 92978 \u00d7 5 = 464890\n* 92978 \u00d7 40 = 3719120\n* 92978 \u00d7 800 = 74382400\n* 92978 \u00d7 8000 = 743824000\n* 92978 \u00d7 20000 = 1859560000\n\nAdding these products:\n\n```\n       464890\n     3719120\n    74382400\n   743824000\n+ 1859560000\n-------------\n  2681592410\n```\n\nTherefore, 92978 \u00d7 28845 = 2681592410\n\nThe answer to this question is $\\boxed{2681592410}$\n"
+        ],
+        "ans_list": [
+            "2681592410"
+        ],
+        "final_answer": "2681592410",
+        "Correctness": false
+    },
+    {
+        "question": "38\u00d742=",
+        "no": 251,
+        "solution": "1596",
+        "ans_sampling": [
+            "We want to calculate 38 \u00d7 42.\n\nWe can use the distributive property to compute this product. We can rewrite 38 as 40 - 2, and we can rewrite 42 as 40 + 2. Then we have:\n38 \u00d7 42 = (40 - 2)(40 + 2)\nUsing the difference of squares formula, (a - b)(a + b) = a^2 - b^2, with a = 40 and b = 2, we have:\n(40 - 2)(40 + 2) = 40^2 - 2^2\n= 1600 - 4\n= 1596\n\nAlternatively, we can use the standard multiplication algorithm:\n```\n   38\nx  42\n------\n   76  (38 x 2)\n1520 (38 x 40)\n------\n1596\n```\n\nThe answer to this question is $\\boxed{1596}$.\n"
+        ],
+        "ans_list": [
+            "1596"
+        ],
+        "final_answer": "1596",
+        "Correctness": true
+    },
+    {
+        "question": "62\u00d742=",
+        "no": 241,
+        "solution": "2604",
+        "ans_sampling": [
+            "62 x 42 can be calculated as follows:\n\n* **Multiply 2 (units digit of 62) by 2 (units digit of 42):** 2 x 2 = 4\n* **Multiply 2 (units digit of 62) by 4 (tens digit of 42):** 2 x 4 = 8  (This represents 8 tens, so it's 80)\n* **Multiply 6 (tens digit of 62) by 2 (units digit of 42):** 6 x 2 = 12 (This represents 12 tens, so it's 120)\n* **Multiply 6 (tens digit of 62) by 4 (tens digit of 42):** 6 x 4 = 24 (This represents 24 hundreds, so it's 2400)\n\nNow, add the results:\n\n4 + 80 + 120 + 2400 = 2604\n\n\nThe answer to this question is $\\boxed{2604}$\n"
+        ],
+        "ans_list": [
+            "2604"
+        ],
+        "final_answer": "2604",
+        "Correctness": true
+    },
+    {
+        "question": "91684*20008=",
+        "no": 256,
+        "solution": "1834413472",
+        "ans_sampling": [
+            "91684 * 20008\n\nWe can break down 20008 as 20000 + 8.\n\nSo, 91684 * 20008 = 91684 * (20000 + 8)\n                      = (91684 * 20000) + (91684 * 8)\n\nNow we calculate each part separately:\n\n91684 * 20000 = 1833680000\n\n91684 * 8\n= (90000 * 8) + (1000 * 8) + (600 * 8) + (80 * 8) + (4 * 8)\n= 720000 + 8000 + 4800 + 640 + 32\n= 733472\n\nNow we add the two results:\n1833680000 + 733472 = 1834413472\n\nThe answer to this question is $\\boxed{1834413472}$\n"
+        ],
+        "ans_list": [
+            "1834413472"
+        ],
+        "final_answer": "1834413472",
+        "Correctness": true
+    },
+    {
+        "question": "4032*84266=",
+        "no": 259,
+        "solution": "339760512",
+        "ans_sampling": [
+            "4032 * 84266\n\nFirst, multiply 4032 by 6:\n4032 * 6 = 24192\n\nNext, multiply 4032 by 60 (6 in the tens place):\n4032 * 60 = 241920\n\nNext, multiply 4032 by 200 (2 in the hundreds place):\n4032 * 200 = 806400\n\nNext, multiply 4032 by 4000 (4 in the thousands place):\n4032 * 4000 = 16128000\n\nNext, multiply 4032 by 80000 (8 in the ten-thousands place):\n4032 * 80000 = 322560000\n\nNow, add the products:\n24192 + 241920 + 806400 + 16128000 + 322560000 = 340336512\n\nThe answer to this question is $\\boxed{340336512}$\n"
+        ],
+        "ans_list": [
+            "340336512"
+        ],
+        "final_answer": "340336512",
+        "Correctness": false
+    },
+    {
+        "question": "What is -5*(-17 + (-697)/476*-12), please return the calculation result in its simplest fraction form.",
+        "no": 148,
+        "solution": "-20/7",
+        "ans_sampling": [
+            "1. **Calculate (-697)/476 * -12:**\n   (-697)/476 * -12 = (697 * 12) / 476  = 8364/476\n\n2. **Simplify the fraction 8364/476:**\n   Both 8364 and 476 are divisible by 4.\n   8364/4 = 2091\n   476/4 = 119\n   So, 8364/476 simplifies to 2091/119.\n\n   Furthermore, 2091 and 119 are both divisible by 17.\n   2091 / 17 = 123\n   119 / 17 = 7\n\n   So the simplified fraction is 123/7.\n\n3. **Substitute back into the original expression:**\n   -5 * (-17 + 123/7)\n\n4. **Convert -17 to a fraction with denominator 7:**\n   -17 = -119/7\n\n5. **Calculate -17 + 123/7:**\n   -119/7 + 123/7 = 4/7\n\n6. **Calculate -5 * (4/7):**\n   -5 * (4/7) = -20/7\n\nThe answer to this question is $\\boxed{-\\frac{20}{7}}$.\n"
+        ],
+        "ans_list": [
+            "20"
+        ],
+        "final_answer": "20",
+        "Correctness": false
+    },
+    {
+        "question": "946195468138+987210728275=",
+        "no": 211,
+        "solution": "1933406196413",
+        "ans_sampling": [
+            "946195468138 + 987210728275\n\nWe can line up the numbers and add them column by column, starting from the rightmost column:\n\n```\n  946195468138\n+ 987210728275\n---------------\n1933406196413\n```\n\nStarting from the right:\n\n8+5 = 13, write down 3, carry over 1\n3+7+1 = 11, write down 1, carry over 1\n1+2+1 = 4\n8+8 = 16, write down 6, carry over 1\n6+2+1 = 9\n4+0 = 4\n5+7 = 12, write down 2, carry over 1\n9+1+1 = 11, write down 1, carry over 1\n1+2+1=4\n6+7=13, write down 3, carry over 1\n4+8+1=13, write down 3, carry over 1\n9+9+1=19\n\nSo, 946195468138 + 987210728275 = 1933406196413\n\nThe answer to this question is $\\boxed{1933406196413}$\n"
+        ],
+        "ans_list": [
+            "1933406196413"
+        ],
+        "final_answer": "1933406196413",
+        "Correctness": true
+    },
+    {
+        "question": "936913097197+52653430976=",
+        "no": 214,
+        "solution": "989566528173",
+        "ans_sampling": [
+            "936913097197 + 52653430976\n\nAdding the units place: 7+6=13. Write down 3, carry over 1\nAdding the tens place: 9+7+1=17. Write down 7, carry over 1\nAdding the hundreds place: 1+9+1=11. Write down 1, carry over 1\nAdding the thousands place: 7+0+1=8\nAdding the ten-thousands place: 9+3=12. Write down 2, carry over 1\nAdding the hundred-thousands place: 0+4+1=5\nAdding the millions place: 3+3=6\nAdding the ten-millions place: 1+5=6\nAdding the hundred-millions place: 3+2=5\nAdding the billions place: 6+0=6\nAdding the ten-billions place: 9+0=9\nAdding the hundred-billions place: 3+0=3\nAdding the trillion place: 9+0=9\n\nSo, 936913097197 + 52653430976 = 989566528173\n\n\nThe answer to this question is $\\boxed{989566528173}$\n"
+        ],
+        "ans_list": [
+            "989566528173"
+        ],
+        "final_answer": "989566528173",
+        "Correctness": true
+    },
+    {
+        "question": "90161*91816=",
+        "no": 266,
+        "solution": "8278222376",
+        "ans_sampling": [
+            "90161 * 91816\n\n= 90161 * (90000 + 1000 + 800 + 10 + 6)\n\n= (90161 * 90000) + (90161 * 1000) + (90161 * 800) + (90161 * 10) + (90161 * 6)\n\n= 8114490000 + 90161000 + 72128800 + 901610 + 540966\n\n= 8114490000 + 90161000 + 72128800 + 901610 + 540966\n\n= 8204651000 + 72128800 + 901610 + 540966\n\n= 8276779800 + 901610 + 540966\n\n= 8277681410 + 540966\n\n= 8278222376\n\nThe answer to this question is $\\boxed{8278222376}$\n"
+        ],
+        "ans_list": [
+            "8278222376"
+        ],
+        "final_answer": "8278222376",
+        "Correctness": true
+    },
+    {
+        "question": "61\u00d772=",
+        "no": 252,
+        "solution": "4392",
+        "ans_sampling": [
+            "* **Multiply 2 (from 72) by 1 (from 61):** 2 * 1 = 2\n* **Multiply 2 (from 72) by 6 (from 61):** 2 * 6 = 12.  This gives us 120 (since the 2 was in the \"ones\" place of 72).\n* **Now, move to the 7 in 72.  Since it's in the \"tens\" place, add a zero as a placeholder:**  \n* **Multiply 7 (from 72) by 1 (from 61):** 7 * 1 = 7. Write down 70 (because of the placeholder zero).\n* **Multiply 7 (from 72) by 6 (from 61):** 7 * 6 = 42. Write down 4200 (because of the tens place).\n* **Add the results:** 122 + 4270  =  2 + 70 = 72.  120 + 4270 = 4392\n     2\n   120\n+4200\n------\n 4320 + 70 + 2 = 4392\n      2\n    120\n+ 4270\n-------\n   4392\n\nThe answer to this question is $\\boxed{4392}$\n"
+        ],
+        "ans_list": [
+            "4392"
+        ],
+        "final_answer": "4392",
+        "Correctness": true
+    },
+    {
+        "question": "45960*59693=",
+        "no": 267,
+        "solution": "2743490280",
+        "ans_sampling": [
+            "45960 * 59693\n\nWe can break down the multiplication as follows:\n\n45960 * 59693 = 45960 * (50000 + 9000 + 600 + 90 + 3)\n\n= (45960 * 50000) + (45960 * 9000) + (45960 * 600) + (45960 * 90) + (45960 * 3)\n\n= 2298000000 + 413640000 + 27576000 + 4136400 + 137880\n\n= 2298000000 + 413640000 + 27576000 + 4136400 + 137880\n\nAdding the products together:\n\n2298000000\n  413640000\n   27576000\n    4136400\n     137880\n-------------\n2744750280\n\nTherefore, 45960 * 59693 = 2744750280\n\nThe answer to this question is $\\boxed{2744750280}$\n"
+        ],
+        "ans_list": [
+            "2744750280"
+        ],
+        "final_answer": "2744750280",
+        "Correctness": false
+    },
+    {
+        "question": "61081\u00d744496=",
+        "no": 264,
+        "solution": "2717860176",
+        "ans_sampling": [
+            "61081 \u00d7 44496\n\nWe can calculate this by breaking down one of the numbers and distributing.\n\n61081 \u00d7 44496 = 61081 \u00d7 (40000 + 4000 + 400 + 90 + 6)\n                    = 61081 \u00d7 40000 + 61081 \u00d7 4000 + 61081 \u00d7 400 + 61081 \u00d7 90 + 61081 \u00d7 6\n                    = 2443240000 + 244324000 + 24432400 + 5497290 + 366486\n\nAdding these gives:\n2443240000\n  244324000\n   24432400\n     5497290\n      366486\n------------\n2717430776\n\nAlternatively, we can multiply the numbers directly:\n     61081\nx   44496\n--------\n   366486\n  5497290\n 24432400\n244324000\n2443240000\n-------------\n2717430776\n\nThe answer to this question is $\\boxed{2717430776}$\n"
+        ],
+        "ans_list": [
+            "2717430776"
+        ],
+        "final_answer": "2717430776",
+        "Correctness": false
+    },
+    {
+        "question": "Evaluate (465/(-17298)*(-3)/10)/(1/24*2), please return the calculation result in its simplest fraction form.",
+        "no": 77,
+        "solution": "3/31",
+        "ans_sampling": [
+            "Let the given expression be denoted by $E$.\n\\begin{align*}E &= \\frac{\\frac{465}{-17298} \\cdot \\frac{-3}{10}}{\\frac{1}{24} \\cdot 2} \\\\ &= \\frac{\\frac{465}{17298} \\cdot \\frac{3}{10}}{\\frac{2}{24}} \\\\ &= \\frac{\\frac{465 \\cdot 3}{17298 \\cdot 10}}{\\frac{1}{12}} \\\\ &= \\frac{\\frac{1395}{172980}}{\\frac{1}{12}} \\\\ &= \\frac{1395}{172980} \\cdot 12 \\\\ &= \\frac{1395 \\cdot 12}{172980} \\\\ &= \\frac{16740}{172980}\\end{align*}\nNow we simplify the fraction by finding the greatest common divisor of the numerator and denominator.\n$$16740 = 2^2 \\cdot 3^2 \\cdot 5 \\cdot 7 \\cdot 13$$\n$$172980 = 2^2 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 13 \\cdot 31$$\nThe GCD is $2^2 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 13 = 4 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 13 = 5460$.\nSo we divide the numerator and denominator by 5460:\n$$\\frac{16740}{172980} = \\frac{16740/5460}{172980/5460} = \\frac{3}{31.8} = \\frac{16740}{5460} \\cdot \\frac{1}{172980/5460} = 3(1/31.8)$$\n$$ \\frac{16740}{172980} = \\frac{16740}{172980} = \\frac{5460 \\cdot 3}{5460 \\cdot 31.8} = \\frac{3}{31.8} \\times \\frac{10}{10} = \\frac{30}{318} = \\frac{3 \\times 10}{3 \\times 106} = \\frac{10}{106} = \\frac{2 \\times 5}{2 \\times 53} = \\frac{5}{53} $$\n\nThe answer to this question is $\\boxed{5/53}$.\nFinal Answer: The final answer is 5/53.\n"
+        ],
+        "ans_list": [
+            "53"
+        ],
+        "final_answer": "53",
+        "Correctness": false
+    },
+    {
+        "question": "Calculate (-24)/(-32) - (20/60 + (-5 - 4467/(-828))), please return the calculation result in its simplest fraction form.",
+        "no": 82,
+        "solution": "1/46",
+        "ans_sampling": [
+            "First, let's simplify each part of the expression separately:\n\n1. (-24)/(-32) = 24/32 = 3/4 (Since both numerator and denominator are negative, the fraction becomes positive). Simplifying the fraction by dividing both by 8.\n\n2. 20/60 = 1/3 (Simplifying by dividing both by 20).\n\n3. -4467/(-828) = 4467/828 =  5.39  (Since both numerator and denominator are negative, the fraction becomes positive). Dividing 4467 by 828 gives 5 with a remainder.  The decimal value is approximately 5.39.  4467 = 5.39 x 828  \nThen we can simplify the fraction by finding the greatest common divisor (GCD). GCD of 4467 and 828 is 27. So 4467 / 27 = 165.44 and 828/27 = 30.67. Therefore, we can approximate it as 165/31 = 5.32 which is close to the decimal value calculated earlier.\n\n4. -5 - 4467/(-828) = -5 + 4467/828 = -5 + 165.44/30.67 Approximately equal to -5 + 5.38. Convert -5 to a fraction over 828. We get -4140/828 + 4467/828\nAdd the numerators and simplify: 327/828\n\n5. 20/60 + (-5 - 4467/(-828)) = 1/3 + 327/828. We need a common denominator, which is 828. Multiply the numerator and denominator of 1/3 by 276. 276/828 + 327/828= 603/828 = 201/276.\n\n6. Now, we combine everything:\n(-24)/(-32) - (20/60 + (-5 - 4467/(-828)))\n= 3/4 - 201/276\nFind a common denominator for 4 and 276. Since 4 goes into 276 we have 276 as our common denominator. Rewrite 3/4 with a denominator of 276, multiply numerator and denominator by 69, you get 207/276.\n207/276 - 201/276 = 6/276 = 1/46.\n\nThe answer to this question is $\\boxed{1/46}$\n"
+        ],
+        "ans_list": [
+            "46"
+        ],
+        "final_answer": "46",
+        "Correctness": false
+    },
+    {
+        "question": "979442624617-98210807692=",
+        "no": 223,
+        "solution": "881231816925",
+        "ans_sampling": [
+            "979442624617 - 98210807692\n\nSubtract the ones place: 7 - 2 = 5\nSubtract the tens place: 1 - 9 (borrow 1 from hundreds place) -> 11 - 9 = 2\nSubtract the hundreds place: 6 - 6 (remember we borrowed 1, it's now 5) -> 5 - 6 (borrow 1 from thousands place) -> 15 - 6 = 9\nSubtract the thousands place: 4 - 7 (remember we borrowed 1, it's now 3) -> 3 - 7 (borrow 1 from ten thousands place) -> 13 - 7 = 6\nSubtract the ten thousands place: 2 - 0 (remember we borrowed 1, it's now 1) -> 1 - 0 = 1\nSubtract the hundred thousands place: 2 - 8 (borrow 1 from millions place) -> 12 - 8 = 4\nSubtract the millions place: 6 - 1 (remember we borrowed 1, it's now 5) -> 5 - 1 = 4\nSubtract the ten millions place: 4 - 0 = 4\nSubtract the hundred millions place: 4 - 2 = 2\nSubtract the billions place: 9 - 8 = 1\nSubtract the ten billions place: 7 - 9 (borrow 1 from hundred billions place) -> 17 - 9 = 8\nSubtract the hundred billions place: 9 - 0 (remember we borrowed 1, it's now 8) -> 8 - 0 = 8\n\nSo, 979442624617 - 98210807692 = 881231816925\n\nThe answer to this question is $\\boxed{881231816925}$\n"
+        ],
+        "ans_list": [
+            "881231816925"
+        ],
+        "final_answer": "881231816925",
+        "Correctness": true
+    },
+    {
+        "question": "What is -3*52/(-336)*(-3339)/(-477), please return the calculation result in its simplest fraction form.",
+        "no": 68,
+        "solution": "13/4",
+        "ans_sampling": [
+            "1. **Multiply -3 and 52:**  -3 * 52 = -156\n\n2. **Divide by -336:** -156 / -336 = 156/336. We can simplify this fraction by dividing both numerator and denominator by their greatest common divisor, which is 12. So, 156/336 = 13/28.\n\n3. **Multiply by -3339:** (13/28) * -3339 = -43407/28\n\n4. **Divide by -477:** (-43407/28) / -477 = (-43407/28) * (-1/477) = 43407 / (28*477) = 43407/13356.  We can simplify this by dividing both numerator and denominator by their greatest common divisor which is 3. 43407/3 = 14469 and 13356/3 = 4452. So, the fraction becomes 14469/4452.  We can simplify further by noting both numbers are divisible by 3 again.  14469/3 = 4823 and 4452/3 = 1484. The fraction becomes 4823/1484. We can simplify this further as both are divisible by 3. 4823/3 = 1607+(2/3) which is written as 4823/3 = 1607.666... and 1484/3 = 494+(2/3) which is written as 1484/3 = 494.666... so 4823/1484 = (4823/3) / (1484/3) = 4823/1484.\n\nLooking for factors greater than 3 now to simply the fraction 4823/1484 further, we find that both are divisible by 13. So 4823/13 = 371 and 1484/13 = 114 +2/13. \n\nLet's start by looking at 43407 / 13356 and dividing by 3 a total of three times:\n43407/3 = 14469\n14469/3 = 4823\n4823/3 = 1607 + 2/3, which gives a long decimal representation\n\n13356/3 = 4452\n4452/3 = 1484\n1484/3 = 494+ 2/3 which gives a long decimal representation\n\nSo, let's rewind and try dividing the 43407/13356 by 27 (3^3) directly which gives us 43407/27 = 1607.66666... and 13356/27 = 494.6666666. The division is 1607.666.../494.666..... which is close to 3.25\n\nGoing back to 43407/13356 = 371/114.23...  \n\nThe answer to this question is $\\boxed{371/114}$\n"
+        ],
+        "ans_list": [
+            "114"
+        ],
+        "final_answer": "114",
+        "Correctness": false
+    }
+]
