@@ -1,2 +1,2 @@
-python Evaluation.py \
-    --Evaluation "MS_MAD"
+python src/Evaluation.py \
+    --Evaluation "MS_MAD" \

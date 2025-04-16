@@ -1,2 +1,3 @@
-python Evaluation.py \
-    --Evaluation "RM"
+python src/Evaluation.py \
+    --Evaluation "RM" \
+    --dataset "MathBench"
