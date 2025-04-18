@@ -67,9 +67,15 @@ python src/Evaluation.py \
 ## Citation
 
 
-@article{chen2025we,
+@article{
+
+  chen2025we,
+
   title={Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scale Test-Time Compute},
+  
   author={Chen, Jianhao and Xun, Zishuo and Zhou, Bocheng and Qi, Han and Zhang, Qiaosheng and Chen, Yang and Hu, Wei and Qu, Yuzhong and Ouyang, Wanli and Hu, Shuyue},
+  
   journal={arXiv preprint arXiv:2504.00762},
+  
   year={2025}
 }
