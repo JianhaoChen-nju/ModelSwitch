@@ -51,7 +51,6 @@ python src/Evaluation.py \
 python src/Evaluation.py \
     --Evaluation "MS_MAD" \
     --dataset "GSM8K"
-
 ```
 
 ### Combined with Reward Model
@@ -66,16 +65,12 @@ python src/Evaluation.py \
 
 ## Citation
 
-
+```
 @article{
-
-  chen2025we,
-
-  title={Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scale Test-Time Compute},
-  
-  author={Chen, Jianhao and Xun, Zishuo and Zhou, Bocheng and Qi, Han and Zhang, Qiaosheng and Chen, Yang and Hu, Wei and Qu, Yuzhong and Ouyang, Wanli and Hu, Shuyue},
-  
-  journal={arXiv preprint arXiv:2504.00762},
-  
-  year={2025}
+    chen2025we,
+    title={Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scale Test-Time Compute},
+    author={Chen, Jianhao and Xun, Zishuo and Zhou, Bocheng and Qi, Han and Zhang, Qiaosheng and Chen, Yang and Hu, Wei and Qu, Yuzhong and Ouyang, Wanli and Hu, Shuyue},
+    journal={arXiv preprint arXiv:2504.00762},
+    year={2025}
 }
+```
