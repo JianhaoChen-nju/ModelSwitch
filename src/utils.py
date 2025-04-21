@@ -279,18 +279,13 @@ def get_last_uppercase(solutions):
     return final_answers
 
 def latex_to_python(latex_expr):
-    """
-    将 LaTeX 格式的加减乘除符号转换为 Python 运算符。
-    :param latex_expr: str, 包含 LaTeX 表达式的字符串
-    :return: str, Python 运算符组成的表达式字符串
-    """
-    # 替换 LaTeX 符号为 Python 运算符
-    latex_expr = latex_expr.replace('\\+', '+')  # 加号
-    latex_expr = latex_expr.replace('\\-', '-')  # 减号
-    latex_expr = latex_expr.replace('\\times', '*')  # 乘号
-    latex_expr = latex_expr.replace('\\cdot', '*')  # 乘号（点符号）
-    latex_expr = latex_expr.replace('\\div', '/')  # 除号
-    latex_expr = latex_expr.replace('\\frac', '/')  # 分式
+
+    latex_expr = latex_expr.replace('\\+', '+') 
+    latex_expr = latex_expr.replace('\\-', '-')  
+    latex_expr = latex_expr.replace('\\times', '*')  
+    latex_expr = latex_expr.replace('\\cdot', '*')  
+    latex_expr = latex_expr.replace('\\div', '/') 
+    latex_expr = latex_expr.replace('\\frac', '/')  
     return latex_expr
 
 def extract_final_answers_game24(outputs):
@@ -302,24 +297,6 @@ def extract_final_answers_game24(outputs):
     return final_answers
 
 
-
-def validate_expression(numbers, expression):
-    # 检查等式是否为24
-    try:
-        if eval(expression.split('=')[0]) != 24:
-            return False
-    except:
-        return False
-
-    # 提取等式中的数字
-    import re
-    expression_numbers = re.findall(r'\d+', expression.split('=')[0])
-    expression_numbers = list(map(int, expression_numbers))
-    # print(expression_numbers)
-    # 检查输入的数字是否全部使用且只使用一次
-    return sorted(numbers) == sorted(expression_numbers)
-
-# 3.humaneval, mbpp代码提取
 def extract_code_answer(text: str) -> str:
 
     text = text.split('```python')[-1]
@@ -330,47 +307,7 @@ def extract_code_answer(text: str) -> str:
     else:
         return "NONE"
     
-# 4.humaneval代码评测
-@timeout(20)
-def format_solution_humaneval(answer: str, target: str) ->bool:
-    '''
-    match_fn(answer, target)
-    Args:
-    answer: codes from agents
-    target : solution: dict
-    '''
-    eval_code = answer + '\n' + target["test"] + f'\ncheck({target["entry_point"]})'
-    exec_globals = {}
-    try:
-        exec(eval_code,exec_globals)
-        return True
-    except:
-        return False
-    
-# 5.mbpp代码评测
-@timeout(20)
-def format_solution_mbpp(answer: str, target: str) ->bool:
-    '''
-    match_fn(answer, target)
-    Args:
-    answer: codes from agents
-    target : solution: dict
-    '''
-    answer = '\n'+answer
-    pos = answer.rfind('\ndef ')
-    last_func_name = answer[pos+5:].split('(')[0]
-    format_answer = answer.replace(last_func_name, target["func_name"])
-    eval_code = ""
-    for item in target["test_setup_code"]:
-        eval_code += item
-    eval_code += format_answer
-    try:
-        exec(eval_code, globals())
-        for test in target["test_list"]:
-            exec(test)
-        return True
-    except:
-        return False
+
 def compute_correctness(ans_list,s,dataset):
     is_correct=0
     if dataset not in ["humaneval","mbpp"]: 

@@ -105,7 +105,6 @@ def MGSM_questions(
     random_seed: int = 42
 ):
     random.seed(random_seed)
-    # 除去英文
     dataset=[]
     subsets=["bn","de","es","fr","ja","ru","sw","te","th","zh"]
     subset_len=250

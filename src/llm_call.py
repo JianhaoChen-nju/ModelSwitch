@@ -45,7 +45,7 @@ class Hg_model:
         }
         if 'llama' in self.model_name:
             messages = [
-            {"role": "system", "content": "You are a bot that responds to weather queries. Stop when you get the answer"},
+            {"role": "system", "content": "You are a robot completing questions. Stop when you get the answer"},
             {"role": "user", "content": f"{prompt}"}
             ]
 
@@ -214,97 +214,5 @@ def gemini(
     for s in stop:
         result=result.split(s)[0]
     
-    return result
-
-@try_except_decorator
-def summarize_text(
-    prompt,
-    model: str = "gpt-4o-mini",
-    temperature: float = 0.0,
-    max_tokens: int = 50
-):
-    set_api_and_proxy()
-    # gpt-4o-mini
-    client = OpenAI(
-            api_key="sk-jFMH3CyP3TFbKnSdk4V412YmIlBJRaycbniOjoiZobYwvTAo",
-            base_url="https://api.claudeshop.top/v1"
-    )
-    response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "user", "content": "Summarize the following text in one sentence:\n\n"+prompt}
-            ],
-            temperature=temperature,
-            max_tokens=max_tokens,
-        ).to_dict()
-    
-    return response["choices"][0]["message"]["content"]
-
-@try_except_decorator
-def evaluate_topic(
-    question,
-    statement1,
-    statement2,
-    model: str = "gpt-4o-mini",
-    max_tokens: int = 3,
-    temperature: float=0.0
-):
-    # 构建请求内容
-    prompt = (
-        f"Question:\n{question}\n\nDetermine whether the following two statements about the Question are discussing the same subproblem. Please ignore their conclusions about this subproblem and only focus on whether they are discussing the same topic:\n"
-        f"1. {statement1}\n2. {statement2}\n\nAnswer with one of the words: 'Yes', 'No':\n"
-    )
-    # print(prompt)
-    # 调用 OpenAI 的 ChatGPT API
-    set_api_and_proxy()
-    client = OpenAI(
-            api_key="sk-8eHzwMgmpm05NTJ6y26e2SiWbAPf6wLGIiH2zr0u1iHjZd1p",
-            base_url="https://api.claudeshop.top/v1"
-        )
-
-    response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            temperature=temperature,
-            max_tokens=max_tokens
-        ).to_dict()
-    result=response["choices"][0]["message"]["content"].lower()
-    # print(result)
-    return result
-
-@try_except_decorator
-def evaluate_conclusion(
-    question,
-    statement1,
-    statement2,
-    model: str = "gpt-4o-mini",
-    max_tokens: int = 3,
-    temperature: float=0.0
-):
-    # 构建请求内容
-    prompt = (
-        f"Question:\n{question}\n\nDetermine whether the following two statements about one of the subproblems of the Question lead to the same conclusion. Please pay special attention to the logic and calculation parts:\n"
-        f"1. {statement1}\n2. {statement2}\n\nAnswer with one of the words: 'Yes', 'No':\n"
-    )
-    # print(prompt)
-    # 调用 OpenAI 的 ChatGPT API
-    set_api_and_proxy()
-    client = OpenAI(
-            api_key = os.environ["OPENAI_API_KEY"],
-            base_url = os.environ["OPENAI_API_BASE"]
-        )
-
-    response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            temperature=temperature,
-            max_tokens=max_tokens
-        ).to_dict()
-    result=response["choices"][0]["message"]["content"].lower()
-    # print(result)
     return result
 
