@@ -159,11 +159,4 @@ wrapt_timeout_decorator==1.5.1
 xxhash==3.5.0
 yarl==1.18.3
 zipp==3.21.0
-<<<<<<< HEAD
-zstandard @ file:///croot/zstandard_1714677652653/work
-=======
-datasets
-openai
-transformer
-wrapt_timeout_decorator
->>>>>>> c699baa7fdd2b5b77d81a9ce29358f2e70cd7987
+
