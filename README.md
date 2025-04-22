@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 
 ```
-python src/Model_swtich.py \
+python src/Model_switch.py \
     --dataset_name "GSM8K" \
     --num_workers 250 \
     --Sampling True \
