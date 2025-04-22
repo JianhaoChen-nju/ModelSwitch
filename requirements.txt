@@ -26,3 +26,5 @@ sympy==1.12
 threadpoolctl==3.5.0
 tzdata==2025.1
 zipp==3.21.0
+datasets
+openai

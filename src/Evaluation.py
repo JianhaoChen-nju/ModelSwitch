@@ -120,7 +120,8 @@ def metric_agent_verse(dataset):
         datas=json.load(f)
     total=len(datas)
     for data in datas:
-        correct+=compute_correctness([data["answer_letter"]],data,dataset)
+        if data["correct"]:
+            correct+=1
     print(f"AgentVerse Accuracy:{correct*100.0/total}")
 def metric_RM(dataset,budget):
     lm_ids=["gpt-4o-mini","gemini-1.5-flash-latest"]
@@ -142,6 +143,7 @@ def metric_RM(dataset,budget):
     print(f"Best_Single_RM Accuracy:{max(correct_list)*100.0/total}")
 def metric_Sampling(dataset,budget):
     lm_ids=["gpt-4o-mini","gemini-1.5-flash-latest","gpt-4o","gemini-1.5-pro"]
+    budgets=[budget,budget,1,1]
     with open (f"Results/{dataset}/MS/closed_source/results.json","r")as f:
         datas=json.load(f)
         total=len(datas)
@@ -153,7 +155,7 @@ def metric_Sampling(dataset,budget):
                 final_ans_list=data[f"{lm_id}_ans_list"][:sampling_num]
                 correct_each[index_lm]+=compute_correctness(final_ans_list,data,dataset)
         for index_lm,lm_id in enumerate(lm_ids):
-            print(f"{lm_id}_Budget{budget}_Accuracy: {correct_each[index_lm]*100.0/total}")
+            print(f"{lm_id}_Budget{budgets[index_lm]}_Accuracy: {correct_each[index_lm]*100.0/total}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate the dataset.")

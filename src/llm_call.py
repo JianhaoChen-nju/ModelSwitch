@@ -7,15 +7,12 @@ import requests
 from openai import OpenAI
 from tqdm import tqdm
 from typing import Any, Callable, Dict, Optional, Tuple
-from huggingface_hub import login
 from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, LlamaForCausalLM
 import torch
 
 device='cuda'
-# model="meta-llama/Llama-3.1-8B-Instruct"
-access_token = "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"
-# login(access_token)
-
+os.environ["OPENAI_API_KEY"] = "YOUR KEY"
+os.environ["OPENAI_API_BASE"] = "YOUR BASE"
 class Hg_model:
     def __init__(
     self,
@@ -82,20 +79,6 @@ def try_except_decorator(func: Callable) -> Callable:
                 time.sleep(3)
     return func_wrapper
 
-def set_api_and_proxy():
-    # byjunior031@gmail.coms
-    # os.environ["OPENAI_API_KEY"] = "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"
-    # ivykkg@berlin.com
-    os.environ["OPENAI_API_KEY"] = "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"
-    os.environ["OPENAI_API_BASE"] = "https://api.openai.com/v1"
-
-    # os.environ["http_proxy"] = "http://127.0.0.1:7897"
-    # os.environ["https_proxy"] = "http://127.0.0.1:7897"
-
-    os.environ["CLAUDESHOP_API_BASE"] = "https://api.claudeshop.top/v1"
-    os.environ["CLAUDESHOP_API_KEY"] = "sk-WtIfXtM8Mtoz2DwVDhKYUMWeNNtEhD79Q5LKuKTBi2mGwVs7"#"sk-VxUMGYMoiYWdFRFE5pcp9femWhhinvNUGY7qziHn7VwpB03O"
-    os.environ['NO_PROXY'] = 'api.claudeshop.top'
-
 @try_except_decorator
 def gpt(
     prompt: str,
@@ -105,13 +88,9 @@ def gpt(
     top_p: float=1.0,
     num_sampling:int=1
 ):
-
-    # set_api_and_proxy()
-
-    # gpt-4o-mini
     client = OpenAI(
-            api_key="sk-8eHzwMgmpm05NTJ6y26e2SiWbAPf6wLGIiH2zr0u1iHjZd1p",
-            base_url="https://api.claudeshop.top/v1"
+            api_key=os.environ["OPENAI_API_KEY"],
+            base_url=os.environ["OPENAI_API_BASE"]
     )
 
     response = client.chat.completions.create(
@@ -132,11 +111,9 @@ def claude(
     temperature: float=1.0,
     top_p: float=1.0
 ):
-    # set_api_and_proxy()
-    os.environ["CLAUDESHOP_API_KEY"] = "sk-WtIfXtM8Mtoz2DwVDhKYUMWeNNtEhD79Q5LKuKTBi2mGwVs7"
     client = OpenAI(
-                api_key = os.environ["CLAUDESHOP_API_KEY"],
-                base_url = "https://api.claudeshop.top/v1"
+                api_key = os.environ["OPENAI_API_KEY"],
+                base_url = os.environ["OPENAI_API_BASE"]
             )
     if system_prompt=="":
         response = client.chat.completions.create(
@@ -173,8 +150,8 @@ def gemini(
 ):
     set_api_and_proxy()
     client = OpenAI(
-            api_key="sk-jFMH3CyP3TFbKnSdk4V412YmIlBJRaycbniOjoiZobYwvTAo",
-            base_url="https://api.claudeshop.top/v1"
+                api_key = os.environ["OPENAI_API_KEY"],
+                base_url = os.environ["OPENAI_API_BASE"]
             )
     response = client.chat.completions.create(
             model=model,
@@ -190,29 +167,4 @@ def gemini(
 
     return result
 
-@try_except_decorator
-def gemini(
-    prompt: str,
-    model: str = "gemini-1.5-flash-latest",
-    stop: list[str] = [],
-    temperature: float=1.0,
-    top_p: float=1.0    
-):
-    set_api_and_proxy()
-    client = OpenAI(
-                api_key = os.environ["CLAUDESHOP_API_KEY"],
-                base_url = os.environ["CLAUDESHOP_API_BASE"]
-            )
-    response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=temperature,
-            top_p=top_p
-        ).to_dict()
-    result=response["choices"][0]["message"]["content"]
-    # print(result)
-    for s in stop:
-        result=result.split(s)[0]
-    
-    return result
 

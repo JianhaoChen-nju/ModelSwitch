@@ -8,5 +8,5 @@ python src/Model_swtich.py \
     --results_sampling 5 \
     --modellist "Llama-3.1-8B-Instruct|gemma-2-9b-it"\
     --ConsistencyThreshold 1  \
-    --Open_SourceModel True \
+    --Open_SourceModel True
 

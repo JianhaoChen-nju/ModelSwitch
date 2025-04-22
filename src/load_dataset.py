@@ -25,7 +25,7 @@ def gsm8k_questions(
     questions = []
     Sampling_questions = []
 
-    data = load_hf_dataset("arrow", data_files={"train": "../Datasets/GSM8K/gsm8k-train.arrow", "test": "../Datasets/GSM8K/gsm8k-test.arrow"}, split="test")
+    data = load_hf_dataset("arrow", data_files={"train": "Datasets/GSM8K/gsm8k-train.arrow", "test": "Datasets/GSM8K/gsm8k-test.arrow"}, split="test")
 
     for i, q in enumerate(data):
         question = {
@@ -54,7 +54,7 @@ def date_question(
     random_seed: int = 42
 ):
     random.seed(random_seed)
-    datas=load_hf_dataset("json",data_files="../Datasets/DATE/DATE.json",split="train")
+    datas=load_hf_dataset("json",data_files="Datasets/DATE/DATE.json",split="train")
     questions=[]
     for data in datas:
         question={
@@ -75,7 +75,7 @@ def mmlu_pro_question(
     random_seed: int = 42
 ):
     random.seed(random_seed)
-    dataset=load_hf_dataset("json",data_files="../Datasets/MMLU_Pro/MMLU-Pro.json",split="train")
+    dataset=load_hf_dataset("json",data_files="Datasets/MMLU_Pro/MMLU-Pro.json",split="train")
     questions=[]
     for index in range(len(dataset)):
         question={
@@ -108,7 +108,7 @@ def MGSM_questions(
     dataset=[]
     subsets=["bn","de","es","fr","ja","ru","sw","te","th","zh"]
     subset_len=250
-    dataset = load_hf_dataset("json",data_files="../Datasets/MGSM.json",split="train")
+    dataset = load_hf_dataset("json",data_files="Datasets/MGSM.json",split="train")
     # print(len(dataset))
     questions=[]
     for index in range(len(dataset)):
@@ -143,7 +143,7 @@ Sampling_Numbers: int = 100,
 random_seed: int = 42
 ):
     dataset=[]
-    with open("../Datasets/MathBench.txt","r")as f:
+    with open("Datasets/MathBench.txt","r")as f:
         datas_line=f.readlines()
         for data in datas_line:
             dataset.append(json.loads(data))
@@ -174,7 +174,7 @@ Sampling: bool = False,
 Sampling_Numbers: int = 100,
 random_seed: int = 42
 ):
-    dataset = load_hf_dataset("../Datasets/MATH.json",split="train")
+    dataset = load_hf_dataset("Datasets/MATH.json",split="train")
     random.seed(random_seed)
     questions=[]
     for index in range(len(dataset)):
