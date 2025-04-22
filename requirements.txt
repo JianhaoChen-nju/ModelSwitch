@@ -28,3 +28,5 @@ tzdata==2025.1
 zipp==3.21.0
 datasets
 openai
+transformer
+wrapt_timeout_decorator
