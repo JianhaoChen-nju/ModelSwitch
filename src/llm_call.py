@@ -25,7 +25,7 @@ class Hg_model:
 
                                                                     # pad_token_id=tokenizer.eos_token_id,
                                                                     #load_in_8bit=True,
-                                                                    device_map="balanced_low_0",
+                                                                    device_map="auto",
                                                                     cache_dir='../../../Multi-Agent_Collaboration/debatellm/eval/work/pi_chuangg_umass_edu/.cahce',trust_remote_code=True)
     #generator = pipeline(model=lm_id, device=device, torch_dtype=torch.float16)
         self.model_name=model
