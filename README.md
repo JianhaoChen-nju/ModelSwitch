@@ -11,6 +11,8 @@ Some of the data and code are still being organized and will be available soon.
 
 
 ```
+conda create -n ModelSwitch python=3.10
+conda activate ModelSwitch
 pip install -r requirements.txt
 ```
 
