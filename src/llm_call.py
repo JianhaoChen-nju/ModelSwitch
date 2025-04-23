@@ -11,8 +11,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, Ll
 import torch
 
 device='cuda'
-os.environ["OPENAI_API_KEY"] = "YOUR KEY"
-os.environ["OPENAI_API_BASE"] = "YOUR BASE"
+os.environ["OPENAI_API_KEY"] = "sk-WtIfXtM8Mtoz2DwVDhKYUMWeNNtEhD79Q5LKuKTBi2mGwVs7"
+os.environ["OPENAI_API_BASE"] = "https://api.claudeshop.top/v1"
 class Hg_model:
     def __init__(
     self,
@@ -20,13 +20,13 @@ class Hg_model:
     temperature=1.0,
     top_p=1.0
     ):  
-        self.tokenizer = AutoTokenizer.from_pretrained(model, cache_dir='../../../Multi-Agent_Collaboration/debatellm/eval/work/pi_chuangg_umass_edu/.cahce',trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(model,trust_remote_code=True)
         self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype=torch.float16,
 
                                                                     # pad_token_id=tokenizer.eos_token_id,
                                                                     #load_in_8bit=True,
                                                                     device_map="auto",
-                                                                    cache_dir='../../../Multi-Agent_Collaboration/debatellm/eval/work/pi_chuangg_umass_edu/.cahce',trust_remote_code=True)
+                                                                    trust_remote_code=True)
     #generator = pipeline(model=lm_id, device=device, torch_dtype=torch.float16)
         self.model_name=model
 

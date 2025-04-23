@@ -5,7 +5,15 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from utils import *
 import copy
 import argparse
-
+import math
+weights_dict={
+    "GSM8K":{'1': 1, '2': 1, '3': 1},
+    "MATH": {'1': 2, '2': 2, '3': 1},
+    "MMLU-Pro":{'1': 1, '2': 1, '3': 1}, 
+    "MGSM":{'1': 1, '2': 1, '3': 1},
+    "MathBench": {"1":2, "2":2, "3":2},
+    "DATE": {"1":1.5, "2":1.5, "3":1}
+}
 def compute_correctness(ans_list,s,dataset):
     is_correct=0
     ans_list=[item for item in ans_list if item !="Error" and item!=""]
@@ -31,6 +39,137 @@ def compute_correctness(ans_list,s,dataset):
 
     
     return is_correct
+def calculate_scores_with_weights(answer_list, weights):
+    cleaned_answer_list = []
+    for answers in answer_list:
+        cleaned_answers = [item.replace(" ", "") for item in answers if item != "Error" and item != ""]
+        cleaned_answer_list.append(cleaned_answers)
+
+    answer_scores = {}
+
+    # V2 entropy
+    def internal_consistency_score(answers):
+        score = {}
+        total_answers = len(answers)
+        if len(answers) == 0:
+            return score
+        counts = {}
+        for answer in answers:
+            counts[answer] = counts.get(answer, 0) + 1
+
+        entropy = 0
+        for count in counts.values():
+            probability = count / total_answers
+            entropy -= probability * math.log2(probability) if probability > 0 else 0
+
+        max_entropy = math.log2(len(counts))
+
+        bias = 1.0 / len(answers)
+        weight = bias + (1 - bias) * (1 - (entropy / max_entropy)) if max_entropy > 0 else 1
+        # print(weight)
+        for answer, count in counts.items():
+            score[answer] = count * weight
+            # score[answer] = count * probability
+            # score[answer] = count
+
+        return score
+
+    def external_weight_score(internal_scores, weight):
+        score = {key: value * weight for key, value in internal_scores.items()}
+        return score
+
+    weighted_scores_list = []
+    for i, answers in enumerate(cleaned_answer_list):
+        internal_scores = internal_consistency_score(answers)
+        weighted_scores = external_weight_score(internal_scores, weights[str(i + 1)])
+        weighted_scores_list.append(weighted_scores)
+
+    all_answers = [answer for answers in cleaned_answer_list for answer in answers]
+    for answer in set(all_answers):
+        total_score = 0
+        for weighted_scores in weighted_scores_list:
+            total_score += weighted_scores.get(answer, 0)
+
+        answer_scores[answer] = total_score
+
+    def select_best_answer():
+        max_score = -1
+        best_answer = None
+
+        for answers in cleaned_answer_list:
+            for answer in answers:
+                score = answer_scores.get(answer, 0)
+                if score > max_score:
+                    max_score = score
+                    best_answer = answer
+
+        return best_answer
+
+    return select_best_answer()
+def vote_algorithmn_performance(dataset,weights):
+    file=f"Results/{dataset}/MS/closed_source/results.json"
+    with open(file,"r") as f1:
+        datas=json.load(f1)
+    lm_ids=["gpt-4o-mini","gemini-1.5-flash-latest","claude"]
+    first_round_Acc=0
+    first_round_Correct=0
+
+    second_round_Acc=0
+    second_round_Correct=0
+
+    third_round_Acc=0
+    third_round_Correct=0
+    mixed_Acc=0
+    mixed_Correct=0
+    Total=len(datas)
+    Correct_answer_before=0
+    Correct_answer_after=0
+    request_len=0
+    correct2wrong=[]
+    wrong2correct=[]
+    correct2wrong_data=[]
+    wrong2correct_data=[]
+    CC=0
+    CW=0
+    WC=0
+    WW=0
+    CW_data=[]
+    WC_data=[]
+    
+    for i,n in enumerate(datas):
+        j=0
+        k=0
+        if dataset=="GSM8K":
+            s = float(datas[i]["solution"].replace(',',''))
+        else:
+            s = datas[i]["solution"]
+
+        first_round_answers=datas[i][f"{lm_ids[0]}_ans_list"][0:6]
+        second_round_answers=datas[i][f"{lm_ids[1]}_ans_list"][0:6]
+        third_round_answers=datas[i][f"{lm_ids[2]}_ans_list"][0:4]
+        
+        request_len+=len(datas[i][f"{lm_ids[0]}_sampling"])
+        first_round_Correct+=compute_correctness(first_round_answers,datas[i],dataset)
+        second_round_Correct+=compute_correctness(second_round_answers,datas[i],dataset)
+        third_round_Correct+=compute_correctness(third_round_answers,datas[i],dataset)
+
+        if dataset in ["MGSM","MATH","MMLU-Pro"]:
+            mixed_final_answer=calculate_scores_with_weights([second_round_answers,first_round_answers,third_round_answers],weights)
+            mixed_answers=second_round_answers+first_round_answers+third_round_answers
+        else: 
+            mixed_final_answer=calculate_scores_with_weights([first_round_answers,second_round_answers,third_round_answers],weights)
+            mixed_answers=first_round_answers+second_round_answers+third_round_answers
+        correctness=compute_correctness([mixed_final_answer],datas[i],dataset)
+        mixed_Correct+=correctness
+
+
+    first_round_Acc=first_round_Correct*1.0/Total
+    second_round_Acc=second_round_Correct*1.0/Total
+    third_round_Acc=third_round_Correct*1.0/Total
+    mixed_Acc=mixed_Correct*100.0/Total
+    print(f"Model_Switch Accuracy:{mixed_Acc}")
+
+
 
 def extract_via_string(ans):
     pattern = r'\b(?:0[1-9]|1[0-2])/(?:0[1-9]|[12][0-9]|3[01])/\d{4}\b'
@@ -52,7 +191,7 @@ def metrics_mad_MLD(dataset):
             answer=data["answer"]
             answer_list=[]
             for index_agnet in range(5):
-                answer_list.extend(extract_via_string([answer[f"Agent_{index_agnet}"]["Round_2"]]))
+                answer_list.append(extract_via_string(answer[f"Agent_{index_agnet}"]["Round_2"]))
             correct+=compute_correctness(answer_list,data,dataset)
     else:
         for data in datas:
@@ -69,7 +208,7 @@ def metrics_mad(dataset):
             answer=data["answer"]
             answer_list=[]
             for index_agnet in range(5):
-                answer_list.extend(extract_via_string([answer[f"Agent_{index_agnet}"]["Round_2"]]))
+                answer_list.append(extract_via_string(answer[f"Agent_{index_agnet}"]["Round_2"]))
             correct+=compute_correctness(answer_list,data,dataset)
     else:
         for data in datas:
@@ -87,7 +226,7 @@ def metrics_chateval(dataset):
             answer=data["answer"]
             answer_list=[]
             for index_agnet in range(3):
-                answer_list.extend(extract_via_string([answer[f"{agent_list[index_agnet]}"]["Round_4"]]))
+                answer_list.append(extract_via_string(answer[f"{agent_list[index_agnet]}"]["Round_4"]))
             correct+=compute_correctness(answer_list,data,dataset)
     else:
         for data in datas:
@@ -169,7 +308,7 @@ if __name__ == "__main__":
         metrics_ms(dataset,budget)
         metric_Sampling(dataset,budget)
     elif args.Evaluation=="MS_MAD":
-        metrics_ms(dataset,budget=16)
+        vote_algorithmn_performance(dataset,weights_dict[dataset])
         metrics_mad_MLD(dataset)
         metric_moa(dataset)
         metrics_mad(dataset)

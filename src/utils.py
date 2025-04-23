@@ -163,33 +163,6 @@ def is_equiv(str1, str2, verbose=False):
     except Exception as e:
         return str1 == str2
 
-def extract_via_gpt(input_str: str,question:str) -> str:
-    """Extracts letter from answer.
-
-    Args:
-        input_str : answer string - answers should start as mentioned in starts_with_capital_letter.
-
-    Returns:
-        letter or "-1".
-    """
-    client = OpenAI(
-        api_key="sk-8eHzwMgmpm05NTJ6y26e2SiWbAPf6wLGIiH2zr0u1iHjZd1p",
-        base_url="https://api.claudeshop.top/v1"
-    )
-
-    message = [{
-        'role': 'user',
-        'content': "Here is a model's answer about following question.\nQuestion:{}\n Please extract the EXACT answer (only one capital letter) from the answer text as the final answer for question.\n\n[Example]: When a picture frame is not hung vertically, placing it on a flat surface is a practical solution. A table provides a stable and accessible location for displaying the frame, allowing for easy viewing and enhancing the decor of the space. Other options, such as a wall or a car, may not offer the same stability or visibility. Therefore, the best choice remains: E: table\n[Extracted Answer]: E\n\n[Example]: The correct answer is A because it aligns with the provided evidence. After further analysis, the answer is still A.\n[Extracted Answer]: A\n\n[Example]: The answer is B. The other options are not supported by the evidence.\n[Extracted Answer]: B\n\n[Example]: To analyze the question, we need to consider the context in which a man would take paperwork to consult with others. 1. **Desk**: This is typically a personal workspace and not a place where multiple people gather to consult over paperwork. It seems less likely. 2. **Meeting**: This is a formal gathering where people discuss specific topics, often involving paperwork. This option fits well with the idea of consulting over paperwork. 3. **Office**: This is a general term for a workplace. While it could involve consulting, it doesn't specifically imply a gathering of people for discussion. 4. **Table**: This is a piece of furniture and doesn't inherently suggest a location for consultation. It lacks context. 5. **Work**: This is a broad term that refers to a place or activity. It does not specifically indicate a location for consulting over paperwork. Given this analysis, the most fitting answer is **B: meeting**, as it directly implies a gathering of people to discuss paperwork.\n[Extracted Answer]: B\n\n[Example]: The correct answer is A.\n[Extracted Answer]:A\n\n[Example]: A.key The correct answer is key.\n[Extracted Answer]:A\n\n[Example]: Answer: C is justified by the information given in the previous section.\n[Extracted Answer]:C\n\n[Example]: (D)\n[Extracted Answer]:D\n\n[Example]: {}\n[Extracted Answer]:".format(question,input_str)    }]
-
-    response = client.chat.completions.create(
-        model='gpt-4o-mini',
-        messages=message
-    ).to_dict()
-    response = response["choices"][0]["message"]["content"]
-    if len(response)<1:
-        return "-1"
-    else:
-        return response[0]
 
 def extract_last_num(text: str) -> str:
         match = re.search(r'boxed\{(.*?)\}', text)
@@ -203,24 +176,6 @@ def extract_last_num(text: str) -> str:
         else:
             return "Error"
 
-def most_frequent_by_bleu(list: List[str]) -> Tuple[str, int]:
-    best_score=0
-    best_code=list[0]
-    smooth_func = SmoothingFunction().method1
-    for i,current_code in enumerate(list):
-        current_score=0
-        for index,code in enumerate(list):
-            if i==index:continue
-            # current_score+=sacrebleu.corpus_bleu(word_tokenize(current_code), [word_tokenize(code)], lowercase=True).score
-            current_score+=sentence_bleu([word_tokenize(code)], current_code,smoothing_function=smooth_func)
-            # if current_score==0:
-            #     print(word_tokenize(current_code))
-            #     print(word_tokenize(code))
-            #     time.sleep(10)
-        if current_score>best_score:
-            best_score=current_score
-            best_code=current_code
-    return best_code,best_score
 
 def extract_final_answers_gsm8k(outputs):
     # need to consider robostness
@@ -284,35 +239,14 @@ def latex_to_python(latex_expr):
     latex_expr = latex_expr.replace('\\frac', '/')  
     return latex_expr
 
-def extract_final_answers_game24(outputs):
-    # need to consider robostness
-    final_answers = []
-    for output in outputs:
-            final_answer = extract_last_num(output)
-            final_answers.append(final_answer)
-    return final_answers
-
-
-def extract_code_answer(text: str) -> str:
-
-    text = text.split('```python')[-1]
-    text = text.split('```')[0]
-    if len(text) > 0:
-        text = text.replace("print(", "#print(")
-        return text
-    else:
-        return "NONE"
-    
 
 def compute_correctness(ans_list,s,dataset):
     is_correct=0
-    if dataset not in ["humaneval","mbpp"]: 
-        ans_list=[item for item in ans_list if item !="Error" and item!=""]
-        ans_list=[item.replace(" ","") for item in ans_list]
-        ans= most_frequent(ans_list)
-    else:
-        ans,_=most_frequent_by_bleu(ans_list)
-    if dataset in ["gsm8k","MGSM"]:
+    ans_list=[item for item in ans_list if item !="Error" and item!=""]
+    ans_list=[item.replace(" ","") for item in ans_list]
+    ans= most_frequent(ans_list)
+
+    if dataset in ["GSM8K","MGSM"]:
         a = float(ans.replace(',',''))
         if dataset=="MGSM":
             s=float(s["solution"])
@@ -320,20 +254,8 @@ def compute_correctness(ans_list,s,dataset):
             s=float(s["solution"].replace(',',''))
         if abs(s-a) < 1e-6:
             is_correct=1
-    elif dataset=="math":
+    elif dataset=="MATH":
         if is_equiv(s["solution"].replace(" ",""),ans):
-            is_correct=1
-    elif dataset =="humaneval":
-        if format_solution_humaneval(ans,s):
-            is_correct=1
-    elif dataset == "mbpp":
-        if format_solution_mbpp(ans,s):
-            is_correct=1
-    elif dataset == "logiqa":
-        matches = re.findall(r'\{(.*?)\}', ans)
-        if matches:
-            ans=matches[0]
-        if ans.replace(" ","").lower()==chr(65+s["solution"]).replace(" ","").lower():
             is_correct=1
     else:
         matches = re.findall(r'\{(.*?)\}', ans)
@@ -341,8 +263,6 @@ def compute_correctness(ans_list,s,dataset):
             ans=matches[0]
         if ans.replace(" ","").lower()==s["solution"].replace(" ","").lower():
             is_correct=1
-
-    
     return is_correct
 def calculate_num_sampling(ans_list):
     set_list=set(ans_list)
