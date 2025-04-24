@@ -9,7 +9,7 @@ import math
 weights_dict={
     "GSM8K":{'1': 1, '2': 1, '3': 1},
     "MATH": {'1': 2, '2': 2, '3': 1},
-    "MMLU-Pro":{'1': 1, '2': 1, '3': 1}, 
+    "MMLU-Pro":{'1': 1.5, '2': 1, '3': 1}, 
     "MGSM":{'1': 1, '2': 1, '3': 1},
     "MathBench": {"1":2, "2":2, "3":2},
     "DATE": {"1":1.5, "2":1.5, "3":1}
@@ -144,9 +144,9 @@ def vote_algorithmn_performance(dataset,weights):
         else:
             s = datas[i]["solution"]
 
-        first_round_answers=datas[i][f"{lm_ids[0]}_ans_list"][0:6]
-        second_round_answers=datas[i][f"{lm_ids[1]}_ans_list"][0:6]
-        third_round_answers=datas[i][f"{lm_ids[2]}_ans_list"][0:4]
+        first_round_answers=datas[i][f"{lm_ids[0]}_ans_list"][0:5]
+        second_round_answers=datas[i][f"{lm_ids[1]}_ans_list"][0:5]
+        third_round_answers=datas[i][f"{lm_ids[2]}_ans_list"][0:5]
         
         request_len+=len(datas[i][f"{lm_ids[0]}_sampling"])
         first_round_Correct+=compute_correctness(first_round_answers,datas[i],dataset)

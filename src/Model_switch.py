@@ -36,16 +36,16 @@ def metric(dataset_name, results):
     
     return total, acc
 
-def log_out(dataset_name, results,llm):
+def log_out(dataset_name, results):
     total, acc= metric(dataset_name,results)
-    metric_output_path=f"../Results/{dataset_name}/MS/metrics_{llm}.json"
+    metric_output_path=f"Results/{dataset_name}/MS/metrics_test.json"
     with open(metric_output_path, "w") as f:
         f.write(f"total={total}")
         f.write("\n")
         f.write(f"acc={acc}")
         # f.write(f"acc2={acc2}")
 
-    output_path = f"../Results//{dataset_name}/MS/results_{llm}.json"
+    output_path = f"Results/{dataset_name}/MS/results_test.json"
     with open(output_path, "w") as f:
         json.dump(results, f, indent=4)
 
@@ -68,7 +68,7 @@ def evaluate(num_workers, dataset_name,Sampling,Sampling_Numbers,modellist,resul
                 )
             data["ans_sampling"]+=outputs
             data["ans_list"]+= ans_list
-            if compute_correctness(ans_list)<ConsistencyThreshold:
+            if calculate_num_sampling(ans_list)<ConsistencyThreshold:
                 index+=1
             else:
                 break
@@ -81,7 +81,7 @@ def evaluate(num_workers, dataset_name,Sampling,Sampling_Numbers,modellist,resul
         for future in tqdm(as_completed(futures), total=len(dataset)):
             results.append(future.result())
 
-    log_out(dataset_name, results,llm)
+    log_out(dataset_name, results)
 def generate(dataset_name,question,llm,results_sampling):
     prompt_tail="\n\nThink step by step and slove this question. Your final answer should be in the form \"The answer to this question is \\boxed{X}\", X is your answer and at the end of your response:\n\n"
     prompt=f"Question:\n{question}\n"+prompt_tail

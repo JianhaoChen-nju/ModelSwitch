@@ -11,8 +11,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, Ll
 import torch
 
 device='cuda'
-os.environ["OPENAI_API_KEY"] = "sk-WtIfXtM8Mtoz2DwVDhKYUMWeNNtEhD79Q5LKuKTBi2mGwVs7"
-os.environ["OPENAI_API_BASE"] = "https://api.claudeshop.top/v1"
+os.environ["OPENAI_API_KEY"] = "YOUR KEY"
+os.environ["OPENAI_API_BASE"] = "YOUR BASE"
 class Hg_model:
     def __init__(
     self,
@@ -148,7 +148,6 @@ def gemini(
     top_p: float=1.0,
     num_sampling:int=1 
 ):
-    set_api_and_proxy()
     client = OpenAI(
                 api_key = os.environ["OPENAI_API_KEY"],
                 base_url = os.environ["OPENAI_API_BASE"]
